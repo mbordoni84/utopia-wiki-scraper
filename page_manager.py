@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Utopia Wiki Page Manager
-Classifica, archivia e gestisce le pagine scaricate dal wiki.
+Classifies, archives and manages downloaded wiki pages.
 """
 
 import os
@@ -76,19 +76,19 @@ class PageManager:
             json.dump(self.config, f, indent=2, ensure_ascii=False)
 
     def _get_all_page_files(self):
-        """Trova tutti i file HTML in pages/ e archived/."""
+        """Find all HTML files in pages/ and archived/."""
         pages = {}
         for directory in [self.pages_dir, self.archive_dir]:
             if not os.path.exists(directory):
                 continue
             for fname in os.listdir(directory):
                 if fname.endswith(".html") and not fname.startswith("_"):
-                    name = fname[:-5]  # rimuovi .html
+                    name = fname[:-5]  # remove .html
                     pages[name] = os.path.join(directory, fname)
         return pages
 
     def _read_page_body(self, filepath):
-        """Legge il corpo di una pagina HTML (senza titolo h1)."""
+        """Read the body of an HTML page (without the h1 title)."""
         with open(filepath, "r", encoding="utf-8") as f:
             soup = BeautifulSoup(f.read(), "html.parser")
         article = soup.find("article")
@@ -100,28 +100,28 @@ class PageManager:
         return article.get_text().strip()
 
     def classify(self):
-        """Classifica tutte le pagine secondo i criteri definiti."""
+        """Classify all pages according to defined criteria."""
         all_pages = self._get_all_page_files()
         current_age = self.config.get("current_age", DEFAULT_AGE)
 
-        # Preserva override manuali
+        # Preserve manual overrides
         manual_overrides = {}
         for name, info in self.config.get("pages", {}).items():
             if info.get("reason") == "manual":
                 manual_overrides[name] = info
 
-        # Leggi contenuto di tutte le pagine
+        # Read content of all pages
         page_bodies = {}
         for name, path in all_pages.items():
             page_bodies[name] = self._read_page_body(path)
 
-        # Trova gruppi di duplicati
+        # Find duplicate groups
         content_groups = defaultdict(list)
         for name, body in page_bodies.items():
             key = body[:500] if body else ""
             content_groups[key].append(name)
 
-        # Mappa duplicato -> pagina canonica (nome piu lungo)
+        # Map duplicate -> canonical page (longest name)
         duplicate_map = {}
         for key, names in content_groups.items():
             if len(names) > 1 and key:
@@ -133,14 +133,14 @@ class PageManager:
         result = {}
 
         for name in sorted(all_pages.keys()):
-            # Override manuale ha priorita
+            # Manual override takes priority
             if name in manual_overrides:
                 result[name] = manual_overrides[name]
                 continue
 
             body = page_bodies[name]
 
-            # 1. Pagine vuote/placeholder
+            # 1. Empty/placeholder pages
             if len(body) < 50 or "UNDER CONSTRUCTION" in body or "flag:delete" in body:
                 if body.strip() in ("", "TBD"):
                     result[name] = {"status": "ignore", "reason": "empty"}
@@ -152,12 +152,12 @@ class PageManager:
                     result[name] = {"status": "ignore", "reason": "empty"}
                     continue
 
-            # 2. Redirect
+            # 2. Redirects
             if body[:50].startswith("Redirect to:"):
                 result[name] = {"status": "ignore", "reason": "redirect"}
                 continue
 
-            # 3. Age specifiche
+            # 3. Age-specific pages
             age_num_match = re.match(r"^Age_(\d+)$", name)
             age_sub_match = re.match(r"^Age_(\d+)_(Mechanics|Personalities|Races)$", name)
             age_name_match = re.match(r"^Age_of_", name)
@@ -187,7 +187,7 @@ class PageManager:
                 result[name] = {"status": "ignore", "reason": "obsolete_age"}
                 continue
 
-            # 4. Alliance
+            # 4. Alliance pages
             if name.startswith("Alliance_"):
                 result[name] = {"status": "ignore", "reason": "alliance_page"}
                 continue
@@ -195,7 +195,7 @@ class PageManager:
                 result[name] = {"status": "ignore", "reason": "alliance_page"}
                 continue
 
-            # 5. Kingdom
+            # 5. Kingdom pages
             if name.startswith("Kingdom_"):
                 result[name] = {"status": "ignore", "reason": "kingdom_page"}
                 continue
@@ -203,7 +203,7 @@ class PageManager:
                 result[name] = {"status": "ignore", "reason": "kingdom_page"}
                 continue
 
-            # 6. Profili giocatori
+            # 6. Player profiles
             if "Player Information" in body[:100] and "Kingdoms" in body[:300]:
                 result[name] = {"status": "ignore", "reason": "player_profile"}
                 continue
@@ -213,7 +213,7 @@ class PageManager:
                 result[name] = {"status": "ignore", "reason": "irc_obsolete"}
                 continue
 
-            # 8. Tools/External
+            # 8. External tools
             if name in EXTERNAL_TOOL_PAGES:
                 result[name] = {"status": "ignore", "reason": "external_tool"}
                 continue
@@ -223,7 +223,7 @@ class PageManager:
                 result[name] = {"status": "ignore", "reason": "meta_page"}
                 continue
 
-            # 10. Duplicati
+            # 10. Duplicates
             if name in duplicate_map:
                 result[name] = {"status": "ignore", "reason": f"duplicate_of:{duplicate_map[name]}"}
                 continue
@@ -236,35 +236,34 @@ class PageManager:
 
         keep_count = sum(1 for v in result.values() if v["status"] == "keep")
         ignore_count = sum(1 for v in result.values() if v["status"] == "ignore")
-        print(f"Classificazione completata: {keep_count} keep, {ignore_count} ignore ({len(result)} totali)")
-        print(f"Configurazione salvata in {self.config_path}")
+        print(f"Classification complete: {keep_count} keep, {ignore_count} ignore ({len(result)} total)")
+        print(f"Configuration saved to {self.config_path}")
 
     def review(self):
-        """Mostra un riepilogo delle classificazioni per categoria."""
+        """Show a classification summary by category."""
         pages = self.config.get("pages", {})
         if not pages:
-            print("Nessuna classificazione trovata. Esegui prima --classify.")
+            print("No classification found. Run --classify first.")
             return
 
-        # Raggruppa per reason
+        # Group by reason
         by_reason = defaultdict(list)
         for name, info in pages.items():
             key = f"{info['status']}:{info['reason'].split(':')[0]}"
             by_reason[key].append(name)
 
-        print(f"=== Riepilogo classificazione ===")
-        print(f"Age corrente: {self.config.get('current_age', '?')}")
-        print(f"Totale pagine: {len(pages)}")
+        print(f"=== Classification summary ===")
+        print(f"Current age: {self.config.get('current_age', '?')}")
+        print(f"Total pages: {len(pages)}")
         print()
 
-        # Keep first
         print("--- KEEP ---")
         for key in sorted(by_reason.keys()):
             if not key.startswith("keep:"):
                 continue
             reason = key.split(":", 1)[1]
             names = by_reason[key]
-            print(f"  {reason}: {len(names)} pagine")
+            print(f"  {reason}: {len(names)} pages")
 
         print()
         print("--- IGNORE ---")
@@ -273,19 +272,19 @@ class PageManager:
                 continue
             reason = key.split(":", 1)[1]
             names = by_reason[key]
-            print(f"  {reason}: {len(names)} pagine")
+            print(f"  {reason}: {len(names)} pages")
 
         print()
         keep_total = sum(1 for v in pages.values() if v["status"] == "keep")
         ignore_total = sum(1 for v in pages.values() if v["status"] == "ignore")
-        print(f"Totale keep: {keep_total}")
-        print(f"Totale ignore: {ignore_total}")
+        print(f"Total keep: {keep_total}")
+        print(f"Total ignore: {ignore_total}")
 
     def list_pages(self, status_filter):
-        """Lista le pagine per status."""
+        """List pages by status."""
         pages = self.config.get("pages", {})
         if not pages:
-            print("Nessuna classificazione trovata. Esegui prima --classify.")
+            print("No classification found. Run --classify first.")
             return
 
         for name in sorted(pages.keys()):
@@ -294,7 +293,7 @@ class PageManager:
                 print(f"  [{info['status']:6s}] {name}  ({info['reason']})")
 
     def archive(self):
-        """Sposta le pagine ignore in archived/."""
+        """Move ignored pages to archived/."""
         os.makedirs(self.archive_dir, exist_ok=True)
         pages = self.config.get("pages", {})
         moved = 0
@@ -308,18 +307,18 @@ class PageManager:
                 shutil.move(src, dst)
                 moved += 1
 
-        print(f"Archiviate {moved} pagine in {self.archive_dir}/")
+        print(f"Archived {moved} pages to {self.archive_dir}/")
 
-        # Rigenera indice con sole pagine keep
+        # Regenerate index with keep pages only
         self._regenerate_index()
 
     def restore(self, page_name):
-        """Ripristina una pagina dall'archivio."""
+        """Restore a page from the archive."""
         src = os.path.join(self.archive_dir, page_name + ".html")
         dst = os.path.join(self.pages_dir, page_name + ".html")
 
         if not os.path.exists(src):
-            print(f"Pagina '{page_name}' non trovata in archivio.")
+            print(f"Page '{page_name}' not found in archive.")
             return
 
         shutil.move(src, dst)
@@ -327,31 +326,31 @@ class PageManager:
             self.config["pages"][page_name] = {"status": "keep", "reason": "manual"}
         self._save_config()
         self._regenerate_index()
-        print(f"Ripristinata: {page_name}")
+        print(f"Restored: {page_name}")
 
     def set_status(self, page_name, status):
-        """Imposta manualmente lo status di una pagina."""
+        """Manually set a page's status."""
         pages = self.config.get("pages", {})
         if page_name not in pages:
-            print(f"Pagina '{page_name}' non trovata nella configurazione.")
+            print(f"Page '{page_name}' not found in configuration.")
             return
         pages[page_name] = {"status": status, "reason": "manual"}
         self._save_config()
-        print(f"Impostato: {page_name} -> {status}")
+        print(f"Set: {page_name} -> {status}")
 
     def set_age(self, age_number):
-        """Aggiorna la current_age e riclassifica."""
+        """Update the current_age and reclassify."""
         self.config["current_age"] = age_number
         self._save_config()
-        print(f"Age aggiornata a {age_number}. Riclassifico...")
+        print(f"Age updated to {age_number}. Reclassifying...")
         self.classify()
 
     def _regenerate_index(self):
-        """Rigenera index.html con sole pagine keep + special pages."""
+        """Regenerate index.html with keep + special pages only."""
         pages = self.config.get("pages", {})
         special = self.config.get("special_pages", [])
 
-        # Special pages in cima
+        # Special pages at the top
         special_links = []
         for sp in special:
             fname = sp.get("filename", "_special") + ".html"
@@ -361,7 +360,7 @@ class PageManager:
                     f'        <li class="special"><a href="pages/{fname}">{sp["name"]}</a></li>'
                 )
 
-        # Pagine keep
+        # Keep pages
         keep_links = []
         for name in sorted(pages.keys()):
             if pages[name]["status"] != "keep":
@@ -386,14 +385,14 @@ class PageManager:
 <body>
     <header>
         <h1>Utopia Wiki - Offline</h1>
-        <p>{total} pagine disponibili (Age {self.config.get('current_age', '?')})</p>
+        <p>{total} pages available (Age {self.config.get('current_age', '?')})</p>
     </header>
     <main>
-        <h2>Indice delle pagine</h2>
-        <input type="text" id="search" placeholder="Cerca una pagina..." onkeyup="filterPages()">
+        <h2>Page Index</h2>
+        <input type="text" id="search" placeholder="Search for a page..." onkeyup="filterPages()">
 """
         if special_links:
-            html += """        <h3>Pagine speciali</h3>
+            html += """        <h3>Special Pages</h3>
         <ul id="special-list">
 """
             html += "\n".join(special_links) + "\n"
@@ -419,32 +418,62 @@ class PageManager:
 
         with open(os.path.join(self.output_dir, "index.html"), "w", encoding="utf-8") as f:
             f.write(html)
-        print(f"Indice rigenerato: {total} pagine.")
+        print(f"Index regenerated: {total} pages.")
 
     def export_md(self, output_file=None):
-        """Esporta tutte le pagine keep + special in un unico file Markdown."""
+        """Export all keep + special pages into a single Markdown file."""
         pages = self.config.get("pages", {})
         special = self.config.get("special_pages", [])
         current_age = self.config.get("current_age", "?")
 
+        # Age confirmation prompt
+        print(f"Current age is set to: {current_age}")
+        answer = input("Is this correct? (y/N): ").strip().lower()
+        if answer not in ("y", "yes"):
+            print("Aborted. Use --set-age <NUMBER> to update the age first.")
+            return
+
         if output_file is None:
             output_file = os.path.join(self.output_dir, "utopia_wiki.md")
+
+        # Check for manual notes
+        manual_notes_path = os.path.join(self.output_dir, "manual_notes.md")
+        if os.path.exists(manual_notes_path):
+            with open(manual_notes_path, "r", encoding="utf-8") as f:
+                manual_notes_content = f.read().strip()
+            print("Manual notes: found (wiki_offline/manual_notes.md)")
+        else:
+            manual_notes_content = None
+            print("Manual notes: not found (wiki_offline/manual_notes.md)")
 
         sections = []
 
         # Header
         sections.append(f"# Utopia Wiki - Age {current_age}\n")
 
-        # Special pages first
+        # Part 1: Manual Notes
+        sections.append("---\n\n# Part 1: Manual Notes (Authoritative)\n\n_These notes override any conflicting information below._\n")
+        if manual_notes_content:
+            sections.append(f"{manual_notes_content}\n")
+        else:
+            sections.append("_No manual notes file found (wiki_offline/manual_notes.md)._\n")
+
+        # Part 2: Age Details (special pages)
+        sections.append("---\n\n# Part 2: Age Details — Races & Personalities\n")
         for sp in special:
+            url = sp.get("url", "")
             fname = sp.get("filename", "_special") + ".html"
             fpath = os.path.join(self.pages_dir, fname)
+            if url:
+                sections.append(f"Source: {url}\n")
+                print(f"Special page URL: {url}")
+                print("  ⚠  Double-check this URL is still correct — it may change between ages.")
             if os.path.exists(fpath):
-                title = sp["name"]
                 body = self._html_to_markdown(fpath)
-                sections.append(f"---\n\n## {title}\n\n{body}\n")
+                sections.append(f"{body}\n")
 
-        # Keep pages
+        # Part 3: Wiki Pages
+        sections.append("---\n\n# Part 3: Wiki Pages\n")
         for name in sorted(pages.keys()):
             if pages[name]["status"] != "keep":
                 continue
@@ -453,7 +482,7 @@ class PageManager:
                 continue
             title = name.replace("_", " ")
             body = self._html_to_markdown(fpath)
-            sections.append(f"---\n\n## {title}\n\n{body}\n")
+            sections.append(f"## {title}\n\n{body}\n")
 
         content = "\n".join(sections)
 
@@ -464,11 +493,11 @@ class PageManager:
         page_count = len([n for n, i in pages.items() if i["status"] == "keep"])
         special_count = sum(1 for sp in special
                            if os.path.exists(os.path.join(self.pages_dir, sp.get("filename", "_special") + ".html")))
-        print(f"Esportato: {output_file}")
-        print(f"  {page_count + special_count} pagine, {size_kb:.0f} KB")
+        print(f"Exported: {output_file}")
+        print(f"  {page_count + special_count} pages, {size_kb:.0f} KB")
 
     def _html_to_markdown(self, filepath):
-        """Converte una pagina HTML in testo Markdown semplificato."""
+        """Convert an HTML page to simplified Markdown text."""
         with open(filepath, "r", encoding="utf-8") as f:
             soup = BeautifulSoup(f.read(), "html.parser")
 
@@ -476,18 +505,40 @@ class PageManager:
         if not article:
             article = soup.find("body") or soup
 
-        # Rimuovi il titolo h1 (lo aggiungiamo noi come ##)
+        # Remove h1 title (we add it ourselves as ##)
         h1 = article.find("h1")
         if h1:
             h1.decompose()
 
-        # Converti headers
+        # Remove navigation footer tables (MediaWiki templates)
+        nav_titles = {
+            "The Utopia Guide",
+            "Races & Personalities",
+            "Races &amp; Personalities",
+            "The Thieves' Toolbox",
+            "The Thieves&#39; Toolbox",
+            "The Spellbook",
+            "Ages",
+        }
+        for table in article.find_all("table"):
+            # Check for nav template tables by header text
+            for th in table.find_all("th"):
+                if th.get_text().strip() in nav_titles:
+                    table.decompose()
+                    break
+            else:
+                # Check for « Previous: navigation tables
+                table_text = table.get_text()
+                if "« Previous:" in table_text or "\u00ab Previous:" in table_text:
+                    table.decompose()
+
+        # Convert headers
         for tag in article.find_all(["h2", "h3", "h4", "h5", "h6"]):
             level = int(tag.name[1])
             prefix = "#" * (level + 1)  # h2 -> ###, h3 -> ####
             tag.replace_with(f"\n{prefix} {tag.get_text().strip()}\n")
 
-        # Converti tabelle in formato leggibile
+        # Convert tables to readable format
         for table in article.find_all("table"):
             rows = []
             for tr in table.find_all("tr"):
@@ -496,26 +547,26 @@ class PageManager:
                 if cells:
                     rows.append(" | ".join(cells))
             if rows:
-                # Aggiungi separator dopo header
+                # Add separator after header
                 table_text = rows[0] + "\n" + " | ".join(["---"] * rows[0].count("|") + ["---"]) if len(rows) > 0 else ""
                 if len(rows) > 1:
                     table_text += "\n" + "\n".join(rows[1:])
                 table.replace_with(f"\n{table_text}\n")
 
-        # Converti liste
+        # Convert lists
         for li in article.find_all("li"):
             li.replace_with(f"- {li.get_text().strip()}\n")
 
-        # Converti bold/italic
+        # Convert bold/italic
         for b in article.find_all(["b", "strong"]):
             b.replace_with(f"**{b.get_text()}**")
         for i in article.find_all(["i", "em"]):
             i.replace_with(f"*{i.get_text()}*")
 
-        # Estrai testo
+        # Extract text
         text = article.get_text()
 
-        # Pulisci whitespace eccessivo
+        # Clean excessive whitespace
         lines = []
         prev_empty = False
         for line in text.split("\n"):
@@ -532,28 +583,28 @@ class PageManager:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Gestisci le pagine scaricate del wiki di Utopia")
+    parser = argparse.ArgumentParser(description="Manage downloaded Utopia wiki pages")
     parser.add_argument("-o", "--output", default=DEFAULT_OUTPUT_DIR,
-                        help=f"Directory wiki offline (default: {DEFAULT_OUTPUT_DIR})")
+                        help=f"Offline wiki directory (default: {DEFAULT_OUTPUT_DIR})")
 
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--classify", action="store_true",
-                       help="Classifica automaticamente tutte le pagine")
+                       help="Automatically classify all pages")
     group.add_argument("--review", action="store_true",
-                       help="Mostra riepilogo delle classificazioni")
+                       help="Show classification summary")
     group.add_argument("--list", choices=["keep", "ignore", "all"],
-                       help="Lista pagine per status")
+                       help="List pages by status")
     group.add_argument("--archive", action="store_true",
-                       help="Sposta pagine ignore in archived/")
-    group.add_argument("--restore", metavar="PAGINA",
-                       help="Ripristina una pagina dall'archivio")
-    group.add_argument("--set", nargs=2, metavar=("PAGINA", "STATUS"),
-                       help="Imposta manualmente lo status (keep/ignore)")
-    group.add_argument("--set-age", type=int, metavar="NUMERO",
-                       help="Aggiorna la current_age e riclassifica")
+                       help="Move ignored pages to archived/")
+    group.add_argument("--restore", metavar="PAGE",
+                       help="Restore a page from the archive")
+    group.add_argument("--set", nargs=2, metavar=("PAGE", "STATUS"),
+                       help="Manually set page status (keep/ignore)")
+    group.add_argument("--set-age", type=int, metavar="NUMBER",
+                       help="Update the current_age and reclassify")
     group.add_argument("--export-md", nargs="?", const=True, default=None,
                        metavar="FILE",
-                       help="Esporta le pagine keep in un unico file Markdown (default: wiki_offline/utopia_wiki.md)")
+                       help="Export keep pages to a single Markdown file (default: wiki_offline/utopia_wiki.md)")
 
     args = parser.parse_args()
     mgr = PageManager(output_dir=args.output)
@@ -571,7 +622,7 @@ def main():
     elif args.set:
         page, status = args.set
         if status not in ("keep", "ignore"):
-            print("Status deve essere 'keep' o 'ignore'.")
+            print("Status must be 'keep' or 'ignore'.")
             sys.exit(1)
         mgr.set_status(page, status)
     elif args.set_age is not None:

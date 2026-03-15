@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Utopia Wiki Offline Scraper
-Scarica tutte le pagine del wiki di Utopia per la consultazione offline.
-Usa l'API MediaWiki per elencare le pagine e salva sia l'HTML che il testo.
+Downloads all Utopia wiki pages for offline use.
+Uses the MediaWiki API to list pages and saves them as HTML.
 """
 
 import os
@@ -22,9 +22,9 @@ API_URL = f"{WIKI_BASE}/api.php"
 INDEX_URL = f"{WIKI_BASE}/index.php"
 
 DEFAULT_OUTPUT_DIR = "wiki_offline"
-DEFAULT_DELAY = 1.0  # secondi tra le richieste
-MAX_RETRIES = 10  # il sito da spesso 502, serve insistere
-RETRY_BASE_DELAY = 3  # secondi di base per il backoff
+DEFAULT_DELAY = 1.0  # seconds between requests
+MAX_RETRIES = 10  # site often returns 502, need aggressive retries
+RETRY_BASE_DELAY = 3  # base seconds for backoff
 PROGRESS_FILE = "scraper_progress.json"
 
 
@@ -48,11 +48,11 @@ class UtopiaWikiScraper:
         os.makedirs(os.path.join(self.output_dir, "images"), exist_ok=True)
         os.makedirs(os.path.join(self.output_dir, "css"), exist_ok=True)
 
-        # Carica progresso precedente per riprendere download interrotti
+        # Load previous progress to resume interrupted downloads
         self._load_progress()
 
     def _load_progress(self):
-        """Carica il progresso da un file per riprendere download interrotti."""
+        """Load progress from file to resume interrupted downloads."""
         if os.path.exists(self.progress_file):
             try:
                 with open(self.progress_file, "r") as f:
@@ -60,12 +60,12 @@ class UtopiaWikiScraper:
                 self.downloaded_pages = set(data.get("downloaded_pages", []))
                 self.downloaded_images = set(data.get("downloaded_images", []))
                 if self.downloaded_pages:
-                    print(f"Riprendendo download precedente: {len(self.downloaded_pages)} pagine gia' scaricate.")
+                    print(f"Resuming previous download: {len(self.downloaded_pages)} pages already downloaded.")
             except (json.JSONDecodeError, KeyError):
                 pass
 
     def _save_progress(self):
-        """Salva il progresso su file."""
+        """Save progress to file."""
         data = {
             "downloaded_pages": sorted(self.downloaded_pages),
             "downloaded_images": sorted(self.downloaded_images),
@@ -76,10 +76,10 @@ class UtopiaWikiScraper:
 
     @staticmethod
     def show_status(output_dir=DEFAULT_OUTPUT_DIR):
-        """Mostra lo stato del download."""
+        """Show download status."""
         progress_file = os.path.join(output_dir, PROGRESS_FILE)
         if not os.path.exists(progress_file):
-            print("Nessun download precedente trovato.")
+            print("No previous download found.")
             return
 
         with open(progress_file, "r") as f:
@@ -89,32 +89,32 @@ class UtopiaWikiScraper:
         images = data.get("downloaded_images", [])
         failed = data.get("failed_pages", [])
 
-        print(f"=== Stato download wiki ===")
-        print(f"Pagine scaricate:  {len(downloaded)}")
-        print(f"Immagini scaricate: {len(images)}")
-        print(f"Pagine fallite:    {len(failed)}")
+        print(f"=== Wiki download status ===")
+        print(f"Pages downloaded:  {len(downloaded)}")
+        print(f"Images downloaded: {len(images)}")
+        print(f"Failed pages:      {len(failed)}")
 
         if failed:
-            print(f"\nPagine non scaricate:")
+            print(f"\nPages not downloaded:")
             for p in failed:
                 print(f"  - {p}")
 
-        print(f"\nRilancia lo script per riprendere il download delle pagine mancanti.")
+        print(f"\nRe-run the script to resume downloading missing pages.")
 
     def _request_with_retry(self, url, params=None, timeout=30, binary=False):
-        """Effettua una richiesta HTTP con retry aggressivo per gestire i 502."""
+        """Make an HTTP request with aggressive retry to handle 502 errors."""
         last_error = None
         for attempt in range(1, self.max_retries + 1):
             try:
                 resp = self.session.get(url, params=params, timeout=timeout)
                 if resp.status_code == 502:
                     wait = RETRY_BASE_DELAY * attempt
-                    print(f"    502 Bad Gateway (tentativo {attempt}/{MAX_RETRIES}), riprovo tra {wait}s...")
+                    print(f"    502 Bad Gateway (attempt {attempt}/{self.max_retries}), retrying in {wait}s...")
                     time.sleep(wait)
                     continue
                 if resp.status_code == 503:
                     wait = RETRY_BASE_DELAY * attempt
-                    print(f"    503 Service Unavailable (tentativo {attempt}/{MAX_RETRIES}), riprovo tra {wait}s...")
+                    print(f"    503 Service Unavailable (attempt {attempt}/{self.max_retries}), retrying in {wait}s...")
                     time.sleep(wait)
                     continue
                 resp.raise_for_status()
@@ -122,20 +122,20 @@ class UtopiaWikiScraper:
             except requests.exceptions.ConnectionError as e:
                 last_error = e
                 wait = RETRY_BASE_DELAY * attempt
-                print(f"    Errore connessione (tentativo {attempt}/{MAX_RETRIES}), riprovo tra {wait}s...")
+                print(f"    Connection error (attempt {attempt}/{self.max_retries}), retrying in {wait}s...")
                 time.sleep(wait)
             except requests.exceptions.Timeout as e:
                 last_error = e
                 wait = RETRY_BASE_DELAY * attempt
-                print(f"    Timeout (tentativo {attempt}/{MAX_RETRIES}), riprovo tra {wait}s...")
+                print(f"    Timeout (attempt {attempt}/{self.max_retries}), retrying in {wait}s...")
                 time.sleep(wait)
             except requests.RequestException as e:
-                raise  # errori non recuperabili (es. 404)
+                raise  # non-recoverable errors (e.g. 404)
 
-        raise requests.RequestException(f"Fallito dopo {self.max_retries} tentativi: {last_error}")
+        raise requests.RequestException(f"Failed after {self.max_retries} attempts: {last_error}")
 
     def get_all_pages(self):
-        """Usa l'API MediaWiki per ottenere la lista di tutte le pagine."""
+        """Use the MediaWiki API to get the list of all pages."""
         pages = []
         params = {
             "action": "query",
@@ -144,31 +144,31 @@ class UtopiaWikiScraper:
             "format": "json",
         }
 
-        print("Recupero lista pagine dal wiki...")
+        print("Fetching page list from wiki...")
         while True:
             try:
                 resp = self._request_with_retry(API_URL, params=params)
                 data = resp.json()
             except requests.RequestException as e:
-                print(f"Errore API: {e}")
-                print("Provo metodo alternativo (scraping di Special:AllPages)...")
+                print(f"API error: {e}")
+                print("Trying fallback method (scraping Special:AllPages)...")
                 return self._get_all_pages_fallback()
 
             for page in data.get("query", {}).get("allpages", []):
                 pages.append(page["title"])
 
-            # Paginazione
+            # Pagination
             if "continue" in data:
                 params["apcontinue"] = data["continue"]["apcontinue"]
                 time.sleep(0.5)
             else:
                 break
 
-        print(f"Trovate {len(pages)} pagine.")
+        print(f"Found {len(pages)} pages.")
         return pages
 
     def _get_all_pages_fallback(self):
-        """Fallback: scraping della pagina Special:AllPages."""
+        """Fallback: scrape the Special:AllPages page."""
         pages = set()
         url = f"{INDEX_URL}?title=Special:AllPages"
 
@@ -176,7 +176,7 @@ class UtopiaWikiScraper:
             try:
                 resp = self._request_with_retry(url)
             except requests.RequestException as e:
-                print(f"Errore nel fallback: {e}")
+                print(f"Fallback error: {e}")
                 break
 
             soup = BeautifulSoup(resp.text, "html.parser")
@@ -187,22 +187,22 @@ class UtopiaWikiScraper:
                     if title:
                         pages.add(title)
 
-            # Controlla se c'e' un link "next"
+            # Check for a "next" link
             nav = soup.find("div", {"class": "mw-allpages-nav"})
             url = None
             if nav:
                 for link in nav.find_all("a"):
-                    if "next" in link.text.lower() or "prossim" in link.text.lower():
+                    if "next" in link.text.lower():
                         url = urljoin(WIKI_BASE, link["href"])
                         break
 
             time.sleep(0.5)
 
-        print(f"Trovate {len(pages)} pagine (fallback).")
+        print(f"Found {len(pages)} pages (fallback).")
         return sorted(pages)
 
     def safe_filename(self, title):
-        """Converte un titolo di pagina in un nome file sicuro."""
+        """Convert a page title to a safe filename."""
         name = re.sub(r'[<>:"/\\|?*]', '_', title)
         name = name.replace(' ', '_')
         if len(name) > 200:
@@ -210,7 +210,7 @@ class UtopiaWikiScraper:
         return name
 
     def download_page(self, title):
-        """Scarica una singola pagina wiki."""
+        """Download a single wiki page."""
         if title in self.downloaded_pages:
             return
 
@@ -219,26 +219,26 @@ class UtopiaWikiScraper:
 
         params = {
             "title": title,
-            "action": "render",  # solo il contenuto, senza chrome del sito
+            "action": "render",  # content only, no site chrome
         }
 
         try:
             resp = self._request_with_retry(INDEX_URL, params=params)
         except requests.RequestException as e:
-            print(f"  ERRORE: {title} - {e}")
+            print(f"  ERROR: {title} - {e}")
             self.failed_pages.append(title)
             return
 
         soup = BeautifulSoup(resp.text, "html.parser")
 
-        # Scarica immagini se richiesto
+        # Download images if requested
         if self.download_images:
             self._process_images(soup)
 
-        # Aggiorna i link interni per puntare ai file locali
+        # Fix internal links to point to local files
         self._fix_internal_links(soup)
 
-        # Genera HTML completo con stile base
+        # Generate complete HTML with basic styling
         html_content = self._wrap_html(title, str(soup))
 
         with open(filepath, "w", encoding="utf-8") as f:
@@ -247,7 +247,7 @@ class UtopiaWikiScraper:
         self.downloaded_pages.add(title)
 
     def _process_images(self, soup):
-        """Scarica le immagini e aggiorna i src."""
+        """Download images and update src attributes."""
         for img in soup.find_all("img"):
             src = img.get("src")
             if not src:
@@ -275,7 +275,7 @@ class UtopiaWikiScraper:
             time.sleep(0.2)
 
     def _img_filename(self, url):
-        """Genera un nome file per un'immagine a partire dall'URL."""
+        """Generate a filename for an image from its URL."""
         parsed = urlparse(url)
         basename = os.path.basename(unquote(parsed.path))
         if not basename or len(basename) > 150:
@@ -283,11 +283,10 @@ class UtopiaWikiScraper:
         return re.sub(r'[<>:"/\\|?*]', '_', basename)
 
     def _fix_internal_links(self, soup):
-        """Converte i link interni del wiki in link ai file locali."""
+        """Convert internal wiki links to local file links."""
         for a in soup.find_all("a", href=True):
             href = a["href"]
 
-            # Link interni del wiki
             if href.startswith("/index.php"):
                 parsed = urlparse(href)
                 params = parse_qs(parsed.query)
@@ -302,7 +301,7 @@ class UtopiaWikiScraper:
                 continue
 
     def _wrap_html(self, title, body_content):
-        """Avvolge il contenuto in un documento HTML completo con stile."""
+        """Wrap content in a complete HTML document with styling."""
         return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -323,7 +322,7 @@ class UtopiaWikiScraper:
 </html>"""
 
     def create_index(self, pages):
-        """Crea la pagina indice con link a tutte le pagine scaricate."""
+        """Create the index page with links to all downloaded pages."""
         links = []
         for title in sorted(pages):
             if title in self.downloaded_pages:
@@ -341,11 +340,11 @@ class UtopiaWikiScraper:
 <body>
     <header>
         <h1>Utopia Wiki - Offline</h1>
-        <p>{len(self.downloaded_pages)} pagine scaricate</p>
+        <p>{len(self.downloaded_pages)} pages downloaded</p>
     </header>
     <main>
-        <h2>Indice delle pagine</h2>
-        <input type="text" id="search" placeholder="Cerca una pagina..." onkeyup="filterPages()">
+        <h2>Page Index</h2>
+        <input type="text" id="search" placeholder="Search for a page..." onkeyup="filterPages()">
         <ul id="page-list">
 {chr(10).join(links)}
         </ul>
@@ -367,7 +366,7 @@ class UtopiaWikiScraper:
             f.write(html)
 
     def create_css(self):
-        """Crea un foglio di stile base per la consultazione offline."""
+        """Create a basic stylesheet for offline browsing."""
         css = """body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     max-width: 960px;
@@ -454,12 +453,12 @@ pre {
             f.write(css)
 
     def run(self):
-        """Esegue lo scraping completo."""
+        """Run the complete scraping process."""
         self.create_css()
 
         pages = self.get_all_pages()
         if not pages:
-            print("Nessuna pagina trovata. Il sito potrebbe essere offline.")
+            print("No pages found. The site may be offline.")
             sys.exit(1)
 
         total = len(pages)
@@ -468,42 +467,42 @@ pre {
             if title in self.downloaded_pages:
                 skipped += 1
                 continue
-            print(f"[{i}/{total}] Scaricando: {title}" + (f" (saltate {skipped})" if skipped and i == skipped + 1 else ""))
+            print(f"[{i}/{total}] Downloading: {title}" + (f" (skipped {skipped})" if skipped and i == skipped + 1 else ""))
             self.download_page(title)
             self._save_progress()
             time.sleep(self.delay)
 
-        # Secondo passaggio: ritenta le pagine fallite
+        # Second pass: retry failed pages
         if self.failed_pages:
-            print(f"\n--- Secondo passaggio: ritento {len(self.failed_pages)} pagine fallite ---")
+            print(f"\n--- Second pass: retrying {len(self.failed_pages)} failed pages ---")
             retry_list = list(self.failed_pages)
             self.failed_pages = []
             for i, title in enumerate(retry_list, 1):
                 print(f"[retry {i}/{len(retry_list)}] {title}")
                 self.download_page(title)
                 self._save_progress()
-                time.sleep(self.delay * 2)  # attesa doppia nel retry
+                time.sleep(self.delay * 2)  # double delay on retry
 
         self.create_index(pages)
         self._save_progress()
 
-        # Report finale
+        # Final report
         print(f"\n{'='*50}")
-        print(f"Download completato!")
-        print(f"Pagine scaricate: {len(self.downloaded_pages)}/{total}")
-        print(f"Immagini scaricate: {len(self.downloaded_images)}")
+        print(f"Download complete!")
+        print(f"Pages downloaded: {len(self.downloaded_pages)}/{total}")
+        print(f"Images downloaded: {len(self.downloaded_images)}")
         if self.failed_pages:
-            print(f"Pagine fallite: {len(self.failed_pages)}")
+            print(f"Failed pages: {len(self.failed_pages)}")
             for p in self.failed_pages:
                 print(f"  - {p}")
-            print(f"\nRilancia lo script per ritentare le pagine mancanti (il progresso e' salvato).")
-        print(f"\nApri {self.output_dir}/index.html nel browser per consultare il wiki offline.")
+            print(f"\nRe-run the script to retry missing pages (progress is saved).")
+        print(f"\nOpen {self.output_dir}/index.html in your browser to browse the wiki offline.")
 
     def update_keep(self):
-        """Riscarica solo le pagine con status 'keep' dal page_config.json + special pages."""
+        """Re-download only pages with 'keep' status from page_config.json + special pages."""
         config_path = os.path.join(self.output_dir, "page_config.json")
         if not os.path.exists(config_path):
-            print("page_config.json non trovato. Esegui prima: python3 page_manager.py --classify")
+            print("page_config.json not found. Run first: python3 page_manager.py --classify")
             sys.exit(1)
 
         with open(config_path, "r") as f:
@@ -512,24 +511,24 @@ pre {
         keep_pages = [name for name, info in config.get("pages", {}).items()
                       if info["status"] == "keep"]
 
-        print(f"Aggiornamento di {len(keep_pages)} pagine keep...")
+        print(f"Updating {len(keep_pages)} keep pages...")
         self.create_css()
 
-        # Forza il re-download ignorando il progress per queste pagine
+        # Force re-download by removing from progress
         for i, title in enumerate(keep_pages, 1):
-            print(f"[{i}/{len(keep_pages)}] Aggiornando: {title}")
+            print(f"[{i}/{len(keep_pages)}] Updating: {title}")
             self.downloaded_pages.discard(title)
             self.download_page(title)
             self._save_progress()
             time.sleep(self.delay)
 
-        # Scarica special pages
+        # Download special pages
         special_pages = config.get("special_pages", [])
         for sp in special_pages:
             url = sp["url"]
             filename = sp.get("filename", "_special") + ".html"
             filepath = os.path.join(self.output_dir, "pages", filename)
-            print(f"Scaricando pagina speciale: {sp['name']}")
+            print(f"Downloading special page: {sp['name']}")
             try:
                 resp = self._request_with_retry(url)
                 soup = BeautifulSoup(resp.text, "html.parser")
@@ -538,11 +537,11 @@ pre {
                 html_content = self._wrap_html(sp["name"], str(soup))
                 with open(filepath, "w", encoding="utf-8") as f:
                     f.write(html_content)
-                print(f"  Salvata: {filename}")
+                print(f"  Saved: {filename}")
             except Exception as e:
-                print(f"  ERRORE scaricando {sp['name']}: {e}")
+                print(f"  ERROR downloading {sp['name']}: {e}")
 
-        # Rigenera indice tramite page_manager
+        # Regenerate index via page_manager
         try:
             from page_manager import PageManager
             mgr = PageManager(output_dir=self.output_dir)
@@ -552,30 +551,30 @@ pre {
 
         # Report
         print(f"\n{'='*50}")
-        print(f"Aggiornamento completato!")
-        print(f"Pagine aggiornate: {len(keep_pages)}")
+        print(f"Update complete!")
+        print(f"Pages updated: {len(keep_pages)}")
         if self.failed_pages:
-            print(f"Pagine fallite: {len(self.failed_pages)}")
+            print(f"Failed pages: {len(self.failed_pages)}")
             for p in self.failed_pages:
                 print(f"  - {p}")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Scarica il wiki di Utopia per consultazione offline")
+    parser = argparse.ArgumentParser(description="Download the Utopia wiki for offline use")
     parser.add_argument("-o", "--output", default=DEFAULT_OUTPUT_DIR,
-                        help=f"Directory di output (default: {DEFAULT_OUTPUT_DIR})")
+                        help=f"Output directory (default: {DEFAULT_OUTPUT_DIR})")
     parser.add_argument("-d", "--delay", type=float, default=DEFAULT_DELAY,
-                        help=f"Ritardo in secondi tra le richieste (default: {DEFAULT_DELAY})")
+                        help=f"Delay in seconds between requests (default: {DEFAULT_DELAY})")
     parser.add_argument("--no-images", action="store_true",
-                        help="Non scaricare le immagini")
+                        help="Skip image downloads")
     parser.add_argument("--status", action="store_true",
-                        help="Mostra lo stato del download e le pagine mancanti")
+                        help="Show download status and missing pages")
     parser.add_argument("--update-keep", action="store_true",
-                        help="Riscarica solo le pagine con status 'keep' + special pages")
+                        help="Re-download only 'keep' pages + special pages")
     parser.add_argument("--reset", action="store_true",
-                        help="Ignora il progresso precedente e ricomincia da zero")
+                        help="Ignore previous progress and start from scratch")
     parser.add_argument("--retries", type=int, default=MAX_RETRIES,
-                        help=f"Numero massimo di retry per richiesta (default: {MAX_RETRIES})")
+                        help=f"Max retries per request (default: {MAX_RETRIES})")
     args = parser.parse_args()
 
     if args.status:
@@ -592,7 +591,7 @@ def main():
     if args.reset:
         scraper.downloaded_pages = set()
         scraper.downloaded_images = set()
-        print("Progresso resettato.")
+        print("Progress reset.")
 
     if args.update_keep:
         scraper.update_keep()

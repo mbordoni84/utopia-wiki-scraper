@@ -1,5 +1,6 @@
 wiki_offline/*
 !wiki_offline/utopia_wiki.md
+!wiki_offline/manual_notes.md
 __pycache__/
 *.pyc
 .cursor/

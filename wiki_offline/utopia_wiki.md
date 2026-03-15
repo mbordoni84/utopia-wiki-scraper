@@ -2,7 +2,17 @@
 
 ---
 
-## Age Details (Current Age)
+# Part 1: Manual Notes (Authoritative)
+
+_These notes override any conflicting information below._
+
+_No manual notes file found (wiki_offline/manual_notes.md)._
+
+---
+
+# Part 2: Age Details — Races & Personalities
+
+Source: https://utopia-game.com/wol/chooser/age_details/
 
 Utopia
             -
@@ -738,6 +748,8 @@ Report this
 
 ---
 
+# Part 3: Wiki Pages
+
 ## A Players Guide to Utopia
 
 By Dan4GS. October 26, 2014 (Age 63 Changes included)
@@ -1072,8 +1084,6 @@ I did not make these and all credit goes to their creator, who did a fantastic j
 
 - Basics of Utopia: http://www.youtube.com/watch?v=kBk90x5z4GY
 
----
-
 ## Ages
 
 Each game of Utopia is broken up into separate Ages.
@@ -1272,12 +1282,6 @@ Details: Utopia Time
 
 - Rest of ages were named as Age
 
-Ages
----
-Ages | 1998 - 1999 : The first generation of Utopia (1)  •  The Second Age of Utopia (2)  •  The Third Age of Utopia (3)  •  The Fourth Age of Utopia (4)  •  The Fifth Age of Utopia (5)  •  The Sixth Age of Utopia (6)  •  2000 - 2001 : The Seventh Age of Utopia (7)  •  The Age of Chaos (8)  •  The Renaissance Age (9)  •  The Age of Conflict (10)  •  The Age of Nobility (11)  •  The Era of Magic (12)  •  The Era of Mystery (13)  •  The Era of Strife (14)  •   2002 - 2003 : The Age of Valour (15)  •  The Age of Discovery (16)  •  The Age of the People (17)  •  The Age of Heroes (18)  •  An Era of Hope (19)  •  An Age of Dreams (20)  •  An Age of Wonders (21)  •  An Age of Conquerors (22)  •  The Revolution (23)  •   2004 - 2005 : An Age of Glory (24)  •  An Age of Tranquility (25)  •  An Age of Turmoil (26)  •  An Age of Courage (27)  •  An Age of Intrigue (28)  •  An Age of War (29)  •  An Age of Unity (30)  •   2006 - 2007 : An Age of Reason (31)  •  An Age of Kings (32)  •  An Age of Prosperity (33)  •  The Age of the Dragon (34)  •  An Age of Triumph (35)  •  An Age of Bravery (36)  •  The Age of Darkness (37)  •   2008 - 2009 : The Age of Angels (38)  •  The Age of the Scholar (39)  •  The Awakening (40)  •  The Age of Renewal (41)  •  The Age of Hope (42)  •  The Age of Rebirth (43)  •  The Age of Change (44)  •  The Age of Light (45)  •   2010 - 2011 : The Age of Distinction (46)  •  The Age of Justice (47)  •  The Age of Peril (48)  •  The Age of Conspiracy (49)  •  The Age of Resurrection (50)  •  The Age of Domination (51)  •  An Era of Supremacy (52)  •  2012 - 2013 : The Age of Havoc (53)  •  A Call to Arms (54)  •  Veil of Shadows (55)  •  Strength in Union (56)  •  Relentless Onslaught (57)  •  Art of War (58)  •  An Honorable Proposition (59)  •  A Battle Joined (60)  •  2014 - 2015 : Age of Destruction (61)  •  Books of War (62)  •  Iron Walls, Iron Heart (63)  •  The Spoils of War (64)  •  The Isles of Legion (65)  •  Thunder and Bedlam (66)  •  2016 - 2017 : The Age of Perception (67)  •  The Age of Heresy (68)  •  The Age of Scholars and Scoundrels (69)  •  The Age of Daunting Judgement (70)  •   The Metamorphosis (71)  •   The Era of Venerated Bastions (72)  •  The Age of Tricksters and Mischief (73)  •  The Age of Affinity (74)  •  2017 - 2018 : The Age of Empowering Enchantments (75)  •  The Age of the Empyrean Advent (76)  •  The Age of Accession and Abrogation  (77)  •  The Age of Insight  (78)  •  The Age of Vanguards Acquiescence (79)  •   2019 - 2020 : The Age of Reconnaissance (80)  •  The Emergence (81)  •  The Grimoires of Glory (82)  •  Age of Adjudication (83)  •  Bethink the Fray (84)  •  Intuition (85)  •  Global Viction (86)  •  Age of the Sword (87)  •  Swift Strife (88)  •  Reformation (89) 2021 - 2022 : Age of Exile 90  •  Age of Remembrance 91  •  Age of Ancestry 92  •  Occult Ordination 93  •  Ascent 94  •  Age of the Omen 95  •  The Eternal Rift 96  •  Dominance 97  •  Keen Transformation 98  •  2023 - 2024 : Crossing Boundaries 99  •  Equilibrium 100  •  Crusades 101  •  Godsend 102  •  Unbound Dominion 103  •  Renascence 104  •  Devout Fervor 105
-
----
-
 ## Aggressive Actions
 
 ### Aggressive Actions
@@ -1317,8 +1321,6 @@ When abandoning a province, deserting, defecting and/or other province reset wil
 - Use of any Offensive Spell
 
 - Dragon slay
-
----
 
 ## Aid
 
@@ -1381,18 +1383,6 @@ Aid to needy Provinces is sometimes exempt from taxation. This aid still accumul
 - If the province is below 25% of the Kingdom's median Acres, its Tax Rate is capped at 15%.
 
 - Taxes don't take effect until your negative trade balance reaches 400% of your net worth (equivalent to one maximum aid shipment).
-
-« Previous:  War Room | Next:  Mail & Forum »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Alliances
 
@@ -1653,8 +1643,6 @@ The following 21 pages are in this category, out of 21 total.
 
 - Alliance:Zen
 
----
-
 ## Ambush Guide
 
 This is part of the Utopia WIKI Mini Guide Series.
@@ -1756,8 +1744,6 @@ You would have to ambush the hit for 25 acres before you could ambush the hit fo
 - Ambush
 
 - War Room
-
----
 
 ## Ambushing
 
@@ -1874,18 +1860,6 @@ Be sure to check out the Ambush Guide if you are still unclear.
 - Attacking & Defending
 
 - Units
-
-« Previous:  Sciences | Next:  Mystics »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Assassinate wizards
 
@@ -2221,31 +2195,6 @@ Attempts to convince enemy peasants, military, or wizards to revolt and join you
 
 - Age 106: NS updated to reflect 25% more damage on 29 May 2024.
 
-« Previous:  Mystics | Next:  War Room »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
-Races & Personalities
----
-Races | Avians  •  Dark Elves  •  Dryads  •  Dwarves  •  Elves  •  Faeries  •  Halflings  •  Humans  •  Orcs  •  Undead
-Extinct Races | Bocans  •  Gnomes
-Personalities | The Artisan  •  The Cleric  •  The General  •  The Heretic  •  The Mystic  •  The Rogue  •  The Tactician  •  The Warrior
-Extinct Personalities | The Freak  •  The Paladin  •  The Raider  •  The Undead  •  The Necromancer  •  The Merchant  •  The Sage  •  The Shepherd  •  The War Hero
-
-The Thieves' Toolbox
----
-The Espionage Operations | Spy on Throne  •  Spy on Defense  •  Snatch News  •  Infiltrate  •  Survey  •  Spy on Military  •  Spy on Sciences
-The Stealing Operations | Rob the Granaries  •  Rob the Vaults  •  Rob the Towers  •  Kidnapping  •  Steal Horses  •  Propaganda
-The Mischief Operations | Sabotage Wizards  •  Destabilize Guilds  •  Arson  •  Greater Arson  •  Night Strike  •  Incite Riots  •  Bribe Thieves  •  Bribe Generals  •  Free Prisoners  •  Assassinate Wizards
-
----
-
 ## Attacking & Calculating an Attack
 
 This is part of the Utopia WIKI Player written guides.
@@ -2286,8 +2235,6 @@ THIS PAGE is a guide aimed to cover Attacking & Calculating an Attack. It compri
 **Modified Offense you need to send =** (Target Def + 1)
 
 - Intel gathered using 5% of your thieves will be accurate.
-
----
 
 ## Buildings
 
@@ -2670,24 +2617,12 @@ Spell: Blizzard | 0.9 | 1
 
 - Age 107: Updated Building Effects formulas to include personalities.
 
-« Previous:  Explore | Next:  Sciences »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
 Buildings
 ---
 Civil Buildings | Barren Lands  •  Homes  •  Farms  •  Mills  •  Banks
 Military Buildings | Training Grounds  •  Armouries  •  Barracks  •  Forts  •  Castles  •  Hospitals  •  Stables  •  Dungeons
 Thievery and Mystic Buildings | Guilds  •  Towers  •  Thieves' Dens  •  Watchtowers
 Science Buildings | Universities  •  Libraries
-
----
 
 ## Bushels
 
@@ -2721,15 +2656,6 @@ Drought | 0.75
 **Food Remaining** = Food Stock * 0.99 + Modified Food Production - Bushels Eaten
 
 0.99 or about 1% of the total food stock decays in normal conditions. The exact amount depends on the modifiers in the formula as provided above and it is calculated on the total food stored in the province. So if a province has 300,000 bushels of food in stock under normal conditions, then the expected decay is slightly less or more than 3000 bushels per tick / Utopia day. There may be scenarios where the total food decayed, is higher than what remains after food needed by the population is consumed from the food grown. This may lead to depletion of the stock in the province especially after a war when the people are much lesser compared to the maximum population limit and the stored food may be much higher or when a new player has built a lot of farms / received aid as food. This will normalize once the population reaches back to expected levels and the province only needs to ensure that the food grown is more than the food needed by the population at all times so as to avoid starvation.
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Chaining
 
@@ -2784,8 +2710,6 @@ If we have a large spread, we will be able to make quality hits more easily by w
 
 So your kingdom networth is relatively larger than your opponents, and you'd like to control their economy and ensure that you gain the upper hand at the top.
 Thus, you choose to semi chain them, whilst aiding up unbreakable provinces. Winner!
-
----
 
 ## Creating a province
 
@@ -2854,179 +2778,6 @@ For a period of 24 hours, new provinces are placed under protection. This preven
 - Total books a province should start with is 85% of the amount of books that would be generated by the amount of scientists (Recruits) the province is starting with to that point in the age
 
 - Starting scientists for a late starting province is increased by days into the age divided by 3 for each day after the 3rd day into the age.
-
-« Previous:  Getting Started with Utopia | Next:  Race »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
-Races & Personalities
----
-Races | Avians  •  Dark Elves  •  Dryads  •  Dwarves  •  Elves  •  Faeries  •  Halflings  •  Humans  •  Orcs  •  Undead
-Extinct Races | Bocans  •  Gnomes
-Personalities | The Artisan  •  The Cleric  •  The General  •  The Heretic  •  The Mystic  •  The Rogue  •  The Tactician  •  The Warrior
-Extinct Personalities | The Freak  •  The Paladin  •  The Raider  •  The Undead  •  The Necromancer  •  The Merchant  •  The Sage  •  The Shepherd  •  The War Hero
-
----
-
-## Dark Elves
-
-The population of Utopia is currently made up of a mix of 10 Races. I advise you to pick your Race carefully. Consider also your Kingdom, as they will be an important part of your experience in Utopia. Many Kingdoms choose to make their Race and Personality choices as a team, and finding the right mix can be an important part of developing your Kingdom strategy.
-This is a list of the current benefits, limitations, Spellbooks, and army information for the Utopian Races on the World of Legends server for the current Age, Age 111.
-For personality bonuses, see Personality.
-For unique abilities, see Unique Abilities.
-
-### Contents
-
-- 1 Comparison Table (Age 111)
-
-- 2 Current Races in Utopia
-
-2.1 Avians
-2.2 Dark Elves
-2.3 Dryads
-2.4 Gnomes
-2.5 Dwarves
-2.6 Elves
-2.7 Faeries
-2.8 Halflings
-2.9 Humans
-2.10 Orcs
-
-- 3 Retired Races
-
-3.1 Bocans
-3.2 Undead
-
-Comparison Table (Age 111)
-
-Avian | Dark Elf | Dryad | Dwarf
---- | --- | --- | ---
--15% Attack Travel Time  -70% Reduced Damage from Nightmare  Ambush Immunity | +20% Wizards Per Acre (WPA)  +10% Offensive Military Efficiency  -50% Rune Cost (excluding Ritual)  Train Thieves with Credits | +30% Draft Rate  -30% Military Training Time | +30% Building Efficiency  -50% Building Construction Time
-Greater Protection, Quick Feet, Town Watch | Blizzard, Guile, Invisibility, Mage's Fury | Ghost Workers and Clear Sight | Miner's Mystique and Heroes Inspiration
-+15% Own casualities when attacking  +15% Own casualities when defending  Can't use Barracks  Can't use Stables or War Horses | +20% Explore Cost (Gold)  +20% Explore Cost (Men)  +35% Thief cost | +15% Attack Travel Time  -10% Enemy casualities when attacking  -10% Enemy casualities when defending | +100% Food Consumption  Can't Accelerate Construction
-Soldiers - 3/0  Griffins - 10/0  Harpies - 0/10  Drakes - 14/3, 850gc, 6.5nw  Mercenaries - 8/0  Prisoners - 8/0  Thieves - , 500gc | Soldiers - 3/0  Night Rangers - 10/0  Druids - 0/10  Drows - 12/6, 900gc, 6.0nw  Mercenaries - 8/0  Prisoners - 8/0  War Horses - 3/0  Thieves - , 500gc | Soldiers - 3/0  Huldras - 11/0  Nymphs - 0/10  Will O The Wisps - 17/3, 900gc, 7.0nw  Mercenaries - 8/0  Prisoners - 8/0  War Horses - 2/0  Thieves - , 500gc | Soldiers - 3/0  Warriors - 10/0  Axemen - 0/10  Berserkers - 13/5, 1,000gc, 7.5nw  Mercenaries - 8/0  Prisoners - 8/0  War Horses - 2/0  Thieves - , 500gc
-Skybound Strike | Void Tap | Living Forests | Earthshaker
-
-Elf | Faery | Halfling | Human
---- | --- | --- | ---
-+40% Wizards Per Acre (WPA)  +1% Extra Mana Per Tick  +25% Land Effect - Towers | +25% Offensive Spell Duration  +25% Self-Spell Duration  +1% Extra Mana Per Tick (in war) | +15% Max Population  +25% Thievery Per Acre (TPA) | +20% Income  +15% Barracks Effectiveness  +15% Castle Effectiveness  +15% Hospital Effectiveness  +15% Training Grounds Effectiveness
-Wrath, Mist, Pitfalls, Wrath and Greater Protection | Guile, Miner's Mystique, Mist, Pitfalls, Chastity, Blizzard, Greater Protection, Quick Feet, Town Watch, Fountain of Knowledge, Mage's Fury, Tree of Gold, Vermin, Wrath, Animate Dead, Revelation and Invisibility | Vermin, Town Watch and Quick Feet | Fountain of Knowledge and Revelation
--35% Thieves' Den Effectiveness  Can't use Dungeons | -10% Max Population | -25% Birth Rate  +25% Building Construction Cost | -40% Farms Effectiveness  -25% Wizards Per Acre (WPA)
-Soldiers - 3/0  Rangers - 10/0  Archers - 0/10  Elf Lords - 13/4, 950gc, 6.5nw  Mercenaries - 8/0  War Horses - 2/0  Thieves - , 500gc | Soldiers - 3/0  Magicians - 10/0  Druids - 0/10  Beastmasters - 4/12, 950gc, 6.75nw  Mercenaries - 8/0  Prisoners - 8/0  War Horses - 2/0  Thieves - , 500gc | Soldiers - 3/0  Strongarms - 10/0  Slingers - 0/10  Brutes - 11/5, 850gc, 6.25nw  Mercenaries - 8/0  Prisoners - 8/0  War Horses - 2/0  Thieves - , 500gc | Soldiers - 3/0  Swordsmen - 12/0  Archers - 0/10  Knights - 7/12, 1,050gc, 6.75nw  Mercenaries - 8/0  Prisoners - 8/0  War Horses - 2/0  Thieves - , 500gc
-Mana Surge | Ethereal Mirage | Sneak Attack | Strategic Reserve
-
-Orc | Undead |  |
---- | --- | --- | ---
-+25% Battle Gains  -50% Draft Cost  Train Elites with Credits | -100% Food Consumption  -75% Own casualities when attacking  +75% Enemy battle casualties convert to soldiers  Convert Specialists into Elites on Attack  Always Carries and is Immune to the Plague
-Bloodlust and Aggression | Animate Dead and Aggression
--20% Building Credits  -10% Building Efficiency  -20% Specialist Training Credits | +20% Rune Cost (excluding Ritual)  -20% Science Effectiveness
-Soldiers - 3/0  Goblins - 10/0  Trolls - 0/10  Ogres - 15/4, 1,000gc, 7.25nw  Mercenaries - 8/0  Prisoners - 8/0  War Horses - 2/0  Thieves - , 500gc | Soldiers - 3/3  Skeletons - 10/0  Zombies - 0/8  Ghouls - 14/3, 950gc, 6.5nw  Mercenaries - 8/0  Prisoners - 8/0  War Horses - 2/0  Thieves - , 500gc
-Warlord's Fury | Rotting Plague
-
-Current Races in Utopia
-
-### Avians
-
-- A mix of bird and man, Avians have the unique ability to fly. Their natural wilderness lifestyle and speed make them efficient and powerful warriors, and they breed at a ferocious rate.
-
-Lived at: Age 3 ... Age 35, Age 45... Age 86, Age 88 ... now
-
-### Dark Elves
-
-- Subterranean counterpart of the Elves, the Dark Elves are also known for their magical abilities and are evil individuals that like suffering and pain. Their hostile underground environment has allowed the Dark Elves to develop special offensive maneuvers, their offensive spells are more efficient than average, as well as resisting enemy magic!
-
-Lived at: Age 36 ... Age 49, Age 73 ... Age 76, Age 85, Age 86, Age 89 ... Age 94, Age 96 ... Age 99, Age 102, Age 104 ... now
-
-### Dryads
-
-- A recently discovered race of magical treefolk, the Dryads have are caretakers of nature and have a unique connection to the land. This affinity allows them to produce bountiful harvests from their own lands, even if they don't have farms. This link also extends to the creatures of their woodlands, most notably the horses they breed and care for, who possess a fierceness of spirit not found amongst those of other races. Despite the strength of their woods and it's creatures, the dryads themselves are rather peaceable and shy away from combat unless absolutely necessary. Even then, their aversion to bloodshed makes them reluctant to enter battle or even slay those who would bear arms against them. But when they decide to fight, they are very strong.
-
-Lived at: Age 72 ... Age 76 ... Age 92, Age 94, Age 95, Age 99, Age 108
-
-### Gnomes
-
-- One of the most mysterious races, the Gnomes are short legged individuals who live in natural areas close to the Earth and care for wildlife.  Gnomes are versatile and will be a good pick for players who want to focus on combining Attacking with Thievery or Magic.
-
-Lived at: Age 36 ... Age 49, Age 87 ... Age 89 ... Age 94 ... Age 96, Age 99, Age 101 ... Age 102, Age 104
-
-### Dwarves
-
-- Dwarves are a friendly but powerful race of individuals, and by far the most technologically advanced race in Utopia. They have always had huge skills in engineering, mining and metallurgy, and with time and experience they have become excellent at building and using their land.
-
-Lived at: Age 1 ... now
-
-### Elves
-
-- An intelligent group of individuals, Elves have always been known for their magical abilities and grant a high priority to the research of the arcane powers. Elves master the mystical energies easier than other race. They also have learned many and powerful spells. Overall, Elves are naturally oriented towards Magic, but are very versatile and can be used for attacking also. They can be good Mages or supporting Attacker/Mages.
-
-Lived at: Age 1 ... Age 72, Age 74 ... Age 101, Age 103
-
-### Faeries
-
-- A race of creatures unbeknownst to many, the Faeries excel at magic (as they are beings of magic themselves) and subterfuge (largely due to their small size), but are often known as the most peaceful of the Utopian races. These creatures are considered fragile but noble, and much about these tiny forest dwellers remains a mystery.
-
-Lived at: Age 1 ... Age 35, Age 50 ... now
-
-### Halflings
-
-- A race resembling tiny humans, Halflings are famous for their quickness and Thievery skills. Their small stature makes them mediocre warriors, but also creates many unique advantages. Their petite size also results in the natural ability to substantially increase their effectiveness on thievery operations.
-
-Lived at: Age 3 ... Age 35, Age 47 ... Age 72, Age 76 ... Age 86, Age 90 ... Age 95 ... Age 97 ... now
-
-### Humans
-
-- The most scholarly and noble of the races, Humans have always taken the greatest interest in learning about their world, and developing better tools and machines to make life easier. Alas, they are often considered a greedy and selfish bunch, but humans do know how to make money extremely well. Overall, Humans are versatile.
-
-Lived at: Age 1 ... now
-
-### Orcs
-
-- The most evil of the races, the Orcs are cruel, selfish, and arrogant. Lovers of destruction and chaos, they are one of the most ferocious and efficient warriors on the planet and their ranks are filled with one of the most powerful units in the game, the dreadful Ogre. Overall, Orcs tend to be focused Attackers and are a good pick for players who do not want to bother with heavy magic or thievery.
-
-Lived at: Age 1 ... now
-
-Retired Races
-
-### Bocans
-
-- The malevolent Bocan can take any form, from a satyr to a cat. The only way to spot a Bocan is their eyes, which will glow red, blue, or green. This characteristic makes them excellent thieves. But be careful, they are fiercely independent creatures and may not follow your orders as effectively as you may wish.
-
-Lived at: Age 73... Age 76
-
-### Undead
-
-- The Undead are an unnatural species with amazingly unique abilities. They are generally rotting to pieces and carry the plague (a highly contagious disease that will kill the living but seems to provide them the strength they need to survive) with them wherever they walk.
-
-Lived at: Age 6 ... Age 35, Age 43, Age 50 ... Age 73, Age 80 ... Age 86, Age 88 ... Age 94, Age 96 ... Age 107
-
-« Previous:  Creating a province | Next:  Personality »
---- | ---
-
-Ages
----
-Ages | 1998 - 1999 : The first generation of Utopia (1)  •  The Second Age of Utopia (2)  •  The Third Age of Utopia (3)  •  The Fourth Age of Utopia (4)  •  The Fifth Age of Utopia (5)  •  The Sixth Age of Utopia (6)  •  2000 - 2001 : The Seventh Age of Utopia (7)  •  The Age of Chaos (8)  •  The Renaissance Age (9)  •  The Age of Conflict (10)  •  The Age of Nobility (11)  •  The Era of Magic (12)  •  The Era of Mystery (13)  •  The Era of Strife (14)  •   2002 - 2003 : The Age of Valour (15)  •  The Age of Discovery (16)  •  The Age of the People (17)  •  The Age of Heroes (18)  •  An Era of Hope (19)  •  An Age of Dreams (20)  •  An Age of Wonders (21)  •  An Age of Conquerors (22)  •  The Revolution (23)  •   2004 - 2005 : An Age of Glory (24)  •  An Age of Tranquility (25)  •  An Age of Turmoil (26)  •  An Age of Courage (27)  •  An Age of Intrigue (28)  •  An Age of War (29)  •  An Age of Unity (30)  •   2006 - 2007 : An Age of Reason (31)  •  An Age of Kings (32)  •  An Age of Prosperity (33)  •  The Age of the Dragon (34)  •  An Age of Triumph (35)  •  An Age of Bravery (36)  •  The Age of Darkness (37)  •   2008 - 2009 : The Age of Angels (38)  •  The Age of the Scholar (39)  •  The Awakening (40)  •  The Age of Renewal (41)  •  The Age of Hope (42)  •  The Age of Rebirth (43)  •  The Age of Change (44)  •  The Age of Light (45)  •   2010 - 2011 : The Age of Distinction (46)  •  The Age of Justice (47)  •  The Age of Peril (48)  •  The Age of Conspiracy (49)  •  The Age of Resurrection (50)  •  The Age of Domination (51)  •  An Era of Supremacy (52)  •  2012 - 2013 : The Age of Havoc (53)  •  A Call to Arms (54)  •  Veil of Shadows (55)  •  Strength in Union (56)  •  Relentless Onslaught (57)  •  Art of War (58)  •  An Honorable Proposition (59)  •  A Battle Joined (60)  •  2014 - 2015 : Age of Destruction (61)  •  Books of War (62)  •  Iron Walls, Iron Heart (63)  •  The Spoils of War (64)  •  The Isles of Legion (65)  •  Thunder and Bedlam (66)  •  2016 - 2017 : The Age of Perception (67)  •  The Age of Heresy (68)  •  The Age of Scholars and Scoundrels (69)  •  The Age of Daunting Judgement (70)  •   The Metamorphosis (71)  •   The Era of Venerated Bastions (72)  •  The Age of Tricksters and Mischief (73)  •  The Age of Affinity (74)  •  2017 - 2018 : The Age of Empowering Enchantments (75)  •  The Age of the Empyrean Advent (76)  •  The Age of Accession and Abrogation  (77)  •  The Age of Insight  (78)  •  The Age of Vanguards Acquiescence (79)  •   2019 - 2020 : The Age of Reconnaissance (80)  •  The Emergence (81)  •  The Grimoires of Glory (82)  •  Age of Adjudication (83)  •  Bethink the Fray (84)  •  Intuition (85)  •  Global Viction (86)  •  Age of the Sword (87)  •  Swift Strife (88)  •  Reformation (89) 2021 - 2022 : Age of Exile 90  •  Age of Remembrance 91  •  Age of Ancestry 92  •  Occult Ordination 93  •  Ascent 94  •  Age of the Omen 95  •  The Eternal Rift 96  •  Dominance 97  •  Keen Transformation 98  •  2023 - 2024 : Crossing Boundaries 99  •  Equilibrium 100  •  Crusades 101  •  Godsend 102  •  Unbound Dominion 103  •  Renascence 104  •  Devout Fervor 105
-
-Races & Personalities
----
-Races | Avians  •  Dark Elves  •  Dryads  •  Dwarves  •  Elves  •  Faeries  •  Halflings  •  Humans  •  Orcs  •  Undead
-Extinct Races | Bocans  •  Gnomes
-Personalities | The Artisan  •  The Cleric  •  The General  •  The Heretic  •  The Mystic  •  The Rogue  •  The Tactician  •  The Warrior
-Extinct Personalities | The Freak  •  The Paladin  •  The Raider  •  The Undead  •  The Necromancer  •  The Merchant  •  The Sage  •  The Shepherd  •  The War Hero
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Dragons
 
@@ -3117,18 +2868,6 @@ Relations: War | 1
 
 //w1nd
 
-« Previous:  Preferences | Next:  Ritual »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## Dragons, Aid & Stances
 
 Dragons
@@ -3167,15 +2906,6 @@ Relations: War | 1
 
 -->
 
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## Dual Monarch
 
 This is part of the Utopia WIKI Player written guides.
@@ -3189,8 +2919,6 @@ Dual monarchy is a system employed by some kingdoms, whereby votes are split bet
 The way this system works is that if **Province A** and **Province B** are meant to be sharing votes with **Province A** being the main monarch, then each province would vote for the other, and **Province A** would ensure that he gathers enough votes on himself to be the monarch. When **Province B** requires monarchy however, he will switch his vote from **Province A** to himself and thus gain the monarchy.
 However, this may lead to the kingdom page showing 2 monarchs present in the kingdom until **Province A** is updated.
 In previous ages, these votes were shared between the real leader and a large province during wars to create an unbreakable province due to the +10% Defense bonus conferred to monarchs in War/Hostiles. This bonus is no longer active though.
-
----
 
 ## Economy
 
@@ -3311,15 +3039,6 @@ Chastity | 0.5 | 1
 
 **Employment Rate =** (Employed Peasants / Peasants) * 100
 
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## Ethics of Waving and War
 
 By W1nd. 12-12-2020. Part of Utopia News, Age 88.
@@ -3357,8 +3076,6 @@ Most monarchs will tell you that when the NW/ACRE gap reaches a certain point by
 #### RAZING INTO WARS
 
 Unless you want a severe beatdown that could potentially cause you to rage quit or destroy your entire kingdom, I would avoid this behavior. The community is generally very accepting of mistakes and errors but when things are done maliciously it is not cool and no one deserves to be harassed in a game that is meant to be fun for all. I feel strongly that this aspect should be blocked from the game, I know others feel the opposite but this would solve a lot of the butthurt grudges by not allowing them to continue. Secret alliances can also influence wars by razing provinces to help the other team, not to mention sending override dragons. For these reasons alone I would call these acts interference of the mechanics of the ‘war’ and secret collusion with the opponent resulting in a fixing of the charts.
-
----
 
 ## Exploration
 
@@ -3415,23 +3132,9 @@ The following penalties apply during war:
 
 - During End-of-War Cease-Fire, when under Median, explore time is reduced by 50%.
 
-« Previous:  News | Next:  Growth »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## Explore Pool
 
 The Explore pool is a pool of acres available to each individual province in a kingdom to use for exploring. This pool begins at the start of the age at 5000 acres and grows by 100 acres each hour. The pool decays, while not in war, at .5% an hour.
-
----
 
 ## FAQ
 
@@ -3600,15 +3303,6 @@ http://forums.utopia-game.com/showthread.php?622799-Quick-Tips
 
 - Tom
 
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## Finding Good Learn Targets
 
 This is part of the Utopia WIKI Player written guides.
@@ -3629,8 +3323,6 @@ If they have better population than this they are one of 3 things running homes,
 SoS these guys to get their science percentages.
 3 Persona, always SoS a Sage when you see one you never know how much they will have in science. Especially if they have some amount of elites.
 Get an SoS infact I would have yourself narrowed down to 3-4 targets, from the SoS figure out how many books per acre they have roughly. Pick the one less likely to retal you and also the one with the most books per acre in the science you are focusing on. Typically focus on one science at a time, if they have only 1 or 2 sciences you will gain better on them than if they have all 7 sciences. - Uzziah
-
----
 
 ## Finding Good Plunder Targets
 
@@ -3654,8 +3346,6 @@ Get an SoS infact I would have yourself narrowed down to 3-4 targets, from the S
  Kingdoms within the top 15 of rankings usually have a few provinces that stock resources. Do remember though, you are playing with fire when and if you decide to mess with any top kingdom. They could raze you back, retal, or full on wave your kingdom.
 
 Just remember, there are consequences to your actions and need to play smart when it comes to plundering.
-
----
 
 ## Formulas
 
@@ -3719,8 +3409,6 @@ The following 13 pages are in this category, out of 13 total.
 #### U
 
 - Units
-
----
 
 ## Fountain of knowledge
 
@@ -4725,47 +4413,9 @@ Causes death among the peasants of an enemy, turning some into the caster's sold
 
 - Age 110: Updated spell availability and bonuses.
 
-« Previous:  Military | Next:  Thievery »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
-Races & Personalities
----
-Races | Avians  •  Dark Elves  •  Dryads  •  Dwarves  •  Elves  •  Faeries  •  Halflings  •  Humans  •  Orcs  •  Undead
-Extinct Races | Bocans  •  Gnomes
-Personalities | The Artisan  •  The Cleric  •  The General  •  The Heretic  •  The Mystic  •  The Rogue  •  The Tactician  •  The Warrior
-Extinct Personalities | The Freak  •  The Paladin  •  The Raider  •  The Undead  •  The Necromancer  •  The Merchant  •  The Sage  •  The Shepherd  •  The War Hero
-
-The Spellbook
----
-Self Spells | Army Spells | Defensive Spells | Animate Dead  •  Greater Protection  •  Minor Protection  •  Town Watch  •  Wrathful Smite  •  †Fog
- |  | Offensive Spells | Aggression  •  Anonymity  •  Bloodlust  •  Fanaticism  •  Quick Feet  •  War Spoils
- |  | Army Spells | Inspire Army  •  †Hero's Inspiration  •  Patriotism
- | Civil Spells | Mystic Security Spells | Divine Shield  •  Mage's Fury  •  Magic Shield  •  †Mystic Aura  •  Nature's Blessing  •  Reflect Magic
- |  | Thievery Spells | Clear Sight  •  Illuminate Shadows  •  Invisibility  •  Shadowlight
- |  | Economy Spells | Builders' Boon  •  Fertile Lands  •  Fountain of Knowledge  •  Love & Peace  •  Mind Focus  •  Paradise •  Tree of Gold  •  Revelation  •  †Scientific Insights
-
-Combat Spells | Economy Damage Spells | Friendly | Blizzard  •  Droughts  •  Explosions  •  Greed  •  Gluttony  •  Vermin
- |  | Unfriendly | Amnesia  •  Fool's Gold  •  Land Lust  •  Lightning Strike  •  Magic Ward  •  Nightfall  •  †Sloth  •  Tornadoes  •  †Barrier of Integrity
- | Population Damage Spells | Friendly | Storms
- |  | Unfriendly | Chastity  •  Fireball  •  Nightmares
- |  | Hostile | Meteor Showers
- | Interaction Spells | Friendly | Crystal Ball  •  Crystal Eye  •  Pitfalls
- |  | Unfriendly | Expose Thieves  •  Mystic Vortex
-
----
-
 ## Freeze time
 
 This is the time at the start of every age, before Protection begins. During this time you may log into your province and navigate the game, but the games time will not progress. This time is to allow players to decide on a kingdom strategy or races and specialties. During Freeze time you may reset your province details from your Preferences menu.
-
----
 
 ## Game Rules
 
@@ -4964,8 +4614,6 @@ YOU UNDERSTAND THAT YOU ARE PERSONALLY RESPONSIBLE FOR YOUR BEHAVIOR WHILE USING
 
 YOU UNDERSTAND THAT YOUR USE OF THE SITE (INCLUDING ANY DOWNLOAD FROM THE SITE AND ANY LOSS OF DATA OR OTHER DAMAGE TO YOUR COMPUTER SYSTEM YOU EXPERIENCE FROM USING THE SITE) IS AT YOUR SOLE RISK. YOU UNDERSTAND THAT THE SITE AND ALL INFORMATION, APPLICATIONS, PRODUCTS AND OTHER CONTENT (INCLUDING THIRD PARTY INFORMATION, APPLICATIONS PRODUCTS AND CONTENT) INCLUDED IN OR ACCESSIBLE FROM THE SITE, ARE PROVIDED ON AN “AS IS” “WHERE-IS” AND “WHERE AVAILABLE” BASIS, AND ARE SUBJECT TO CHANGE AT ANY TIME WITHOUT NOTICE TO YOU. YOU ACKNOWLEDGE THAT THE OPERATOR OF THE GAME MAKES NO WARRANTY THAT THE SITE WILL BE UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE. YOU UNDERSTAND THAT THE OPERATOR OF THE GAME DOES NOT WARRANT THAT THE RESULTS OBTAINED FROM YOUR USE OF THE SITE WILL MEET YOUR EXPECTATIONS. NO WARRANTY OF ANY KIND, WHETHER ORAL OR WRITTEN, CAN MODIFY THE TERMS OF THE DISCLAIMER SET FORTH IN THIS DOCUMENT. TO THE FULLEST EXTENT PERMITTED BY LAW, THE OPERATOR OF THE GAME DISCLAIMS ALL REPRESENTATIONS, WARRANTIES AND CONDITIONS OF ANY KIND (EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT OF PROPRIETARY RIGHTS) AS TO THE SITE AND ALL INFORMATION, APPLICATIONS, PRODUCTS AND OTHER CONTENT (INCLUDING THIRD PARTY INFORMATION, APPLICATIONS, PRODUCTS AND CONTENT) INCLUDED IN OR ACCESSIBLE FROM THE SITE.
 
----
-
 ## Getting Started with Utopia
 
 ### Contents
@@ -5003,18 +4651,6 @@ Invest in science for steady, long-term bonuses. Though subtle initially, these 
 ### Military
 
 Balance troop drafting and wages carefully to maintain a strong defense without harming your economy. Collaborate with kingdom allies to improve your military strength.
-
-« Previous:  Welcome to the Utopia Wiki | Next:  Creating a province »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Guide
 
@@ -5115,8 +4751,6 @@ People argue over the value of releasing WPA on chained provs.
 3) If you release the WPA, you can LL less (but you would run out your mana on LL before releasing
 4) If you release the WPA, you can be intra-kd fireballed to release peasants, but it usually is better to release the WPA (several ticks) prior to army coming home, as you release WPA into peasants that you then need to lose to solve overpop.
 
----
-
 ## Guide Combo Selection
 
 This is part of the Utopia WIKI Player written guides.
@@ -5196,18 +4830,9 @@ Seldom seen, the A/T/M is a challenging effort to play all three disciplines at 
 Normally only attempted by top kingdoms, a bank is an extremely large province that from early in the age is made to grow to tremendous size with the aid of the rest of the kingdom. He or she then performs many useful tasks, such as paying for and killing dragons and aiding the growth of the smaller provinces in the kingdom. Humans make excellent banks, as do Dwarves, usefully combined with the Sage or Merchant personalities.
 An explorer is related but different. While banks are a kingdom-wide effort, explorers normally involve one player growing exclusively for his/her own benefit, often to the detriment of their kingdom-mates. Explorers are generally regarded as "useless" as they do not attack, perform ops or cast spells. Explorers are considered selfish and undesirable by most kingdoms. Dwarves are excellent explorers, but any race can do it, as can any personality.
 
----
-
 ## Guides
 
 **Guide** pages are part of the official Utopia Guide.
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
 
 ### Pages in category "Guide"
 
@@ -5305,8 +4930,6 @@ The following 31 pages are in this category, out of 31 total.
 
 - World of Legends
 
----
-
 ## Island
 
 The world is divided into islands with an ocean. As the age progresses, more islands will become available to view using the Kingdom view page.
@@ -5398,8 +5021,6 @@ Island names used in previous ages are:
 
 - Yie
 
----
-
 ## Kingdoms
 
 CONTENTS: Kingdoms | CONTENTS: Kingdoms
@@ -5452,8 +5073,6 @@ The following 14 pages are in this category, out of 14 total.
 
 - Kingdom:Zenobia's Zealots
 
----
-
 ## Land Whorring Tips & Tricks
 
 This is part of the Utopia WIKI Player written guides.
@@ -5501,8 +5120,6 @@ THIS PAGE is a guide aimed to cover Land Whorring Tips & Tricks. It comprises of
 
 - Always scout every potential threat in the kingdom you plan to attack in. No one wants to suffer a retal for your hit.
 
----
-
 ## Leadership Logic
 
 **Presented by Warbirds.**
@@ -5528,8 +5145,6 @@ In practice, our core leadership has not changed much in 5 ages. Smiles and I ha
 10. Don't be a martyr: set a sitter and get some sleep.
 **Thank you Redbird and Thank you Warbirds for being part of the community! You have a very unique kingdom structure and a nice piece of history for anyone who many have missed the early 80’s. It also serves as a very inspirational story on building a kingdom from the ground up and how you overcame struggles you faced in order to maintain a presence in the war charts age over age.**
 **I would like to thank Smiles for constantly commenting and participating in the MUGA chat especially when I mention him as he has been very transparent about sharing information and data. Thank you Smiles for your contribution!**
-
----
 
 ## Magic Formulas
 
@@ -5725,39 +5340,6 @@ Spell | Description | Spell Bonus | Difficulty | Cost Multiplier | Duration (Ave
 
 For full information on all of the current Spells refer to Mystics.
 
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
-Races & Personalities
----
-Races | Avians  •  Dark Elves  •  Dryads  •  Dwarves  •  Elves  •  Faeries  •  Halflings  •  Humans  •  Orcs  •  Undead
-Extinct Races | Bocans  •  Gnomes
-Personalities | The Artisan  •  The Cleric  •  The General  •  The Heretic  •  The Mystic  •  The Rogue  •  The Tactician  •  The Warrior
-Extinct Personalities | The Freak  •  The Paladin  •  The Raider  •  The Undead  •  The Necromancer  •  The Merchant  •  The Sage  •  The Shepherd  •  The War Hero
-
-The Spellbook
----
-Self Spells | Army Spells | Defensive Spells | Animate Dead  •  Greater Protection  •  Minor Protection  •  Town Watch  •  Wrathful Smite  •  †Fog
- |  | Offensive Spells | Aggression  •  Anonymity  •  Bloodlust  •  Fanaticism  •  Quick Feet  •  War Spoils
- |  | Army Spells | Inspire Army  •  †Hero's Inspiration  •  Patriotism
- | Civil Spells | Mystic Security Spells | Divine Shield  •  Mage's Fury  •  Magic Shield  •  †Mystic Aura  •  Nature's Blessing  •  Reflect Magic
- |  | Thievery Spells | Clear Sight  •  Illuminate Shadows  •  Invisibility  •  Shadowlight
- |  | Economy Spells | Builders' Boon  •  Fertile Lands  •  Fountain of Knowledge  •  Love & Peace  •  Mind Focus  •  Paradise •  Tree of Gold  •  Revelation  •  †Scientific Insights
-
-Combat Spells | Economy Damage Spells | Friendly | Blizzard  •  Droughts  •  Explosions  •  Greed  •  Gluttony  •  Vermin
- |  | Unfriendly | Amnesia  •  Fool's Gold  •  Land Lust  •  Lightning Strike  •  Magic Ward  •  Nightfall  •  †Sloth  •  Tornadoes  •  †Barrier of Integrity
- | Population Damage Spells | Friendly | Storms
- |  | Unfriendly | Chastity  •  Fireball  •  Nightmares
- |  | Hostile | Meteor Showers
- | Interaction Spells | Friendly | Crystal Ball  •  Crystal Eye  •  Pitfalls
- |  | Unfriendly | Expose Thieves  •  Mystic Vortex
-
----
-
 ## Monarchy
 
 ### Contents
@@ -5818,18 +5400,6 @@ As the Monarch you have the power to destroy inactive provinces just as you coul
  wol tick = 1 hour
  abandon will force the inactive leader out
  delete will destroy the province completely
-
-« Previous:  Mail & Forum | Next:  Relations »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Multi-Attack Protection (MAP)
 
@@ -5903,8 +5473,6 @@ For example if a target with a MAP rating of 20% (and thus Gains OOW of 80%) whi
  MAP gives a bonus to Military Effectiveness equal to the MAP rating / 7.5
 
 For example if the MAP rating of a province is 59% (heavily hit) their ME is boosted by (59 / 7.5 = 7.9%) 7.9% - ie. 1.079 times it's current rating.
-
----
 
 ## Mystics Spell Table
 
@@ -5988,39 +5556,6 @@ Spell | Description | Spell Bonus | Difficulty | Cost Multiplier | Duration (Ave
 
 **Runes cost =** *ROUNDDOWN* ( (0.6 * Size + 200) * Spell Cost Multiplier * 1.5 )
 
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
-Races & Personalities
----
-Races | Avians  •  Dark Elves  •  Dryads  •  Dwarves  •  Elves  •  Faeries  •  Halflings  •  Humans  •  Orcs  •  Undead
-Extinct Races | Bocans  •  Gnomes
-Personalities | The Artisan  •  The Cleric  •  The General  •  The Heretic  •  The Mystic  •  The Rogue  •  The Tactician  •  The Warrior
-Extinct Personalities | The Freak  •  The Paladin  •  The Raider  •  The Undead  •  The Necromancer  •  The Merchant  •  The Sage  •  The Shepherd  •  The War Hero
-
-The Spellbook
----
-Self Spells | Army Spells | Defensive Spells | Animate Dead  •  Greater Protection  •  Minor Protection  •  Town Watch  •  Wrathful Smite  •  †Fog
- |  | Offensive Spells | Aggression  •  Anonymity  •  Bloodlust  •  Fanaticism  •  Quick Feet  •  War Spoils
- |  | Army Spells | Inspire Army  •  †Hero's Inspiration  •  Patriotism
- | Civil Spells | Mystic Security Spells | Divine Shield  •  Mage's Fury  •  Magic Shield  •  †Mystic Aura  •  Nature's Blessing  •  Reflect Magic
- |  | Thievery Spells | Clear Sight  •  Illuminate Shadows  •  Invisibility  •  Shadowlight
- |  | Economy Spells | Builders' Boon  •  Fertile Lands  •  Fountain of Knowledge  •  Love & Peace  •  Mind Focus  •  Paradise •  Tree of Gold  •  Revelation  •  †Scientific Insights
-
-Combat Spells | Economy Damage Spells | Friendly | Blizzard  •  Droughts  •  Explosions  •  Greed  •  Gluttony  •  Vermin
- |  | Unfriendly | Amnesia  •  Fool's Gold  •  Land Lust  •  Lightning Strike  •  Magic Ward  •  Nightfall  •  †Sloth  •  Tornadoes  •  †Barrier of Integrity
- | Population Damage Spells | Friendly | Storms
- |  | Unfriendly | Chastity  •  Fireball  •  Nightmares
- |  | Hostile | Meteor Showers
- | Interaction Spells | Friendly | Crystal Ball  •  Crystal Eye  •  Pitfalls
- |  | Unfriendly | Expose Thieves  •  Mystic Vortex
-
----
-
 ## Networth
 
 **Networth** is a nominal value in gold coins of a Province/Kingdom.
@@ -6058,15 +5593,6 @@ Gold | 1/1000
 Food | 0
 Runes | 0
 Science Book | Acres * 0.000006
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Offensive Military Efficiency
 
@@ -6309,15 +5835,6 @@ Spell: Wrath | Enemy Military Casualties | +20%
 Operation: Bribe Generals | All Military Casualties | +20%
 Emerald Dragon | All Military Casualties | +20%
 
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## Overpop Mitigation
 
 This is part of the Utopia WIKI Player written guides.
@@ -6376,8 +5893,6 @@ When you are chained, depending on your starting wizzies and how deep the chain 
     -If you release the WPA, you can be intra-kd fireballed to release peasants, but it usually is better to release the WPA (several ticks) prior to army coming home, as you release WPA into peasants that you then need to lose to solve overpop.
 
 �
-
----
 
 ## Overpopulation
 
@@ -6443,15 +5958,6 @@ When your current military population is larger than you max population, your ar
 (i.e. a province that has 10k max pop and 10.5k military will not be in desertions or have any other effect other than the military will refuse to attack, unless they are also above 15% overpop due to peasant+wizard count)
 
 - Cannot use your army to attack.
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Paper Utopia
 
@@ -6571,24 +6077,10 @@ Enemy Accepts: | Kingdom(x:yy) has accepted our ceasefire proposal!
 Terminated: | We have canceled our ceasefire with Kingdom(x:yy)!
 Enemy Terminates: | Kingdom(x:yy) has broken their ceasefire agreement with us!
 
-« Previous:  Kingdom | Next:  Explore »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## Protection
 
 For a period of 24 hours after Freeze time ends and for the same period once you create a new account, your province is under Protection. During this time your province is unable to send Aid, change the Wage rate, cast on Rituals, fund or slay Dragons; you cannot interact with other provinces, except to receive Aid. This period is used to prepare your province for exposure to the game world. Provinces under Protection are displayed on the Kingdom Page in green text, and with a trailing ^ after their province names.
 Provinces joining a Kingdom during War will be subject to a Freeze time which lasts until the end of the War. You will start with less resources.
-
----
 
 ## Province
 
@@ -6619,15 +6111,6 @@ A province can be abandoned but the lands kept intact for a new leader to take o
 #### War
 
 Provinces created/reset during War will start without Soldiers, Military & Building Credits.
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Quick Tips
 
@@ -6714,8 +6197,6 @@ THIS PAGE is a guide aimed to cover Quick Tips. It comprises of tips and tricks 
 
 - http://forums.utopia-game.com/showthread.php?628905-Guide-to-growing-n-stuff
 
----
-
 ## Recommended Defense
 
 This is part of the Utopia WIKI Player written guides.
@@ -6763,8 +6244,6 @@ DSPA/EPA - MAX within funding limits
 TPA - 3 to 5+
 
 This is an initial recommendation for pure TMs. Note that you'll have to take into consideration Elite points for different races as one of the many factors to consider. For example, elves have stronger dspec (defensive specialists) than its elites on defense so they would not train elites normally, while Faeries have tough defense on their elites, so you would want to convert to elites ASAP.
-
----
 
 ## Relations
 
@@ -7078,18 +6557,6 @@ Shortly after declaring War, a temporary Forum is created. This is known as the 
 In the War Forum Provinces from either Kingdom can interact by starting new threads or posting in existing ones.
 Provinces are expected to interact respectfully and obey the Code of Conduct. Any offending material can be removed by either Kingdom's Monarch or Steward.
 
-« Previous:  Politics | Next:  Preferences »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## Relations Meter
 
 ### Contents
@@ -7273,8 +6740,6 @@ No Effects
 
 - Age 109: Failing a Raze Attack will generate 3 meter points
 
----
-
 ## Reservations
 
 ### Contents
@@ -7316,18 +6781,6 @@ If a killed province had endured multiple attacks from within its own kingdom it
 ### Reservation Expiry
 
 Reservations typically only last for two days.  After two days the reservation will be deleted from the system.  It cannot be recovered.  This is to avoid spaces in kingdoms being reserved but unused for long periods of time.
-
-« Previous:  Invitations | Next:  Game Rules »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Ritual
 
@@ -7409,18 +6862,6 @@ Once a Ritual reaches 0% strength it will be removed, unless it has not reached 
 
 - Age 110: Ascendancy ritual added.
 
-« Previous:  Dragons | Next:  Stances »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## Rules
 
 Rules of the Wiki
@@ -7440,8 +6881,6 @@ This places a great responsibility on you as a contributor and as a member of th
 
 Anyone can contribute to Utopia Wiki by clicking on the *Edit this page* tab in an article. Before beginning to contribute however, you should check out some handy helping tools such as the tutorials. It is important to realize that in contributing to Utopia Wiki, users are expected to be civil and neutral, respecting all points of view, and only add verifiable and factual information rather than personal views and opinions. Anyone with Web access can edit UtopiaWiki, and this openness encourages inclusion of a tremendous amount of content. Please employ common sense, remain civil and do not deliberately aim to transmit misinformation - this may result in an IP ban.
 
----
-
 ## Runes
 
 **Runes** are the main resource used in Spell Casting.
@@ -7459,8 +6898,6 @@ Runes can also be taken from an enemy province, via:
 
 After each tick, 1.2% of the total runes in storage will decay.
 An enemy province's rune supply can be attacked via the Lightning Strike Spell. This attack will not give the destroyed runes to you.
-
----
 
 ## Science Formulas
 
@@ -7559,18 +6996,6 @@ Books are worth [0.000006 * Current Land] points.
 ### Obsolete and historical data - saved for reference
 
 Historical information on science systems and formulas can be found here: **Science: Obsolete and historical data**
-
-« Previous:  Growth | Next:  Military »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Scientists
 
@@ -7731,8 +7156,6 @@ yourfather |  |  |
 Zauper |  |  |
 Zzo |  |  |
 
----
-
 ## Should my KD Predetermine a Setup 
 
 ### Introduction
@@ -7749,8 +7172,6 @@ Such weaknesses may include a lack of economy, an inability to open on targets i
 Just as kd-builds are associated with KD goals, they are also associated with what your preferences are, what your habits are, and what you understand to be those game mechanics most easy to capitalize on.
 **5.	KD-Wide strats are not for everyone.**
 KD-wide strats allow you to optimize based on what your kd wants, but sometimes what the kd wants is to simply goof around with some new race/pers that seems fun. It can be fun making strategies based around the random choices people made. Going random also synergizes well casual play, as war kd’s often want to war kd’s that seem to possess similar skill, and so a terrible setup can bait the types of wars you want.
-
----
 
 ## SoM translation
 
@@ -7785,8 +7206,6 @@ The only values on a SOM which are always accurately reported are:
 - Troops out on an attack
 
 - OME, DME, Net Offense Home, and Net Defense Home
-
----
 
 ## Spell Uses
 
@@ -8754,8 +8173,6 @@ Is Known: Age 72 ... Age 80, Age 82, Age 85 ... Age 86, Age 93 ... Age 98
 By creating illusionary forces throughout your lands, it is possible to make an army of men look larger than life. Any crystal balls cast while this spell is active will show a larger-than-normal army.
 Is Known: Age 1 ... Age 11
 
----
-
 ## Stances
 
 **As of Age 112, stances have been removed from the game. This information, though outdated, will be retained for historical purposes.**
@@ -8785,18 +8202,6 @@ No Effects | +10% Battle Gains  -10% Attack Time  -50% Hostility Generation  +15
 
 - Age 112: Stances removed.
 
-« Previous:  Ritual | Next:  Mail & Forum »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## The Plague
 
 ### Plague & Immunity
@@ -8821,15 +8226,6 @@ Undead normally *Always Carry and are Immune to Plague*, invisibly holding it, i
 - Hospitals: Daily cure chance (~3% base), scaling with BE, up to 75%.
  At 100%+ BE, 25% Hospitals = max cure.
  At lower BE, more are required.
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Thievery Formulas
 
@@ -8915,28 +8311,6 @@ Max % of Total | 40% | 13.6% | 28% | 4% | 13.6% | 16%
 Gains Per Thief | 96 | 64 | 16.8 | 0.285 | 10% | 80%
 War Bonus | 25% | 25% | 25% | 25% | 25% | 25%
 Resources Lost | 10% | 10% | 10% | 20% | 50% | 0
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
-Races & Personalities
----
-Races | Avians  •  Dark Elves  •  Dryads  •  Dwarves  •  Elves  •  Faeries  •  Halflings  •  Humans  •  Orcs  •  Undead
-Extinct Races | Bocans  •  Gnomes
-Personalities | The Artisan  •  The Cleric  •  The General  •  The Heretic  •  The Mystic  •  The Rogue  •  The Tactician  •  The Warrior
-Extinct Personalities | The Freak  •  The Paladin  •  The Raider  •  The Undead  •  The Necromancer  •  The Merchant  •  The Sage  •  The Shepherd  •  The War Hero
-
-The Thieves' Toolbox
----
-The Espionage Operations | Spy on Throne  •  Spy on Defense  •  Snatch News  •  Infiltrate  •  Survey  •  Spy on Military  •  Spy on Sciences
-The Stealing Operations | Rob the Granaries  •  Rob the Vaults  •  Rob the Towers  •  Kidnapping  •  Steal Horses  •  Propaganda
-The Mischief Operations | Sabotage Wizards  •  Destabilize Guilds  •  Arson  •  Greater Arson  •  Night Strike  •  Incite Riots  •  Bribe Thieves  •  Bribe Generals  •  Free Prisoners  •  Assassinate Wizards
-
----
 
 ## Throne
 
@@ -9053,18 +8427,6 @@ The main box on this page gives a list of most of the important details about yo
 
 Finally, listed will be events which have occurred to your province since you last looked at your Throne page. This will include enemies attempts to conduct thievery operations or cast spells on you, attacks made against you, or aid you have received from kingdom mates.
 
-« Previous:  Personality | Next:  Kingdom »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## Time in Utopia
 
 Each event in Utopia is dated in **Utopian Time**.
@@ -9141,8 +8503,6 @@ In Utopia terms there are 24 days in a month and 7 months in a year.
         9   10  11  12  13  14  15  16
         17  18  19  20  21  22  23  24
 
----
-
 ## Traditional march
 
 Types of Attacks
@@ -9165,18 +8525,6 @@ Ambush | This attack can only be performed against a target which has recently a
 - Military
 
 - War
-
-« Previous:  Thievery | Next:  Aid »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
 
 ## Tutorials
 
@@ -9262,8 +8610,6 @@ The following 20 pages are in this category, out of 20 total.
 #### U
 
 - Using IRC
-
----
 
 ## Unique Abilities
 
@@ -9420,8 +8766,6 @@ Upon each successful attack, the attack destroys 0.5% of the target’s total po
 
 Successful attacks increase your instant spell damage by 20% for 2 days (in War; does not stack).
 
----
-
 ## Utopia
 
 Welcome to Utopia, a world where reality and dreams come together, a world where the lowliest of peasants can become the world's greatest heroes. A world unlike any other that you may have experienced now stands before you. Any peasant can become Lord of their own province, but only the greatest can survive. Being a leader in the world of Utopia will challenge your every skill and demand your careful attention. Without diplomacy and tact, you will never rise to the respect the people demand of you. You must decide when to be ruthless and when to be compassionate. Will you run an empire of might or magic? Perhaps one of cunning and betrayal? Alas, it is almost impossible to do them all. Every decision, every challenge will be yours and yours alone.
@@ -9462,15 +8806,6 @@ Arcadia Games bought Utopia from OMAC.
 
 Muga Gaming bought Utopia from Arcadia Games.
 
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
----
-
 ## Utopian server
 
 The main server is World of Legends.  Genesis is a secondary server for Utopia, commonly used as a testing ground for software updates. Players may have one account on each server.
@@ -9488,8 +8823,6 @@ The main server is World of Legends.  Genesis is a secondary server for Utopia, 
 - Great Utopia War
 
 - Utopia Tournament
-
----
 
 ## War Score
 
@@ -9513,8 +8846,6 @@ Loss = 0 points
 As of Age 103,
 
 - War Score will now incur a stacking 2% penalty for each missing province below maximum (calculated for each individual War, this carries over to EoA adjustment, full points only awarded full kingdoms).
-
----
 
 ## Warleader Guide to Attrition
 
@@ -9657,8 +8988,6 @@ If we assume total military attrition to be ~25-30% of military per 24 hrs, draf
 
 **Credits: just me of CoL**
 
----
-
 ## Wizards
 
 ### Contents
@@ -9737,202 +9066,6 @@ Emergency | 2.0% | 110gc
 
 **Click here for the Formula**
 
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
-Races & Personalities
----
-Races | Avians  •  Dark Elves  •  Dryads  •  Dwarves  •  Elves  •  Faeries  •  Halflings  •  Humans  •  Orcs  •  Undead
-Extinct Races | Bocans  •  Gnomes
-Personalities | The Artisan  •  The Cleric  •  The General  •  The Heretic  •  The Mystic  •  The Rogue  •  The Tactician  •  The Warrior
-Extinct Personalities | The Freak  •  The Paladin  •  The Raider  •  The Undead  •  The Necromancer  •  The Merchant  •  The Sage  •  The Shepherd  •  The War Hero
-
----
-
-## WoL Personalities
-
-Utopia currently has 8 Personalities. This is a list of the bonuses and penalties for the Utopian Personalities on the WoL server for the current age, Age 110.
-For Race bonuses, see Race.
-
-### Contents
-
-- 1 Personalities (Age 111)
-
-- 2 Current Personalities
-
-2.1 The Artisan
-2.2 The Cleric
-2.3 The Heretic
-2.4 The General
-2.5 The Mystic
-2.6 The Rogue
-2.7 The Tactician
-2.8 The Warrior
-
-- 3 Previous Personalities
-
-3.1 The Freak
-3.2 The Merchant
-3.3 The Paladin
-3.4 The Raider
-3.5 The Shepherd
-3.6 The Sage
-3.7 The War Hero
-3.8 The Undead
-
-Personalities (Age 111)
-
-Artisan | Cleric | Heretic | Mystic
---- | --- | --- | ---
-+50% Building Credits  +50% Flat Rate Capacity and Building Production  +20% Science Effectiveness - Artisan  Espionage is always successful with double stealth  Starting Bonuses:  +200 Starting Build credits  +600 Starting Soldiers  +600 Starting Specialist training credits  Unique - Masterful Craftsmanship | +25% Hospital Effectiveness  Defensive specialist gets +1 strength (Does not increase Networth)  Elite gets +1 defensive strength  Self Spell Mana Cost Reduced by 1  Starting Bonuses:  +800 Starting Soldiers  +800 Starting Specialist training credits  Spell Book:  Salvation, Revelation, Divine Shield and Illuminate Shadows  Unique - Divine Favour | +20% Combat Instant Spell Damage  +20% Sabotage Damage  -40% Thief Losses  +40% Increased Wizard Production  Starting Bonuses:  +400 Starting Thieves  +400 Starting Wizards  Spell Book:  Nightmare and Fools Gold  Unique - Arcane Frenzy | +85% Land Effect - Guilds  +25% Science Effectiveness - Channeling  +1% Extra Mana Per Tick  Starting Bonuses:  +800 Starting Wizards  Spell Book:  Meteor Showers, Magic Ward, Mind Focus and Chastity  Unique - Arcane Mastery
-
-Raider | Rogue | Sage | Tactician
---- | --- | --- | ---
-+10% Offensive Military Efficiency  +25% Science Effectiveness - Tools  -50% Thieves lost on failed ops in war  +25% Thievery Per Acre (TPA)  -30% Thief cost  Starting Bonuses:  +500 Starting Specialist training credits  +500 Starting Thieves  Allowed Thief Operations:  Steal War Horses  Unique - Undermining Assault | +25% Science Effectiveness - Crime  +25% Damage when performing Assassinate Wizards  +25% Damage when performing Kidnap  +80% Thieves' Den Effectiveness  +1% Extra Stealth Per Tick  Access all Thievery Operations  Starting Bonuses:  +800 Starting Thieves  Unique - Shadows in the Night | -30% Losses on Learn Attacks  +15% Science Book Production  +15% Scientist Spawn Rate  Starting Bonuses:  +800 Starting Soldiers  +1 Starting Scientists  +800 Starting Specialist training credits  Spell Book:  Revelation  Unique - Focused Resolve | -15% Attack Travel Time  +25% Science Effectiveness - Valor  No thief losses on espionage operations  Starting Bonuses:  +800 Starting Soldiers  +800 Starting Specialist training credits  Spell Book:  Reflect Magic  Unique - Siege Warfare
-
-Current Personalities
-
-### The Artisan
-
-- An artisan is a skilled manual worker who crafts items that may be functional or strictly decorative, items, and tools. The Artisan buildings work more efficiently in their production.
-
-Title: [RulerName] the Craftsman/Craftswoman
-Lived at: Age 39 ... Age 42, Age 45 ... Age 49 ... Age 80 ... Age 88, Age 90 ... Age 99, Age 105 ... now
-
-### The Cleric
-
-- Clerics assist their armies on the battlefield personally by healing wounded soldiers to reduce overall troop casualties. They support their comrades with magical blessings.
-
-Title: [RulerName] the Blessed
-Lived at: Age 43, Age 44, Age 50 ... Age 73, Age 80 ... Age 86, Age 88 ... Age 95, Age 97, Age 98, Age 100... now
-
-### The Heretic
-
-- The Heretic goes against the fundamental norms and does not care. They are perfectly happy dissenting from acceptable arcane beliefs and doctrine.
-
-Title: [RulerName] the Skeptic
-Lived at: Age 68 ... Age 102, Age 104 ... now
-
-### The General
-
-- Unlike the above personalities, the General's focus is on the strategic side of war. Leadership is its own reward, and the General's cunning gives you the unique ability to conduct Conquest Attacks at all times. The benefits of this attack are simple: failure can still yield positive results. Military tact is about far more than winning vs. losing for the General -- it is about gaining strategic advantage and taking bits and pieces of land.
-
-Title: The Great [RulerName]
-Lived at: Age 13 ... Age 35, Age 110
-
-### The Mystic
-
-- A master of magic, the Mystic has experience with getting the most out of the world of sorcery. Being led by "one of their own" gives a province extraordinary abilities in the mystic arts. Mystics will find themselves having access to one of the most deadly spell that others can simply never experience.
-
-Title: [RulerName] the Sorcerer/Sorceress
-Lived at: Age 13 ... now
-
-### The Rogue
-
-- Widely considered to be evil to the core, the Rogue is a very enigmatic persona. Rogues have extensive experience in the arts of thievery, fraud and crime - but in the Utopian World, this can be used for both good and evil. Rogues will find themselves having access to deadly thievery operations that others can simply never experience.
-
-Title: [RulerName] the Rogue
-Lived at: Age 13 ... now
-
-### The Tactician
-
-- The Tactician's focus is on the strategic side of war, allowing swift and accurate movement of troops. Leadership is its own reward and the Tactician's cunning gives you the unique ability use their strategic advantage to gather information.
-
-Title: The Conniving [RulerName]
-Lived at: Age 46 ... now
-
-### The Warrior
-
-- Aggressive, powerful and forceful are all adjectives that come to mind when describing the Warrior. Leadership through military power is what being a Warrior is all about.
-
-Title: [RulerName] the Warrior
-Lived at: Age 13 ... now
-
-Previous Personalities
-
-### The Freak
-
-- How the Freaks come to power, no one knows. Freaks can be ruthless, headstrong, impressive, or foolish. The freak adds a great deal of chance to every attack you make. It includes the ability to succeed in otherwise impossible attacks or fail in fairly easy assaults. You never really know what will happen when choosing this background.
-
-Title: The Crazy [RulerName]
-Lived at: Age 13 ... Age 38
-
-### The Merchant
-
-- Merchants are the masters of trade and finance. Known for their intuition and expertise when dealing with cash, Merchants are able to generate more gold than the other personas.
-
-Title: The Wealthy [RulerName]
-Lived at: Age 13 ... Age 67, Age 100, Age 104 ... Age 106
-
-### The Paladin
-
-- The Paladin is a holy warrior dedicated to smiting evil and protecting the innocent. They support their comrades with divine blessings and fight with increased fervor against dragons.
-
-Title: [RulerName] the Chivalrous
-Lived at: Age 72 ... Age 80, Age 96, Age 99
-
-### The Raider
-
-- Raiders combine cunning and ruthlessness to main the enemies or capture their resources.
-
-Title: [RulerName] the Merciless
-Lived at: Age 87, Age 99, Age 104
-
-### The Shepherd
-
-- The Shepherd knows how to protect the land and people from the ceaseless onslaught of the enemies. Their ability to live off the land helps generate food from all types of land.
-
-Title: The Humble  [RulerName]
-Lived at: Age 13 ... Age 53, Age 97 ... Age 102, Age 105 ... now
-
-### The Sage
-
-- The Sage has the wisdom of the ages and an infinite knowledge. Understanding so much about life, the world, and history, the Sage can provide unique guidance in a world consisting of so many different areas. Provinces led by Sages will find themselves more efficient in the domains of Arts and Sciences.
-
-Title: The Wise [RulerName]
-Lived at: Age 13 ... Age 77, Age 85, Age 86, Age 90 ... Age 103, Age 107
-
-### The War Hero
-
-- Great military leaders, the War Heroes are amongst the finest commanders in Utopia. A background in war and a legacy of heroism creates an aura of legitimacy around any leader. The War Hero gains enormous respect for his or her position.
-
-Title: [RulerName] the Hero
-Lived at: Age 13 ... Age 45, Age 54 ... Age 109
-
-### The Undead
-
-- The Undead will turn any race into unnatural beings with amazingly unique abilities. They are generally rotting to pieces and carry the plague (a highly contagious disease that will kill the living but seems to provide the Undead the strength they need to survive) with them wherever they walk. This strength allows them to continue fighting through even the most grievous of wounds, effectively lowering their casualties in battle.
-
-Title: [RulerName] the Undying
-Lived at: Age 74... Age 79
-
-« Previous:  Race | Next:  Throne »
---- | ---
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
-
-Races & Personalities
----
-Races | Avians  •  Dark Elves  •  Dryads  •  Dwarves  •  Elves  •  Faeries  •  Halflings  •  Humans  •  Orcs  •  Undead
-Extinct Races | Bocans  •  Gnomes
-Personalities | The Artisan  •  The Cleric  •  The General  •  The Heretic  •  The Mystic  •  The Rogue  •  The Tactician  •  The Warrior
-Extinct Personalities | The Freak  •  The Paladin  •  The Raider  •  The Undead  •  The Necromancer  •  The Merchant  •  The Sage  •  The Shepherd  •  The War Hero
-
-Ages
----
-Ages | 1998 - 1999 : The first generation of Utopia (1)  •  The Second Age of Utopia (2)  •  The Third Age of Utopia (3)  •  The Fourth Age of Utopia (4)  •  The Fifth Age of Utopia (5)  •  The Sixth Age of Utopia (6)  •  2000 - 2001 : The Seventh Age of Utopia (7)  •  The Age of Chaos (8)  •  The Renaissance Age (9)  •  The Age of Conflict (10)  •  The Age of Nobility (11)  •  The Era of Magic (12)  •  The Era of Mystery (13)  •  The Era of Strife (14)  •   2002 - 2003 : The Age of Valour (15)  •  The Age of Discovery (16)  •  The Age of the People (17)  •  The Age of Heroes (18)  •  An Era of Hope (19)  •  An Age of Dreams (20)  •  An Age of Wonders (21)  •  An Age of Conquerors (22)  •  The Revolution (23)  •   2004 - 2005 : An Age of Glory (24)  •  An Age of Tranquility (25)  •  An Age of Turmoil (26)  •  An Age of Courage (27)  •  An Age of Intrigue (28)  •  An Age of War (29)  •  An Age of Unity (30)  •   2006 - 2007 : An Age of Reason (31)  •  An Age of Kings (32)  •  An Age of Prosperity (33)  •  The Age of the Dragon (34)  •  An Age of Triumph (35)  •  An Age of Bravery (36)  •  The Age of Darkness (37)  •   2008 - 2009 : The Age of Angels (38)  •  The Age of the Scholar (39)  •  The Awakening (40)  •  The Age of Renewal (41)  •  The Age of Hope (42)  •  The Age of Rebirth (43)  •  The Age of Change (44)  •  The Age of Light (45)  •   2010 - 2011 : The Age of Distinction (46)  •  The Age of Justice (47)  •  The Age of Peril (48)  •  The Age of Conspiracy (49)  •  The Age of Resurrection (50)  •  The Age of Domination (51)  •  An Era of Supremacy (52)  •  2012 - 2013 : The Age of Havoc (53)  •  A Call to Arms (54)  •  Veil of Shadows (55)  •  Strength in Union (56)  •  Relentless Onslaught (57)  •  Art of War (58)  •  An Honorable Proposition (59)  •  A Battle Joined (60)  •  2014 - 2015 : Age of Destruction (61)  •  Books of War (62)  •  Iron Walls, Iron Heart (63)  •  The Spoils of War (64)  •  The Isles of Legion (65)  •  Thunder and Bedlam (66)  •  2016 - 2017 : The Age of Perception (67)  •  The Age of Heresy (68)  •  The Age of Scholars and Scoundrels (69)  •  The Age of Daunting Judgement (70)  •   The Metamorphosis (71)  •   The Era of Venerated Bastions (72)  •  The Age of Tricksters and Mischief (73)  •  The Age of Affinity (74)  •  2017 - 2018 : The Age of Empowering Enchantments (75)  •  The Age of the Empyrean Advent (76)  •  The Age of Accession and Abrogation  (77)  •  The Age of Insight  (78)  •  The Age of Vanguards Acquiescence (79)  •   2019 - 2020 : The Age of Reconnaissance (80)  •  The Emergence (81)  •  The Grimoires of Glory (82)  •  Age of Adjudication (83)  •  Bethink the Fray (84)  •  Intuition (85)  •  Global Viction (86)  •  Age of the Sword (87)  •  Swift Strife (88)  •  Reformation (89) 2021 - 2022 : Age of Exile 90  •  Age of Remembrance 91  •  Age of Ancestry 92  •  Occult Ordination 93  •  Ascent 94  •  Age of the Omen 95  •  The Eternal Rift 96  •  Dominance 97  •  Keen Transformation 98  •  2023 - 2024 : Crossing Boundaries 99  •  Equilibrium 100  •  Crusades 101  •  Godsend 102  •  Unbound Dominion 103  •  Renascence 104  •  Devout Fervor 105
-
----
-
 ## World of Legends
 
 This is the primary gaming server for Utopia. It is often abbreviated to WoL.
@@ -9941,10 +9074,3 @@ This is the primary gaming server for Utopia. It is often abbreviated to WoL.
 
 Race
 Personality
-
-The Utopia Guide
----
-Introduction | Getting Started with Utopia  •  Creating a province  •  Race & Personality
-The Menus | Throne  •  Kingdom  •  News Explore  •  Growth  •  Science  •  Military Mystics  •  Thievery  •  War Room •  Aid  •  Dragon  •  Ritual  •  Stances Mail & Forums Politics  •  Relations  •  Rankings  •  Preferences
-Advanced | MunkBot  •  Invitations  •  Reservations  •  Utopia  •  Province  •  World of Legends  •  Formulas
-Rules | Game Rules
