@@ -160,7 +160,7 @@ The page `https://utopia-game.com/wol/chooser/age_details/` contains key informa
 
 To add more special pages, edit the `special_pages` field in `wiki_offline/page_config.json`.
 
-## Keep Pages (75 pages + 1 special)
+## Keep Pages (70 pages + 1 special)
 
 | # | Page | Description |
 |---|------|-------------|
@@ -179,67 +179,64 @@ To add more special pages, edit the `special_pages` field in `wiki_offline/page_
 | 12 | Chaining | Attack chaining strategy |
 | 13 | Creating_a_province | How to create a province |
 | 14 | Dark_Elves | Race: Dark Elves |
-| 15 | Dragons | Dragon system |
-| 16 | Dragons,_Aid_&_Stances | Dragons, aid and stances |
-| 17 | Dual_Monarch | Dual Monarch guide |
-| 18 | Economy | Economic system |
-| 19 | Ethics_of_Waving_and_War | Ethics of waving and war |
-| 20 | Exploration | Exploration system |
-| 21 | Explore_Pool | Explore pool |
-| 22 | FAQ | Frequently asked questions |
-| 23 | Finding_Good_Learn_Targets | How to find good learn targets |
-| 24 | Finding_Good_Plunder_Targets | How to find good plunder targets |
-| 25 | Formulas | Game formulas index |
-| 26 | Fountain_of_knowledge | Spell: Fountain of Knowledge |
-| 27 | Freeze_time | Freeze time mechanic |
-| 28 | Game_Rules | Official game rules |
-| 29 | Getting_Started_with_Utopia | Getting started guide |
-| 30 | Guide | General strategy guide |
-| 31 | Guide_Combo_Selection | Race/personality combo selection guide |
-| 32 | Guides | Guide index |
-| 33 | Island | Island system |
-| 34 | Kingdoms | Kingdom mechanics |
-| 35 | Land_Whorring_Tips_&_Tricks | Land whoring guide |
-| 36 | Leadership_Logic | Leadership and KD management logic |
-| 37 | Magic_Formulas | Magic formulas |
-| 38 | Monarchy | Monarchy system |
-| 39 | Multi-Attack_Protection_(MAP) | Multi-attack protection |
-| 40 | Mystics_Spell_Table | Mystics spell table |
-| 41 | Networth | Networth calculation |
-| 42 | Offensive_Military_Efficiency | Offensive military efficiency |
-| 43 | Overpop_Mitigation | Overpopulation mitigation |
-| 44 | Overpopulation | Overpopulation mechanic |
-| 45 | Paper_Utopia | The kingdom newspaper |
-| 46 | Protection | Protection system |
-| 47 | Province | Province overview |
-| 48 | Quick_Tips | Quick tips |
-| 49 | Recommended_Defense | Recommended defense |
-| 50 | Relations | Kingdom relations system |
-| 51 | Relations_Meter | Relations meter |
-| 52 | Reservations | Reservations system |
-| 53 | Ritual | Ritual mechanic |
-| 54 | Rules | Game rules |
-| 55 | Runes | Rune system |
-| 56 | Science_Formulas | Science formulas |
-| 57 | Scientists | Scientists system |
-| 58 | Should_my_KD_Predetermine_a_Setup_ | Guide: predetermining a KD setup |
-| 59 | SoM_translation | Sword of Might translation |
-| 60 | Spell_Uses | Spell uses |
-| 61 | Stances | Kingdom stances |
-| 62 | The_Plague | Plague mechanic |
-| 63 | Thievery_Formulas | Thievery formulas |
-| 64 | Throne | Throne page |
-| 65 | Time_in_Utopia | Time system in Utopia |
-| 66 | Traditional_march | Attack type: Traditional March |
-| 67 | Tutorials | Tutorial index |
-| 68 | Unique_Abilities | Unique race abilities |
-| 69 | Utopia | General game overview |
-| 70 | Utopian_server | Game server info |
-| 71 | War_Score | War score |
-| 72 | Warleader_Guide_to_Attrition | Warleader's guide to attrition |
-| 73 | Wizards | Wizards and units system |
-| 74 | WoL_Personalities | World of Legends personalities |
-| 75 | World_of_Legends | WoL server info |
+| 15 | Dual_Monarch | Dual Monarch guide |
+| 16 | Economy | Economic system |
+| 17 | Ethics_of_Waving_and_War | Ethics of waving and war |
+| 18 | Exploration | Exploration system |
+| 19 | Explore_Pool | Explore pool |
+| 20 | FAQ | Frequently asked questions |
+| 21 | Finding_Good_Learn_Targets | How to find good learn targets |
+| 22 | Finding_Good_Plunder_Targets | How to find good plunder targets |
+| 23 | Formulas | Game formulas index |
+| 24 | Fountain_of_knowledge | Spell: Fountain of Knowledge |
+| 25 | Freeze_time | Freeze time mechanic |
+| 26 | Game_Rules | Official game rules |
+| 27 | Getting_Started_with_Utopia | Getting started guide |
+| 28 | Guide | General strategy guide |
+| 29 | Guide_Combo_Selection | Race/personality combo selection guide |
+| 30 | Guides | Guide index |
+| 31 | Island | Island system |
+| 32 | Kingdoms | Kingdom mechanics |
+| 33 | Land_Whorring_Tips_&_Tricks | Land whoring guide |
+| 34 | Leadership_Logic | Leadership and KD management logic |
+| 35 | Magic_Formulas | Magic formulas |
+| 36 | Monarchy | Monarchy system |
+| 37 | Multi-Attack_Protection_(MAP) | Multi-attack protection |
+| 38 | Mystics_Spell_Table | Mystics spell table |
+| 39 | Networth | Networth calculation |
+| 40 | Offensive_Military_Efficiency | Offensive military efficiency |
+| 41 | Overpop_Mitigation | Overpopulation mitigation |
+| 42 | Overpopulation | Overpopulation mechanic |
+| 43 | Paper_Utopia | The kingdom newspaper |
+| 44 | Protection | Protection system |
+| 45 | Province | Province overview |
+| 46 | Quick_Tips | Quick tips |
+| 47 | Recommended_Defense | Recommended defense |
+| 48 | Relations | Kingdom relations system |
+| 49 | Relations_Meter | Relations meter |
+| 50 | Reservations | Reservations system |
+| 51 | Rules | Game rules |
+| 52 | Runes | Rune system |
+| 53 | Science_Formulas | Science formulas |
+| 54 | Scientists | Scientists system |
+| 55 | Should_my_KD_Predetermine_a_Setup_ | Guide: predetermining a KD setup |
+| 56 | SoM_translation | Sword of Might translation |
+| 57 | Spell_Uses | Spell uses |
+| 58 | Stances | Kingdom stances |
+| 59 | The_Plague | Plague mechanic |
+| 60 | Thievery_Formulas | Thievery formulas |
+| 61 | Throne | Throne page |
+| 62 | Time_in_Utopia | Time system in Utopia |
+| 63 | Traditional_march | Attack type: Traditional March |
+| 64 | Tutorials | Tutorial index |
+| 65 | Unique_Abilities | Unique race abilities |
+| 66 | Utopia | General game overview |
+| 67 | Utopian_server | Game server info |
+| 68 | War_Score | War score |
+| 69 | Warleader_Guide_to_Attrition | Warleader's guide to attrition |
+| 70 | Wizards | Wizards and units system |
+| 71 | WoL_Personalities | World of Legends personalities |
+| 72 | World_of_Legends | WoL server info |
 
 ## Output Structure
 
