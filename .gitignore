@@ -1,0 +1,4 @@
+wiki_offline/
+__pycache__/
+*.pyc
+.cursor/
