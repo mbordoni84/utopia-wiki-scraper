@@ -1,4 +1,5 @@
-wiki_offline/
+wiki_offline/*
+!wiki_offline/utopia_wiki.md
 __pycache__/
 *.pyc
 .cursor/

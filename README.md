@@ -150,7 +150,7 @@ La pagina `https://utopia-game.com/wol/chooser/age_details/` contiene le informa
 
 Per aggiungere altre pagine speciali, modifica il campo `special_pages` in `wiki_offline/page_config.json`.
 
-## Pagine keep (76 pagine + 1 speciale)
+## Pagine keep (75 pagine + 1 speciale)
 
 | # | Pagina | Contenuto |
 |---|--------|-----------|
@@ -203,34 +203,33 @@ Per aggiungere altre pagine speciali, modifica il campo `special_pages` in `wiki
 | 46 | Protection | Sistema di protezione |
 | 47 | Province | Panoramica della provincia |
 | 48 | Quick_Tips | Consigli rapidi |
-| 49 | Races_and_Personalities | Razze e personalita |
-| 50 | Recommended_Defense | Difesa consigliata |
-| 51 | Relations | Sistema di relazioni tra kingdom |
-| 52 | Relations_Meter | Contatore delle relazioni |
-| 53 | Reservations | Sistema delle prenotazioni |
-| 54 | Ritual | Meccanica dei rituali |
-| 55 | Rules | Regole del gioco |
-| 56 | Runes | Sistema delle rune |
-| 57 | Science_Formulas | Formule scientifiche |
-| 58 | Scientists | Sistema degli scienziati |
-| 59 | Should_my_KD_Predetermine_a_Setup_ | Guida: predeterminare un setup di KD |
-| 60 | SoM_translation | Traduzione Sword of Might |
-| 61 | Spell_Uses | Utilizzi degli spell |
-| 62 | Stances | Stance del kingdom |
-| 63 | The_Plague | Meccanica della peste |
-| 64 | Thievery_Formulas | Formule di thievery |
-| 65 | Throne | Pagina del trono |
-| 66 | Time_in_Utopia | Sistema del tempo in Utopia |
-| 67 | Traditional_march | Tipo di attacco: Traditional March |
-| 68 | Tutorials | Indice dei tutorial |
-| 69 | Unique_Abilities | Abilita uniche delle razze |
-| 70 | Utopia | Panoramica generale del gioco |
-| 71 | Utopian_server | Info sui server di gioco |
-| 72 | War_Score | Punteggio di guerra |
-| 73 | Warleader_Guide_to_Attrition | Guida del warleader all'attrito |
-| 74 | Wizards | Sistema dei maghi e unita |
-| 75 | WoL_Personalities | Personalita su World of Legends |
-| 76 | World_of_Legends | Info sul server WoL |
+| 49 | Recommended_Defense | Difesa consigliata |
+| 50 | Relations | Sistema di relazioni tra kingdom |
+| 51 | Relations_Meter | Contatore delle relazioni |
+| 52 | Reservations | Sistema delle prenotazioni |
+| 53 | Ritual | Meccanica dei rituali |
+| 54 | Rules | Regole del gioco |
+| 55 | Runes | Sistema delle rune |
+| 56 | Science_Formulas | Formule scientifiche |
+| 57 | Scientists | Sistema degli scienziati |
+| 58 | Should_my_KD_Predetermine_a_Setup_ | Guida: predeterminare un setup di KD |
+| 59 | SoM_translation | Traduzione Sword of Might |
+| 60 | Spell_Uses | Utilizzi degli spell |
+| 61 | Stances | Stance del kingdom |
+| 62 | The_Plague | Meccanica della peste |
+| 63 | Thievery_Formulas | Formule di thievery |
+| 64 | Throne | Pagina del trono |
+| 65 | Time_in_Utopia | Sistema del tempo in Utopia |
+| 66 | Traditional_march | Tipo di attacco: Traditional March |
+| 67 | Tutorials | Indice dei tutorial |
+| 68 | Unique_Abilities | Abilita uniche delle razze |
+| 69 | Utopia | Panoramica generale del gioco |
+| 70 | Utopian_server | Info sui server di gioco |
+| 71 | War_Score | Punteggio di guerra |
+| 72 | Warleader_Guide_to_Attrition | Guida del warleader all'attrito |
+| 73 | Wizards | Sistema dei maghi e unita |
+| 74 | WoL_Personalities | Personalita su World of Legends |
+| 75 | World_of_Legends | Info sul server WoL |
 
 ## Struttura output
 
@@ -241,10 +240,10 @@ wiki_offline/
   scraper_progress.json      # Stato del download (per resume)
   css/
     style.css                # Stile per la consultazione offline
-  pages/                     # Pagine keep (76 + 1 speciale)
+  pages/                     # Pagine keep (75 + 1 speciale)
     _Age_Details_Current.html
     Spells.html
     ...
-  archived/                  # Pagine ignorate (~486 file)
+  archived/                  # Pagine ignorate (~487 file)
   images/
 ```
