@@ -160,7 +160,7 @@ The page `https://utopia-game.com/wol/chooser/age_details/` contains key informa
 
 To add more special pages, edit the `special_pages` field in `wiki_offline/page_config.json`.
 
-## Keep Pages (70 pages + 1 special)
+## Keep Pages (71 pages + 1 special)
 
 | # | Page | Description |
 |---|------|-------------|
@@ -178,23 +178,23 @@ To add more special pages, edit the `special_pages` field in `wiki_offline/page_
 | 11 | Bushels | Bushels (food) system |
 | 12 | Chaining | Attack chaining strategy |
 | 13 | Creating_a_province | How to create a province |
-| 14 | Dark_Elves | Race: Dark Elves |
-| 15 | Dual_Monarch | Dual Monarch guide |
-| 16 | Economy | Economic system |
-| 17 | Ethics_of_Waving_and_War | Ethics of waving and war |
-| 18 | Exploration | Exploration system |
-| 19 | Explore_Pool | Explore pool |
-| 20 | FAQ | Frequently asked questions |
-| 21 | Finding_Good_Learn_Targets | How to find good learn targets |
-| 22 | Finding_Good_Plunder_Targets | How to find good plunder targets |
-| 23 | Formulas | Game formulas index |
-| 24 | Fountain_of_knowledge | Spell: Fountain of Knowledge |
-| 25 | Freeze_time | Freeze time mechanic |
-| 26 | Game_Rules | Official game rules |
-| 27 | Getting_Started_with_Utopia | Getting started guide |
-| 28 | Guide | General strategy guide |
-| 29 | Guide_Combo_Selection | Race/personality combo selection guide |
-| 30 | Guides | Guide index |
+| 14 | Dual_Monarch | Dual Monarch guide |
+| 15 | Economy | Economic system |
+| 16 | Ethics_of_Waving_and_War | Ethics of waving and war |
+| 17 | Exploration | Exploration system |
+| 18 | Explore_Pool | Explore pool |
+| 19 | FAQ | Frequently asked questions |
+| 20 | Finding_Good_Learn_Targets | How to find good learn targets |
+| 21 | Finding_Good_Plunder_Targets | How to find good plunder targets |
+| 22 | Formulas | Game formulas index |
+| 23 | Fountain_of_knowledge | Spell: Fountain of Knowledge |
+| 24 | Freeze_time | Freeze time mechanic |
+| 25 | Game_Rules | Official game rules |
+| 26 | Getting_Started_with_Utopia | Getting started guide |
+| 27 | Guide | General strategy guide |
+| 28 | Guide_Combo_Selection | Race/personality combo selection guide |
+| 29 | Guides | Guide index |
+| 30 | Honor | Honor titles and bonuses |
 | 31 | Island | Island system |
 | 32 | Kingdoms | Kingdom mechanics |
 | 33 | Land_Whorring_Tips_&_Tricks | Land whoring guide |
@@ -235,8 +235,7 @@ To add more special pages, edit the `special_pages` field in `wiki_offline/page_
 | 68 | War_Score | War score |
 | 69 | Warleader_Guide_to_Attrition | Warleader's guide to attrition |
 | 70 | Wizards | Wizards and units system |
-| 71 | WoL_Personalities | World of Legends personalities |
-| 72 | World_of_Legends | WoL server info |
+| 71 | World_of_Legends | WoL server info |
 
 ## Output Structure
 
