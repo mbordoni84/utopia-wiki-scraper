@@ -452,14 +452,27 @@ class PageManager:
         sections.append(f"# Utopia Wiki - Age {current_age}\n")
 
         # Part 1: Manual Notes
-        sections.append("---\n\n# Part 1: Manual Notes (Authoritative)\n\n_These notes override any conflicting information below._\n")
+        sections.append(
+            "---\n\n"
+            "# Part 1: Manual Notes (Authoritative)\n\n"
+            "> **PRIORITY: HIGHEST — Overrides everything else.**\n"
+            "> These notes are manually maintained and reflect the current age's confirmed rules.\n"
+            "> If any information in Part 2 or Part 3 conflicts with this section, discard it and trust Part 1.\n"
+        )
         if manual_notes_content:
             sections.append(f"{manual_notes_content}\n")
         else:
             sections.append("_No manual notes file found (wiki_offline/manual_notes.md)._\n")
 
         # Part 2: Age Details (special pages)
-        sections.append("---\n\n# Part 2: Age Details — Races & Personalities\n")
+        sections.append(
+            "---\n\n"
+            "# Part 2: Age Details — Races & Personalities\n\n"
+            "> **PRIORITY: HIGH — Current age data, second only to Part 1.**\n"
+            "> This page is scraped directly from the game for the current age.\n"
+            "> It is the authoritative source for race stats, personality stats, war doctrines, and unique abilities.\n"
+            "> If Part 3 contradicts this section on any race or personality detail, trust Part 2.\n"
+        )
         for sp in special:
             url = sp.get("url", "")
             fname = sp.get("filename", "_special") + ".html"
@@ -473,7 +486,15 @@ class PageManager:
                 sections.append(f"{body}\n")
 
         # Part 3: Wiki Pages
-        sections.append("---\n\n# Part 3: Wiki Pages\n")
+        sections.append(
+            "---\n\n"
+            "# Part 3: Wiki Pages\n\n"
+            "> **PRIORITY: MEDIUM — Reliable for mechanics, formulas, and concepts. Unreliable for current-age specifics.**\n"
+            "> These are scraped wiki pages. They are valuable for game formulas, mechanics explanations, and strategic guides.\n"
+            "> However, they may reference races, personalities, abilities, or balance values from past ages.\n"
+            "> Do NOT use Part 3 as the source of truth for race/personality stats, unique abilities, or any data\n"
+            "> that changes between ages. For those, defer to Part 1 and Part 2.\n"
+        )
         for name in sorted(pages.keys()):
             if pages[name]["status"] != "keep":
                 continue
