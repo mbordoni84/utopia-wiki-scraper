@@ -160,7 +160,7 @@ The page `https://utopia-game.com/wol/chooser/age_details/` contains key informa
 
 To add more special pages, edit the `special_pages` field in `wiki_offline/page_config.json`.
 
-## Keep Pages (71 pages + 1 special)
+## Keep Pages (70 pages + 1 special)
 
 | # | Page | Description |
 |---|------|-------------|
@@ -229,13 +229,12 @@ To add more special pages, edit the `special_pages` field in `wiki_offline/page_
 | 62 | Time_in_Utopia | Time system in Utopia |
 | 63 | Traditional_march | Attack type: Traditional March |
 | 64 | Tutorials | Tutorial index |
-| 65 | Unique_Abilities | Unique race abilities |
-| 66 | Utopia | General game overview |
-| 67 | Utopian_server | Game server info |
-| 68 | War_Score | War score |
-| 69 | Warleader_Guide_to_Attrition | Warleader's guide to attrition |
-| 70 | Wizards | Wizards and units system |
-| 71 | World_of_Legends | WoL server info |
+| 65 | Utopia | General game overview |
+| 66 | Utopian_server | Game server info |
+| 67 | War_Score | War score |
+| 68 | Warleader_Guide_to_Attrition | Warleader's guide to attrition |
+| 69 | Wizards | Wizards and units system |
+| 70 | World_of_Legends | WoL server info |
 
 ## Output Structure
 
