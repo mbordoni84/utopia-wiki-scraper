@@ -1,4 +1,4 @@
-# Utopia Wiki - Age 114
+# Utopia Wiki - Age 115
 
 ---
 
@@ -8,140 +8,451 @@
 > These notes are manually maintained and reflect the current age's confirmed rules.
 > If any information in Part 2 or Part 3 conflicts with this section, discard it and trust Part 1.
 
-War Doctrines (Battle Doctrines)
-Each race contributes a War Doctrine that applies kingdom-wide during War.
-Doctrine strength scales with the number of provinces of that race, up to a defined cap.
+War Doctrine Updates
+Each Race provides a unique War Doctrine bonus when your kingdom is at war. The strength of the bonus depends on how many provinces of that race are in your kingdom.
+1st Province:            +2.0%
+Each additional Province: +1.5%
+Maximum:                 12.5%
 
-
-Global Parameters (Applies to All Races)
-Base Value: 1.5%
-Increment: +1% per province of that race
-Maximum Cap: 7.5%
-
-
-Design Guardrails
-No War Doctrine may exceed 7.5% total effect.
-Caps are designed to be reached at 7 provinces, not earlier, except Avians, they reach cap at 5.
-Additional provinces beyond the cap do not increase doctrine strength.
-
-
-Massacre Changes
-Massacre effectiveness in War will now be 2x instead of 3x.
-
-
-Learn and Plunder Changes
-Learns and Plunders will have their enemy military kills reverted to normal troop kills in War.
-
-
-Out of War Attack Penalty Updates
-When targeting a Kingdom that is less than 85% of both your Land and Networth, the following penalties apply:
-Battle Gains: –10%
-Military Casualties: +10%
-Honor Gains: –25%
-Attack Time: +20%
-
-
-Dragons
-
-We are providing some new dragons to add some flavour to the current set. Next age, several dragons have been reworked to hit harder, punish sloppy execution, and better define their role on the battlefield. Whether you’re breaking sustain, choking recovery, or forcing mistakes, each dragon now offers a clearer reason to be chosen and a real consequence if ignored.
-
-General Changes
-Elites deal dragon damage based on their higher value.
-For example, an elite with 14/4 will deal 14 damage per unit to a dragon (before any slaying modifiers apply).
-Elites no longer combine offence and defence when slaying dragons. Only the higher of the two values is used.
-Dragon HP reduced by 10%.
-
-
-Amethyst Dragon
-−40% Spell Success Chance
-−40% Thievery Success Chance on sabotage operations
-Enemy provinces suffer +25% thievery and wizard losses on failed spells and sabotage operations
-Cost Modifier: 2.4
-
-
-Emerald Dragon
-+25% military casualties in combat
-−20% combat gains
-−40% Building and Specialist Credits gained in combat
-Cost Modifier: 2.4
-
-
-Celestite Dragon
-−60% Birth Rates
-−40% Hospital Effectiveness
-+50% Build Cost and Time
-Cost Modifier: 2.4
-
-
-Ruby Dragon
-Reduces Military Effectiveness by 15%
-Increases Military Wages by 30%
-Lose 30% of new draftees
-Cost Modifier: 2.4
-
-
-Topaz Dragon
-−30% Building Efficiency
-−25% Income
-Destroys 4% of buildings instantly and every 6 days thereafter
-Cost Modifier: 2
-
-
-Sapphire Dragon
-−30% lower magic (WPA) and thievery (TPA) effectiveness
-+12.5% Instant Spell and Sabotage Damage taken
-−12.5% Instant Spell and Sabotage Damage dealt
-Cost Modifier: 2
-
-
-Rituals
-
-Barrier
-+20% Birth Rates
-−25% Damage from Enemy Instant Magic and Thievery Operations
-−20% Massacre Damage
-−10% Battle (Resource) Losses
-
-
-Expedient
-+20% Building Efficiency
-−25% Construction Cost
-−25% Construction Time
-−25% Military Wages
-
-
-Ascendancy
-+50% Wizard Production
-−50% Wizard Losses on Failed Spells
-−25% Science Book Production
-
-
-Haste
-−10% Attack Time
-−25% Training Time
-−25% Construction Time
-
-
+This means the first province of a race provides a stronger initial doctrine bonus, with each additional province contributing a smaller amount. This rewards early commitment to a race while still allowing deeper specialisation, up to a maximum total bonus of 12.5%. 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔮 RITUALS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Havoc
-+20% Offensive WPA
-+20% Offensive TPA
++25% WPA
++25% TPA
 +20% Spell Damage
 +20% Sabotage Damage
 
-
-Onslaught
-+10% Offensive Military Efficiency
-+15% Enemy Military Casualties on Attacks
-
-
 Stalwart
-+5% Defensive Military Efficiency
-−20% Military Casualties
++5%  Defensive Military Efficiency
+-20% Raze Damage
+-25% Military Casualties
 
+Benediction
++20% Building Efficiency
+-20% Draft Costs
+-20% Build Costs
+-20% Wages
 
-Spell Changes
-Greed increased from 25% to 35% for both Wage and Draft Costs.
+No changes to other rituals
+Expedient — REMOVED ❌
+ 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🏰 BUILDINGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Castles base percent shifted from 2.25% to 2%
 
+ 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 SCIENCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Resilience Multiplier shifted to 0.04401 from 0.0489
+Artisan Multiplier    shifted to 0.04302 from 0.0478
+Finesse Multiplier    shifted to 0.08685 from 0.0965
+ 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ SPELLS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+New Spell: Soul Blight
+Effect:       Kills x% of peasants and then adds y% of those
+              killed to the caster's soldiers
+Duration:     N/A
+Cast Message: A Pall of death descends upon the enemy (x:x),
+              taking xxx peasant's lives. Your legion is
+              reinforced by xx of their fallen.
+
+ 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤝 RELATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Defensive Force Ceasefire reintroduced with the following changes:
+DFCF becomes available when all of the following are met:
+  - Kingdom is 45 points (in-range) or 30 points
+    (out-of-range) below the aggressor on hostility meter
+  - The aggressor has not been given Hostile status
+  - No attacks have been made against the aggressor for 3 ticks
+  - Kingdom is lower in both Land and Networth than the aggressor
+ 
+DFCF will incur a penalty if within War Range of the aggressor
+  (15% NW or Land)
+Penalty will be a loss of 1.75% Honor and 1.75% Science
+There is no penalty incurred for DCFC if out of War Range
+Penalty will have a warning popup, as to not be done accidentally
+DFCFd duration will be 48 hours before it can be cancelled
+  by either kingdom
+
+Hostile meter will now decay after 48 hours of going hostile, decay rate will ramp with meter points 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🐉 DRAGONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Celestite Dragon — REMOVED ❌
+Dragon HP reduced by 2% across all dragons
+ 
+🟣 Amethyst Dragon
+−30% Spell Success Chance
+−30% Thievery Success Chance on sabotage operations
+All active self-spells are removed instantly upon arrival,
+and every 6 ticks thereafter, kills 2% wizard & thieves
+
+🟢 Emerald Dragon
++25% Military Casualties
+-25% Combat Gains
+Destroys 1.5% of troops at home instantly upon arrival,
+and every 6 ticks 1.5% of troops at home are lost and
+current Building and Specialist Credits are reduced by 40%
+
+🔴 Ruby Dragon
+-12.5% Military Effectiveness
++20%   Military Wages
+Destroys 2.5% of offensive specialists instantly upon arrival,
+and every 6 ticks 2.5% of offensive specialists at home desert
+
+🟡 Topaz Dragon
+-30% Building Efficiency
+-25% Income
+Destroys 10% of buildings instantly upon arrival,
+and every 6 ticks thereafter, destroys 10% of buildings
+and 20% of current gold
+
+🔵 Sapphire Dragons
+-35% WPA and TPA
+-1   Mana Recovery
+-1   Stealth Recovery
++12.5% Instant Spell and Sabotage Damage taken and
+-12.5% Instant and Sabotage Damage dealt
+Destroys 25% of runes instantly upon arrival, and every
+6 ticks thereafter destroys 25% current rune supplies.
+ 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧬 RACES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🦅 Avian
+Bonuses:
+-20% Attack Time
+-25% Training Time
+-25% Military Wage Cost
+
+War Doctrine (In War): Provides up to -10% Attack Time and +12.5% Birth Rates to you and all your kingdom.
+Unique Passive: Dive Bomb Your offensive specialists gain +2 offense point (War Only) (Does not affect NW)
+Spells: Town Watch, Illuminate Shadows
+Penalties:
+No Access to Stables and War Horses
+-5% BE
+
+Units:
+Soldier:              3/0,          0.75nw
+Offensive Specialist: 12/0,         4.8nw
+Defensive Specialist: 0/10,         5nw
+Elite Unit:           16/3, 750gc,  7nw
+Mercenary:            8/0,          0.0nw
+Prisoner:             8/0,          1.6nw
+War Horse:            n/a
+ 
+🌑 Dark Elf
+Bonuses:
++35% Instant Spell Damage
+-35% Rune Cost (Not Including Rituals)
+Can train Thieves using Specialist Credits
+
+War Doctrine (In War): Provides up to +12.5% Instant Spell Damage and −12.5% Rune Costs to you and all your kingdom.
+Unique Passive: Mystic Enthusiasts Successful Offensive instant spells refund 40% Rune Cost.
+Spells: Blizzard, Mage's Fury, Illuminate Shadows, Pitfalls, Mind Focus
+Penalties:
+-15% Birth Rates
+
+Units:
+Soldier:              3/0,         0.75nw
+Offensive Specialist: 15/0,        6.0nw
+Defensive Specialist: 0/11,        5.5nw
+Elite Unit:           4/12, 750gc, 7nw
+Mercenary:            8/0,         0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
+
+ 
+⛏️ Dwarf
+Bonuses:
++30% Building Efficiency
+-50% Construction Time
+
+War Doctrine (In War): Provides up to -12.5% Construction Costs and +12.5% Income for you and all your kingdom.
+Unique Passive: Architect's Revenge - Incoming Raze damage reduced by 15% and Raze damage increased by 20%
+Spells: Miner's Mystique, Town Watch, Reflect Magic,
+Penalties:
+Cannot Accelerate Construction
++10% Attack Time
+
+Units:
+Soldier:              3/0,         0.75nw
+Offensive Specialist: 10/0,        4.0nw
+Defensive Specialist: 0/10         5.0nw
+Elite Unit:           15/5, 800gc, 7nw
+Mercenary:            8/0,         0.0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
+ 
+🏹 Elf
+Bonuses:
++40% Magic Effectiveness (WPA)
++1   Mana Per Tick in War
++40% Rune Production
+
+War Doctrine (In War): Provides up to +12.5% Offensive WPA and +12.5% Spell Duration to you and all your kingdom.
+Unique Passive: Arcane Surge: Whenever your province's mana drops below 40%, all spells you cast while under that threshold deal +25% spell damage. The boost disappears as soon as your mana climbs back above 40%.
+Spells: Pitfalls, Wrath, Vermin, Sloth
+Penalties:
+-20% TPA
+
+Units:
+Soldier:              3/0,         0.75nw
+Offensive Specialist: 10/0,        4.0nw
+Defensive Specialist: 0/13 ,       6.5nw
+Elite Unit:           15/4  750gc, 6.0nw
+Mercenary:            8/0,         0.0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
+
+ 
+🧚 Faery
+Bonuses:
++25% Spell Duration
++20% WPA
++1   Mana Recovery per Tick
+
+War Doctrine (In War): Provides up to +12.5% Defensive WPA and -12.5% Damage from Enemy Thievery Operations to you and all your kingdom.
+Unique Passive - Leyline Interference: Enemy spells cast against Faery provinces have a 20% chance to fail.
+Spells: All Racial Spells
+Penalties:
+-5% Population
+
+Units:
+Soldier:              3/0,          0.75nw
+Offensive Specialist: 10/0,         4.0nw
+Defensive Specialist: 0/10,         5.0nw
+Elite Unit:           4/16, 1000gc, 8.5nw
+Mercenary:            8/0,          0.0nw
+Prisoner:             8/0,          1.6nw
+War Horse:            2/0,          0.6nw
+ 
+🗡️ Halfling
+Bonuses:
++10% Population
++1   Stealth Regeneration Per Tick
++20% Thievery Effectiveness (TPA)
+
+War Doctrine (In War): Provides up to +12.5% Sabotage Damage and +12.5% Offensive TPA to you and all your kingdom.
+Unique Passive: Silent Assault Sabotage operations suffer 50% fewer thievery losses
+Spells: Tree of Gold, Greater Protection
+Penalties:
++10% Military Casualties
+
+Units:
+Soldier:              3/0,         0.75nw
+Offensive Specialist: 10/0,        4.0nw
+Defensive Specialist: 0/10,        5.0nw
+Elite Unit:           6/12, 700gc, 7.5nw
+Mercenary:            8/0,         0.0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
+
+ 
+👑 Human
+Bonuses:
+All Lands hold Prisoners - 2 Per Acre
++1   Stealth Regeneration Per Tick
+-30% Damage from Learn Attacks
++10% Science Efficiency
+
+War Doctrine (In War): Provides up to +12.5% Book Generation and +12.5% Science Effectiveness to you and all your kingdom.
+Unique Passive - Civil Administration: Prisoners generate an additional 2.0gc per tick and Mercenary costs are reduced by 40%
+Spells: Fountain of Knowledge, Revelation, Invisibility, Guile, Steal War Horses
+Penalties:
+Military wage increases take twice as long to fully apply.
+Wage reductions apply normally.
++40% Rune Cost (Does not Include Rituals)
+
+Units:
+Soldier:              3/0,        0.75nw
+Offensive Specialist: 12/0,       4.8nw
+Defensive Specialist: 0/10,       5.0nw
+Elite Unit:           16/3 750gc, 6.5nw
+Mercenary:            8/0,        0.0nw
+Prisoner:             8/0,        1.6nw
+War Horse:            2/0,        0.6nw
+ 
+👹 Orc
+Bonuses:
++5% Gains OOW & +15% Gains During War
+-50% Draft Cost
+
+War Doctrine (In War): Provides up to +10% Offensive Military Efficiency and +12.5% Raze Damage to you and all your kingdom.
+Unique Passive - Carnage: Every time an Orc makes a successful attack, there is a random bonus effect applied to that attack — the spirit of war is unpredictable and wild.
+Destroy 25% of enemy resources (gold, runes, food)
+Increases Military Wages by 25% for 4-6 ticks.
+-30% Military Losses
+
+Spells: Bloodlust, Wrath
+Penalties:
+-15% DME
+
+Units
+Soldier:              3/0,         0.75nw
+Offensive Specialist: 13/0,        5.2 nw
+Defensive Specialist: 0/10,        5nw
+Elite Unit:           18/2, 800gc, 7nw
+Mercenary:            8/0,         0.0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
+
+ 
+💀 Undead
+Bonuses:
+-45% Military Losses
+Plague Immunity
+Always carries Plague and chance to spread
+No Food Requirement
+
+War Doctrine (In War): Provides up to -12.5% Enemy Battle Gains and +12.5% Increased Plague spread chance (does not grant the ability to spread Plague)
+Unique Passive: Death March Converts 45% of offensive losses into Soldiers instantly.
+Spells: Animate Dead, Aggression
+Penalties:
+-10% Science Efficiency
+
+Units
+Soldier               3/0,         0.75nw
+Offensive Specialist: 11/0,        4.4nw
+Defensive Specialist: 0/10         5.0nw
+Elite Unit:           17/4, 800gc, 7nw
+Mercenary:            8/0,         0.0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
+ 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎭 PERSONALITIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔨 The Artisan
++40% Building Capacity (Homes, Stables, Dungeons)
++40% Building Production (Banks, Farms, Stables, Towers, Homes)
+Immune to Plunder, Greed and Incite Riots
++15% Economy Science Efficiency
+Access to Ghost Workers, Greater Protection
+Starts with +600 Soldiers, +600 Specialist Credits
+           and +200 Building Credits
+
+Unique Passive – Construction Delays - For 3 ticks after a successful attack, enemy's/target's building efficiency is reduced by 10% (Does not stack)
+ 
+🎖️ The General
++1   General
+-20% Training Cost & Speed
+Can Train one Elite for every two Specialist Credits
++15% Military Science Efficiency
+Access to Mist, Wrath
+Starts with +800 Soldiers and +800 Specialist Credits
+
+Unique Passive - General's Authority: Attacks inflict +15% Enemy Military casualties when two or more generals are sent.
+ 
+😈 The Heretic
++15% TPA
++15% WPA
+-50% Thief Losses
++20% Sabotage Damage
++20% Spell Damage
++75% Guild Effectiveness
++15  Arcane Science Efficiency
+Access to Nightmares, Fools Gold, Mages Fury, Vermin
+Starts with +400 Wizards and +400 Thieves
+
+Unique Passive: Blasphemous Might - After a failed offensive spell cast, the heretic recovers 1% Stealth. 
+🔯 The Mystic
++125% Guilds Effectiveness
++1    Mana Recovery per Tick
++25%  Offensive Spell Duration
++25%  Channeling Science Efficiency
+Access to Pitfalls, Meteor Showers, Chastity
+Starts with +800 Wizards
+
+Unique Passive - Focused Channelling: While above 40% mana, spells gain +20% WPA
+ 
+🧙‍♂️ The Necromancer
++35 % WPA
++5%   OME
+-50%  Rune Cost (Not Ritual)
++25%  Channeling Science Efficiency
+Access to Animate Dead, Mind Focus, Soul Blight, Guile, Nightmare
+Starts with +400 Wizards +400 Specialist Credits
+
+Unique Passive – Dark Pact - After each successful attack, The Necromancer converts:
+10% of the enemy's killed units into Wizards.
+20% of the enemy's killed units into Soldiers.
+10% of the enemy's killed units into Peasants.
+
+ 
+⚜️ The Paladin
++2    War Horse Strength (alters NW)
+All lands hold and produces Horses (8 per acre)
++7.5% Defensive Military Efficiency
+Immune to Plague
++25%  Strategy Science Efficiency
+Access to Salvation, Divine Shield, Heroes' Inspiration,
+          Illuminate Shadows, Wrath
+
+Unique Passive: Holy Inquisition Successful Attacks in War or Hostile apply a mini effect:
+Temporarily suppresses 15% of target's science
+  effectiveness for 6–8 ticks
+Temporarily reduces Book Generation by 20% for 6-8 ticks
+Effect does not stack, only refreshes
+
+Starts with +800 Soldiers and +800 Specialist Credits
+ 
+=============== MESSAGE 12 ===============
+ 
+🗝️ The Rogue
++100% Thieves' Dens Effectiveness
++20%  TPA
++1    Stealth Recovery per Tick
+Access to All Thievery Operations
++25%  Crime Science Efficiency
+Starts with +800 Thieves
+
+Unique Passive - Shadow Persistence Rogue provinces may perform thievery operations while overpopulated.
+ 
+🗺️ The Tactician
+-15% Attack Time
++40% Specialist Credits Gains
++25% Draft Speed
+-50% Ambush Losses
+No Thieves lost on Intel
++25% Siege Science Efficiency
+Access to Clearsight
+Starts with +800 Soldiers and +800 Specialist Credits
+
+Unique Ability: Unique Passive: Interdiction - Successful Attacks in War destroy resources as follows:
+10% of gold
+25% of runes
+20% of food
+
+ 
+⚔️ The Warrior
++15% Offensive Military Efficiency
++5   Mercenary & Prisoner Strength
+Mercenaries and Prisoners may be sent at 1 for every 4
+  normal troops sent
+-50% Mercenary Cost
++25% Tactics Science Efficiency
+Starts with +800 Soldiers and +800 Specialist Credits
+
+Unique Passive: Battle Cry - Upon successful attack, the attack will destroy 1% of the entire population.
+ 
+🏆 The War Hero
++15% Honor Gains
++70% Honor Effects
+Offensive specialist gets +2 strength (Affects NW)
++25% Siege Science Efficiency
+Access to Quick Feet, Righteous Aggressor, Heroic Inspiration
+Starts with +800 Soldiers and +800 Specialist Credits
+
+Unique Passive - Heroes Culling: Successful Massacres kill +7% additional peons and kill an additional 2.5% thieves and wizards.
 
 
 Resolution of common ambiguities
@@ -167,737 +478,443 @@ Resolution for Ambiguity #6 (Ambush Immunities & War Spoils): Both Anonymity and
 
 Source: https://utopia-game.com/wol/chooser/age_details/
 
-Utopia
-            -
-
-    Age 114: The Age of Convergence
-
-Forum
-Rules
-Merch
-Wiki
-Blog
-
-### Unique Abilities
-
-Each Race and Personality has a unique ability that reflects its core strengths and theme. These abilities are categorised as either Passive, Active (With duration), Active(Consumable Effect).
-
-- Passive: Always active, provide a consistent positive effect.
-
-- Active (Duration): Activated, Duration is a set amount of days, this works same as Self Spells.
-
-- Active (Consumable): Activated, works until EITHER used or the next day. Be careful using close to a days end!
-
-- Cooldown: Starts when activated and are exact.
-
-### War Doctrines
-
+War Doctrine Updates
 Each Race provides a unique War Doctrine bonus when your kingdom is at war. The strength of the bonus depends on how many provinces of that race are in your kingdom.
-
-- Base Effect: The starting bonus provided by having at least one province of this race.
-
-- Per Province: Additional bonus gained for each province of this race in your kingdom.
-
-- Maximum: The cap on the total bonus, regardless of how many provinces you have.
-
-Example: If your kingdom has 5 Avian provinces and Avian's War Doctrine is "Attack Time" (Base: 1.5%, Per Province: 1.0%, Max: 5.0%), your kingdom would receive a 5.0% reduction in attack time during war (capped at maximum).
-
-Races
-
-### Avian
-
-#### Bonuses:
-
--20% Attack Travel Time
--40% Military Training Time
-
-#### Penalties:
-
-Can't use Stables or War Horses
-Cannot Ambush
-
-#### Military:
-
- | Off/Def | Cost | NW
---- | --- | --- | ---
-Soldiers | (3, 0) |  |
-Griffins | (13, 0) |  |
-Harpies | (0, 9) |  |
-Drakes | (16, 6) | 900gc | 8.0
-Mercenaries | (8, 0) |  |
-Prisoners | (8, 0) |  |
-War Horses | (0, 0) |  |
-Thieves |  | 500gc |  |
-
-#### Spell Book:
-
-Town Watch, Illuminate Shadows, Divine Shield and Salvation
-
-#### War Doctrine - Attack Time
-
-Provides -1.5% Attack Time, decreasing by 1.0% per province of this race in your kingdom, up to -5.0%.
-
-#### Unique - Opportunistic Raiders
-
-Avians are masters of lightning-fast raids and resource acquisition. Their natural agility and aerial advantage allow them to swoop in, steal science books or plunder gold, and escape before the enemy can mount a proper defense.
-
-##### Passive Effect
-
-Learn and Plunder attacks return armies 1 tick faster (after modifiers).
-
-### Dark Elf
-
-#### Bonuses:
-
-+25% Combat Instant Spell Damage
--50% Rune Cost (excluding Ritual)
-Train Thieves with Credits
-
-#### Penalties:
-
--25% Birth Rate
-
-#### Military:
-
- | Off/Def | Cost | NW
---- | --- | --- | ---
-Soldiers | (3, 0) |  |
-Night Rangers | (15, 0) |  |
-Druids | (0, 8) |  |
-Drows | (4, 12) | 750gc | 7.0
-Mercenaries | (8, 0) |  |
-Prisoners | (8, 0) |  |
-War Horses | (2, 0) |  |
-Thieves |  | 500gc |  |
-
-#### Spell Book:
-
-Blizzard, Mage's Fury, Illuminate Shadows, Pitfalls and Quick Feet
-
-#### War Doctrine - Instant Spell Damage
-
-Provides 1.5% Instant Spell Damage, increasing by 1.0% per province of this race in your kingdom, up to 7.5%.
-
-#### Unique - Mystic Enthusiasts
-
-Dark Elves possess an innate understanding of the arcane arts, allowing them to channel magical energy with remarkable efficiency. Their mastery over offensive magic enables them to recover a portion of the runes expended, turning successful spellcasting into a sustainable art of war.
-
-##### Passive Effect
-
-Successful offensive instant spells refund 20% of the rune cost.
-
-### Dwarf
-
-#### Bonuses:
-
-+20% Building Credits
-+25% Building Efficiency
--50% Building Construction Time
-
-#### Penalties:
-
-+10% Attack Travel Time
-Can't Accelerate Construction
-
-#### Military:
-
- | Off/Def | Cost | NW
---- | --- | --- | ---
-Soldiers | (3, 0) |  |
-Warriors | (10, 0) |  |
-Axemen | (0, 11) |  |
-Berserkers | (15, 9) | 900gc | 8.0
-Mercenaries | (8, 0) |  |
-Prisoners | (8, 0) |  |
-War Horses | (2, 0) |  |
-Thieves |  | 500gc |  |
-
-#### Spell Book:
-
-Miner's Mystique, Town Watch, Reflect Magic and Mist
-
-#### War Doctrine - Specialist Credits
-
-Provides 1.5% Specialist Credits, increasing by 1.0% per province of this race in your kingdom, up to 7.5%.
-
-#### Unique - Architect's Revenge
-
-Dwarven architects take deep offense when their craftsmanship is questioned or threatened. Every attack on their stonework fuels their determination to demonstrate superiority, both in the impenetrable fortresses they raise and the devastating siege weapons they turn upon those foolish enough to challenge their mastery of stone and steel.
-
-##### Passive Effect
-
-Incoming Raze damage is reduced by 15%. Your Raze attacks destroy 20% additional buildings.
-
-### Elf
-
-#### Bonuses:
-
-+30% Wizards Per Acre (WPA)
-+1% Extra Mana Per Tick (in war)
-
-#### Penalties:
-
--20% Thievery Per Acre (TPA)
-
-#### Military:
-
- | Off/Def | Cost | NW
---- | --- | --- | ---
-Soldiers | (3, 0) |  |
-Rangers | (10, 0) |  |
-Archers | (0, 13) |  |
-Elf Lords | (14, 6) | 800gc | 7.0
-Mercenaries | (8, 0) |  |
-Prisoners | (8, 0) |  |
-War Horses | (2, 0) |  |
-Thieves |  | 500gc |  |
-
-#### Spell Book:
-
-Pitfalls, Wrath, Fountain of Knowledge and Revelation
-
-#### War Doctrine - Military Casualties Taken
-
-Provides -1.5% Military Casualties Taken, decreasing by 1.0% per province of this race in your kingdom, up to -7.5%.
-
-#### Unique - Mana Surge
-
-As reserves dwindle, raw magic flares with volatile strength. In moments of desperation, every incantation lashes out with amplified force, channeled from the dregs of your waning power.
-
-##### Passive Effect
-
-While mana is below 40%, your offensive spells deal +25% spell damage.
-
-### Faery
-
-#### Bonuses:
-
-+25% Offensive Spell Duration
-+25% Wizards Per Acre (WPA)
-+25% Self-Spell Duration
-+1% Extra Mana Per Tick
-
-#### Penalties:
-
--10% Building Efficiency
-+15% Military Wages
-
-#### Military:
-
- | Off/Def | Cost | NW
---- | --- | --- | ---
-Soldiers | (3, 0) |  |
-Magicians | (10, 0) |  |
-Druids | (0, 10) |  |
-Beastmasters | (8, 15) | 900gc | 9.0
-Mercenaries | (8, 0) |  |
-Prisoners | (8, 0) |  |
-War Horses | (2, 0) |  |
-Thieves |  | 500gc |  |
-
-#### Spell Book:
-
-Miner's Mystique, Pitfalls, Blizzard, Greater Protection, Quick Feet, Town Watch, Fountain of Knowledge, Mage's Fury, Tree of Gold, Revelation and Animate Dead
-
-#### War Doctrine - Thievery and Magic Damage
-
-Provides -1.5% Thievery and Magic Damage, decreasing by 1.0% per province of this race in your kingdom, up to -7.5%.
-
-#### Unique - Leyline Interference
-
-Faeries dwell within natural wellsprings of magical energy, their homes nestled among ancient leylines. These mystical currents create unpredictable interference patterns that disrupt hostile spellcasting, causing enemy magic to unravel before it can take hold.
-
-##### Passive Effect
-
-Enemy spells cast against your province have a 15% chance to fail completely.
-
-### Halfling
-
-#### Bonuses:
-
-+10% Max Population
-+20% Thievery Per Acre (TPA)
-+1% Extra Stealth Per Tick
-
-#### Penalties:
-
-+15% Own casualities when attacking
-+15% Own casualities when defending
-
-#### Military:
-
- | Off/Def | Cost | NW
---- | --- | --- | ---
-Soldiers | (3, 0) |  |
-Strongarms | (10, 0) |  |
-Slingers | (0, 11) |  |
-Brutes | (10, 13) | 900gc | 8.0
-Mercenaries | (8, 0) |  |
-Prisoners | (8, 0) |  |
-War Horses | (2, 0) |  |
-Thieves |  | 500gc |  |
-
-#### Spell Book:
-
-Town Watch and Greater Protection
-
-#### War Doctrine - Sabotage Damage
-
-Provides 1.5% Sabotage Damage, increasing by 1.0% per province of this race in your kingdom, up to 7.5%.
-
-#### Unique - Sneak Attack
-
-Halflings are masters of subterfuge, executing precise and calculated operations with unmatched skill. When they launch a Sneak Attack, their innate cunning ensures their thieves evade capture.
-
-##### Active Effect
-
-All thievery operations incur zero thievery losses.
-
-##### Cooldown
-
-23 Utopian Days
-
-##### Duration
-
-2 Utopian Days
-
-### Human
-
-#### Bonuses:
-
-+2 Prisoner Capacity Per Acre
-+15% Science Effectiveness
-+1% Extra Stealth Per Tick
-
-#### Penalties:
-
--50% Land Effect - Library Effectiveness
-+50% Rune Cost (excluding Ritual)
-Wages affect positive military efficiency growth at half the normal rate
-
-#### Military:
-
- | Off/Def | Cost | NW
---- | --- | --- | ---
-Soldiers | (3, 0) |  |
-Swordsmen | (12, 0) |  |
-Archers | (0, 10) |  |
-Knights | (14, 9) | 1,000gc | 8.0
-Mercenaries | (8, 0) |  |
-Prisoners | (8, 0) |  |
-War Horses | (3, 0) |  |
-Thieves |  | 500gc |  |
-
-#### Spell Book:
-
-Fountain of Knowledge, Revelation, Invisibility and Guile
-
-#### War Doctrine - Book Generation
-
-Provides 1.5% Book Generation, increasing by 1.0% per province of this race in your kingdom, up to 7.5%.
-
-#### Unique - Civil Administration
-
-Humans excel at organization and bureaucracy, running efficient prisoner work programs and maintaining well-regulated mercenary contracts. Their administrative prowess transforms captives into productive assets and ensures mercenary forces can be hired at favorable rates.
-
-##### Passive Effect
-
-Prisoners generate an additional 2.0 gold coins per tick. Mercenary costs are reduced by 25%.
-
-### Orc
-
-#### Bonuses:
-
-+15% Battle Gains
+1st Province:            +2.0%
+Each additional Province: +1.5%
+Maximum:                 12.5%
+
+This means the first province of a race provides a stronger initial doctrine bonus, with each additional province contributing a smaller amount. This rewards early commitment to a race while still allowing deeper specialisation, up to a maximum total bonus of 12.5%.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔮 RITUALS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Havoc
++25% WPA
++25% TPA
++20% Spell Damage
++20% Sabotage Damage
+
+Stalwart
++5%  Defensive Military Efficiency
+-20% Raze Damage
+-25% Military Casualties
+
+Benediction
++20% Building Efficiency
+-20% Draft Costs
+-20% Build Costs
+-20% Wages
+
+No changes to other rituals
+Expedient — REMOVED ❌
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🏰 BUILDINGS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Castles base percent shifted from 2.25% to 2%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 SCIENCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Resilience Multiplier shifted to 0.04401 from 0.0489
+Artisan Multiplier    shifted to 0.04302 from 0.0478
+Finesse Multiplier    shifted to 0.08685 from 0.0965
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ SPELLS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+New Spell: Soul Blight
+Effect:       Kills x% of peasants and then adds y% of those
+              killed to the caster's soldiers
+Duration:     N/A
+Cast Message: A Pall of death descends upon the enemy (x:x),
+              taking xxx peasant's lives. Your legion is
+              reinforced by xx of their fallen.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤝 RELATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Defensive Force Ceasefire reintroduced with the following changes:
+DFCF becomes available when all of the following are met:
+  - Kingdom is 45 points (in-range) or 30 points
+    (out-of-range) below the aggressor on hostility meter
+  - The aggressor has not been given Hostile status
+  - No attacks have been made against the aggressor for 3 ticks
+  - Kingdom is lower in both Land and Networth than the aggressor
+
+DFCF will incur a penalty if within War Range of the aggressor
+  (15% NW or Land)
+Penalty will be a loss of 1.75% Honor and 1.75% Science
+There is no penalty incurred for DCFC if out of War Range
+Penalty will have a warning popup, as to not be done accidentally
+DFCFd duration will be 48 hours before it can be cancelled
+  by either kingdom
+
+Hostile meter will now decay after 48 hours of going hostile, decay rate will ramp with meter points
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🐉 DRAGONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Celestite Dragon — REMOVED ❌
+Dragon HP reduced by 2% across all dragons
+
+🟣 Amethyst Dragon
+−30% Spell Success Chance
+−30% Thievery Success Chance on sabotage operations
+All active self-spells are removed instantly upon arrival,
+and every 6 ticks thereafter, kills 2% wizard & thieves
+
+🟢 Emerald Dragon
++25% Military Casualties
+-25% Combat Gains
+Destroys 1.5% of troops at home instantly upon arrival,
+and every 6 ticks 1.5% of troops at home are lost and
+current Building and Specialist Credits are reduced by 40%
+
+🔴 Ruby Dragon
+-12.5% Military Effectiveness
++20%   Military Wages
+Destroys 2.5% of offensive specialists instantly upon arrival,
+and every 6 ticks 2.5% of offensive specialists at home desert
+
+🟡 Topaz Dragon
+-30% Building Efficiency
+-25% Income
+Destroys 10% of buildings instantly upon arrival,
+and every 6 ticks thereafter, destroys 10% of buildings
+and 20% of current gold
+
+🔵 Sapphire Dragons
+-35% WPA and TPA
+-1   Mana Recovery
+-1   Stealth Recovery
++12.5% Instant Spell and Sabotage Damage taken and
+-12.5% Instant and Sabotage Damage dealt
+Destroys 25% of runes instantly upon arrival, and every
+6 ticks thereafter destroys 25% current rune supplies.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧬 RACES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🦅 Avian
+Bonuses:
+-20% Attack Time
+-25% Training Time
+-25% Military Wage Cost
+
+War Doctrine (In War): Provides up to -10% Attack Time and +12.5% Birth Rates to you and all your kingdom.
+Unique Passive: Dive Bomb Your offensive specialists gain +2 offense point (War Only) (Does not affect NW)
+Spells: Town Watch, Illuminate Shadows
+Penalties:
+No Access to Stables and War Horses
+-5% BE
+
+Units:
+Soldier:              3/0,          0.75nw
+Offensive Specialist: 12/0,         4.8nw
+Defensive Specialist: 0/10,         5nw
+Elite Unit:           16/3, 750gc,  7nw
+Mercenary:            8/0,          0.0nw
+Prisoner:             8/0,          1.6nw
+War Horse:            n/a
+
+🌑 Dark Elf
+Bonuses:
++35% Instant Spell Damage
+-35% Rune Cost (Not Including Rituals)
+Can train Thieves using Specialist Credits
+
+War Doctrine (In War): Provides up to +12.5% Instant Spell Damage and −12.5% Rune Costs to you and all your kingdom.
+Unique Passive: Mystic Enthusiasts Successful Offensive instant spells refund 40% Rune Cost.
+Spells: Blizzard, Mage's Fury, Illuminate Shadows, Pitfalls, Mind Focus
+Penalties:
+-15% Birth Rates
+
+Units:
+Soldier:              3/0,         0.75nw
+Offensive Specialist: 15/0,        6.0nw
+Defensive Specialist: 0/11,        5.5nw
+Elite Unit:           4/12, 750gc, 7nw
+Mercenary:            8/0,         0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
+
+⛏️ Dwarf
+Bonuses:
++30% Building Efficiency
+-50% Construction Time
+
+War Doctrine (In War): Provides up to -12.5% Construction Costs and +12.5% Income for you and all your kingdom.
+Unique Passive: Architect's Revenge - Incoming Raze damage reduced by 15% and Raze damage increased by 20%
+Spells: Miner's Mystique, Town Watch, Reflect Magic,
+Penalties:
+Cannot Accelerate Construction
++10% Attack Time
+
+Units:
+Soldier:              3/0,         0.75nw
+Offensive Specialist: 10/0,        4.0nw
+Defensive Specialist: 0/10         5.0nw
+Elite Unit:           15/5, 800gc, 7nw
+Mercenary:            8/0,         0.0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
+
+🏹 Elf
+Bonuses:
++40% Magic Effectiveness (WPA)
++1   Mana Per Tick in War
++40% Rune Production
+
+War Doctrine (In War): Provides up to +12.5% Offensive WPA and +12.5% Spell Duration to you and all your kingdom.
+Unique Passive: Arcane Surge: Whenever your province's mana drops below 40%, all spells you cast while under that threshold deal +25% spell damage. The boost disappears as soon as your mana climbs back above 40%.
+Spells: Pitfalls, Wrath, Vermin, Sloth
+Penalties:
+-20% TPA
+
+Units:
+Soldier:              3/0,         0.75nw
+Offensive Specialist: 10/0,        4.0nw
+Defensive Specialist: 0/13 ,       6.5nw
+Elite Unit:           15/4  750gc, 6.0nw
+Mercenary:            8/0,         0.0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
+
+🧚 Faery
+Bonuses:
++25% Spell Duration
++20% WPA
++1   Mana Recovery per Tick
+
+War Doctrine (In War): Provides up to +12.5% Defensive WPA and -12.5% Damage from Enemy Thievery Operations to you and all your kingdom.
+Unique Passive - Leyline Interference: Enemy spells cast against Faery provinces have a 20% chance to fail.
+Spells: All Racial Spells
+Penalties:
+-5% Population
+
+Units:
+Soldier:              3/0,          0.75nw
+Offensive Specialist: 10/0,         4.0nw
+Defensive Specialist: 0/10,         5.0nw
+Elite Unit:           4/16, 1000gc, 8.5nw
+Mercenary:            8/0,          0.0nw
+Prisoner:             8/0,          1.6nw
+War Horse:            2/0,          0.6nw
+
+🗡️ Halfling
+Bonuses:
++10% Population
++1   Stealth Regeneration Per Tick
++20% Thievery Effectiveness (TPA)
+
+War Doctrine (In War): Provides up to +12.5% Sabotage Damage and +12.5% Offensive TPA to you and all your kingdom.
+Unique Passive: Silent Assault Sabotage operations suffer 50% fewer thievery losses
+Spells: Tree of Gold, Greater Protection
+Penalties:
++10% Military Casualties
+
+Units:
+Soldier:              3/0,         0.75nw
+Offensive Specialist: 10/0,        4.0nw
+Defensive Specialist: 0/10,        5.0nw
+Elite Unit:           6/12, 700gc, 7.5nw
+Mercenary:            8/0,         0.0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
+
+👑 Human
+Bonuses:
+All Lands hold Prisoners - 2 Per Acre
++1   Stealth Regeneration Per Tick
+-30% Damage from Learn Attacks
++10% Science Efficiency
+
+War Doctrine (In War): Provides up to +12.5% Book Generation and +12.5% Science Effectiveness to you and all your kingdom.
+Unique Passive - Civil Administration: Prisoners generate an additional 2.0gc per tick and Mercenary costs are reduced by 40%
+Spells: Fountain of Knowledge, Revelation, Invisibility, Guile, Steal War Horses
+Penalties:
+Military wage increases take twice as long to fully apply.
+Wage reductions apply normally.
++40% Rune Cost (Does not Include Rituals)
+
+Units:
+Soldier:              3/0,        0.75nw
+Offensive Specialist: 12/0,       4.8nw
+Defensive Specialist: 0/10,       5.0nw
+Elite Unit:           16/3 750gc, 6.5nw
+Mercenary:            8/0,        0.0nw
+Prisoner:             8/0,        1.6nw
+War Horse:            2/0,        0.6nw
+
+👹 Orc
+Bonuses:
++5% Gains OOW & +15% Gains During War
 -50% Draft Cost
 
-#### Penalties:
+War Doctrine (In War): Provides up to +10% Offensive Military Efficiency and +12.5% Raze Damage to you and all your kingdom.
+Unique Passive - Carnage: Every time an Orc makes a successful attack, there is a random bonus effect applied to that attack — the spirit of war is unpredictable and wild.
+Destroy 25% of enemy resources (gold, runes, food)
+Increases Military Wages by 25% for 4-6 ticks.
+-30% Military Losses
 
--15% Defensive Military Efficiency
+Spells: Bloodlust, Wrath
+Penalties:
+-15% DME
 
-#### Military:
+Units
+Soldier:              3/0,         0.75nw
+Offensive Specialist: 13/0,        5.2 nw
+Defensive Specialist: 0/10,        5nw
+Elite Unit:           18/2, 800gc, 7nw
+Mercenary:            8/0,         0.0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
 
- | Off/Def | Cost | NW
---- | --- | --- | ---
-Soldiers | (3, 0) |  |
-Goblins | (13, 0) |  |
-Trolls | (0, 10) |  |
-Ogres | (20, 1) | 850gc | 7.0
-Mercenaries | (8, 0) |  |
-Prisoners | (8, 0) |  |
-War Horses | (2, 0) |  |
-Thieves |  | 500gc |  |
-
-#### Spell Book:
-
-Bloodlust and Aggression
-
-#### War Doctrine - Enemy Military Casualties
-
-Provides 1.5% Enemy Military Casualties, increasing by 1.0% per province of this race in your kingdom, up to 7.5%.
-
-#### Unique - Pillage and Burn
-
-Orcs wage war with brutal efficiency, their Traditional Marches designed to capture vast numbers of prisoners for enslavement, while their Massacre attacks target enemy spellcasters with particular savagery. Terror and plunder define the Orcish way of war.
-
-##### Passive Effect
-
-Traditional Marches capture +30% additional Prisoners. Massacre attacks are +15% more effective at killing Wizards.
-
-### Undead
-
-#### Bonuses:
-
--100% Food Consumption
--40% Own casualities when attacking
--40% Own casualities when defending
+💀 Undead
+Bonuses:
+-45% Military Losses
 Plague Immunity
+Always carries Plague and chance to spread
+No Food Requirement
 
-#### Penalties:
+War Doctrine (In War): Provides up to -12.5% Enemy Battle Gains and +12.5% Increased Plague spread chance (does not grant the ability to spread Plague)
+Unique Passive: Death March Converts 45% of offensive losses into Soldiers instantly.
+Spells: Animate Dead, Aggression
+Penalties:
+-10% Science Efficiency
 
--5% Offensive Military Efficiency
+Units
+Soldier               3/0,         0.75nw
+Offensive Specialist: 11/0,        4.4nw
+Defensive Specialist: 0/10         5.0nw
+Elite Unit:           17/4, 800gc, 7nw
+Mercenary:            8/0,         0.0nw
+Prisoner:             8/0,         1.6nw
+War Horse:            2/0,         0.6nw
 
-#### Military:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎭 PERSONALITIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔨 The Artisan
++40% Building Capacity (Homes, Stables, Dungeons)
++40% Building Production (Banks, Farms, Stables, Towers, Homes)
+Immune to Plunder, Greed and Incite Riots
++15% Economy Science Efficiency
+Access to Ghost Workers, Greater Protection
+Starts with +600 Soldiers, +600 Specialist Credits
+           and +200 Building Credits
 
- | Off/Def | Cost | NW
---- | --- | --- | ---
-Soldiers | (3, 0) |  |
-Skeletons | (11, 0) |  |
-Zombies | (0, 10) |  |
-Ghouls | (16, 7) | 900gc | 8.0
-Mercenaries | (8, 0) |  |
-Prisoners | (8, 0) |  |
-War Horses | (2, 0) |  |
-Thieves |  | 500gc |  |
+Unique Passive – Construction Delays - For 3 ticks after a successful attack, enemy's/target's building efficiency is reduced by 10% (Does not stack)
 
-#### Spell Book:
+🎖️ The General
++1   General
+-20% Training Cost & Speed
+Can Train one Elite for every two Specialist Credits
++15% Military Science Efficiency
+Access to Mist, Wrath
+Starts with +800 Soldiers and +800 Specialist Credits
 
-Animate Dead
+Unique Passive - General's Authority: Attacks inflict +15% Enemy Military casualties when two or more generals are sent.
 
-#### War Doctrine - Enemy Battle Gains
-
-Provides -1.5% Enemy Battle Gains, decreasing by 1.0% per province of this race in your kingdom, up to -7.5%.
-
-#### Unique - Plaguebearers
-
-The Undead carry pestilence in their very essence, spreading disease wherever their armies march. Each victorious assault leaves behind a trail of sickness, as plague spores cling to the living and corrupt all they touch.
-
-##### Passive Effect
-
-All successful attacks have a 33% chance to spread plague to the target province.
-
-Personalities
-
-### Artisan
-
-#### Bonuses:
-
-+30% Flat Rate Capacity
-+30% Flat Rate Building Production
-+15% Science Effectiveness - Alchemy
-+15% Science Effectiveness - Artisan
-+15% Science Effectiveness - Bookkeeping
-+15% Science Effectiveness - Production
-+15% Science Effectiveness - Housing
-+15% Science Effectiveness - Tools
-Espionage is always successful with double stealth
-
-#### Starting Bonuses:
-
-+200 Starting Build credits
-+600 Starting Soldiers
-+600 Starting Specialist training credits
-
-#### Spell Book:
-
-Ghost Workers and Greater Protection
-
-#### Unique - Construction Delays
-
-The Artisan understands the intricate workings of infrastructure and knows precisely where to strike to cause maximum disruption. A successful attack doesn't just destroy buildings—it sabotages supply lines, damages tools, and demoralizes craftsmen, leaving the enemy's economy crippled long after the battle ends.
-
-##### Passive Effect
-
-For 6 ticks after a successful attack, the target's building efficiency is reduced by 10% (does not stack with multiple attacks).
-
-### General
-
-#### Bonuses:
-
--25% Military Training Cost
-+1 Army generals
-+15% Science Effectiveness - Bookkeeping
-+20% Specialist Training Credits
-Train Elites with Credits (War Only)
-
-#### Starting Bonuses:
-
-+800 Starting Soldiers
-+800 Starting Specialist training credits
-
-#### Spell Book:
-
-Wrath
-
-#### Unique - Generals Authority
-
-When multiple experienced generals coordinate their efforts on the battlefield, their combined tactical brilliance transforms a victory into a massacre. The enemy military is outmaneuvered at every turn, suffering catastrophic casualties from the relentless, perfectly executed assault.
-
-##### Passive Effect
-
-When attacking with 2 or more generals, enemy military casualties are increased by +15%.
-
-### Heretic
-
-#### Bonuses:
-
-+50% Land Effect - Guilds
-+15% Science Effectiveness - Cunning
-+15% Science Effectiveness - Finesse
-+15% Science Effectiveness - Channeling
-+15% Science Effectiveness - Shielding
-+15% Science Effectiveness - Sorcery
-+15% Science Effectiveness - Crime
+😈 The Heretic
++15% TPA
++15% WPA
+-50% Thief Losses
 +20% Sabotage Damage
-+25% Thievery Per Acre (TPA)
--40% Thief cost
-
-#### Starting Bonuses:
-
-+400 Starting Thieves
-+400 Starting Wizards
-
-#### Spell Book:
-
-Nightmare, Fools Gold, Invisibility and Vermin
-
-#### Allowed Thief Operations:
-
-Steal War Horses
-
-#### Unique - Chaotic Affliction
-
-Magic and mischief spiral out of control, unleashing unpredictable destruction upon our enemies. No one can predict the extent of the chaos, only that devastation is certain.
-
-##### Active Effect
-
-For 2 ticks when activated, all offensive spells and sabotage operations deal a random increased damage bonus between +10% and +30%.
-
-##### Cooldown
-
-23 Utopian Days
-
-##### Duration
-
-2 Utopian Days
-
-### Mystic
-
-#### Bonuses:
-
-+125% Land Effect - Guilds
-+15% Science Effectiveness - Channeling
-+1% Extra Mana Per Tick
-
-#### Starting Bonuses:
-
-+800 Starting Wizards
-
-#### Spell Book:
-
-Meteor Showers, Chastity, Pitfalls and Vermin
-
-#### Unique - Focused Channeling
-
-When a Mystic's mana reserves remain abundant, they can focus their magical energies with laser precision. This disciplined approach to spellcasting enhances the potency of every incantation, channeling raw power into devastating magical assaults.
-
-##### Passive Effect
-
-While your mana is above 40%, all spells gain +20% Wizard Effectiveness (WPA).
-
-### Necromancer
-
-#### Bonuses:
-
-+30% Wizards Per Acre (WPA)
-+25% Battle casualties convert to soldiers
-+30% Enemy battle casualties convert to soldiers
-+15% Science Effectiveness - Channeling
-
-#### Starting Bonuses:
-
-+400 Starting Soldiers
-+400 Starting Specialist training credits
-+400 Starting Wizards
-
-#### Spell Book:
-
-Mystic Aura, Animate Dead, Vermin, Pitfalls and Mind Focus
-
-#### Unique - Black Magic
-
-The Necromancer's offensive spells carry a virulent curse that extends far beyond their primary target. Dark energy seeps into the enemy province, causing necrotic fallout that withers the living. Peasants fall ill and perish as the shadow of death lingers over the land.
-
-##### Passive Effect
-
-Successful offensive instant spells also kill 1% of the target's peasant population.
-
-### Paladin
-
-#### Bonuses:
-
-+15% Enemy casualities when attacking
-+50% Stable Capacity and Production
-+5% Max Population
-+15% Science Effectiveness - Valor
-Plague Immunity
-
-#### Penalties:
-
-+10% Own casualities when attacking
-
-#### Starting Bonuses:
-
-+800 Starting Soldiers
-+800 Starting Specialist training credits
-
-#### Unique - Divine Blessing
-
-The gods smile upon the righteous Paladin, showering them with divine favor at the dawn of each new month. This celestial blessing magnifies all the gifts and bonuses that mark the passage of time, rewarding steadfast devotion with twice the usual bounty.
-
-##### Passive Effect
-
-All daily bonuses granted on the 1st of each month are doubled.
-
-### Rogue
-
-#### Bonuses:
-
-+15% Science Effectiveness - Crime
-+15% Thievery Per Acre (TPA)
-+100% Thieves' Den Effectiveness
-+1% Extra Stealth Per Tick
-Access all Thievery Operations
-
-#### Starting Bonuses:
-
-+800 Starting Thieves
-
-#### Unique - Shadow Persistence
-
-Rogues thrive in chaos and overcrowding, using the press of bodies and confusion of overpopulated streets to their advantage. Where others see disorder, the Rogue sees opportunity—operating freely even when the province strains under the weight of too many souls.
-
-##### Passive Effect
-
-You may perform thievery operations even while overpopulated.
-
-### Tactician
-
-#### Bonuses:
-
--15% Attack Travel Time
-+15% Science Effectiveness - Siege
-+40% Specialist Training Credits
-Access Conquest regardless of Net Worth
-No thief losses on espionage operations
-
-#### Starting Bonuses:
-
-+800 Starting Soldiers
-+800 Starting Specialist training credits
-
-#### Spell Book:
-
-Clear Sight
-
-#### Unique - Dragon's Wrath
-
-Tacticians turn adversity into opportunity, using precise strategies to retaliate against enemy dragons sent to weaken their province. With a Dragon’s Wrath, their forces deal damage to the dragon during attacks, ensuring that even under siege, their resilience remains unmatched.
-
-##### Passive Effect
-
-When attacking with a dragon, 3% of your raw offense from units will also deal damage to the dragon.
-
-### War hero
-
-#### Bonuses:
-
-+50% Honor Bonus
--30% Honor Losses
-Convert Specialists into Elites on Attack
-Offensive specialist gets +2 strength
-
-#### Starting Bonuses:
-
-+800 Starting Soldiers
-+800 Starting Specialist training credits
-
-#### Unique - Honor and Glory
-
-The War Hero's legendary status precedes them, and every victory further cements their place in history. Tales of their exploits spread far and wide, and even routine triumphs are celebrated as grand achievements, earning greater recognition and honor from their peers.
-
-##### Passive Effect
-
-All successful attacks generate +2.5% additional Honor Gains.
-
-### Warrior
-
-#### Bonuses:
-
++20% Spell Damage
++75% Guild Effectiveness
++15  Arcane Science Efficiency
+Access to Nightmares, Fools Gold, Mages Fury, Vermin
+Starts with +400 Wizards and +400 Thieves
+
+Unique Passive: Blasphemous Might - After a failed offensive spell cast, the heretic recovers 1% Stealth.
+🔯 The Mystic
++125% Guilds Effectiveness
++1    Mana Recovery per Tick
++25%  Offensive Spell Duration
++25%  Channeling Science Efficiency
+Access to Pitfalls, Meteor Showers, Chastity
+Starts with +800 Wizards
+
+Unique Passive - Focused Channelling: While above 40% mana, spells gain +20% WPA
+
+🧙‍♂️ The Necromancer
++35 % WPA
++5%   OME
+-50%  Rune Cost (Not Ritual)
++25%  Channeling Science Efficiency
+Access to Animate Dead, Mind Focus, Soul Blight, Guile, Nightmare
+Starts with +400 Wizards +400 Specialist Credits
+
+Unique Passive – Dark Pact - After each successful attack, The Necromancer converts:
+10% of the enemy's killed units into Wizards.
+20% of the enemy's killed units into Soldiers.
+10% of the enemy's killed units into Peasants.
+
+⚜️ The Paladin
++2    War Horse Strength (alters NW)
+All lands hold and produces Horses (8 per acre)
++7.5% Defensive Military Efficiency
+Immune to Plague
++25%  Strategy Science Efficiency
+Access to Salvation, Divine Shield, Heroes' Inspiration,
+          Illuminate Shadows, Wrath
+
+Unique Passive: Holy Inquisition Successful Attacks in War or Hostile apply a mini effect:
+Temporarily suppresses 15% of target's science
+  effectiveness for 6–8 ticks
+Temporarily reduces Book Generation by 20% for 6-8 ticks
+Effect does not stack, only refreshes
+
+Starts with +800 Soldiers and +800 Specialist Credits
+
+=============== MESSAGE 12 ===============
+
+🗝️ The Rogue
++100% Thieves' Dens Effectiveness
++20%  TPA
++1    Stealth Recovery per Tick
+Access to All Thievery Operations
++25%  Crime Science Efficiency
+Starts with +800 Thieves
+
+Unique Passive - Shadow Persistence Rogue provinces may perform thievery operations while overpopulated.
+
+🗺️ The Tactician
+-15% Attack Time
++40% Specialist Credits Gains
++25% Draft Speed
+-50% Ambush Losses
+No Thieves lost on Intel
++25% Siege Science Efficiency
+Access to Clearsight
+Starts with +800 Soldiers and +800 Specialist Credits
+
+Unique Ability: Unique Passive: Interdiction - Successful Attacks in War destroy resources as follows:
+10% of gold
+25% of runes
+20% of food
+
+⚔️ The Warrior
++15% Offensive Military Efficiency
++5   Mercenary & Prisoner Strength
+Mercenaries and Prisoners may be sent at 1 for every 4
+  normal troops sent
 -50% Mercenary Cost
-+10% Offensive Military Efficiency
-+4 Prisoner and Mercenary Offensive Strength
-+15% Science Effectiveness - Tactics
++25% Tactics Science Efficiency
+Starts with +800 Soldiers and +800 Specialist Credits
 
-#### Starting Bonuses:
+Unique Passive: Battle Cry - Upon successful attack, the attack will destroy 1% of the entire population.
 
-+800 Starting Soldiers
-+800 Starting Specialist training credits
+🏆 The War Hero
++15% Honor Gains
++70% Honor Effects
+Offensive specialist gets +2 strength (Affects NW)
++25% Siege Science Efficiency
+Access to Quick Feet, Righteous Aggressor, Heroic Inspiration
+Starts with +800 Soldiers and +800 Specialist Credits
 
-#### Spell Book:
-
-Bloodlust
-
-#### Unique - Battle Cry
-
-Every strike is measured, every collapse calculated. With ruthless precision, structures fall faster and cleaner, leaving nothing but rubble in their wake. Destruction is no accident — it is a perfected craft.
-
-##### Passive Effect
-
-Upon successful attack, the attack will destroy 1% of the target's total population.
-
-Here is the effects of all possible rituals.
-
-Ascendency | +50% Wizard Production, -50% Wizard Losses on Failed Spells, -25% Science Book Production
---- | ---
-Barrier | -25% Damage from Enemy Instant Magic & Thievery Operations, -10% Battle (Resource) Losses, +20% Birth Rate, -20% Massacre Damage
-Expedient | +20% Building Efficiency, -25% Military Wages, -25% Construction Cost & Time
-Haste | -10% Attack Time, -25% Training Time, -25% Construction Time
-Havoc | +20% Offensive WPA, +20% Offensive TPA, +20% Spell Damage, +20% Sabotage Damage
-Onslaught | +10% Offensive Military Efficiency, +15% Enemy Military Casualties on Attacks
-Stalwart | +5% Defensive Military Efficiency, -20% Military Casualties
-
-Here are the effects of all possible dragons.
-
-Amethyst | -40% spell success chance, -40% thievery success chance, +25% losses on failed thievery and spell attempts
---- | ---
-Celestite | -60% birth rates, -40% hospital effectiveness, +50% build cost and build time
-Emerald | +25% military casualties in combat, -20% combat gains, -40% Building and Specialist Credits gained in combat
-Ruby | Reduces military effectiveness by 15%, Increase military wages by 30% and lose 30% of new draftees
-Sapphire | -30% lower magic (WPA) and thievery (TPA) effectiveness, +12.5% Instant Spell and Sabotage Damage taken and -12.5% Instant and Sabotage Damage dealt
-Topaz | -30% Building Efficiency, -25% Income, destroys 4% of buildings instantly and every 6 days thereafter
-
-                            Copyright 2026 MUGA Gaming, LLC -
-
-                            Contact Support
- Version: 0e9db42
-
-Report Content
-
-You are about to report that the content below is in breach of the Code of Conduct. This is a serious allegation, which may result in disciplinary action against the player that uploaded it.**WARNING: Falsely reporting content is also considered an offense, and may result in your account being suspended, or worse.**
-
-Report this
-/shared/feedback/report_content/
+Unique Passive - Heroes Culling: Successful Massacres kill +7% additional peons and kill an additional 2.5% thieves and wizards.
 
 ---
 
