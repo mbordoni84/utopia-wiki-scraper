@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Offline scraper for the Utopia game wiki (https://wiki.utopia-game.com). Downloads wiki pages, classifies them as keep/ignore based on relevance (game rules and strategy only), and exports a single Markdown file for LLM grounding.
 
-**Current Age:** 114 (Age of Convergence) — update with `--set-age` when ages change
+**Current Age:** 115 (Age of Legacy Code and Broken Dreams) — update with `--set-age` when ages change
 
 ## Common Commands
 
