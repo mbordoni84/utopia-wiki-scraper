@@ -1,4 +1,4 @@
-# Utopia Wiki - Age 115
+# Utopia Wiki - Age 117
 
 ---
 
@@ -8,17 +8,54 @@
 > These notes are manually maintained and reflect the current age's confirmed rules.
 > If any information in Part 2 or Part 3 conflicts with this section, discard it and trust Part 1.
 
-Resolution of common ambiguities
+# Age 117 Authoritative Data
 
-Resolution for Ambiguity #1 (Stances): > Stances (Aggressive, Peaceful, Normal) no longer exist. Therefore, whenever a Wiki formula from Part 3 includes a "Stance Modifier" (such as in the Attack Gains or Rune Generation formulas), that variable must always be calculated as exactly $1.0$ (having no effect). Do not confuse Stances with Relations (Unfriendly, Hostile, War), which are still highly active and apply their respective modifiers.
+> These statements are the correct Age 117 values. The Age Details page in Part 2 is scraped from the live game and still contains a few known errors on the points below. Wherever Part 2 (or Part 3) disagrees with this section, this section is correct.
 
-Resolution for Ambiguity #2 (Multiplicative Modifiers): > Unless explicitly stated otherwise, Race and Personality modifiers are always multiplicative, never additive. When calculating stacked bonuses (or penalties), calculate the Race multiplier and the Personality multiplier separately and multiply them together.
+## Races
 
-Resolution for Ambiguity #3 (Handling "Unknown" Formulas): > * Building Credits: We will utilize the working formula: $Base Credits = Acres Taken \times 0.4 \times Relative NW$. All known modifiers  will be applied multiplicatively to this base.Propaganda: For attrition models, we recognize Propaganda's yield as a dynamic variable, but we classify it mathematically as a $2x$ Value Swing compared to standard sabotage, because it simultaneously reduces enemy military count and increases our own.
+- **Dark Elf** is immune to Sabotage Wizards. Its unique spells are **Blizzard** and **Mind Focus** only — it does not have Mage's Fury, and Blizzard is listed only once.
+- **Dryad** maximum War Doctrine is **+7.5% Offensive Military Efficiency** (+0.75% per province), not +10%.
+- **Dwarf** has **-20% Damage Taken from Raze** attacks.
+- **Human** has **-20% Military Wages** (a reduction). It is not +20%.
+- **Gnome** unique ability **Cunning Assault:** each successful attack provides one of the following thievery boosts, which last for 6 days: **+25% offensive thievery effectiveness, -25% thief losses, or +10% sabotage damage.** All of these can be active at the same time.
+- **Undead** is **immune to the Plague only**. It does not always carry the plague. Its Plaguebearers unique ability still gives every successful attack a 33% chance to spread plague to the target province.
 
-Resolution for Ambiguity #5 (Flat Rate Capacity vs. Production): Production Modifiers: Any modifier affecting "Flat Rate Production" (e.g., Rune or Food generation) acts as a standard multiplier—such as $(1 + Race)$ or $(1 + Personality)$—and is always subject to Building Efficiency (BE). It does not bypass economic penalties.Capacity Modifiers: Any modifier affecting "Capacity" (e.g., population limits, stable space, dungeon space) modifies the base value directly and always ignores Building Efficiency (BE).
+## Personalities
 
-Resolution for Ambiguity #6 (Ambush Immunities & War Spoils): Both Anonymity and War Spoils grant complete immunity to being ambushed
+- **Tactician** has **100% successful espionage operations at 2x stealth**. It does not grant "no thief losses on intel".
+- **Rogue** grants an **offensive Thievery Per Acre (TPA) bonus only** (not defensive).
+
+## Rituals
+
+- The **Ascendency** ritual does **not** exist in Age 117. Ignore any mention of it. The only rituals are: Barrier, Benediction, Haste, Havoc, Onslaught, Stalwart.
+
+## Dragons
+
+- There is **no Amethyst dragon** in Age 117. The only dragons are: **Emerald, Ruby, Sapphire, Topaz**.
+
+---
+
+# Resolution of Common Ambiguities
+
+These resolve recurring mechanics questions. They are timeless rules for interpreting the formulas in Part 3.
+
+## Ambiguity #1 — Stances
+Stances (Aggressive, Peaceful, Normal) no longer exist. Whenever a Part 3 wiki formula includes a "Stance Modifier" (such as in Attack Gains or Rune Generation), that variable is always exactly **1.0** (no effect). Do not confuse Stances with Relations (Unfriendly, Hostile, War), which are still active and apply their respective modifiers.
+
+## Ambiguity #2 — Multiplicative Modifiers
+Unless explicitly stated otherwise, Race and Personality modifiers are always **multiplicative**, never additive. When stacking bonuses or penalties, compute the Race multiplier and the Personality multiplier separately and multiply them together.
+
+## Ambiguity #3 — Handling "Unknown" Formulas
+- **Building Credits:** use the working formula `Base Credits = Acres Taken x 0.4 x Relative NW`. All known modifiers apply multiplicatively to this base.
+- **Propaganda:** its yield is a dynamic variable, classified mathematically as a **2x value swing** compared to standard sabotage, because it simultaneously reduces enemy military count and increases your own.
+
+## Ambiguity #5 — Flat Rate Capacity vs. Production
+- **Production Modifiers:** any modifier affecting "Flat Rate Production" (e.g. Rune or Food generation) acts as a standard multiplier such as `(1 + Race)` or `(1 + Personality)`, and is always subject to Building Efficiency (BE). It does not bypass economic penalties.
+- **Capacity Modifiers:** any modifier affecting "Capacity" (e.g. population limits, stable space, dungeon space) modifies the base value directly and always ignores Building Efficiency (BE).
+
+## Ambiguity #6 — Ambush Immunities & War Spoils
+Both Anonymity and War Spoils grant complete immunity to being ambushed.
 
 ---
 
@@ -34,7 +71,7 @@ Source: https://utopia-game.com/wol/chooser/age_details/
 Utopia
             -
 
-    Age 115: Age of Legacy Code and Broken Dreams
+    Age 117: Devoted Pursuits Crowned Promise
 
 Forum
 Rules
@@ -73,12 +110,10 @@ Races
 #### Bonuses:
 
 -20% Attack Travel Time
--25% Military Wages
--25% Military Training Time
++25% Birth Rate
 
 #### Penalties:
 
--5% Building Efficiency
 Can't use Stables or War Horses
 
 #### Military:
@@ -88,7 +123,7 @@ Can't use Stables or War Horses
 Soldiers | (3, 0) |  |
 Griffins | (12, 0) |  |
 Harpies | (0, 10) |  |
-Drakes | (16, 3) | 750gc | 7.0
+Drakes | (14, 3) | 900gc | 6.25
 Mercenaries | (8, 0) |  |
 Prisoners | (8, 0) |  |
 War Horses | (0, 0) |  |
@@ -96,40 +131,40 @@ Thieves |  | 500gc |  |
 
 #### Spell Book:
 
-Town Watch and Illuminate Shadows
+Town Watch
 
-#### War Doctrine - Attack Time
+#### War Doctrines
 
-Provides -1.6% Attack Time and +2.0% Birth Rates, decreasing and increasing by 1.2% and 1.5% respectively per province of this race in your kingdom, up to -10.0% Attack Time and +12.5% Birth Rates.
+-1.5% **Attack time**, scaling by -0.75% per province of this race in your kingdom (max -7.5%).
 
-#### Unique - Dive Bomb
+#### Unique - Opportunistic Raiders
 
-Avian warriors excel at aerial superiority, leveraging their wings to execute devastating diving attacks from above. In times of war, their mastery of the skies grants them a tactical advantage, allowing their offensive specialists to strike with unprecedented force and precision.
+Avians are masters of lightning-fast raids and resource acquisition. Their natural agility and aerial advantage allow them to swoop in, steal science books or plunder gold, and escape before the enemy can mount a proper defense.
 
 ##### Passive Effect
 
-Offensive Specialists gain +2 Offensive Points during War (does not affect Net Worth).
+Learn and Plunder attacks return armies 1 tick faster (after modifiers).
 
 ### Dark Elf
 
 #### Bonuses:
 
-+35% Combat Instant Spell Damage
--35% Rune Cost (excluding Ritual)
-Train Thieves with Credits
++20% Combat Instant Spell Damage
+-25% Rune Cost (excluding Ritual)
+Immune to Sabotage Wizards
 
 #### Penalties:
 
--15% Birth Rate
+-20% Sabotage Damage
 
 #### Military:
 
  | Off/Def | Cost | NW
 --- | --- | --- | ---
 Soldiers | (3, 0) |  |
-Night Rangers | (15, 0) |  |
+Night Rangers | (11, 0) |  |
 Druids | (0, 11) |  |
-Drows | (4, 12) | 750gc | 7.0
+Drows | (13, 4) | 900gc | 6.25
 Mercenaries | (8, 0) |  |
 Prisoners | (8, 0) |  |
 War Horses | (2, 0) |  |
@@ -137,11 +172,11 @@ Thieves |  | 500gc |  |
 
 #### Spell Book:
 
-Blizzard, Mage's Fury, Illuminate Shadows, Pitfalls and Mind Focus
+Blizzard and Mind Focus
 
-#### War Doctrine - Instant Spell Damage
+#### War Doctrines
 
-Provides 2.0% Instant Spell Damage, increasing by 1.5% per province of this race in your kingdom, up to 12.5%.
++2% **Instant spell damage**, scaling by +1% per province of this race in your kingdom (max +10%).
 
 #### Unique - Mystic Enthusiasts
 
@@ -149,19 +184,60 @@ Dark Elves possess an innate understanding of the arcane arts, allowing them to 
 
 ##### Passive Effect
 
-Successful offensive instant spells refund 40% of the rune cost.
+Successful offensive instant spells refund 30% of the rune cost.
+
+### Dryad
+
+#### Bonuses:
+
++25% Dragon slaying strength
++10% Offensive Military Efficiency
+
+#### Penalties:
+
+-10% Building Efficiency
+
+#### Military:
+
+ | Off/Def | Cost | NW
+--- | --- | --- | ---
+Soldiers | (3, 0) |  |
+Huldras | (10, 0) |  |
+Nymphs | (0, 9) |  |
+Will O The Wisps | (15, 3) | 925gc | 6.75
+Mercenaries | (8, 0) |  |
+Prisoners | (8, 0) |  |
+War Horses | (2, 0) |  |
+Thieves |  | 500gc |  |
+
+#### Spell Book:
+
+Fanaticism
+
+#### War Doctrines
+
++1.5% **Offensive military efficiency**, scaling by +0.75% per province of this race in your kingdom (max +7.5%).
+
+#### Unique - Interdiction
+
+Tacticians excel at disrupting enemy logistics and resource chains. Every successful attack in war systematically destroys enemy supplies, cutting off their ability to sustain prolonged conflict.
+
+##### Passive Effect
+
+Successful Attacks in War destroy 15% of enemy gold, 15% of enemy runes, and 15% of enemy food.
 
 ### Dwarf
 
 #### Bonuses:
 
-+30% Building Efficiency
--50% Building Construction Time
++25% Building Credits
++20% Building Efficiency
+-50% Building Construction Cost
+-20% Damage Taken from Raze Attacks
 
 #### Penalties:
 
-+10% Attack Travel Time
-Can't Accelerate Construction
++50% Food Consumption
 
 #### Military:
 
@@ -170,7 +246,7 @@ Can't Accelerate Construction
 Soldiers | (3, 0) |  |
 Warriors | (10, 0) |  |
 Axemen | (0, 10) |  |
-Berserkers | (15, 5) | 800gc | 7.0
+Berserkers | (13, 5) | 950gc | 6.5
 Mercenaries | (8, 0) |  |
 Prisoners | (8, 0) |  |
 War Horses | (2, 0) |  |
@@ -178,40 +254,40 @@ Thieves |  | 500gc |  |
 
 #### Spell Book:
 
-Miner's Mystique, Town Watch and Reflect Magic
+Miner's Mystique
 
-#### War Doctrine - Specialist Credits
+#### War Doctrines
 
-Provides 2.0% Specialist Credits, increasing by 1.5% per province of this race in your kingdom, up to 12.5%.
++2% **Building Efficiency**, scaling by +1% per province of this race in your kingdom (max +10%).
 
-#### Unique - Architect's Revenge
+#### Unique - Construction Delays
 
-Dwarven architects take deep offense when their craftsmanship is questioned or threatened. Every attack on their stonework fuels their determination to demonstrate superiority, both in the impenetrable fortresses they raise and the devastating siege weapons they turn upon those foolish enough to challenge their mastery of stone and steel.
+The Artisan understands the intricate workings of infrastructure and knows precisely where to strike to cause maximum disruption. A successful attack doesn't just destroy buildings—it sabotages supply lines, damages tools, and demoralizes craftsmen, leaving the enemy's economy crippled long after the battle ends.
 
 ##### Passive Effect
 
-Incoming Raze damage is reduced by 15%. Your Raze attacks destroy 20% additional buildings.
+For 3 ticks after a successful attack, the target's building efficiency is reduced by 10% (does not stack with multiple attacks).
 
 ### Elf
 
 #### Bonuses:
 
-+40% Wizards Per Acre (WPA)
++25% Wizards Per Acre (WPA)
 +1% Extra Mana Per Tick (in war)
-+40% Land Effect - Towers
++50% Land Effect - Towers
 
 #### Penalties:
 
--20% Thievery Per Acre (TPA)
+-20% Thieves Per Acre (Offensive Only)
 
 #### Military:
 
  | Off/Def | Cost | NW
 --- | --- | --- | ---
 Soldiers | (3, 0) |  |
-Rangers | (10, 0) |  |
-Archers | (0, 13) |  |
-Elf Lords | (15, 4) | 750gc | 6.0
+Rangers | (9, 0) |  |
+Archers | (0, 11) |  |
+Elf Lords | (5, 12) | 1,000gc | 7.0
 Mercenaries | (8, 0) |  |
 Prisoners | (8, 0) |  |
 War Horses | (2, 0) |  |
@@ -219,28 +295,35 @@ Thieves |  | 500gc |  |
 
 #### Spell Book:
 
-Pitfalls, Wrath, Vermin and Sloth
+Pitfalls and Greater Protection
 
-#### War Doctrine - Military Casualties Taken
+#### War Doctrines
 
-Provides -2.0% Military Casualties Taken, decreasing by 1.5% per province of this race in your kingdom, up to -12.5%.
+-4% **Defensive Military Casualties**, scaling by -2% per province of this race in your kingdom (max -20%).
 
-#### Unique - Mana Surge
+#### Unique - Arcane Respite
 
-As reserves dwindle, raw magic flares with volatile strength. In moments of desperation, every incantation lashes out with amplified force, channeled from the dregs of your waning power.
+The din of battle softens to a measured hush. Wards settle, focus returns, and the aether gathers in steady pulses. What was spent flows back, day by day, restoring the will to shape the fight ahead.
 
-##### Passive Effect
+##### Active Effect
 
-While mana is below 40%, your offensive spells deal +25% spell damage.
+Once activated, for the next 6 days, regenerate +2 mana per day.
+
+##### Cooldown
+
+23 Utopian Days
+
+##### Duration
+
+6 Utopian Days
 
 ### Faery
 
 #### Bonuses:
 
 +25% Offensive Spell Duration
-+20% Wizards Per Acre (WPA)
-+25% Self-Spell Duration
-+1% Extra Mana Per Tick
++1% Extra Mana Per Tick (in war)
+Self Spell Mana Cost Reduced by 1
 
 #### Penalties:
 
@@ -251,9 +334,9 @@ While mana is below 40%, your offensive spells deal +25% spell damage.
  | Off/Def | Cost | NW
 --- | --- | --- | ---
 Soldiers | (3, 0) |  |
-Magicians | (10, 0) |  |
+Magicians | (9, 0) |  |
 Druids | (0, 10) |  |
-Beastmasters | (4, 16) | 1,000gc | 8.5
+Beastmasters | (4, 13) | 1,000gc | 7.25
 Mercenaries | (8, 0) |  |
 Prisoners | (8, 0) |  |
 War Horses | (2, 0) |  |
@@ -261,41 +344,82 @@ Thieves |  | 500gc |  |
 
 #### Spell Book:
 
-Miner's Mystique, Pitfalls, Blizzard, Greater Protection, Town Watch, Fountain of Knowledge, Mage's Fury, Tree of Gold, Revelation, Animate Dead, Illuminate Shadows, Mind Focus, Reflect Magic, Vermin, Sloth, Wrath, Guile, Invisibility, Bloodlust and Aggression
+Miner's Mystique, Lightning Strike, Town Watch, Ghost Workers and Invisibility
 
-#### War Doctrine - Thievery and Magic Damage
+#### War Doctrines
 
-Provides -2.0% Thievery and Magic Damage, decreasing by 1.5% per province of this race in your kingdom, up to -12.5%.
++1.5% **Defensive Military Efficiency**, scaling by +0.75% per province of this race in your kingdom (max +7.5%).
 
-#### Unique - Leyline Interference
+#### Unique - Arcane Overflow
 
-Faeries dwell within natural wellsprings of magical energy, their homes nestled among ancient leylines. These mystical currents create unpredictable interference patterns that disrupt hostile spellcasting, causing enemy magic to unravel before it can take hold.
+Arcane energy surges beyond control, warping the very fabric of magic. Each strike not only harms but erodes the foundation of enemy rituals, unraveling their potency with every spell cast.
 
 ##### Passive Effect
 
-Enemy spells cast against your province have a 20% chance to fail completely.
+(In War) Every successful offensive spell also reduces enemy ritual effectiveness by 0.15%.
+
+### Gnome
+
+#### Bonuses:
+
++10% Sabotage Damage
+-25% Thief Losses
+Train Thieves with Credits
+Immune to Expose Thieves
+
+#### Penalties:
+
++20% Combat Instant Spell Damage Received
+
+#### Military:
+
+ | Off/Def | Cost | NW
+--- | --- | --- | ---
+Soldiers | (3, 0) |  |
+Quickblades | (11, 0) |  |
+Pikemen | (0, 11) |  |
+Golems | (13, 3) | 850gc | 6.0
+Mercenaries | (8, 0) |  |
+Prisoners | (8, 0) |  |
+War Horses | (2, 0) |  |
+Thieves |  | 500gc |  |
+
+#### Spell Book:
+
+Quick Feet
+
+#### War Doctrines
+
++5% **Birth rates**, scaling by +2.5% per province of this race in your kingdom (max +25%).
+
+#### Unique - Cunning Assault
+
+Your forces strike with calculated precision. Each successful attack may inspire a surge of cunning that enhances your thievery prowess for several days.
+
+##### Passive Effect
+
+Each successful attack will provide one of the following thievery boosts, which last for 6 days: +25% offensive thievery effectiveness, -25% thief losses, or +10% sabotage damage. All of these can be active at the same time.
 
 ### Halfling
 
 #### Bonuses:
 
 +10% Max Population
-+20% Thievery Per Acre (TPA)
++25% Thievery Per Acre (TPA)
 +1% Extra Stealth Per Tick
 
 #### Penalties:
 
-+10% Own casualities when attacking
-+10% Own casualities when defending
+-20% Wizards Per Acre (Offensive Only)
 
 #### Military:
 
  | Off/Def | Cost | NW
 --- | --- | --- | ---
 Soldiers | (3, 0) |  |
-Strongarms | (10, 0) |  |
+Strongarms | (9, 0) |  |
 Slingers | (0, 10) |  |
-Brutes | (6, 12) | 700gc | 7.5
+Brutes | (6, 11) | 1,000gc | 6.75
 Mercenaries | (8, 0) |  |
 Prisoners | (8, 0) |  |
 War Horses | (2, 0) |  |
@@ -303,42 +427,49 @@ Thieves |  | 500gc |  |
 
 #### Spell Book:
 
-Greater Protection and Tree of Gold
+Invisibility
 
-#### War Doctrine - Sabotage Damage
+#### War Doctrines
 
-Provides 2.0% Sabotage Damage, increasing by 1.5% per province of this race in your kingdom, up to 12.5%.
++1% **Population**, scaling by +0.5% per province of this race in your kingdom (max +5%).
 
-#### Unique - Silent Assault
+#### Unique - Overgrowth
 
-When sabotage operations go wrong, expert infiltrators don't panic—they vanish. Through superior stealth and escape training, operatives slip away with minimal casualties, turning potential disasters into mere setbacks.
+Life surges beyond its bounds, spilling over in wild abundance. Homes overflow with people and every corner of the land bursts with growth untamed. The province thrives in a verdant tide of vitality.
 
-##### Passive Effect
+##### Active Effect
 
-50% fewer thievery losses when performing sabotage operations.
+Once activated, your maximum population increases by +25% for 5 days.
+
+##### Cooldown
+
+23 Utopian Days
+
+##### Duration
+
+3 Utopian Days
 
 ### Human
 
 #### Bonuses:
 
-+2 Prisoner Capacity Per Acre
--30% Losses on Learn Attacks
-+10% Science Effectiveness
-+1% Extra Stealth Per Tick
++25% Income
+-20% Military Training Cost
+-20% Military Wages
+Incite Riot Immunity
 
 #### Penalties:
 
-+40% Rune Cost (excluding Ritual)
-Wages affect positive military efficiency growth at half the normal rate
+Self Spell Mana Cost Increased by 1
 
 #### Military:
 
  | Off/Def | Cost | NW
 --- | --- | --- | ---
 Soldiers | (3, 0) |  |
-Swordsmen | (12, 0) |  |
+Swordsmen | (10, 0) |  |
 Archers | (0, 10) |  |
-Knights | (16, 3) | 750gc | 6.5
+Knights | (13, 4) | 900gc | 6.25
 Mercenaries | (8, 0) |  |
 Prisoners | (8, 0) |  |
 War Horses | (2, 0) |  |
@@ -346,11 +477,11 @@ Thieves |  | 500gc |  |
 
 #### Spell Book:
 
-Fountain of Knowledge, Revelation, Invisibility and Guile
+Tree of Gold
 
-#### War Doctrine - Book Generation
+#### War Doctrines
 
-Provides 2.0% Book Generation, increasing by 1.5% per province of this race in your kingdom, up to 12.5%.
++3% **Income**, scaling by +1.5% per province of this race in your kingdom (max +15%).
 
 #### Unique - Civil Administration
 
@@ -364,22 +495,21 @@ Prisoners generate an additional 2.0 gold coins per tick. Mercenary costs are re
 
 #### Bonuses:
 
-+5% Battle Gains
-+15% Battle Gains (War Only)
++20% Battle Gains
 -50% Draft Cost
 
 #### Penalties:
 
--15% Defensive Military Efficiency
+-5% Defensive Military Efficiency
 
 #### Military:
 
  | Off/Def | Cost | NW
 --- | --- | --- | ---
 Soldiers | (3, 0) |  |
-Goblins | (13, 0) |  |
+Goblins | (11, 0) |  |
 Trolls | (0, 10) |  |
-Ogres | (18, 2) | 800gc | 7.0
+Ogres | (14, 3) | 900gc | 6.25
 Mercenaries | (8, 0) |  |
 Prisoners | (8, 0) |  |
 War Horses | (2, 0) |  |
@@ -387,122 +517,11 @@ Thieves |  | 500gc |  |
 
 #### Spell Book:
 
-Bloodlust and Wrath
+Bloodlust
 
-#### War Doctrine - Enemy Military Casualties
+#### War Doctrines
 
-Provides 2.0% Enemy Military Casualties, increasing by 1.5% per province of this race in your kingdom, up to 12.5%.
-
-#### Unique - Carnage
-
-When unleashed, Carnage fuels your armies with chaotic fury. Each victorious assault triggers one of several unpredictable surges of power, making every battle a gamble of destruction and glory.
-
-##### Passive Effect
-
-Every successful attack will apply one of the following random bonuses to that attack: Destroy 25% of enemy resources (gold, runes, food), Increase enemy's military wages by 25% for 4-6 ticks, or -30% military casualties.
-
-### Undead
-
-#### Bonuses:
-
--100% Food Consumption
--45% Own casualities when attacking
--45% Own casualities when defending
-Always Carries and is Immune to the Plague
-
-#### Penalties:
-
--10% Science Effectiveness
-
-#### Military:
-
- | Off/Def | Cost | NW
---- | --- | --- | ---
-Soldiers | (3, 0) |  |
-Skeletons | (11, 0) |  |
-Zombies | (0, 10) |  |
-Ghouls | (17, 4) | 800gc | 7.0
-Mercenaries | (8, 0) |  |
-Prisoners | (8, 0) |  |
-War Horses | (2, 0) |  |
-Thieves |  | 500gc |  |
-
-#### Spell Book:
-
-Animate Dead and Aggression
-
-#### War Doctrine - Enemy Battle Gains
-
-Provides -2.0% Enemy Battle Gains, decreasing by 1.5% per province of this race in your kingdom, up to -12.5%.
-
-#### Unique - Death March
-
-The undead know no rest. For every fallen warrior, another corpse rises to continue the march, relentless and unstoppable in their advance.
-
-##### Passive Effect
-
-45% of Military Casualties return as Soldiers on attack.
-
-Personalities
-
-### Artisan
-
-#### Bonuses:
-
-+40% Flat Rate Capacity
-+40% Flat Rate Building Production
-+15% Science Effectiveness - Alchemy
-+15% Science Effectiveness - Artisan
-+15% Science Effectiveness - Bookkeeping
-+15% Science Effectiveness - Production
-+15% Science Effectiveness - Housing
-+15% Science Effectiveness - Tools
-Plunder Immunity
-Greed Immunity
-Incite Riot Immunity
-
-#### Starting Bonuses:
-
-+200 Starting Build credits
-+600 Starting Soldiers
-+600 Starting Specialist training credits
-
-#### Spell Book:
-
-Ghost Workers and Greater Protection
-
-#### Unique - Construction Delays
-
-The Artisan understands the intricate workings of infrastructure and knows precisely where to strike to cause maximum disruption. A successful attack doesn't just destroy buildings—it sabotages supply lines, damages tools, and demoralizes craftsmen, leaving the enemy's economy crippled long after the battle ends.
-
-##### Passive Effect
-
-For 3 ticks after a successful attack, the target's building efficiency is reduced by 10% (does not stack with multiple attacks).
-
-### General
-
-#### Bonuses:
-
--20% Military Training Cost
-+1 Army generals
-+15% Science Effectiveness - Heroism
-+15% Science Effectiveness - Resilience
-+15% Science Effectiveness - Siege
-+15% Science Effectiveness - Strategy
-+15% Science Effectiveness - Tactics
-+15% Science Effectiveness - Valor
--20% Military Training Time
-+20% Specialist Training Credits
-Train Elites with Specialist Credits (double cost)
-
-#### Starting Bonuses:
-
-+800 Starting Soldiers
-+800 Starting Specialist training credits
-
-#### Spell Book:
-
-Wrath and Mist
++3% **Enemy Casualties on defense**, scaling by +1.5% per province of this race in your kingdom (max +15%).
 
 #### Unique - Generals Authority
 
@@ -512,22 +531,119 @@ When multiple experienced generals coordinate their efforts on the battlefield, 
 
 When attacking with 2 or more generals, enemy military casualties are increased by +15%.
 
+### Undead
+
+#### Bonuses:
+
+-100% Food Consumption
+-40% Own casualities when attacking
+-40% Own casualities when defending
+Immune to the Plague
+
+#### Penalties:
+
+-15% Birth Rate
+
+#### Military:
+
+ | Off/Def | Cost | NW
+--- | --- | --- | ---
+Soldiers | (3, 0) |  |
+Skeletons | (10, 0) |  |
+Zombies | (0, 10) |  |
+Ghouls | (13, 4) | 900gc | 6.25
+Mercenaries | (8, 0) |  |
+Prisoners | (8, 0) |  |
+War Horses | (2, 0) |  |
+Thieves |  | 500gc |  |
+
+#### Spell Book:
+
+Ghost Workers
+
+#### War Doctrines
+
+-4% **Own casualties on offense**, scaling by -2% per province of this race in your kingdom (max -20%).
+
+#### Unique - Plaguebearers
+
+The Undead carry pestilence in their very essence, spreading disease wherever their armies march. Each victorious assault leaves behind a trail of sickness, as plague spores cling to the living and corrupt all they touch.
+
+##### Passive Effect
+
+All successful attacks have a 33% chance to spread plague to the target province.
+
+Personalities
+
+### Cleric
+
+#### Bonuses:
+
+-15% Battle Losses
++15% Defensive Military Efficiency
+-15% Combat Instant Spell Damage Received
+-15% Damage Received on Massacre Attacks
+-15% Sabotage Damage Received
+Plague Immunity
+
+#### Starting Bonuses:
+
++800 Starting Soldiers
++800 Starting Specialist training credits
+
+#### Spell Book:
+
+Salvation
+
+#### Unique - Architect's Revenge
+
+Dwarven architects take deep offense when their craftsmanship is questioned or threatened. Every attack on their stonework fuels their determination to demonstrate superiority, both in the impenetrable fortresses they raise and the devastating siege weapons they turn upon those foolish enough to challenge their mastery of stone and steel.
+
+##### Passive Effect
+
+Incoming Raze damage is reduced by 15%. Your Raze attacks destroy 20% additional buildings.
+
+### General
+
+#### Bonuses:
+
++1 Army generals
+Elite gets +1 offensive strength
+Offensive specialist gets +1 strength
+
+#### Starting Bonuses:
+
++800 Starting Soldiers
++800 Starting Specialist training credits
+
+#### Spell Book:
+
+Righteous Aggressor
+
+#### Unique - Undermining Assault
+
+A calculated offensive aimed at more than just land — it fractures coordination and exposes gaps in the enemy's defenses. As confusion spreads, their ability to resist subterfuge crumbles.
+
+##### Active Effect
+
+Your next successful attack applies Coordinated Strike to the target for 4 days, reducing their Watch Tower thievery defense effectiveness by 15%. This effect cannot be used if Skybound Strike is active on your province.
+
+##### Cooldown
+
+23 Utopian Days
+
+##### Duration
+
+2 Utopian Days
+
 ### Heretic
 
 #### Bonuses:
 
-+75% Land Effect - Guilds
-+20% Combat Instant Spell Damage
-+15% Wizards Per Acre (WPA)
-+15% Science Effectiveness - Cunning
-+15% Science Effectiveness - Finesse
-+15% Science Effectiveness - Channeling
-+15% Science Effectiveness - Shielding
-+15% Science Effectiveness - Sorcery
-+15% Science Effectiveness - Crime
-+20% Sabotage Damage
-+15% Thievery Per Acre (TPA)
--50% Thief Losses
++50% Land Effect - Guilds
++10% Combat Instant Spell Damage
++10% Sabotage Damage
+No thief losses on espionage operations
 
 #### Starting Bonuses:
 
@@ -536,23 +652,22 @@ When attacking with 2 or more generals, enemy military casualties are increased 
 
 #### Spell Book:
 
-Nightmare, Fools Gold, Vermin and Mage's Fury
+Nightmare, Fools Gold and Mage's Fury
 
-#### Unique - Blasphemous Might
+#### Unique - Silent Assault
 
-Heretics defy conventional magic and blend forbidden arts to fuel their power. When their spells fail, their cunning nature allows them to siphon stealth from the shadows, turning failure into opportunity and ensuring their enemies never see them coming.
+When sabotage operations go wrong, expert infiltrators don't panic—they vanish. Through superior stealth and escape training, operatives slip away with minimal casualties, turning potential disasters into mere setbacks.
 
 ##### Passive Effect
 
-After a failed offensive spell cast, the heretic recovers 1% Stealth.
+50% fewer thievery losses when performing sabotage operations.
 
 ### Mystic
 
 #### Bonuses:
 
-+25% Offensive Spell Duration
-+125% Land Effect - Guilds
-+25% Science Effectiveness - Channeling
++100% Land Effect - Guilds
++25% Wizards Per Acre (Offensive Only)
 +1% Extra Mana Per Tick
 
 #### Starting Bonuses:
@@ -563,82 +678,30 @@ After a failed offensive spell cast, the heretic recovers 1% Stealth.
 
 Meteor Showers, Chastity and Pitfalls
 
-#### Unique - Focused Channeling
+#### Unique - Black Magic
 
-When a Mystic's mana reserves remain abundant, they can focus their magical energies with laser precision. This disciplined approach to spellcasting enhances the potency of every incantation, channeling raw power into devastating magical assaults.
-
-##### Passive Effect
-
-While your mana is above 40%, all spells gain +20% Wizard Effectiveness (WPA).
-
-### Necromancer
-
-#### Bonuses:
-
-+35% Wizards Per Acre (WPA)
-+5% Offensive Military Efficiency
--50% Rune Cost (excluding Ritual)
-+25% Science Effectiveness - Channeling
-
-#### Starting Bonuses:
-
-+400 Starting Soldiers
-+400 Starting Specialist training credits
-+400 Starting Wizards
-
-#### Spell Book:
-
-Animate Dead, Mind Focus, Soul Blight, Guile and Nightmare
-
-#### Unique - Dark Pact
-
-Necromancers forge a dark pact, harvesting life from the battlefield. After each successful attack, they reanimate the fallen, converting fallen enemy units into wizards, soldiers, and peasants to serve their sinister cause.
+The Necromancer's offensive spells carry a virulent curse that extends far beyond their primary target. Dark energy seeps into the enemy province, causing necrotic fallout that withers the living. Peasants fall ill and perish as the shadow of death lingers over the land.
 
 ##### Passive Effect
 
-After each successful attack, The Necromancer converts:  10% of the enemy's killed units into Wizards.  20% of the enemy's killed units into Soldiers.  10% of the enemy's killed units into Peasants.
-
-### Paladin
-
-#### Bonuses:
-
-+8 War Horse Capacity Per Acre
-+10 War Horses generated every 10 acres
-+7% Defensive Military Efficiency
-+25% Science Effectiveness - Strategy
-Plague Immunity
-War Horse gets +2 strength
-
-#### Starting Bonuses:
-
-+800 Starting Soldiers
-+800 Starting Specialist training credits
-
-#### Spell Book:
-
-Salvation, Divine Shield, Heroes Inspiration, Illuminate Shadows and Wrath
-
-#### Unique - Holy Inquisition
-
-Paladins are zealous enforcers of divine order, wielding sacred authority to disrupt enemy intellectual progress. Each successful attack during War or Hostile relations applies divine judgment, temporarily suppressing enemy research capabilities and reducing their ability to generate new knowledge.
-
-##### Passive Effect
-
-Successful attacks in War or Hostile temporarily suppress 15% of the target's Science Effectiveness and reduce Book Generation by 20% for 6-8 ticks.
+Successful offensive instant spells also kill 1% of the target's peasant population.
 
 ### Rogue
 
 #### Bonuses:
 
-+25% Science Effectiveness - Crime
-+20% Thievery Per Acre (TPA)
-+100% Thieves' Den Effectiveness
++25% Thievery Per Acre (TPA) (Offensive Only)
++75% Thieves' Den Effectiveness
 +1% Extra Stealth Per Tick
 Access all Thievery Operations
 
 #### Starting Bonuses:
 
 +800 Starting Thieves
+
+#### Spell Book:
+
+Mystic Aura
 
 #### Unique - Shadow Persistence
 
@@ -648,15 +711,37 @@ Rogues thrive in chaos and overcrowding, using the press of bodies and confusion
 
 You may perform thievery operations even while overpopulated.
 
+### Sage
+
+#### Bonuses:
+
+-50% Losses on Learn Attacks
+
+#### Starting Bonuses:
+
++800 Starting Soldiers
++10 Starting Scientists
++800 Starting Specialist training credits
+
+#### Spell Book:
+
+Scientific Insight and Fountain of Knowledge
+
+#### Unique - Holy Inquisition
+
+Paladins are zealous enforcers of divine order, wielding sacred authority to disrupt enemy intellectual progress. Each successful attack during War or Hostile relations applies divine judgment, temporarily suppressing enemy research capabilities and reducing their ability to generate new knowledge.
+
+##### Passive Effect
+
+Successful attacks in War or Hostile temporarily suppress 15% of the target's Science Effectiveness and reduce Book Generation by 20% for 6-8 ticks.
+
 ### Tactician
 
 #### Bonuses:
 
 -15% Attack Travel Time
-+25% Science Effectiveness - Siege
-+40% Specialist Training Credits
-Access Conquest regardless of Net Worth
-No thief losses on espionage operations
++25% Specialist Training Credits
+100% successful espionage operations at 2x stealth
 
 #### Starting Bonuses:
 
@@ -665,89 +750,70 @@ No thief losses on espionage operations
 
 #### Spell Book:
 
-Clear Sight
+Illuminate Shadows
 
-#### Unique - Interdiction
+#### Unique - Dragon's Wrath
 
-Tacticians excel at disrupting enemy logistics and resource chains. Every successful attack in war systematically destroys enemy supplies, cutting off their ability to sustain prolonged conflict.
-
-##### Passive Effect
-
-Successful Attacks in War destroy 10% of enemy gold, 25% of enemy runes, and 20% of enemy food.
-
-### War hero
-
-#### Bonuses:
-
-+70% Honor Bonus
-+15% Honor Gains
-+25% Science Effectiveness - Siege
-Offensive specialist gets +2 strength
-
-#### Starting Bonuses:
-
-+800 Starting Soldiers
-+800 Starting Specialist training credits
-
-#### Spell Book:
-
-Quick Feet, Righteous Aggressor and Heroes Inspiration
-
-#### Unique - Hero's Culling
-
-War Heroes are renowned for their ruthless efficiency on the battlefield, leaving nothing but devastation in their wake. During massacres, their forces systematically eliminate not only peasants but also enemy operatives—cutting down thieves and wizards caught in the chaos with brutal precision.
+Tacticians turn adversity into opportunity, using precise strategies to retaliate against enemy dragons sent to weaken their province. With a Dragon's Wrath, their forces deal damage to the dragon during attacks, ensuring that even under siege, their resilience remains unmatched.
 
 ##### Passive Effect
 
-Massacres kill an additional 7% of peasants and 2.5% of thieves and wizards.
+When attacking with a dragon, 3% of your raw offense from units will also deal damage to the dragon.
 
 ### Warrior
 
 #### Bonuses:
 
--50% Mercenary Cost
++15% Damage Inflicted on Massacre Attacks
 +15% Offensive Military Efficiency
-+5 Prisoner and Mercenary Offensive Strength
-+25% Science Effectiveness - Tactics
-Can send 1 Mercenary or Prisoner for every 4 regular troops
 
 #### Starting Bonuses:
 
 +800 Starting Soldiers
 +800 Starting Specialist training credits
 
-#### Unique - Battle Cry
+#### Spell Book:
 
-Every strike is measured, every collapse calculated. With ruthless precision, structures fall faster and cleaner, leaving nothing but rubble in their wake. Destruction is no accident — it is a perfected craft.
+Heroes Inspiration
 
-##### Passive Effect
+#### Unique - Indomitable Spirit
 
-Upon successful attack, the attack will destroy 1% of the target's total population.
+Warriors embody unshakable resolve and unmatched discipline, drawing upon their indomitable spirit to rally their forces. When invoked, this ability inspires their armies to fight with heightened efficiency, turning the tide of battle in their favor.
+
+##### Active Effect
+
+Once activated Warriors gain 5% Military Efficiency for 6 days.
+
+##### Cooldown
+
+23 Utopian Days
+
+##### Duration
+
+6 Utopian Days
 
 Here is the effects of all possible rituals.
 
-Affluent | Income +15% and Draft Rate +20%
+Barrier | -20% Damage from Enemy Instant Magic & Thievery Operations, -20% Battle (Resource) Losses, -20% Massacre Damage
 --- | ---
-Barrier | -25% Damage from Enemy Instant Magic & Thievery Operations, -10% Battle (Resource) Losses, +20% Birth Rate, -20% Massacre Damage
-Benediction | +10% Building Efficiency, -20% Military Wages and increases Birth Rate by 40%;
-Expropriation | +20% Honor Gains & +20% Credits gained in Combat & +20% Enemy Casualties on Offensive Attacks
-Havoc | +20% Offensive WPA, +20% Offensive TPA, +20% Spell Damage, +20% Sabotage Damage
+Benediction | +15% Building Efficiency, -20% Draft Costs, -20% Build Costs, +15% Birth Rate, +20% Draft Speed
+Haste | -10% Attack Time, -25% Training Time, -25% Construction Time
+Havoc | +25% Offensive WPA, +25% Offensive TPA, +15% Spell Damage, +15% Sabotage Damage
 Onslaught | +10% Offensive Military Efficiency, +15% Enemy Military Casualties on Attacks
-Stalwart | +5% Defensive Military Efficiency, -20% Military Casualties
+Stalwart | +5% Defensive Military Efficiency, -25% Military Casualties
 
 Here are the effects of all possible dragons.
 
-Amethyst | -30% Spell Success Chance, -30% Sabotage Success Chance, removes all active self-spells on arrival, every 6 ticks: 2% wizard losses and 2% thief losses
+Emerald | +25% Military Casualties, -25% Combat Gains, destroys 1.0% of troops on arrival
 --- | ---
-Emerald | +25% Military Casualties, -25% Combat Gains, destroys 0.5% of troops at home on arrival, every 6 ticks: 1.5% troops at home lost and current Building and Specialist Credits reduced by 40%
-Ruby | -12.5% Military Efficiency, +20% Military Wages, destroys 1.5% of offensive specialists on arrival, every 6 ticks: 2.5% offensive specialists desert
-Sapphire | -35% WPA and TPA, -1 Mana Recovery, -1 Stealth Recovery, +12.5% Instant Spell and Sabotage Damage taken, -12.5% Instant Spell and Sabotage Damage dealt, every 6 ticks: 25% of current runes destroyed
-Topaz | -30% Building Efficiency, -25% Income, destroys 10% of buildings on arrival, every 6 ticks: destroys 5% of buildings and 20% of current gold
+Ruby | -10% Military Efficiency, +20% Military Wages, destroys 2.0% of military at home on arrival
+Sapphire | -20% WPA and TPA, +15% Instant Spell and Sabotage Damage taken, kills 3% thieves and wizards on arrival
+Topaz | -20% Building Efficiency, -25% Income, +20% Military Wages, destroys 10% of buildings on arrival
 
                             Copyright 2026 MUGA Gaming, LLC -
 
                             Contact Support
- Version: 51f5de9
+ Version: fdc5dd9
 
 Report Content
 
@@ -2124,8 +2190,6 @@ Assassinates a portion of your enemy's military, both at home and away.
 
 Incites riots which disrupt tax collection efforts for several days.
 
-- Duration capped to 18 at age 95
-
 - The More thieves you send the higher your min, avg, max duration will be
 
 - Unaffected by Sabotage damage bonus
@@ -3025,173 +3089,6 @@ The following penalties apply during war:
 
 The Explore pool is a pool of acres available to each individual province in a kingdom to use for exploring. This pool begins at the start of the age at 5000 acres and grows by 100 acres each hour. The pool decays, while not in war, at .5% an hour.
 
-## FAQ
-
-This is the FAQ Page for Utopia. If you have questions, it is suggested you post them at the discussions page or put them up on the Utopian Forums.
----
-
-### Contents
-
-- 1 Getting Started Questions
-
-- 2 Beginner Game Play Questions
-
-- 3 Advanced Game Play Questions/Starting Monarch Questions
-
-- 4 Starting Inter-Personal Questions
-
-- 5 Third Party Tools Questions
-
-- 6 Helpful Links
-
-- 7 Contributing Editors
-
-#### Getting Started Questions
-
-**Q: What race and personality should I select??**
-
-**A:**It all depends on what style of play you plan on doing, and the needs of your kingdom. You can look at the current races and personalities here, Race and Personality.
-**Q: What should I do when I first join? What buildings to build for protection?**
-
-**A:** You should introduce yourself to the kingdom. Most of the times, your kingdom will post a Discord link where most of the chat goes on. Some kingdoms just use the in-game chat, some others use the forums. If you do not feel comfortable using discord, just send your Monarch or Steward a message in game and introduce yourself. You can identify the Monarch(M) or Stewards(S) by looking on the KD page. In regards of buildings, since protection is only 24 hours, we recommend you consult the leadership within your kingdom first.
-**Q:  I'm a ******/******, what buildings should my "build" consist of?**
-
-**A:** This answer shouldn't be specific to a build, but discussion of what to look for in builds, and how one should be focused on the dynamic situation more than some constant "build"
-**Q: What does x building do? When should I have x building?(this will be the direct link to the page with all the comments for each building)**
-
-**A:** Building Uses
-**Q: What should I do with starting science?**
-
-**A:** Each province starts with 5 scientists at the beginning of the age. Your role should determine where to set your scientists, Economy, Military, or Arcane Arts.
-**Q: What should I set my draft rate to?**
-
-**A:** Your draft rate is set to 70% by default. A new province will take a while to draft to 70%. You can change your draft rate as you deem fit but remember, the lower the draft rate, the higher your peasant count will be and your Building Efficiency will increase. The higher you are drafted, the lower your peasant count will be, negatively affecting your Building Efficiency, but making your province stronger with a stronger military.
-**Q: What is military wages? What should I put them to?**
-
-**A:** Military wages modify the amount each spec/elite costs per tick. Over time, raising or lowering wages will raise or lower military efficiency. It takes 4 days of higher wages for the military efficiency to go from 77.86%(20% wages) to 112.14%(200% wages).
-**Q: What self spells should I cast? Which are good to cast? When should I cast them (note: this will link to a page with each spell and a comment on it concerning when to do it, how good it is, ect.)**
-
-**A:** Spell Uses
-
-#### Beginner Game Play Questions
-
-**Q: What is PPA (population per acre) distribution? How can I use it to be more effective? **
-
-**A:** Population per acre is the max population a province has devided by the amount of acres it has. The manner in which this population is divied between various factors (peasents, thieves, wizards, ospecs, dspecs, soldiers, elites, ect) constitutes the raw numbers underlying a province. When thinking about how you want to run your province and how you can make it more affective it is good to think about how the population is distributed how that distribution is modded by buildings science and how this will perform in various situations.
-**Q: I keep getting hit out of war by massive kd's, how do I prevent this?**
-
-**A:** One way that large kingdoms(whores) generate land is by hitting random provinces that are in nw range. In order to know how not to be targeted it is important to know what they are looking for in a good target.
-**Q: How often do I need to play to be effective?**
-
-**A:** Utopia has myriad kd's, many with their own diverse goals. These goals demand varying levels of activity in order to be successful. In a casual kd, one may be able to log in twice a day and be effective, while in a more hardcore kd a player may be expected to idle in Discord all age and be available to log in at any time. There's a kd with most people on your level of activity somewhere.
-**Q: How do magic and thief ops work? What determines their success-rate? What determines their damage?**
-
-**A:** The success of a magic op is a function of the relative mod wpa between a target province and the caster province * the difficulty of the spell * the relative nw between caster and target. A common rule of thumb is that having *2 your targets mod wpa will grant decent success on most non-mystic specific ops and that having *4-5 your targets mod wpa will grand decent success on most mystic specific ops. NW differential between caster and target also gives a certain amount of auto-fail. Many WPA mods(such as the saphire dragon mod) double as an auto-fail mod. FB is partially immune to the affects of nw. Duration on offensive spells is a function of modified guild % with 20% guilds(after mods) giving max durations.
-The success of a thief op is a function of the relative mod tpa between both parties, the difficulty of the op, and anything that might give auto-fail(WT or CS). The damage done by an op is a function of the amount of raw theives sent(up to a cap on all ops but prop), relative nw, and any gains modifiers.
-**Q: How do I calculate my attack so that I don't bounce?**
-
-**A:** First you should read the Ambush guide for more information on how to calculate an Ambush.   The main idea is that the army being ambushed will only fight at 80% of its defense because it is being surprised attacked by the ambush.   The information you need to calculate your enemy army's defense for your ambush include: Spy on Military report, Offense and Defense Values of your enemy's different specialists and elites.  Once you have this information, you will calculate the army's defense:  (eliteDefense*number_of_elites + number _offensiveSpecialists*defensiveSpecialistvalue + soldiers)  = Army's_Defense .  Now you multiple this number by .8 and this gives you the minimum number of points you must send to ambush the army.   Values for defense of defensive specialists and elites are different for each race, so you should look this information up here on the Race page to be sure.   Remember that you cannot count on modifiers and can only use ONE general for the attack.  (Well, you can use more generals but no bonuses will be given).   Keep in mind that you must ambush the most RECENT attack first, so make sure you are getting all your numbers from the correct army in your SoM.    If you do not want to calculate the Ambush yourself you can simply take the SoM and then fill in the information on an Ambush Calculator - make sure you choose an updated one from the External Sites page or ask in the forums for Ambush calculators other players use.
-**Q: When/Why should I ambush?**
-
-**A:** When to Ambush:  Before your enemy's army returns back home with your land - other wise you cannot ambush them.
-Reasons to Ambush:  Once you take your enemy's SoM, if you can attack your enemy, return home, and then still ambush them, this gives you 2 attacks for every 1 attack your enemy has made on you which means you will likely have a net gain in land over.  During war you might need to ambush armies to keep your enemies from getting too much of your land or to keep them from trying to recover from a chain.  Ambush is also useful if you are trying to harm your enemy's offensive specialist number or number of elites - by ambushing you could cause a decrease in your enemy's offensive power.  A major reason to ambush would also be if you do not have enough offense to attack your enemy's At Home army - ambush could let you get some of your land back without having to use as much offense on a regular attack.  Ambushes are also quicker than traditional attacks so your army will not be out as long.
-**Q: Someone said that offense is better than defense in Utopia. Is this the case? **
-
-**A:** It can be argued from both perspectives that OFF>DEF or DEF>OFF. It will ultimately come down to kingdom strategy. If your kingdom runs a heavy attacker scheme, then they will go heavy on offense and lighter on defense. This will ultimately increase your wages in the end, hurt eco a little bit more, but make for a stronger war kingdom. If your kingdom runs heavy on defense and lighter on offense, it will be the inverse of running heavy offense.
-**Q: There are so many numbers in this game. How important is the math in this game? Can I play without calculating everything?**
-
-**A:**   In short - yes, you can play without calculating everything but you should at minimum know HOW everything is calculated.  For example the attack war room tells you what percentage of the defense value you are sending in offensive points - you should make sure this your offense is at least 1 point higher than the enemy's defense so that your army does not bounce, but usually the default 101% is safer.   Your province might not be as finely tuned as other provinces that are more planned out strategically by calculating everything.   But you can still play without a calculator and there are many tools that can help you with this as well.
-
-#### Advanced Game Play Questions/Starting Monarch Questions
-
-**Q: What is KD-wide nw/land distribution? What are nw/land tiers? How does it effect gameplay?**
-
-**A:** Usually you have all of your attackers within a certain networth range and the same for your TM's. This is done so your kingdom is balanced and so that there is no province that is particularly singled out.
-**Q: Why would I fit my race/pers within a KD-wide scheme?**
-
-**A:** Your KD-wide scheme will depend on your goals for the age whether it being heavy warring, casual laid back, or growth.
-**Q: How do you make an unbreakable(UB)? What is the purpose of an unbreakable? What should I look for in a province that I want to make unbreakable?**
-
-**A:** You make an unbreakable during war by taking out the enemies top attacker and creating a province that is able to not be attacked. With mechanics and operations though, it is more difficult now than in the past creating unbreakables but is still very possible. Once a UB is made, they usually train offense so they can bottom feed on chained provinces and continue to grow during war, feeding their kingdom with resources.
-**Q: How do I prevent the other KD from making an unbreakable(UB)? When should I act on the other kd's attempt to make an UB?**
-
-**A:** Usually to prevent an unbreakable, they are targeted within the opening wave. A UB will usually turn into a TM vs TM battle and who has the better WPA and TPA. If you notice that a KD is making UB's, it is usually beneficial to coordinate taking their resources, and having your TM's do propaganda and nightmare waves to open them up to attackers.
-**Q: Who should I target in war?**
-
-**A:** You should listen to the leadership within your kingdom for targets. Usually the monarch or stewards lead war or a dedicated war leader leads war. Follow their guidance and their orders.
-**Q: How do you win wars?**
-
-**A:** Working as a team will ensure you win wars. Some wars are harder than others. It is a strategy game. You will need to change up your strategy for each war.
-**Q: What is a chain? How does it work? When should I do one?**
-
-**A:** A chain is a target set by the war leader, a province that all attackers end up attacking during a wave. For it to be effective, the best gains are achieved when an attacker is within a good NW and Acre range and starts off hitting first.
-**Q: What is a max gains strategy? How does it work? When should I do one?**
-
-**A:** Max Gains strategy is when an attacker hits for the maximum amount of land. This does not mean adding hours to their hits though. Hitting within NW and Acre range as many times as possible will ensure the maximum gains are achieved. This is usually done when one kingdom may be down in land and need to gain back some economy, or it is also done when a kingdom is about to withdraw from war.
-**Q: What are some good ways to organize my kd-mates to be more effective through orders?**
-
-**A:** Have a strategy and orders set before hand. Ensure that your kingdom knows the game plan, and don't shoot from the hip. Communication is key. The better you communicate your orders to your kingdom, the higher chance of success you will have with your kingdom, win or lose.
-**Q: I know I am calculating everything correctly. Why do I keep bouncing when I try to hit this one province? How can I bounce people like him/her?**
-
-**A:** Old intel, wrong mathing, not using the bot... there are many ways to bounce. They could soldier block you or cast blizzard on you or nightstrike you while you are trying to hit.
-**Q: A province in my KD isn't playing up to par. What do I do?**
-
-**A:** Offer guidance and assistance. This is a team game. If nothing seems to work, it would behoove you to find a suitable replacement.
-**Q: What is a bank? Can my KD run one?**
-
-**A:** A bank is a province that is usually at least 2x the size of every other province in your kingdom, who can stay in an almost full eco-build feeding the kingdom with resources. Yes a kingdom can run one, but takes experience and much coordination.
-**Q: Should I only have my KD war when we are fully pumped?**
-
-**A:** This comes down to what your KD truly wants to do. A fully pumped kingdom looks scary. It could be in your war plan though to run a half-pumped kingdom to bait others into war, if war is what you want. Just beware though, maintaining and gaining eco during war is not the simplest of tasks, and should be coordinated by a well experienced war leader.
-**Q: We keep getting better as a KD, but keep losing wars worse than before. What am I doing wrong?**
-
-**A:** You may not be doing anything wrong, the other kingdoms could be getting better or just have been better prepared. Your time will come. Just have patience.
-**Q: If my kd can't make unbreakables, what should I be focusing on?**
-
-**A:** Controlling eco and troop counts should always be a number one priority. If you are warring a larger kingdom, your gains will be greater as their gains are reduced hitting down.
-**Q: What is baiting?**
-
-**A:** Baiting in general terms is exactly what it sounds like. Using a bait to draw someone in. This is done several ways. One is to wave a kingdom for resources or science and not have any incoming land. Another is suiciding a TM, opening them up for a full chain, enticing the other kingdom to hit. You could also use the "I Play Dumb" strategy and make yourself look completely uncoordinated.
-
-#### Starting Inter-Personal Questions
-
-**Q:My kd-mate/monarch is a jerk, what do i do? **
-
-**A:** Be respectful. People do not respond well to hostility. If they continue being a jerk, it may be time to find a new kingdom to play in.
-**Q:My kd-mate/monarch keeps telling me what to do. Should I listen? **
-
-**A:** They could have more experience than you and may know something that you don't. It is good to have a questionable attitude but only to a certain extent. If you do not understand something, tell them that, and ask for help and/or guidance.
-**Q: I am getting razed by members of my KD. What do I do?**
-
-**A:** Try and find out why. You may already know why. In that case, make plans for how you want to continue your venture.
-**Q: How should I know when to defect? What is the best way to find a KD that I will enjoy?**
-
-**A:** You will know when you need to defect...trust me. The best way to find a KD to play in is using the Recruitment Channel in Discord or looking in the forums for kingdoms that are recruiting. You may have to defect several times or start over completely before you find a home that you mesh with and call home.
-
-#### Third Party Tools Questions
-
-You can also communicate in the forums to find players that might be willing to talk on DISCORD to help you or invite you into a new kingdom if they are recruiting.
-**Q: I'm a t/m, how do I use the Intel Page/Bot to be more effective?**
-
-**A:** There are many categories and charts on the Intel Page. There is a TM tab that you can utilize to see the enemies resources and TM strength. During war, there is an Ops Plan page where you can add and remove TM orders for Operations needed on the enemy. These orders are then displayed on the Mystics and Thievery page in game. For a list of commands to use with the bot, you can find these in the Bot Commands page under the Help tab.
-**Q: I'm an attacker, how do I use the Intel Page/Bot to be more effective?**
-
-**A:** There are many categories and charts on the Intel Page. There are several tabs to utilize on the Intel Site that can help out an attacker. One of the biggest things to look for as an attacker is an enemies defense at home, their build setup (if it includes defensive buildings), and their networth range. For a list of commands to use with the bot, you can find these in the Bot Commands page under the Help tab.
-
-#### Helpful Links
-
-Other questions can be preemptively answered by visiting the following links:
-https://utopia-game.com/guide/
-http://forums.utopia-game.com/showth...ealest-Returns
-http://forums.utopia-game.com/showth...e-advantageous
-http://forums.utopia-game.com/showthread.php?622799-Quick-Tips
-
-#### Contributing Editors
-
-- Topsy
-
-- Tom
-
 ## Finding Good Learn Targets
 
 This is part of the Utopia WIKI Player written guides.
@@ -3236,1272 +3133,9 @@ Get an SoS infact I would have yourself narrowed down to 3-4 targets, from the S
 
 Just remember, there are consequences to your actions and need to play smart when it comes to plundering.
 
-## Formulas
-
-This is part of the Utopia WIKI Formula Series.
----
-
-THIS PAGE attempts to list formulas as relevant to Formulas. If you would like to add a new formula feel free to include it within the text. Ensure that you check the discussions page for Formulas to ensure that this formula is not under discussion/research, or contribute your research there if you do feel so inclined. | THIS PAGE attempts to list formulas as relevant to Formulas. If you would like to add a new formula feel free to include it within the text. Ensure that you check the discussions page for Formulas to ensure that this formula is not under discussion/research, or contribute your research there if you do feel so inclined.
---- | ---
-THIS PAGE attempts to list formulas as relevant to Formulas. If you would like to add a new formula feel free to include it within the text. Ensure that you check the discussions page for Formulas to ensure that this formula is not under discussion/research, or contribute your research there if you do feel so inclined.
-
-### Pages in category "Formulas"
-
-The following 13 pages are in this category, out of 13 total.
-
-#### A
-
-- Attacking & Defending
-
-#### D
-
-- Dragons, Aid & Stances
-
-#### E
-
-- Economy
-
-- Exploring, Construction & Building Formulas
-
-#### F
-
-- Food
-
-#### H
-
-- Honor
-
-#### M
-
-- Magic Formulas
-
-#### N
-
-- Networth
-
-#### O
-
-- Overpopulation
-
-#### R
-
-- Relations
-
-#### S
-
-- Science Formulas
-
-#### T
-
-- Thievery Formulas
-
-#### U
-
-- Units
-
-## Fountain of knowledge
-
-Unlike your fabled land of Earth, the citizens of Utopia truly believe in and have witnessed the powers of magic. From the deadly plagues to the amazingly fertile land, so much has happened on this planet that cannot be explained away by science or nature. As ruler of your lands, you have access to some of the most amazing magical spells ever known. Below, I will try to explain to the best of my ability the powers of these spells and how to make magic your friend. For more in-depth information on each Spell, check Magic Formulas.
-
-### Contents
-
-- 1 Essentials: Runes, Wizards, and Guilds
-
-- 2 Rune Generation
-
-- 3 Determining Success
-
-- 4 Duration of Spells
-
-- 5 Cost of Spells
-
-- 6 Restriction & Limits
-
-- 7 The Spell Book: Self Spells
-
-7.1 Aggression
-7.2 Animate Dead
-7.3 Anonymity
-7.4 Bloodlust
-7.5 Builders' Boon
-7.6 Clear Sight
-7.7 Divine Shield
-7.8 Fanaticism
-7.9 Fertile Lands
-7.10 Fountain of Knowledge
-7.11 Greater Protection
-7.12 Guile
-7.13 Illuminate Shadows
-7.14 Inspire Army
-7.15 Invisibility
-7.16 Love & Peace
-7.17 Mage's Fury
-7.18 Magic Shield
-7.19 Mind Focus
-7.20 Miner's Mystique
-7.21 Minor Protection
-7.22 Mist
-7.23 Nature's Blessing
-7.24 Paradise
-7.25 Patriotism
-7.26 Quick Feet
-7.27 Reflect Magic
-7.28 Revelation
-7.29 Righteous Aggressor
-7.30 Salvation
-7.31 Shadowlight
-7.32 Town Watch
-7.33 Tree of Gold
-7.34 War Spoils
-7.35 Wrath
-
-- 8 The Spell Book: Offensive Spells
-
-8.1 Abolish Ritual
-8.2 Amnesia
-8.3 Blizzard
-8.4 Chastity
-8.5 Crystal Ball
-8.6 Crystal Eye
-8.7 Droughts
-8.8 Explosions
-8.9 Expose Thieves
-8.10 Fireball
-8.11 Fool's Gold
-8.12 Gluttony
-8.13 Greed
-8.14 Lightning Strike
-8.15 Land Lust
-8.16 Magic Ward
-8.17 Meteor Showers
-8.18 Mystic Vortex
-8.19 Nightmares
-8.20 Nightfall
-8.21 Pitfalls
-8.22 Storms
-8.23 Tornadoes
-8.24 Vermin
-
-- 9 Forgotten Spells
-
-9.1 Barrier of Integrity
-9.2 Fog
-9.3 Ghost Workers
-9.4 Haste
-9.5 Hero's Inspiration
-9.6 Illusionary
-9.7 Mystic Aura
-9.8 Scientific Insights
-9.9 Sloth
-
-- 10 Genesis Spells
-
-10.1 Soul Blight
-
-- 11 Changelog
-
-#### Essentials: Runes, Wizards, and Guilds
-
-Spells require Runes, Wizards, and Guilds to be cast. Towers produce runes every hour, which are consumed with each spell. Wizards are naturally trained by your Guilds. Like all of the other individuals across your lands, they come from your peasantry and reduce your number of available workers. Be careful not to hold too many Wizards or you may be sacrificing your peasantry, Thieves, or Military. At any time, you can release Wizards back into the peasantry or simply shut down additional training. Your Wizards maintain a Mana level which determines whether or not they can cast Spells. This rating rises automatically each day and drops each time you cast a Spell. Your Wizards will not cast Spells without at least a 5% Mana level. Casting Spells is not without risks. Failed attempts can result in explosions and kill a small portion of your Wizards.
-
-#### Rune Generation
-
-**Runes Generated =** (( Towers * 12 * Race Land Effect Mod * Personality Land Effect Mod * Building Efficiency ) + ( Land * Land Rune Generation )) * Production Science * Honor Mod * Ritual Mod * Stance Mod
-
-- Each tick, 1.2% of the total Runes in storage will decay.
-
-#### Determining Success
-
-To cast a spell, you must have Guilds, wizards and mystic Runes. For spells cast upon yourself, success is based on your Guild percentage and your Building Efficiency - the more guilds you have, the better you will do. For spells cast upon others, the success is based on your relative wizard population, measured as Wizards Per Acre (WPA), modified by the racial bonuses or penalties and your knowledge of Channeling science. The higher your WPA compared to an enemy, the better your success. However, there is always a great deal of chance in every spell. Furthermore, the duration of all spells is greatly impacted by your Guild percentage.
-For support spells, the formula used to calculate success rate is adjusted to make casting self spells on your allies easier. A WPA vs WPA calculation will still be made which will require the caster to have WPA but the formula will make it so that all Kingdom members have an opportunity to receive the self spell bonuses from their support caster. In other words, although you still need WPA it won't be a very significant part of the formula.
-
-#### Duration of Spells
-
-The duration of successful spells is affected by:
-
-- The nominal duration of that particular spell, which differs for each spell.
-
-- The percentage of guilds the casting province has, with no additional effect for amounts over 20%.
-
-- The relative networth of the two provinces.
-
-- The current relations between the two provinces' kingdoms.
-
-Additionally, there is an element of randomness.
-One quarter of the nominal duration of a spell is always contributed to the final cast time. A scaling factor made up of the % guilds, relative net worth and current relations then governs the contribution of another quarter of the nominal duration. Finally, the remaining half of the nominal duration is contributed to the final cast time, scaled by both the scaling factor and a random number.
-For example, given a spell with a nominal duration of 24 days:
-
-- with a scaling factor of 100% (meaning both provinces have the same net worth, are in war, and the caster has 20% or more guilds), the final cast time will be in the range of 12-24 days.
-
-- in a situation with a scaling factor of 0% (e.g., the cast has no guilds), the final cast time will be 6 days (25% of 24 days).
-
-- in a situation with a scaling factor of 50%, the final cast time will be 6 days (25% of 24 days) + 3 days (25% of 24 days multiplied by scaling factor of 50%) + 0-6 days (random number out of 50% of 24 days multiplied by scaling factor of 50%), which equals 9 - 15 days in total.
-
-#### Cost of Spells
-
-All spells cost mana, which the province will regenerate each Utopian day up to a maximum of 100%. Once your mana falls below 5% you are unable to cast any more spells until your mana regenerates.
-The costs of spells are:
-
-- Self Spells - 3%
-
-- Offensive Spells (without relations) - 3%
-
-- Offensive Spells (Hostile relations) - 2%
-
-- Ritual Spells - 2%
-
-- Support Spells on others - 2%
-
-- Successful received Support Spells - 2%
-
-#### Restriction & Limits
-
-Certain spells are designated Unfriendly, Hostile or War Only spells -- Because of the destructive nature of these spells, they can be cast only against provinces which have at least a certain level of relations with your kingdom. In addition, you will find that many of these spells are more effective during heightened relations conditions.
-
-Spells are divided into two categories, as listed below:
-
-- Self Spells
- Some Self Spells can be cast on kingdom members by certain Races. These spells are known as Support Spells. Success is based on the caster's WPA and relative networth to the target, and the duration of these spells is based on target's guilds. The list can be found here.
-The caster gains honor from kd mates whom they cast support spells on. Those getting cast on lose honor when having a support spell casted on them, ~0.1%.
-
-- Offensive spells
-
-There are 3 possible outcomes of casting a spell. It can be successful, it can fail, or it can fail and some wizards may die.
-
-- Successful message: Your wizards gather their runes and begin casting. The spell consumes X Runes and ... is successful!
-
-- Fail message: Your wizards gather their runes and begin casting. The spell consumes X Runes and ... fizzles. Alas, we were not able to fulfill your expectations. Please forgive us.
-
-- Dying wizards message: "Leader name", something has gone terribly wrong with our spell. X of our wizards were killed in an explosion!
-
-Please note that Duration is in real time, spell messages are in Utopia Time.
-
-### The Spell Book: Self Spells
-
-Listed here is a short reference guide to each of the spells available that can be cast on yourself. Any restrictions on use will be listed under the name. The max cast shown does not include any racial bonuses. Almost all the spells that provide bonuses for certain activities (like speeding up building construction etc.) need to be cast before the activity is initiated / ordered to reap the benefits of the spell.
-
-#### Aggression
-
-This spell refocuses your soldiers from versatile fighting units into an offensive machine. Giving them a lust for attacking, Soldiers will gain 2 offensive point in all combat for the duration of the spell.
-Is Known: Age 14 ... now
-
- Available to: Orc
- Effect: Your soldiers gain 2 Offense points.
- Duration: max 24 days.
- Cast Message: Our soldiers will fight with unique aggression for X days!
- Mystic Advisor Message: Our soldiers will fight with unique aggression for X days!
-
-#### Animate Dead
-
-The power to raise the dead gives you the power to protect your people. By casting this spell, you can protect your people from the death and destruction of defending your lands. During your next defensive battle, half of your dead army will be restored into basic soldiers to help repopulate your army.
-Is Known: Age 1 ... Age 87, Age 90 ... now
-
- Available to: Undead
- Effect: Raises 50% of your dead troops into basic soldiers during your next defensive battle.
- Duration: Expires when attacked.
- Cast Message: Our dead will be awakened the next time our lands are attacked!
- Mystic Advisor Message: Same as Cast Message
-
-#### Anonymity
-
-War is at the heart of the world of Utopia, but the fear of retaliation makes many leaders cringe. This spell casts an aura of mystery around your army. After a successful cast, your forces will remain anonymous during your next attack -- while your kingdom will be revealed, your enemy will not know your province's name.
-Is Known: Age 13 ... now
-
- Available to: All
- Effect: Hides your province name during your next attack at the cost of no honor gains,
- causing the attacked province to be unable to ambush that attack.
- Decreases your attack gains by 15% for your next attack.
- Duration: removed after attack
- Cast Message: Our next attack will be cloaked under the shades of anonymity.
- Mystic Advisor Message: Our armies are surrounded by a cloud of anonymity for our next battle.
-
-- Note - Anon reduces target honor, attacker does not get honor.
-
-#### Bloodlust
-
-Bloodlust fires the blood of your troops, igniting in them a desire to cause destruction. This fury will increase the carnage among enemy troops at a cost of increased recklessness among your own troops.
-Is Known: Age 1 ... Age 22, Age 49 .. Age 58, Age 59 ... now
-
- Available to: Orc
- Effect: A province under Bloodlust will have 10% increased Offensive Military Efficiency, inflict 15% more kills, and suffer 15% higher military losses while the spell is active.
- Duration: Not yet known.
- Cast Message: Our armies crave the scent of blood. They will savage the enemy, or die trying.
- Mystic Advisor Message: Same as Cast Message
-
-#### Builders' Boon
-
-The Builders' Boon spell makes your workers build faster and harder than otherwise. All buildings constructed while the spell is active will be completed more quickly than normal. The spell must be cast before the new construction is ordered in the growth panel for lesser construction time.
-Is Known: Age 15 ... now
-
- Available to: All
- Effect: Decreases your construction times by 25% for building set to build while active.
- Duration: max 24 hours
- Cast Message: Our builders have been blessed with unnatural speed for X days!
- Mystic Advisor Message: Same as cast message.
-
-#### Clear Sight
-
-By granting your police the ability to see through the obvious and into the depths, you give them the ability to catch thieves who may wander into the lands. The spell, lasting potentially for weeks, gives you a base chance to catch opposing thieves, regardless of the strength of the guilds involved.
-Is Known: Age 1 ... now
-
- Available to: Avians
- Effect: Automatically catches 25% of the thieves' operations conducted against your province.
- Duration: max 22 days
- Cast Message: Our police have been blessed with Clear Sight for X days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Divine Shield
-
-The caster protects his people from the dark magic of his enemies, granting them further protection against harmful Instant Spells.
-Is Known: Age 72 ... Age 80 ... Age 87 ... Age 103
-
- Available to: Cleric
- Effect: Reduces Instant Spell Damage taken by 20%.
- Duration: Moderate, max time unknown
- Cast Message: You imbue your province with a holy shield, protecting against foul sorcery for XX days!
- Mystic Advisor Message: Same as cast message
-
-#### Fanaticism
-
-Fanaticism focuses your army on combat, increasing their offensive efficiency for several days. Unfortunately, a side effect of this desire for blood is that your armies remaining at home -- bored and frustrated for not being in combat -- will fight less effectively on defense.
-Is Known: Age 14 ... now
-
- Available to: All
- Effect: Increases your Offensive Military Efficiency by 5%. Decreases your Defensive Military
- Efficiency by 5%.
- Duration: max 9 hours
- Cast Message: Our army will fight with fanaticism for X days!
- Mystic Advisor Message: Our army fights with fanatical fervor
-
-#### Fertile Lands
-
-By magically fertilizing your lands, you can ensure excellent food production for the duration of the spell. Whether a lack of farms, a deadly drought, or just wanting to stockpile extra food, this spell offers a definite increase to your food sources.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Increases food production by 25%.
- Duration: max 30 hours.
- Cast Message: We have made our lands extraordinarily fertile for X days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Fountain of Knowledge
-
-Science is a fundamental building block for any and all of the other parts of your province. While a Fountain of Knowledge spell is active, your students work harder and will learn more than they would otherwise.
-Is Known: Age 39 ... Age 68, Age 82 ... now
-
- Available to: Faery, Human
- Effect: Increases your science book production by 10% while the spell is active.
- Duration: Moderate, max duration unknown
- Cast Message: Our students are blessed with excellent concentration for X Days!
- Mystic Advisor Message: Our students are blessed with excellent concentration for X days!
-
-#### Greater Protection
-
-A more powerful version of the Minor Protection spell, this spell functions similarly but lasts potentially a great deal longer. It can be stacked with Minor Protection.
-Is Known: Age 1 ... now
-
- Available to: Avian, Faery, Human
- Effect: Increases Defensive Military Efficiency by 5%.
- Duration: max time unknown
- Cast Message: Our realm is now under a sphere of protection for X days.
- Mystic Advisor Message: Our realm is now under a sphere of protection for X days!
-
-#### Guile
-
-By focusing your mind and employing cunning techniques, you increase the Damage of your Spells and Operations.
-Is Known: Age 90 ... Age 92, Age 94, Age 95, Age 98, Age 104
-
- Available to: Dark Elf, Faery
- Effect: Increases Instant Spell and Sabotage Operation Damage by 10%.
- Duration: Moderate, max time unknown
- Cast Message: Our thieves and wizards' assimilated concentration will increase their damage for X days!
- Mystic Advisor Message: Our thieves and wizards' assimilated concentration will increase their damage for X days!
-
-#### Illuminate Shadows
-
-Shine light across the land, eliminating the cover of darkness and revealing those who would hide within its shadow. Thieves who would enter these lands are discouraged from performing their duties and will thus have a lessened impact.
-Is Known: Age 72 ... now
-
- Available to: Cleric
- Effect: Reduces damage from thievery operations by 20%.
- Duration: Moderate, max time unknown
- Cast Message: Your mages fill your province with holy light, reducing shadows for thieves to hide in for XX days!
- Mystic Advisor Message: Same as cast message
-
-#### Inspire Army
-
-Inspire Army helps make your military train harder on their own, thus reducing the daily wages you pay your military for several days. This is especially useful in times of limited cash. This spell also increases the intensity of training, allowing your troops to be ready more quickly; provided the spell is cast before the troops are ordered to be trained.
-Is Known: Age 7 ... Age 71, Age 74 ... now
-
- Available to: All
- Effect: Decreases your military wages by 15%. Decreases your military training time by 20%.
- Duration: max 24 hours
- Cast Message: Our army has been inspired to train harder. We expect maintenance costs to be
- reduced for X days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Invisibility
-
-Thieves rely on stealth to master their craft, but a little bit of invisibility never hurts. Through the duration of this spell, your thieves have a 10% bonus to any offensive thievery operations and incur 20% lower losses.
-Is Known: Age 1 ... now
-
- Available to: Dark Elf
- Effect: Increases your Offensive Thievery Efficiency by 10%. Reduce Thieves lost during Thievery Operations by 20%.
- Duration: max 22 hours
- Cast Message: Our thieves have been made partially invisible for X Days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Love & Peace
-
-Love & Peace creates an aura of calm and happiness across your peasantry for several days. This leads to increased natural birth rates which will quickly replenish your population. This is especially useful when your peasantry has suffered greatly.
-Is Known: Age 7 ... now
-
- Available to: All
- Effect: Increases base birth rate from 2.05% to 2.85%. Increase War Horses production by 40%.
- Duration: max 22 hours
- Cast Message: Our peasantry is influenced by a magical calm. We expect birth rates to be higher for
- X days!
- Mystic Advisor Message: Our people feel at peace (Estimated: X more Days).
-
-#### Mage's Fury
-
-This spell sparks a destructive fervor in your Mages Guild. They increase their efforts to cause damage to their opponents, whilst sacrificing a portion of their own defense temporarily.
-Is Known: Age 49 ... now
-
- Available to: Dark Elf, Faery, Mystic
- Effect: This spell increases the province's WPA by 25% for offensive purposes while decreasing
- it by 25% for defensive
- purposes. No effect on self-spells.
- Duration: max 12 hours
- Cast Message: The fire of Mage's Fury burns in our wizards' eyes for x days!
- Mystic Advisor Message: The fire of Mage's Fury burns in our wizards' eyes for x days!
-
-#### Magic Shield
-
-While the natural aura of your Wizards will help protect from enemy spells, a little additional protection can never hurt. Casting this spell offers you a shield of magical protection for your province for about half a month.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Increases your defensive magic efficiency by 20%.
- Duration: max 24 hours
- Cast Message: For X days, the magical auras within our province will shine brightly!
- Mystic Advisor Message: A shield protects us from the black magic of our enemies
- (Estimated: X more Days).
-
-#### Mind Focus
-
-Wizard Production is a fundamental element for all parts of your province. While a Mind Focus spell is active, your guilds work harder and will produce more wizards than they would otherwise.
-Is Known: Age 1 ... Age 38, Age 93 ... Age 99, Age 102
-
- Available to: Mystic
- Effect: Increases Wizard Production by 25%.
- Duration: max 20 hours
- Cast Message: Your guilds will produce extra wizards for X days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Miner's Mystique
-
-Peasants generate a stable, supplemental source of income thru mining. By casting this unique spell, you can increase the money you collect for a period lasting several weeks.
-Is Known: Age 1 ... Age 21 ... Age 97 ... now
-
- Available to: Dwarf, Faery
- Effect: Increases Income by 0.3 per Peasant.
- Duration: Moderate, max time unknown
- Cast Message: Unknown
- Mystic Advisor Message: Unknown
-
-#### Minor Protection
-
-Casting a sphere of protection over your province, this spell helps protect your province from invasion from others. This spell lasts for a few weeks.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Increases defensive military efficiency by 5%.
- Duration: max 24 hours
- Cast Message: Our realm is now under a sphere of protection for X days.
- Mystic Advisor Message: Same as Cast Message
-
-#### Mist
-
-Casting a sphere of protection over your province, this spell helps protect your province from invasion.
-Is Known: Age 85 ... now
-
- Available to: Elf, Faery
- Effect: Lowers enemy Gains by 10% on defensive battles for a duration.
- Duration: Short, max time unknown
- Cast Message: Our lands are protected by a sacred mist for X days from attacks against us!
- Mystic Advisor Message: Our lands are protected by a sacred mist for X days from attacks against us!
-
-#### Nature's Blessing
-
-Nature's Blessing will protect your lands from any droughts and storms the world may see fit to place on you. This spell also has a chance of curing the Plague if your lands are affected by it.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Protects your land against Storms and Drought. Has a 33% chance of curing Plague (per cast).
- Duration: max 36 hours
- Cast Message: Our lands have been blessed by nature for X days, and will be protected from drought
- and storms.
- Mystic Advisor Message: Our land is blessed by nature (Estimated: X more Days).
-
-#### Paradise
-
-Arguably one of the most powerful -- and difficult -- spells known, Paradise simply creates several acres of new land for your people to populate. Similar in concept to exploring, this Spells gives you instant access to new lands to build upon and grow your province.
-Is Known: Age 12 ... now
-
- Available to: All
- Effect: Creates a small amount of land per cast, this land comes directly from your explore pool. Between 1-10 acres per cast.
- Duration: Instant cast
- Cast Message: Our mages created X acres more land for us to use.
- Mystic Advisor Message: N/A
- Note: Paradise is not available during War and Protection. This spell utilizes acres from the explore pool. If the explore pool is empty, it will return 0 acres.
-
-#### Patriotism
-
-Giving your population life and an innate desire to defend your lands, this spell increases the rate that you can draft peasants for several weeks, and offers partial protection against the Propaganda thievery operation. Excellent in emergencies and other strategic situations, this spell is difficult to cast and will more quickly weaken your economy.
-Is Known: Age 11 ... now
-
- Available to: All
- Effect: Increases military draft speed by 30%. Lowers Propaganda Damage received by 30%.
- Duration: max 20 hours
- Cast Message: Our people are excited about the military and will signup more quickly for x days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Quick Feet
-
-By giving your men magical speed, they can go to battle and return more quickly than usual, leaving your land without defense for a shorter period.
-Is Known: Age 1 ... Age 86, Age 88 ... now
-
- Available to: Faery, Halfling
- Effect: Decreases your Attack Time by 10%.
- Duration: Short
- Cast Message: Our armies have been blessed with excellent speed.
- Mystic Advisor Message: Our armies are blessed with incredible speed.
-
-#### Reflect Magic
-
-Reflect magic places a magical barrier around your lands for several days. During this period, successful spells cast upon your province may randomly be reflected upon the caster, doing unto them as they would have done to you.
-Is Known: Age 1 ... Age 98, Age 103
-
- Available to: Human
- Effect: Has a 25% chance of reflecting offensive spells cast upon your province.
- Duration: max 18 hours.
- Cast Message: Some of the spells cast upon our lands will be reflected back upon their creators for X days!
-
-#### Revelation
-
-Science is a fundamental building block for any and all of the other parts of your province. While the Revelation spell is active, it increases the rate of a new scientist emerging.
-Is Known: Age 69 ... Age 103, Age 107
-
- Available to: Cleric
- Effect: Increases the rate of a new scientist emerging on by 20% while the spell is active.
- Duration: Medium, max duration unknown
- Cast Message: Our students are blessed with excellent concentration for X Days!
- Mystic Advisor Message: Our students are blessed with excellent concentration for X days!
-
-#### Righteous Aggressor
-
-Convert offensive specialist to elites on successful attack (Trad, learns, massacres, and plunders).
-
- Effect: Convert offensive specialist to elites on successful attack.
- Duration: Short
- Cast Message: Convinced of their righteous cause, our warriors strike with ever-increasing might for X days!
- Mystic Advisor Message: Convinced of their righteous cause, our warriors strike with ever-increasing might for X days!
-
-#### Salvation
-
-Salvation protects Military in Combat, reducing all Military Casualties by 15%.
-Is Known: Age 97 ... now
-
- Available to: Elf, Cleric
- Effect: Decrease Military Casualties of target province by 15%.
- Duration: Moderate, max time unknown
- Cast Message:
- Mystic Advisor Message:
-
-#### Shadowlight
-
-Shadowlight places a face upon a shadow, revealing the province associated with the next thievery operation against your lands. It will also prevent the next operation from being successful.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Reveals the name of the next province performing a successful thievery operation upon your province. Deflects the next operation.
- Duration: Expires on enemy thievery attempt
- Cast Message: Our lands are blessed with Shadowlight. The next time thieves enter our lands their identities will be revealed.
- Mystic Advisor Message: Same as Cast Message
-
-#### Town Watch
-
-Town Watch will create a peasant watch upon your town for several days. While the Town Watch is active, all of your peasants will help defend your province in combat. Unfortunately, this also means your peasants will be killed during war - and since they are not well-armed, they will suffer heavy losses.
-Is Known: Age 7 ... now
-
- Available to: Faery, Halfling
- Effect: Every 5 of your peasants will defend your land with 1 point of defense.
- Duration: max 18 hours
- Cast Message: Our peasants will help defend our lands for X days!
- Mystic Advisor Message: Our peasants will help defend our lands for X days!
-
-#### Tree of Gold
-
-If you're ever in need of extra cash, casting a Tree of Gold may be a potential solution. While it won't give you a great deal of gold, every little bit can help.
-Is Known: Age 1 ... now
-
- Available to: Faery
- Effect: Magically creates a small amount of gold (from 26.66% to 53.33% of your daily income).
- Duration: Instant cast
- Cast Message: X gold coins have fallen from the trees!
- Mystic Advisor Message: n/a
-
-#### War Spoils
-
-Ordinarily, any land captured in attacks require time to take control of and become available for your own use. War Spoils gives you the opportunity to get this land from combat immediately. The spell lasts just a few Utopian Days, but is more than enough to use on a couple of attacks. This allows you to begin the process of expanding much more quickly than otherwise.
-Is Known: Age 12 ... Age 58, Age 60 ... Age 101, Age 104...Now
-
- Available to: All - with a minimum relationship of War
- Effect: Makes the land gained from Traditional March immediately available.
- Duration: max 6 hours
- Cast Message: Our army has been blessed with immediate War Spoils for X days!
- Mystic Advisor Message: War Spoils give us quick returns on our attacks
-
-#### Wrath
-
-Smite foes who dare to inflict harm upon the target. Enemy attackers suffer increased Military Casualties when attacking lands protected by this spell.
-Is Known: Age 72 ... now
-
- Available to: Elf, Faery, General
- Effect: Increases enemy casualties when attacking the protected province by 20%.
- Duration: Moderate, max time unknown
- Cast Message: Your magic will smite attackers for XX days!
- Mystic Advisor Message: Same as cast message
-
-### The Spell Book: Offensive Spells
-
-Listed here is a short reference guide to each of the spells available that can be cast upon your enemies. Any restrictions on usage will be listed under the name.
-
-#### Abolish Ritual
-
-Reduces the strength of an enemy kingdom's province and has a high cost/difficulty
-Is Known: Age 73 ... now
-
- Available to: All - with minimum relationship of Unfriendly.
- Effect: Reduces ritual strength by 2%. Limited to 10 casts on a single enemy province.
- Duration: Instant
- Cast Message: Your mages infest the guilds of X. Their ritual is now x% destroyed! This province can still be targeted X times!
- Mystic Advisor Message: N/A
- Meter Movement:     0.15
-
-#### Amnesia
-
-Knowledge is vital to the longterm survival of a province. The unique powers of magic allow you to strip a province of some of its long-sought science. Its effects are temporary. By casting Amnesia, you can cause an enemy province to lose effectiveness of their arts & sciences knowledge, opening a window to attack or further damage the enemy.
-Is Known: Age 1 ... now
-
- Available to: All - with a minimum relationship of War
- Effect: Temporarily removes ~5% of target's current total allocated Science Books. These Books return over 48 ticks, not affected by EOWCF.
- Duration: Instant with duration effect: 48Ticks
- Cast Message: N/A
- Mystic Advisor Message: N/A
- Throne Room Notification: N/A
- Meter Movement:     0 (War Only)
-
-#### Blizzard
-
-Reduces the building effectiveness of a province for a short duration.
-Is Known: Age 69 ... now
-
- Available to: Dark Elf, Faery
- Effect: Reduces the Building Effectiveness of a province by 10%.
- Duration: Short
- Cast Message: Your wizards gather n runes and begin casting, and the spell succeeds. Blizzards will beset the works of [province name] (#:#) for X days!
- Mystic Advisor Message: N/A
- Throne Room Notification: Blizzards are besetting our works, and our building efficiency will be crippled by 10% for for X days!
- Meter Movement:     0.3
-
-#### Chastity
-
-Introducing Chastity amongst the peasants of your opponents is an effective way to grind their population growth to a halt.
-Is Known: Age 47 ... now
-
- Available to: Faery,  Mystic - with a minimum relationship of Unfriendly
- Effect: Decreases Birth Rate by 50%.
- Duration: Medium
- Cast Message: Much to the chagrin of their men, the womenfolk of [Province Name] have taken a vow
- of chastity for X days!
- Mystic Advisor Message: Our womenfolk have taken a vow of chastity preventing population growth for
- X days!
- Meter Movement:     0.15
-
-#### Crystal Ball
-
-Knowing more about your friends and opponents is vital to your success as a leader. This spell gives you insight into the workings of any province of your choice.
-Is Known: Age 1 ... Age 47, Age 88 ... now
-
- Available to: All
- Effect: Displays the targeted provinces Throne
- Duration: Instant
- Cast Message:
- Mystic Advisor Message: N/A
- Meter Movement:     0
-
-#### Crystal Eye
-
-Cast on a kingdom instead of an individual province, this option gives a bird's eye view of all that has happened across the Kingdom of the current and previous Months.
-Is Known: Age 1 ... Age 47, Age 105
-
- Available to: All
- Effect: Displays the targeted provinces Kingdom Paper.
- Duration: Instant
- Cast Message:
- Mystic Advisor Message:
- Meter Movement:     0
-
-#### Droughts
-
-The opposite of storms, droughts can do significant damage as well. Without the rains necessary for fertile land, food production will be lower than usual, possibly resulting in starvation throughout the lands. In addition, the harsh conditions slow interest in the military and interferes with the soldier draft. Horses across the province may die as well due to lack of water and food. Droughts negate any Storms currently ravaging the target's land. Increases Arson damage taken by 15%.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Decreases food production by 25%, military draft rate by 15% and horses production by 50%.
- Some horses may also die as a result.
- Increases Arson damage taken by 15%.
- Duration: Medium
- Cast Message: A drought will reign over the lands of [Province Name] for X days!
- Mystic Advisor Message:
- Meter Movement:     0.06
-
-#### Explosions
-
-Provinces work together by assisting each other in times of need. By casting Explosions, you can interrupt the flow of goods between provinces, creating explosions that destroy portions of shipments to and from a province at random.
-Is Known: Age 10 ... now
-
- Available to: All
- Effect: 50% chance to reduce an aid shipment to 55%-80% of original size.
- Duration:
- Cast Message: Explosions will rock aid shipments to and from [Province Name] for X days!
- Mystic Advisor Message: Explosions will rock aid shipments to and from our province for X days!
- Meter Movement:     0.18
-
-#### Expose Thieves
-
-Thieves rely on stealth and surprise to be effective at their jobs. Casting this spell will expose an enemy's guild, leaving them less effective until they can recover.
-Is Known: Age 1 ... now
-
- Available to: All - with a minimum relationship of Unfriendly
- Effect: Reduces Stealth level by 5% of current level each Tick, before Stealth regeneration.
- Duration: Medium
- Cast Message: Our mages have illuminated the lands of our enemies and exposed the thieves that walk
- through their lands.
- Mystic Advisor Message: N/A
- Meter Movement:     0.36
-
-#### Fireball
-
-If you want to directly go after an enemy, launching a fireball at their peasantry is an effective weapon. The fireball, if successful, will splash directly into the heart of your opponent's lands, exploding on impact, and killing instantly.
-Is Known: Age 1 ... now
-
- Available to: All - with minimum relationship of Unfriendly
- Effect: Kills a small and random portion of peasants (4.5-7.5%).
- Duration: Instant
- Cast Message: A fireball burns through the skies of [province name] (##:##). X peasants are killed
- in the destruction!
- Mystic Advisor Message: N/A
- Meter Movement:     0.24
-
-#### Fool's Gold
-
-The art of turning lead into gold has always been a confusing mystery. Is it possible? No one knows. However, turning gold into lead can be done! This spell will convert a portion of your opponent's gold into worthless lead.
-Is Known: Age 12 ... now
-
- Available to: Heretic - with a minimum relationship of Unfriendly
- Effect: Destroys up to 25% of target's gold.
- Duration: Instant
- Cast Message: Our mages have turned X gold coins in [Province Name] to worthless lead.
- Mystic Advisor Message: N/A
- Throne Room Notification: X gold coins have been turned into worthless lead.
- Meter Movement:     0.42
-
-#### Gluttony
-
-One of the seven deadly sins, your population will consume more food.
-Is Known: Age 68 ... now
-
- Available to: All
- Effect: Increases food required by 25%.
- Duration:
- Cast Message: The gluttony of [target] has increased for X days.
- Mystic Advisor Message: A fit of gluttony has descended upon our people, and they will not be sated until for X days.
- Meter Movement:     0.09
-
-#### Greed
-
-People are, by their very nature, greedy individuals. Soldiers have been trained to sacrifice themselves for the greater good. However, this spell reverts the natural greed back into soldiers for several days, causing your opponent to have to pay more in wages and to draft new troops.
-Is Known: Age 12 ... now
-
- Available to: All
- Effect: Increases military wages and draft costs by 25%.
- Duration:
- Cast Message: Our mages have caused our enemy's soldiers to turn greedy for X days.
- Mystic Advisor Message:
- Throne Room Notification: Enemies have convinced our soldiers to demand more money for upkeep.
- Meter Movement:     0.15
-
-#### Lightning Strike
-
-The power of a direct Lightning Strike is arguably the most deadly force on the planet. Your Lightning Strikes will go directly at opponents rune stores and destroy everything in sight. This strike is the most effective way to cripple any opponent's ability to cast spells.
-Is Known: Age 1 ... now
-
- Available to: All - with a minimum relationship of Unfriendly
- Effect: Destroys a random portion of runes between 30-65%.
- Duration: Instant
- Cast Message: Lightning strikes the Towers in [province name] (##:##) and incinerates X runes!
- Mystic Advisor Message: N/A
- Meter Movement:     0.18
-
-#### Land Lust
-
-Land is the defining strength of any province, and this spell is the Mage's way of simply stealing an opponent's land. This spell is a difficult alternative to attacking.
-Is Known: Age 15 ... now
-
- Available to: All - with minimum relationship of Unfriendly.
- Effect: Captures a small and random (up to 1.25%) of the enemy land.
- Duration: Instant
- Cast Message: Our Land Lust over Enemy Province (location) has given us X new acres of land!
- Mystic Advisor Message: N/A
- Throne Room Notification: X acres of land have disappeared from our control!
- Meter Movement:     0.6
-
-#### Magic Ward
-
-Projects a magical ward into the skies above an enemy province, forcing the enemy to pour more resources into their spell casts.
-Is Known: Age 72 ... Age 81, Age 86... now
-
- Available to: Dark Elf, Mystic - with minimum relationship of Unfriendly.
- Effect: Increases target's rune costs by 100%.
- Duration:
- Cast Message: Unknown
- Mystic Advisor Message: Unknown
- Meter Movement:     0.15
-
-#### Meteor Showers
-
-This spell will rain Meteors across the lands of an opponent for several days, killing peasants, troops and more. Deadly and enduring, casting this spell is both difficult and costly. The damage done, however, can be just as great.
-Is Known: Age 12 ... now
-
- Available to: Mystic - with minimum relationship of Hostile
- Effect: Kills peasants and troops (soldiers, specialists and elites) at home each Utopian Day the
- spell is active.
- Duration: Short-moderate
- Cast Message: Meteors will rain across the lands of [province name] (##:##) for X days
- Mystic Advisor Message: Meteors rain across our lands, and are not expected to stop for X days.
- Throne Room Notification: Meteors rain across the lands and kill X peasants and X troops!
- Meter Movement:     0.75
-
-#### Mystic Vortex
-
-The Mystic Vortex is one of the more powerful spells in the Utopian World. A successful cast will cause approximately half of the spells currently active over a province to vanish. However, this spell does not discriminate and will nullify both positive and negative spells affecting their lands.
-Is Known: Age 1 ... now
-
- Available to: All - with a minimum relationship of Unfriendly
- Effect: Nullifies spells on the enemy province (50% chance per spell).
- Duration: Instant
- Cast Message: A magic vortex overcomes the province of [province name] (##:##), negating X active
- spells.
- Mystic Advisor Message: N/A
- Throne Room Notification: A magic vortex rendered many of our spells inactive!
- Meter Movement:     0.45
-
-#### Nightmares
-
-The effects fear can have on an individual are amazing. By causing nightmares within the soldiers of an opposing army, you may be able to cause them to quiver in fear. Troops having nightmares have to be rehabilitated and are unavailable for a period of time.
-Is Known: Age 1 ... now
-
- Available to: Heretic - with a minimum relationship of Unfriendly
- Effect: Instantly returns around 1.5% of the military troops (specialists, elites and thieves) under training for 8 days.
- Will only affect the troops that are at home.
- Soldiers simply quit the army.
- Duration: Instant damage spell, with duration effect: Troops in training queue stretching 8 days (not affected by Train Time or Spell Duration).
- Cast Message: During the night, X of the men in the armies and thieves' guilds of [Province Name]
- had nightmares.
- Some were forced into rehabilitation, but the soldiers simply quit the army!
- Mystic Advisor Message: N/A
- Throne Room Notification:
-   This morning, X of our men from our armies and thieves' guild turned up unfit.
-   The Soldiers quit, while the rest are being retrained. They should be available again in 8 days.
- Meter Movement:     0.45
-
-#### Nightfall
-
-Darkness falls on the land and it is a darker night than most, the minds of mages are clouded by the psychic fog and the magical energies within the towers dims.
-Is Known: Age 110 ... now
-
- Available to: Undead - with a minimum relationship of Unfriendly
- Effect: Reduces enemy Guild and Tower effectiveness by 50% for 8 ticks. (High Difficulty/High Rune Cost)
- Duration: Instant damage spell, with duration effect: Reduce enemy Guild and Tower Effectiveness by 50%, Effects last for 8 ticks.
- Cast Message: TBD
- Mystic Advisor Message: N/A
- Throne Room Notification:
-   TBD
- Meter Movement:     TBD
-
-#### Pitfalls
-
-Placing magical pitfalls throughout an enemy's lands will cause them to suffer higher Military Defensive Casualties in combat for several days. This is an effective way to frustrate attackers and strengthen your own position in the midst of war.
-Is Known: Age 14 ... now
-
- Available to: Elf, Faery
- Effect: Increases defensive military losses by 20%.
- Duration: Medium
- Cast Message: Pitfalls will haunt the lands of [province name] (##:##) for X days. They will suffer
- increased defensive losses during battle.
- Mystic Advisor Message:
- Meter Movement:     0.18
-
-#### Storms
-
-The power of mother nature is amongst the most powerful in existence. Sending storms over another province will cause destruction and death across the lands for days. The Storm Spell will cancel any Droughts affecting the target province. Increases Tornado damage taken by 15%.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Kills 1.5% of peasant population per day.
- Increases Tornado damage taken by 15%.
- Duration:
- Cast Message: Storms will ravage [province name] (##:##) for X days!
- Mystic Advisor Message:
- Throne Room Notification: Storms are ravaging our lands!
- Meter Movement:     0.06
-
-#### Tornadoes
-
-One of the most dangerous and destructive offensive spells, casting this will rain a terror of tornadoes across an opponent's lands, laying waste to acres of buildings across the province.
-Is Known: Age 14 ... now
-
- Available to: All - with minimum relationship of Unfriendly.
- Effect: Destroys a small and random portion of buildings.
- Duration: Instant
- Cast Message: Tornadoes scour the lands of [province name] (##:##), laying waste to X acres of
- buildings!
- Mystic Advisor Message: N/A
- Throne Room Notification: Tornadoes scour the lands, causing the destruction of X acres of
- buildings!
- Meter Movement:     0.3
-
-#### Vermin
-
-Sending vermin scurrying into the Food supplies of an opponent forces the destruction of a great deal of their reserves.
-Is Known: Age 1 ... Age 67, Age 82 ... Age 86, Age 90 ... now
-
- Available to: Faery, Halfling
- Effect: Destroys (on average) about 50% of target's Food supplies.
- Duration: Instant
- Cast Message: Unknown
- Mystic Advisor Message: N/A
- Meter Movement:     0.00 (incorrect value)
-
-### Forgotten Spells
-
-#### Barrier of Integrity
-
-Stops all drafting that would normally take place in target province.
-Was upgraded to Sloth
-Is Known: Age 72 ... Age 80
-
-#### Fog
-
-Casting a sphere of protection over your province, this spell helps protect your province from invasion from others. This spell can last for a couple of days.
-Is Known: Age 1 ... Age 50
-
- Available to: Dwarf, Faery
- Effect: Increases enemy attack times by 3 hours.
- Duration: max 22 hours
- Cast Message: Our lands are protected by dense fog (Estimated: X more Days).
- Mystic Advisor Message: Our lands are filled with fog, slowing opposing armies for X days!
-
-#### Ghost Workers
-
-Creating ghostly workers to perform the duties of your peasants, this spell reduces reduces the amount of filled jobs for maximum efficiency. This spell is effective for several days until the ghosts disappear.
-Is Known: Age 13 ... Age 16 ... Age 81 ... now
-
- Available to: Faery, Undead
- Effect: The required number of jobs filled for maximum Building Efficiency is reduced by 25%.
- Duration: Moderate, max time unknown
- Cast Message: Magical auras enchant our buildings and begin working with increased productivity for XX days!
- Mystic Advisor Message: Same as cast message
-
-#### Haste
-
-Haste makes your workers build faster and harder than otherwise. All buildings constructed while the Haste spell is active will be completed faster than otherwise would be expected.
-Is Known: Age 3 ... Age 14
-
-#### Hero's Inspiration
-
-The spell helps make your military train harder on their own, thus reducing the daily wages you pay your military for several days. This is especially useful in times of limited cash. This spell also increases the intensity of training, allowing your troops to be ready more quickly; provided the spell is cast before the troops are ordered to be trained.
-Is Known: Age 72 ... Age 80, Age 82, Age 85 ... Age 86, Age 93 ... Age 98, Age 101 ... now
-
- Available to: War Hero
- Effect: Decreases your military wages by 30%. Decreases your military training time by 30%. Does not stack with Inspire Army.
- Duration: max 24 hours
- Cast Message: Our army has been inspired to train even harder. We expect maintenance costs to be reduced for X days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Illusionary
-
-By creating illusionary forces throughout your lands, it is possible to make an army of men look larger than life. Any crystal balls cast while this spell is active will show a larger-than-normal army.
-Is Known: Age 1 ... Age 11
-
-#### Mystic Aura
-
-A defense spell, creating a Mystic Aura around your lands will repel the next evil spell cast upon you from abroad. Unfortunately, the effect focuses only on the first spell cast upon you.
-Is Known: Age 1 ... Age 58, Age 60 ... now
-
- Available to: Dwarf
- Effect: Repels the next offensive spell cast upon you (except own spells).
- Duration: N/A
- Cast Message: A Mystic Aura has been placed around our province, protecting us from the next evil
- spell from abroad.
- Mystic Advisor Message: Same as Cast Message
-
-Note that Mystic Aura does not activate on intel spells like Crystal Ball.
-
-#### Scientific Insights
-
-This spell clears the minds of your scientists, allowing them to think more clearly and increasing the effectiveness of their research.
-Is Known: Age 72 ... Age 92, Age 96 ... Age 98, Age 100 ... Age 103
-
- Available to: Sage
- Effect: Increase the science effectiveness of target province by 10%.
- Duration: Medium, max time unknown
- Cast Message: Your scientists have been imbued with mental energy, making them work harder for XX days!
- Mystic Advisor Message: Same as cast message
-
-#### Sloth
-
-This spell enchants the enemy's peasantry, calling upon their deep-rooted morals to family and preventing them from signing up for military service.
-Is Known: Age 72 ... Age 81, Age 87 ... now
-
- Available to: Dark Elf - with minimum relationship of Unfriendly.
- Effect: Reduces drafting within a target province by 50%. Also increases Draft Cost by 100%.
- Duration: Short
- Cast Message: Unknown
- Mystic Advisor Message: Unknown
-
-### Genesis Spells
-
-#### Soul Blight
-
-Causes death among the peasants of an enemy, turning some into the caster's soldiers
-
- Effect: Kills x% of peasants and then adds x% of those killed to the caster's soldiers
- Duration: N/A
- Cast Message: A Pall of death descends upon enemy (x:x), taking xxx peasent's lives. Your legion is reinforced by xx of their fallen.
- Mystic Advisor Message: Unknown
-
-### Changelog
-
-- Age 106: Meter movements updated to reflect forum changes of "all values have tripled" on 6 May 2024.
-
-- Age 107: Updated spell availability and bonuses.
-
-- Age 110: Updated spell availability and bonuses.
-
 ## Freeze time
 
 This is the time at the start of every age, before Protection begins. During this time you may log into your province and navigate the game, but the games time will not progress. This time is to allow players to decide on a kingdom strategy or races and specialties. During Freeze time you may reset your province details from your Preferences menu.
-
-## Game Rules
-
-### Contents
-
-- 1 Terms of Use
-
-1.1 Account Suspension/Deletion
-1.2 Inactive Account
-
-- 2 Code of Conduct
-
-2.1 Your Account
-2.2 Contact Information
-2.3 Game Play
-2.4 Internet Proxies and Anonymizers
-2.5 Spirit of the Rules
-2.6 Fair & Honorable Play
-2.7 Language & Attitude
-2.8 Kingdom Flags and other Images
-2.9 Province, Leader and Kingdom Names
-
-- 3 Changes to this Agreement and the Game
-
-- 4 Privacy Policy
-
-- 5 Liability Disclaimer
-
-- 6 Indemnification
-
-- 7 Warranty Disclaimer
-
-### Terms of Use
-
-There is a Code of Conduct that you must follow when playing Utopia, which is designed to help keep the game as enjoyable as possible for all. This Code of Conduct applies to the main game experience, wiki, forums and any other associated websites. Violation of any of these rules may result in immediate termination of your Utopia account, and your accounts on any associated websites.
-Thank you for abiding by these rules. If another user is violating these rules, please let us know immediately at utopiasupport@utopia-game.com.
-**PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY.  THEY DESCRIBE YOUR RIGHTS AND RESPONSIBILITIES**.
-These are the Terms and Conditions (this “Agreement”) governing your use of utopia-game.com (the “Site”), an Internet website owned and operated by MUGA Gaming, LLC (“we,” “us,” “our,” or the “Company”).  Your use of the Site, including the use of the games, services and features provided on the Site (the “Service”), shall be deemed to be your agreement to abide by this Agreement and any materials available on the Site incorporated by reference herein, including but not limited to our privacy policy.  We and the Site may offer multiple products and services, and this Agreement governs all products and services offered by us.  This Site is offered and made available only to users thirteen (13) years of age or older.  If you are not yet 13 years of age, please discontinue using the Site immediately.  If you are found to be underage, your account may be terminated without notice.
-1. Privacy & Security; Disclosure
-Our privacy policy may be viewed online on the Site at utopia-game.com/privacy.  We reserve the right to modify our privacy policy from time to time.  The Service may include certain communications from us, including service announcements and administrative messages, and these communications are part of the Service and you will not be able to opt out of receiving them.  Nothing contained in this Agreement will limit our right to comply with governmental, court and law enforcement requests or requirements relating to your use of the Site or Service, which may include disclosing your identity and information provided by you to the applicable authorities.
-2. License Grant & Restrictions
-We hereby grant you a limited, non-exclusive, non-transferable right to access, view and use the Site for the purposes of accessing, viewing or playing content, posting or submitting user material, placing store orders or for accessing information.  We reserve the right to deny or suspend, on our sole discretion, your access to the Site or any portion thereof.  This right is a license which is personal and may only be used for personal, non-commercial uses. We reserve all rights not expressly granted to you.  You agree not to (i) reproduce, transmit, sell or otherwise exploit the Site or the Service for any commercial purpose, (ii) license, sublicense, sell, resell, transfer, assign, distribute or otherwise commercially exploit or make available to any third party the Site or Service in any way; (iii) make derivative works based upon the Site or Service; (iv) embed the Service as a frame from within another application; or (v) reverse engineer or access the Service in order to (a) build a competitive product or service, (b) build a product using ideas, features, functions or graphics that are similar to those related to the Service, or (c) copy any ideas, features, functions or graphics of the Service.
-3. Registration and Passwords
-You may be required to have a unique user name and/or password in order to use and access the Site and Service, or portions thereof.  You are responsible for maintaining the confidentiality of your usernames, passwords and accounts.  Usernames and passwords may not be shared by more than one individual, and may not be transferred from one individual to another.  We are not responsible for any harm causes or related to the theft or misappropriation of your user name or password.  You shall be responsible for all actions taken via your username and password, whether or not made with your knowledge or authority.
-4. Your Responsibilities
-You are responsible for all activity occurring under your user accounts and shall abide by all applicable local, state, national and foreign laws, treaties and regulations in connection with your use of the Site, including those related to data privacy, international communications and the transmission of technical or personal data. You shall: (i) notify the Company immediately of any unauthorized use of any password or account or any other known or suspected breach of security; (ii) not provide false identity information to gain access to the Site or to use the Service; (iii) not use the Site or Service to defame, abuse, harass, threaten or otherwise violate the legal right of others; (iv) not publish, post, upload, email, distribute or disseminate any defamatory, misleading, infringing or unlawful content; and (v) not collect, store or transmit personal information about individuals or any information that is subject to applicable privacy laws or regulations.
-5. Intellectual Property
-The Company alone (and its licensors, where applicable) shall own all right, title and interest, including all related Intellectual Property Rights (as defined below), in and to the Site and the Service, including without limitation all Site software, design, text, images, photographs, illustrations, audio and video material, artwork, graphic material, proprietary information and all copyrightable or otherwise legally protectable elements of the Site, including with limitation the selection, sequence and “look and feel” of the Site and the Service, and all trademarks, service marks and tradenames are the property of the Company.  The Site may include trademarks, service marks or logos of third parties, all of which are the property of their respective owners. "Intellectual Property Rights" means unpatented inventions, patent applications, patents, design rights, copyrights, trademarks, service marks, trade names, domain name rights, mask work rights, know-how and other trade secret rights, and all other intellectual property rights, derivatives thereof, and forms of protection of a similar nature anywhere in the world.
-For any materials you provide to us (including feedback and submissions) or post, upload, input or submit to the Site or the Service for review by the general public, or by the members of any public or private community (each a “Submission” and collectively “Submissions”), you grant us and our affiliates and assignees permission to use your Submission in connection with the operation of their businesses, including without limitation the right to copy, distribute, transmit, publicly display, publicly perform, reproduce, edit, translate and reformat your Submission and the right to sublicense such rights to any supplier.  No compensation will be paid with respect to the use of Submissions and we are under no obligation to post or use any Submissions.  By posting or providing a Submission, you warrant and represent that you own or otherwise control all of the rights to your Submission, including without limitation the right to post or submit such Submission.  In addition, by providing or submitting a Submission that contains images, photographs or pictures (“Images”), you warrant and represent that (a) you are the copyright owner of such Image, or that the copyright owner of such Image has granted you the right to use such Image consistent with the manner and purpose of your use and as otherwise permitted by this Agreement, (b) you have the rights necessary to grant the rights described in this paragraph, (c) and that any person depicted in such Images has consented to the use of such Images as set forth in this Agreement.  By posting or providing Images, you grant us and other users the right to use your Images in connection with the Service.
-6. Third Party Interactions
-During use of the Service, you may enter into correspondence with, or purchase or sign up to receive goods and/or services from, a third party, or you may participate in promotions of advertisers or sponsors showing their goods and/or services through the Service. Any such activity, and any terms, conditions, warranties or representations associated with such activity, are solely between you and the applicable third party.  We and our licensors shall have no liability, obligation or responsibility for any such correspondence, purchase or promotion between you and any such third party, including any termination by such third party of their provision of goods or services to you.  We do not endorse any sites on the Internet that are linked through the Site or Service and do not endorse any third party goods or services that are made available to you as a result of your use of the Site or Service. We provide these links to you only as a matter of convenience, and in no event shall we or our licensors be responsible for any content, products, or other materials on or available from such sites.
-7. Rules of Conduct
-Your use of the Site and the Service is subject to all applicable laws. You are solely responsible for all activities, acts and omissions that occur in, from, through or under your user name or password. You shall not use, allow, or enable others to use the Site or the Service, or knowingly condone use of this Site or the Service by others, in any manner that is, attempts to, or is likely to:
-• be libelous, defamatory, indecent, vulgar or obscene, pornographic, sexually explicit or sexually suggestive, racially, culturally, or ethnically offensive, harmful, harassing, intimidating, threatening, hateful, objectionable, discriminatory, or abusive, or which may appear to impersonate anyone else;
-• affect us adversely or reflect negatively on us, the Site, our goodwill, our employees or moderators, our name or reputation, or cause duress, distress or discomfort to us or anyone else, or discourage any person, firm or enterprise from using all or any portion, features or functions of the Site, or from advertising, linking or becoming a supplier to us in connection with the Site;
-• send or result in the transmission of junk e-mail, chain letters, duplicative or unsolicited messages, surveys, contests, pyramid scheme, or so-called "spamming" and "phishing", or encourage other users to copy a message;
-• be used for commercial or business purposes, including, without limitation, advertising, marketing or offering goods or services, whether or not for financial or any other form of compensation or through linking with any other website or web pages;
-• transmit, distribute or upload programs or material that contain malicious code, such as viruses, timebombs, cancelbots, worms, trojan horses, spyware, or other potentially harmful programs or other material or information, or link to any web site which promotes or teaches these actions;
-• create a false identity for the purpose of misleading others (including the creation of alternate accounts) or forge any TCP/IP packet header or part of the header information in any email or newsgroup posting for any reason;
-• disrupt the normal flow of online communities or forums with an excessive number of messages (i.e. flooding attack) or that otherwise negatively affects other users' ability to participate in such communities or forums;
-• contact anyone who has asked not to be contacted;
-• "stalk" or otherwise harass anyone;
-• violate any laws, regulations (including, without limitation, laws regarding the transmission of technical data or software exported from the United States), judicial or governmental order or any treaties, or violate or infringe upon any intellectual property rights, rights of publicity or privacy or any other rights of ours or of any other person, firm or enterprise; gain unauthorized access to the Site, other users' accounts, names, passwords, personally identifiable information or other computers, websites or pages, connected or linked to the Site or to use the Site in any manner which violates or is inconsistent with the terms and conditions of this Agreement;
-• modify, disrupt, impair, alter or interfere with the use, features, functions, operation or maintenance of the Site or the rights of use and enjoyment of the Site by any other person, firm or enterprise; or
-• collect, obtain, compile, gather, transmit, reproduce, delete, revise, view or display any material or information, whether personally identifiable or not, posted by or concerning any other person, firm or enterprise, in connection with their or your use of the Site, unless you have obtained the express, prior permission of such other person, firm or enterprise to do so.
-8. Disclaimer of Warranties
-THE COMPANY AND ITS LICENSORS MAKE NO REPRESENTATION, WARRANTY, OR GUARANTY AS TO THE RELIABILITY, TIMELINESS, QUALITY, SUITABILITY, AVAILABILITY, ACCURACY OR COMPLETENESS OF THE SERVICE, THE SITE OR ANY CONTENT. THE COMPANY AND ITS LICENSORS DO NOT REPRESENT OR WARRANT THAT (A) THE USE OF THE SITE OR SERVICE WILL BE SECURE, TIMELY, UNINTERRUPTED OR ERROR-FREE OR OPERATE IN COMBINATION WITH ANY OTHER HARDWARE, SOFTWARE, SYSTEM OR DATA, (B) THE SITE OR SERVICE WILL MEET YOUR REQUIREMENTS OR EXPECTATIONS, (C) ANY STORED DATA WILL BE ACCURATE OR RELIABLE, (D) THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION, LEADS OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU THROUGH THE SERVICE OR SITE WILL MEET YOUR REQUIREMENTS OR EXPECTATIONS, (E) ERRORS OR DEFECTS WILL BE CORRECTED, OR (F) THE SITE OR THE SERVER(S) THAT MAKE THE SITE OR SERVICE AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. EXCEPT AS EXPRESSLY SET FORTH HEREIN, THE SERVICE AND SITE AND ALL CONTENT IS PROVIDED TO YOU STRICTLY ON AN "AS IS" BASIS. ALL CONDITIONS, REPRESENTATIONS AND WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT OF THIRD PARTY RIGHTS, ARE HEREBY DISCLAIMED TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW BY US AND OUR LICENSORS.
-9. Indemnification
-You shall indemnify and hold us and our licensors and our respective parent organizations, subsidiaries, affiliates, officers, directors, employees, attorneys and agents harmless from and against any and all claims, costs, damages, losses, liabilities and expenses (including attorneys' fees and costs) arising out of or in connection with: (i) a claim alleging that use of your Submissions infringes the rights of, or has caused harm to, a third party; (ii) a claim, which if true, would constitute a violation by you of your representations and warranties; (iii) a claim arising from the breach by you of this Agreement; or (iv) any use or alleged use of your accounts or your passwords by any person, whether or not authorized by you.
-10. Internet Delays
-THE SITE AND SERVICE MAY BE SUBJECT TO LIMITATIONS, DELAYS, AND OTHER PROBLEMS INHERENT IN THE USE OF THE INTERNET AND ELECTRONIC COMMUNICATIONS. WE ARE NOT RESPONSIBLE FOR ANY DELAYS, DELIVERY FAILURES, OR OTHER DAMAGE RESULTING FROM SUCH PROBLEMS.
-11. Limitation of Liability
-YOU UNDERSTAND THAT, TO THE FULLEST EXTENT PERMISSIBLE BY LAW, THIS SITE, THE COMPANY AND ANY OF OUR PARENT ORGANIZATIONS, SUBSIDIARIES, AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES OR AGENTS SHALL NOT BE LIABLE FOR ANY LOSS OR DAMAGE, OF ANY KIND, WHETHER DIRECT OR INDIRECT, PUNITIVE, SPECIAL, EXEMPLARY, INCIDENTAL, CONSEQUENTIAL OR OTHER, ARISING OUT OF, OR IN ANY WAY CONNECTED WITH THIS SERVICE OR THE SITE, INCLUDING BUT NOT LIMITED TO THE USE OR INABILITY TO USE THE SERVICE, OR FOR ANY CONTENT OBTAINED FROM OR THROUGH THE SERVICE, ANY INTERRUPTION, INACCURACY, ERROR OR OMISSION, REGARDLESS OF CAUSE IN THE CONTENT, EVEN IF THE PARTY FROM WHICH DAMAGES ARE BEING SOUGHT OR SUCH PARTY'S LICENSORS HAVE BEEN PREVIOUSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-12. Assumption of Risks and Mature Content
-YOU ASSUME ALL RISKS THAT THE SITE, SERVICE, CONTENT AND USER SUBMISSIONS AND MATERIALS ARE SUITABLE OR ACCURATE FOR YOUR NEEDS AND WILL BE UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE. BY PARTICIPATING IN MULTI-PLAYER GAMES OR VISITING CHAT ROOMS OR PUBLIC FORUMS YOU MAY BE EXPOSED TO RUDE, CRUDE, INDECENT, OR OTHER OFFENSIVE LANGUAGE OR REFERENCES. YOU AGREE THAT WE SHALL NOT BE RESPONSIBLE FOR ANY LOSS OR DAMAGE OF ANY SORT RELATING TO YOUR DEALINGS WITH ANY THIRD PARTY ADVERTISER OR CONTENT PROVIDED ON THE SITE.
-13. Notice
-We may give notice by means of a general notice on the Service, electronic mail to any e-mail address on record in our account information for you, or by written communication sent by first class mail or pre-paid post to your address on record in the Company’s account information. Such notice shall be deemed to have been given upon the expiration of 48 hours after mailing or posting (if sent by first class mail or pre-paid post) or 12 hours after sending (if sent by email). You may give notice to us at any time by any of the following: letter to the Company delivered by nationally recognized overnight delivery service or first class postage prepaid mail to the Company, in either case, addressed to the attention of: President.
-14. Modification to Terms
-We reserve the right to modify the terms and conditions of this Agreement or our policies relating to the Service at any time, effective upon posting of an updated version of this Agreement or updated policies on the Site. You are responsible for regularly reviewing this Agreement. Continued use of the Service or the Site after any such changes shall constitute your consent to such changes.
-15. Assignment
-This Agreement may not be assigned by you without the prior written approval of the Company but may be assigned without your consent by us.
-16. General
-The Site is controlled by the Company from its offices in Massachusetts, United States of America.  We make no representations or warranties that the Site or Service or related information offered by us are appropriate in other locations.  Those who choose to access the Site from other locations are responsible for compliance with local laws, to the extent locals laws are applicable.  This Agreement shall be governed by Massachusetts law and controlling United States federal law, without regard to the choice or conflicts of law provisions of any jurisdiction, and any disputes, actions, claims or causes of action arising out of or in connection with this Agreement or the Service shall be subject to the exclusive jurisdiction of the state and federal courts located in Boston, MA. If any provision of this Agreement is held by a court of competent jurisdiction to be invalid or unenforceable, then such provision(s) shall be construed, as nearly as possible, to reflect the intentions of the invalid or unenforceable provision(s), with all other provisions remaining in full force and effect. No joint venture, partnership, employment, or agency relationship exists between you and the Company as a result of this Agreement or use of the Service. The failure of the Company to enforce any right or provision in this Agreement shall not constitute a waiver of such right or provision unless acknowledged and agreed to by us in writing.
-Questions or Additional Information
-If you have questions regarding this Agreement or wish to obtain additional information, please send an e-mail to David@MUGAGamingLLC.com
-This Terms of Service was last modified on August 10, 2017.
-
-#### Account Suspension/Deletion
-
-Your account may be suspended, modified or deleted at any time for any reason, with or without notice to you. In the event of suspension, modification or deletion of your account, you will not be entitled to a refund of any prior amounts that have been paid by you to purchase credits for your account. For purposes of explanation and not limitation, most account suspensions/deletions are the result of violations of the Code of Conduct.
-
-#### Inactive Account
-
-If, upon logging in to your account, you receive a message stating that your account is "Inactive" it is possible that your account was rendered inactive due to a violation of the games rules.
-If you believe you did not break these rules here is what you can do.
-Please be aware, and I'm looking at you monarchs here, we cannot discuss another players account. This means if you email us asking why a kingdom mate was deleted we will not be able to tell you. We will release details only to the account owner.
-Now that is out of the way here are the steps you can take.
-Send a **POLITE** email to utopiasupport@utopia-game.com from the email associated with your master account. Include your username or your Support ID. Explain why you think you might have been deleted, the more detail you provide the better. If it is found that you were deleted in error your account will be restored, along with your province.
-Be aware though that ignorance of the rules is not an excuse we can accept, nor are we able to contact people via mail before we take action - it is simply not feasible.
-These actions are taken for the good of the game. While we understand you may be angry we will not put up with swearing, insults, threats and the like so, for your own sake, please keep the language civil.
-Finally, if you do not get your account reinstated that does not mean you are banned forever from the game (not unless its an IP ban, which is rare unless you use a proxy). You are free to make a new account but you should probably email us to confirm it wont be deleted automatically.
-
-### Code of Conduct
-
-#### Your Account
-
-You may create only one account in the Utopia gaming environment. You may maintain only your own account: under no circumstances should your account be accessed by anyone other than you. In the event that a third party is deemed to be accessing your account, both you and the third party will be considered in violation of the Code of Conduct.
-Persistent creation and deletion of accounts is not allowed under any circumstances.
-Should your account be suspended, the creation of a new account will be considered a breach of the Code of Conduct.
-*Can I play with a brother/sister/housemate? Please see http://forums.utopia-game.com/showthread.php?623628-FAQ-Please-check-in-here-before-posting&p=15185602&viewfull=1#post15185602*
-
-#### Contact Information
-
-The information you provide when signing up is used to protect the Utopia game from cheating. You are expected to provide complete and accurate information account information, and to keep it up to date. You can update this information in the Account Settings section of the game.
-
-#### Game Play
-
-Under no circumstances may you use automation software, hacks, mods, scripts or any unauthorized third-party tools designed to improve your performance in Utopia.
-
-#### Internet Proxies and Anonymizers
-
-You are expected to access the site from the IP addresses assigned to you normally by your Internet Service Provider.
-If you access the site via a proxy server, anonymizing network or any anonymizing software, you will be considered to be in violation of the Code of Conduct.
-If you are using **VPN**, please contact game support with reasoning behind doing so to avoid any unnecessary deactivations.
-If you have no choice but to use proxy servers made compulsory by your Internet Service Provider, country or corporation, you must provide details and supporting evidence to the operators of the game before continuing to use the game. Exceptions may be made at the sole discretion of the operators of the game, and may be revoked at any time without notice.
-
-#### Spirit of the Rules
-
-Players attempting to manipulate rules and quirks of the game in ways obviously not intended may be subject to deletion. Because of their nature, these types of circumstances are considered on a case-by-case basis. Users should avoid actions they believe are against the spirit and intent of the game.
-
-#### Fair & Honorable Play
-
-The operators of the game aim to maintain the highest standards of ethics within the game. Any instance of inappropriate language, manipulation of bugs, or acts of deception/fraud can result in immediate removal from the game. We rely on our users to help us enforce these rules and provide an enjoyable gaming environment for users of all ages and backgrounds.
-
-#### Language & Attitude
-
-Utopia is played by people of all ages and backgrounds. You are expected to treat others with respect and use only appropriate language in any contact with other players.
-In particular:
-
-- you may not use language that is vulgar or that is otherwise offensive, defamatory, obscene, hateful or racially, ethnically or otherwise objectionable
-
-- you may not post any content that is subject to the rights of any other person or entity
-
-- you may not post any content that is related to drugs, sex or any criminal activity
-
-- you may not post any content including any personally identifiable information about another player or yourself
-
-You are encouraged to report any violation of these rules. Violators will be considered in breach of the Code of Conduct, and subject to suspension or deletion.
-
-#### Kingdom Flags and other Images
-
-Various game features permit players to upload images to the website, which are visible to other players in the game. As such, these images are subject to the Language & Attitude rules defined above. In addition, you are forbidden from uploading any images that are pornographic in nature.
-
-#### Province, Leader and Kingdom Names
-
-Players may select names for their province, leader and kingdom, which are visible to other players in the game. As such, these names are subject to the Language & Attitude rules defined above. In addition, the following rules apply:
-
-- Names may not contain gibberish (for example, “asdqwe”, “lkjlkjlkj”, “542341224” etc)
-
-- Names may not be designed to be confusingly similar to other names in the game. For example, it is forbidden for the provinces of a kingdom to select names that are deliberately difficult to distinguish from each other.
-
-- Names may not be designed to be confusing with respect to the normal text of the game. For example, it is forbidden to set a kingdom name that reads like an error message to a novice player.
-
-- Names may not be designed to impersonate another player or member of the game.
-
-### Changes to this Agreement and the Game
-
-We reserve the right to modify this Agreement and any aspect of the Game, with or without prior notice. Your continued use of the Game following any revision to this Agreement constitutes your complete and irrevocable acceptance of any and all such changes.
-
-### Privacy Policy
-
-We respect the privacy of the users of utopia-game.com, and will not sell or otherwise make available any identifying information provided to us by our users to any third party.
-At MUGA Gaming, LLC, a Delaware limited liability company (together with its subsidiaries and or affiliated companies, the “Company”, “we,” or “us”), your privacy is very important to us. The purpose of this privacy policy (this “Policy”) is to provide you with a description of the types of information we collect about you when you visit the Company web site located at www.utopia-game.com and associated sub-domains (the “Site”) or use the products, applications or services we provide through the Site (the “Services”), and how we use that information. This Policy only applies to information collected while you are on the Site or accessing the Services.
-**Information We Collect**.  We collect and store information that you voluntarily provide to us as well as data related to your Site visit and use of the Services. We may request that you provide personally identifiable information, including your email address and other information from which your identity is or may be discernible.  The information we collect may be stored on our servers, and on the servers of third party service providers. In addition, we may collect certain aggregate information and analytical data related to your Site visit usage and use of the Services (see “Use of Cookies” below). Aggregate information is non-personally identifiable or anonymous information about you, and may include the date and time of your visit, the IP address of your computer or mobile device, your computer or mobile device browser information, the Internet address that you visited prior to and after reaching the Site or Service, the name of the domain and host you used to access the Internet, the type of mobile device you use, your mobile device’s unique device ID and the features of our Site and Service which you accessed. This data is not associated with your personally identifiable information.
-**How We Use Information**.  We use collected information to make available and to improve our Site and Services.  We use such information to respond to inquiries or service requests and monitor such responses; provide information about and market our Services; resolve problems; manage the Site; develop new products and services; to let you know about changes or improvements and to enforce our terms and conditions.  Please keep in mind that comments sections, forums, multi-user games and other similar areas of our site are public and information posted in those areas is viewable and usable by anyone with access.
-If you have any questions regarding the foregoing, or our privacy practices, you may contact: **David@MUGAGamingLLC.com**
-**Disclosure of Information**.  We do not sell or rent personally identifiable information to third parties who are not affiliates of the Company without your consent to do so.  We may disclose personally identifiable information to third party service providers that perform functions on our behalf, such as companies or individuals that host or operate our Site, analyze data, or provide customer service.  We are not limited in our use of non-personal information that does not permit direct association with any specific individual, or non-identifiable aggregate information about our users (such as the number of users of our Services and the geographic distribution of our users). We disclose information that we, in good faith, believe is appropriate to cooperate in investigations of fraud or other illegal activity.  We disclose information in response to a subpoena, warrant, court order, levy, attachment, order of a court-appointed receiver or other comparable legal process, including subpoenas from private parties in a civil action.  We may disclose information to your agent or legal representative (such as the holder of a power of attorney that you grant, or a guardian appointed for you).  We may share information with companies that provide public relations and marketing services for us.  As with any other business, it is possible that in the future we could merge with or be acquired by another company. If such an acquisition occurs, the successor company would have access to the information maintained by us, including customer account information, but would continue to be bound by this Policy unless and until it is amended. We may share aggregate (non-personally identifiable) information with certain third parties such as advertisers, industry organizations, and prospective affiliates.
-**Choice and Opt-Out**.  We provide you the opportunity to “opt-out” of having your personally identifiable information used for certain purposes when we ask for this information. For example, if you do not wish to receive marketing material from us, you can indicate your preference by clicking a link to unsubscribe contained in such communications.  If you no longer wish to receive our newsletter and promotional communications, you may opt-out of receiving them by following the instructions included in each communication.
-**Use of Cookies**.  “Cookies” are simple text files stored on your computer for use by a browser. Certain Site features may only be available through the placement of a cookie. We may use “cookies” to assist in data collection and to track visitor Site and Services usage and trends to help us better serve you. The use of cookies is a standard practice among Internet web sites; most Internet browsers permit a user to accept, decline or delete cookies. We may use persistent cookies to make it easier for you to navigate the Site and our Services.  Specifically, we may use persistent cookies to track whether you are logged into the Site or our Services. A persistent cookie may remain on your local device for an extended period of time. You can remove persistent cookies by following directions provided in your Internet browser’s “help” file. We may set a persistent cookie to store how you came to the Site and what items you interact with. Persistent cookies also enable tracking and targeting the interests of our users to enhance their experience on the Site. If you reject cookies, you will still be able to view the Site, but your ability to use some areas of the Site may be limited. Some of our business partners (e.g., analytical tracking software providers) may use cookies and tracking technologies on the Site. We have no access to or control over these cookies or tracking technologies. This Policy covers the use of cookies on our Site and by us only and does not cover the use of cookies or tracking technologies by any such business partner.
-**Data Security**.  We follow generally accepted industry standards to protect the personal information submitted to us, both during transmission and once we receive it. While we strive to use commercially acceptable means to protect your personal information, no method of transmission over the Internet, or method of electronic storage, is 100% secure and we cannot guarantee its absolute security. In the event of an inadvertent disclosure of your personal information we will take all commercially reasonable steps to limit and remedy the disclosure as required by the applicable law. If you have any questions about security of our Site and the Services, you can contact us via email at David@MUGAGamingLLC.com.
-**Age Limitation**.  This Site and the Services are not directed to person under the age of 13. If you become aware that your child under the age of 13 has provided us with personal information without your consent, please contact us at David@MUGAGamingLLC.com.  We do not knowingly collect or solicit information from, market to or accept services from persons under the age of 13 years old. If we become aware that a person under the age of 13 has provided us with personal information, we take steps to remove such information.
-**Effective Date; Policy Changes**.  Each time you use the Site and our Services, the current version of the Policy will apply. Accordingly, when you use the Site or our Services, you should check the date of this Policy (which appears at the top of the Policy) and review any changes since the last version. Our business changes frequently and this Policy is subject to change from time to time. You are encouraged to check the Site regularly for any changes to this Privacy Policy. Unless stated otherwise, our current Policy applies to all information that we have about you. We will not materially change our policies and practices to make them less protective of customer information collected in the past without the consent of affected customers.
-**Governing Law**.  This Policy is governed by the laws of the Commonwealth of Massachusetts, U.S.A. without giving effect to any principles of conflict of law.  If you are outside of the United States, your information will be processed and stored in the United States and you consent to such processing and storage under the laws of the United States.
-**Your California Privacy Rights**.  California Civil Code Section 1798.83 permits customers who are California residents and who have provided the Company with “personal information” (as that term is defined in Section 1798.83) to request certain information about the disclosure of that information to third parties for their direct marketing purposes. If you are a California resident with questions regarding this, please contact us at David@MUGAGamingLLC.com.
-**Contact Us**.  To contact us with your questions or comments regarding this Policy or the information collection and dissemination practices of the Site, please email us at David@MUGAGamingLLC.com.
-
-### Liability Disclaimer
-
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL THE OPERATOR OF THE GAME OR ITS AFFILIATES BE LIABLE TO YOU (OR ANY THIRD PARTY MAKING CLAIMS THROUGH YOU) FOR ANY DAMAGES WHATSOEVER, INCLUDING BUT NOT LIMITED TO ANY DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL, PUNITIVE OR INCIDENTAL DAMAGES, OR DAMAGES FOR LOSS OF USE, PROFITS, DATA OR OTHER INTANGIBLES, OR THE COST OF PROCUREMENT OF SUBSTITUTE GOODS OR THE SITE, UNAUTHORIZED ACCESS TO AND TAMPERING WITH YOUR PERSONAL INFORMATION OR TRANSMISSIONS, ARISING OUT OF OR RELATED TO THE USE, INABILITY TO USE, UNAUTHORIZED USE, PERFORMANCE OR NON-PERFORMANCE OF THE SITE OR THE OPERATOR OF THE GAME, EVEN IF THE OPERATOR OF THE GAME HAS BEEN ADVISED PREVIOUSLY OF THE POSSIBILITY OF SUCH DAMAGES AND WHETHER SUCH DAMAGES ARISE IN CONTRACT, NEGLIGENCE, TORT, UNDER STATUTE, IN EQUITY, AT LAW OR OTHERWISE.
-
-### Indemnification
-
-YOU UNDERSTAND THAT YOU ARE PERSONALLY RESPONSIBLE FOR YOUR BEHAVIOR WHILE USING THE SITE AND FOR ALL CONTENT PROVIDED VIA YOUR ACCOUNT, AND AGREE TO INDEMNIFY AND HOLD THE OPERATOR OF THE GAME AND ITS AFFILIATES AND THEIR OFFICERS, DIRECTORS, EMPLOYEES AND AGENTS HARMLESS FROM AND AGAINST ANY LOSS, DAMAGE, LIABILITY, COST OR EXPENSE OF ANY KIND (INCLUDING LEGAL FEES) THAT MAY BE INCURRED IN CONNECTION WITH A THIRD PARTY CLAIM OR OTHERWISE, IN RELATION TO YOUR USE OF THE SITE, THE CONTENT YOU CONTRIBUTE OR LINK TO, OR YOUR ACCESS TO THE SITE, OR YOUR VIOLATION OF EITHER THESE TERMS OR THE RIGHTS OF ANY THIRD PARTY.
-
-### Warranty Disclaimer
-
-YOU UNDERSTAND THAT YOUR USE OF THE SITE (INCLUDING ANY DOWNLOAD FROM THE SITE AND ANY LOSS OF DATA OR OTHER DAMAGE TO YOUR COMPUTER SYSTEM YOU EXPERIENCE FROM USING THE SITE) IS AT YOUR SOLE RISK. YOU UNDERSTAND THAT THE SITE AND ALL INFORMATION, APPLICATIONS, PRODUCTS AND OTHER CONTENT (INCLUDING THIRD PARTY INFORMATION, APPLICATIONS PRODUCTS AND CONTENT) INCLUDED IN OR ACCESSIBLE FROM THE SITE, ARE PROVIDED ON AN “AS IS” “WHERE-IS” AND “WHERE AVAILABLE” BASIS, AND ARE SUBJECT TO CHANGE AT ANY TIME WITHOUT NOTICE TO YOU. YOU ACKNOWLEDGE THAT THE OPERATOR OF THE GAME MAKES NO WARRANTY THAT THE SITE WILL BE UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE. YOU UNDERSTAND THAT THE OPERATOR OF THE GAME DOES NOT WARRANT THAT THE RESULTS OBTAINED FROM YOUR USE OF THE SITE WILL MEET YOUR EXPECTATIONS. NO WARRANTY OF ANY KIND, WHETHER ORAL OR WRITTEN, CAN MODIFY THE TERMS OF THE DISCLAIMER SET FORTH IN THIS DOCUMENT. TO THE FULLEST EXTENT PERMITTED BY LAW, THE OPERATOR OF THE GAME DISCLAIMS ALL REPRESENTATIONS, WARRANTIES AND CONDITIONS OF ANY KIND (EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT OF PROPRIETARY RIGHTS) AS TO THE SITE AND ALL INFORMATION, APPLICATIONS, PRODUCTS AND OTHER CONTENT (INCLUDING THIRD PARTY INFORMATION, APPLICATIONS, PRODUCTS AND CONTENT) INCLUDED IN OR ACCESSIBLE FROM THE SITE.
 
 ## Getting Started with Utopia
 
@@ -4718,106 +3352,6 @@ Seldom seen, the A/T/M is a challenging effort to play all three disciplines at 
 
 Normally only attempted by top kingdoms, a bank is an extremely large province that from early in the age is made to grow to tremendous size with the aid of the rest of the kingdom. He or she then performs many useful tasks, such as paying for and killing dragons and aiding the growth of the smaller provinces in the kingdom. Humans make excellent banks, as do Dwarves, usefully combined with the Sage or Merchant personalities.
 An explorer is related but different. While banks are a kingdom-wide effort, explorers normally involve one player growing exclusively for his/her own benefit, often to the detriment of their kingdom-mates. Explorers are generally regarded as "useless" as they do not attack, perform ops or cast spells. Explorers are considered selfish and undesirable by most kingdoms. Dwarves are excellent explorers, but any race can do it, as can any personality.
-
-## Guides
-
-**Guide** pages are part of the official Utopia Guide.
-
-### Pages in category "Guide"
-
-The following 31 pages are in this category, out of 31 total.
-
-#### A
-
-- Age 109
-
-#### B
-
-- Brian & Sean
-
-#### C
-
-- Creating a province
-
-#### D
-
-- Dictionary
-
-- Dragons
-
-#### E
-
-- Explore
-
-#### F
-
-- FAQ
-
-#### G
-
-- Growth
-
-#### I
-
-- Ingame
-
-#### M
-
-- Magic Formulas
-
-- Mehul Patel
-
-- Military
-
-- Mystics
-
-- Mystics Spell Table
-
-#### P
-
-- Personality
-
-- Politics
-
-- Preferences
-
-- Province
-
-#### R
-
-- Race
-
-- Relations
-
-- Reservations
-
-- Ritual
-
-#### S
-
-- Stances
-
-#### T
-
-- Target Finder
-
-- The Paper
-
-- The Plague
-
-- Thievery
-
-#### U
-
-- Units
-
-- Utopia
-
-#### W
-
-- War Room
-
-- World of Legends
 
 ## Honor
 
@@ -5429,88 +3963,6 @@ For example if a target with a MAP rating of 20% (and thus Gains OOW of 80%) whi
  MAP gives a bonus to Military Effectiveness equal to the MAP rating / 7.5
 
 For example if the MAP rating of a province is 59% (heavily hit) their ME is boosted by (59 / 7.5 = 7.9%) 7.9% - ie. 1.079 times it's current rating.
-
-## Mystics Spell Table
-
-**NOT CURRENT FOR AGE 106**
-
-### Spell Table [Self Spells]
-
-Spell | Description | Spell Bonus | Difficulty | Cost Multiplier | Duration (Average) | Support Spell | Avian | Dwarf | Elf | Faery | Halfling | Human | Orc | Undead | Cle | Here | Merch | Mys | Rog | Sage | Shep | Tact | WHero | Warr
---- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-Minor Protection | Increases Defensive Military Efficiency by 5% (multiplicative). Stacks with Greater Protection. | 105% | 0.017 | 0.35 | 12 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Greater Protection | Increases Defensive Military Efficiency by 5%. Stacks (multiplicative) with Minor Protection. | 105% | 0.019 | 0.45 | 24 | Yes | No | No | Yes | No | No | Yes | No | No | Yes | No | No | No | No | No | No | No | No | No
-Magic Shield | Increases Defensive Magic Effectiveness by 20%. | 120% | 0.022 | 0.5 | 14 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Mystic Aura | Makes the next spell cast on you fail automatically. |  | 0.022 | 0.5 | N/A | No | No | Yes | Yes | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Fertile Lands | Increases Food production by 25% | 125% | 0.022 | 0.5 | 16 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Nature's Blessing | Grants immunity to Storms and Droughts. Has a 33% chance to cure the Plague on a successful cast. | 100% | 0.023 | 0.6 | 16 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Love & Peace | Increases Birth Rate by +0.85% and War Horse production rate by 40%. | +0.85% | 0.024 | 0.7 | 14 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Divine Shield | Decreases Instant Spell Damage taken by 20%. | 80% | 0.024 | 0.8 | 12 | Yes | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No | No | No | No
-Quick Feet | Decreases Attack Time by 15%. | 85% | 0.026 | 0.8 | 2 | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | Yes | No | No
-Builder's Boon | Reduces Construction Time by 25%. | 75% | 0.027 | 1 | 12 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Inspire Army | Reduces wages by 15% and decreases training time by 20%. | 85%/80% | 0.028 | 1.1 | 12 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Hero's Inspiration | Reduces Military Wages by 30% and Training Time by 30%. | 70%/70% | 0.017 | 1.1 | 14 | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Scientific Insights | Increases Science Efficiency by 10%. | 110% | 0.019 | 1.25 | 9 | No | No | No | No | No | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No
-Anonymity | Hides province name in the next attack, but reveals Kingdom location. No Honor gains when active. Reduces attack gains by 15%. Grants Ambush Immunity for this attack. |  | 0.04 | 1.3 | N/A | No | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Illuminate Shadows | Reduces damage taken from Thievery Operations by 20%. | 80% | 0.02 | 1.3 | 8 | Yes | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No | No | No | No
-Salvation | Reduces all Military Casualties by 10%. | 90% | 0.02 | 1.3 | 8 | Yes | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No | No | No | No
-Wrathful Smite | Increases the Military Casualties of attacking provinces by 20%. | 120% | 0.021 | 1.35 | 8 | Yes | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No | No | No | No
-Invisibility | Increases Offensive Thievery Effectiveness (Offensive TPA) by 10%. Reduce Thieves lost during Thievery Operations by 20%. | 110%/80% | 0.032 | 1.35 | 12 | No | No | No | Yes | Yes | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Clear Sight | Gives a 25% chance to catch enemy thieves. | 75% | 0.033 | 1.4 | 16 | No | No | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No | No
-Mage's Fury | Magic Effectiveness 25% higher for Offense, 25% lower for Defense. | 125%/75% | 0.033 | 1.4 | 6 | No | No | No | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No
-War Spoils | While the spell is active, you immediately take control of Land gained on Attacks. |  | 0.034 | 1.45 | 4 | No | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Mind Focus | Increases Wizard production by 35%. | 135% | 0.033 | 1.475 | 12 | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Fanaticism | Increases Offensive Military Efficiency by 5%. Decreases Defensive Military Efficiency by 5%. | 105%/95% | 0.034 | 1.5 | 6 | Yes | Yes | No | Yes | No | No | No | No | No | Yes | No | No | No | No | No | No | No | No | No
-Guile | Increases Instant Spell Damage and Sabotage Operation Damage by 15% for the duration. | 115% | 0.039 | 1.5 | 8 | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Revelation | Increases the Spawn Rate of new Scientists by 30% while the spell is active. | 130% | 0.035 | 1.55 | 8 | No | No | No | No | No | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No
-Fountain of Knowledge | Increases the Science Book production by 10% while the spell is active. | 110% | 0.033 | 1.55 | 10 | No | No | No | No | No | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No
-Tree of Gold | Instantly generates 26.66% to 53.33% of daily Income. |  | 0.025 | 1.6 | N/A | No | No | No | Yes | No | No | Yes | No | No | No | No | No | No | No | No | No | No | No | No
-Town Watch | Every 5 Peasants defend with 1 strength, but suffer high Casualties. |  | 0.037 | 1.6 | 10 | No | No | No | Yes | No | Yes | No | No | No | No | No | No | No | No | No | No | No | No | No
-Aggression | Soldiers are +2/-2 strength for the duration of the spell. | +2/-2 | 0.037 | 1.625 | 12 | No | Yes | No | Yes | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Miner's Mystique | Peasants generate an extra 0.3gc per tick. | +0.3 | 0.038 | 1.65 | 14 | No | No | Yes | Yes | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Ghost Workers | Lowers Jobs required for maximum efficiency by 20%. | 80% | 0.038 | 1.65 | 14 | No | No | No | Yes | Yes | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Animate Dead | In your next defensive battle, 50% your Military Casualties are returned as Soldiers. | 50% | 0.038 | 1.7 | N/A | No | No | No | Yes | No | No | No | No | Yes | No | No | No | No | No | No | No | No | No | No
-Mist | 10% lower resource losses in battle. | 90% | 0.038 | 1.7 | 6 | No | No | Yes | Yes | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Reflect Magic | 25% chance to reflect Offensive Spells back upon casters. | 25% | 0.4 | 1.8 | 12 | No | No | No | No | No | No | No | No | No | No | No | No | No | No | No | Yes | No | No | No
-Shadowlight | Reveals the origin Province for the next Thievery Operation on you. Makes the next Sabotage Operation targeting you fail automatically. |  | 0.042 | 1.9 | N/A | No | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Bloodlust | Increases Offensive Military Efficiency by 10% and Enemy Military Casualties by 15%, but suffer 15% higher Military Casualties. | 110% 115%/115% | 0.04 | 2.0 | 6 | No | No | No | Yes | No | No | No | Yes | No | No | No | No | No | No | No | No | No | No | No
-Patriotism | Increases draft speed by 30%. Lowers Propaganda Damage taken by 30%. | 130%/70% | 0.045 | 2.0 | 12 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Paradise | Creates a few acres of land. Consumes explore pool. Not available during War or Protection. |  | 0.5 | 3.0 | N/A | No | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Cast Ritual | Increases progress towards the chosen ritual for each cast. Only available on the Ritual tab. |  | N/A | 6.0 | N/A | No | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Spell | Description | Spell Bonus | Difficulty | Cost Multiplier | Duration (Average) | Support Spell | Avian | Dwarf | Elf | Faery | Halfling | Human | Orc | Undead | Cle | Here | Merch | Mys | Rog | Sage | Shep | Tact | WHero | Warr
-
-### Spell Table [Offensive Spells]
-
-Spell | Description | Spell Bonus | Difficulty | Cost Multiplier | Duration (Average) | Avian | Dwarf | Elf | Faery | Halfling | Human | Orc | Undead | Cle | Here | Merch | Mys | Rog | Sage | Shep | Tact | WHero | Warr
---- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-Crystal Ball | Reveals target's Throne, displaying Troops and Resources. Fully accurate. Costs 1 Mana. |  | 0.004 | 0.35 | N/A | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Storms | Kills Peasants equal to 1.5% of total Population. Cancels Drought. Increases Tornado damage taken by 15%. |  | 0.009 | 0.8 | 12 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Drought | Food production reduced by 25%. Draft Speed reduced by 15%. Kills some War Horses. Cancels Storms. Increases Arson damage taken by 15%. | 75% / 85% | 0.01 | 1.0 | 12 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Magic Ward | Unfriendly + Hostile + War: Increases the Rune Costs of target province by 100%. | 200% | 0.02 | 1.15 | 6 | No | No | Yes | Yes | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Gluttony | Increases Food required by 25%. | 125% | 0.014 | 1.2 | 12 | No | No | Yes | Yes | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Vermin | Destroys on average about 50% of target's Food. | 50% | 0.014 | 1.275 | N/A | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No | No | No
-Greed | Increases Military Wages and Draft Costs of target province by 25%. | 125% | 0.016 | 1.3 | 12 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Fool's Gold | Unfriendly + Hostile + War: Destroys up to 25% of target's Gold. | 75% | 0.017 | 1.4 | N/A | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No | No | No
-Expose Thieves | Unfriendly + Hostile + War: Reduces target province's Stealth by 5% of current Stealth level every Tick. | 0.95 | 0.024 | 1.4 | 6 | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Chastity | Reduces Birth Rate by 50%. | 50% | 0.024 | 1.4 | 6 | No | No | Yes | Yes | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Sloth | Unfriendly + Hostile + War: Reduces Drafting Rate of target province by 50%. Increases Draft Cost by 100%. | 50% / 200% | 0.024 | 1.4 | 6 | No | No | Yes | Yes | No | No | No | No | No | No | No | No | No | No | No | No | No | No
-Pitfalls | Causes opponent to suffer 25% higher Defensive Military Casualties. | 125% | 0.019 | 1.5 | 12 | No | No | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No
-Fireball | Unfriendly + Hostile + War: Kills ~7% of opponent's Peasants. | 93% | 0.02 | 1.5 | N/A | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Lightning Strike | Unfriendly + Hostile + War: Destroys up to 65% of opponent's Runes. |  | 0.02 | 1.55 | N/A | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Explosions | When sending aid if either the donor or the receiver are under the explosions spell, there is a 50% chance that the shipment will be reduced to 55%-80% of what it would have been otherwise. |  | 0.02 | 1.8 | 12. | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Blizzard | Reduces the building effectiveness of target province by 10%. | 90% | 0.02 | 1.8 | 6 | No | No | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No
-Nightmares | Unfriendly + Hostile + War: Roughly 1.5% of target's Troops are put back in Training over 8 Ticks. | 98.5% | 0.039 | 2.2 | N/A | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No | No | No
-Tornadoes | Unfriendly + Hostile + War: Destroys several of your opponent's Buildings. |  | 0.03 | 2.5 | N/A | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Mystic Vortex | Unfriendly + Hostile + War: For each active spell your opponent has, there's a 50% chance it's removed. | 50% | 0.031 | 2.8 | N/A | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Amnesia | War: Temporarily removes ~5% of target's total allocated Science Books. These return over 24 ticks. | 0.95 | 0.034 | 2.8 | N/A | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No | No | No
-Meteor Showers | Hostile + War: Kills Peasants and Troops every Tick. |  | 0.04 | 2.8 | 8 | No | No | No | No | No | No | No | No | No | No | No | Yes | No | No | No | No | No | No
-Abolish Ritual | Unfriendly + Hostile + War: Reduces enemy ritual strength by 2%. Limited to 10 casts on a single enemy province; see Ritual tab for more details. | -2% | 0.032 | 2.8 | N/A | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Land Lust | Unfriendly + Hostile + War: Captures between 1 and 1.35% of opponents Acres. |  | 0.04 | 3.5 | N/A | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No | No | No | No | No | No | No | No
-Spell | Description | Spell Bonus | Difficulty | Cost Multiplier | Duration (Average) | Avian | Dwarf | Elf | Faery | Halfling | Human | Orc | Undead | Cle | Here | Merch | Mys | Rog | Sage | Shep | Tact | WHero | Warr
-
-### Runes Cost Formula
-
-**Runes cost =** *ROUNDDOWN* ( (0.6 * Size + 200) * Spell Cost Multiplier * 1.5 )
 
 ## Networth
 
@@ -6738,25 +5190,6 @@ If a killed province had endured multiple attacks from within its own kingdom it
 
 Reservations typically only last for two days.  After two days the reservation will be deleted from the system.  It cannot be recovered.  This is to avoid spaces in kingdoms being reserved but unused for long periods of time.
 
-## Rules
-
-Rules of the Wiki
-
-This places a great responsibility on you as a contributor and as a member of the Utopia community.
-
-- Please do not sabotage or misuse the site in any way, doing so will only lead to a ban of your account and/or IP and possible restrictions being placed on who can contribute in the future.
-
-- Do not publish information on cheating or support investigations. Those matters belong in the public forum.
-
-- As you add and edit articles please be on the lookout for others who may be misusing this tool and report them to administrators.
- Before editing an article check that the formula isn't under discussion in the page's discussion tab (above).
-
-- Please contribute all you can to make this a useful addition to the Utopia community. We want this to take the community interaction of the game to the next level, a place for you to share ideas and collaborate on articles, information, statistics, anything you feel, you, the players of the game are interested in.
-
-- We would prefer it if you register your Utopia Wiki account under either your irc nick or forum name, but this is not a requirement.
-
-Anyone can contribute to Utopia Wiki by clicking on the *Edit this page* tab in an article. Before beginning to contribute however, you should check out some handy helping tools such as the tutorials. It is important to realize that in contributing to Utopia Wiki, users are expected to be civil and neutral, respecting all points of view, and only add verifiable and factual information rather than personal views and opinions. Anyone with Web access can edit UtopiaWiki, and this openness encourages inclusion of a tremendous amount of content. Please employ common sense, remain civil and do not deliberately aim to transmit misinformation - this may result in an IP ban.
-
 ## Runes
 
 **Runes** are the main resource used in Spell Casting.
@@ -7083,1001 +5516,6 @@ The only values on a SOM which are always accurately reported are:
 
 - OME, DME, Net Offense Home, and Net Defense Home
 
-## Spell Uses
-
-Unlike your fabled land of Earth, the citizens of Utopia truly believe in and have witnessed the powers of magic. From the deadly plagues to the amazingly fertile land, so much has happened on this planet that cannot be explained away by science or nature. As ruler of your lands, you have access to some of the most amazing magical spells ever known. Below, I will try to explain to the best of my ability the powers of these spells and how to make magic your friend.
-
-### Contents
-
-- 1 Essentials: Runes, Wizards, and Guilds
-
-- 2 Determining Success
-
-- 3 Duration of Spells
-
-- 4 Cost of Spells
-
-- 5 Restriction & Limits
-
-- 6 The Spell Book: Self Spells
-
-6.1 Aggression
-6.2 Animate Dead
-6.3 Anonymity
-6.4 Bloodlust
-6.5 Builders' Boon
-6.6 Cast Ritual
-6.7 Clear Sight
-6.8 Divine Shield
-6.9 Fanaticism
-6.10 Fertile Lands
-6.11 Fountain of Knowledge
-6.12 Ghost Workers
-6.13 Greater Protection
-6.14 Illuminate Shadows
-6.15 Inspire Army
-6.16 Invisibility
-6.17 Love & Peace
-6.18 Mage's Fury
-6.19 Magic Shield
-6.20 Mind Focus
-6.21 Miner's Mystique
-6.22 Minor Protection
-6.23 Mist
-6.24 Mystic Aura
-6.25 Nature's Blessing
-6.26 Paradise
-6.27 Patriotism
-6.28 Quick Feet
-6.29 Reflect Magic
-6.30 Revelation
-6.31 Salvation
-6.32 Scientific Insights
-6.33 Shadowlight
-6.34 Town Watch
-6.35 Tree of Gold
-6.36 War Spoils
-6.37 Wrathful Smite
-
-- 7 The Spell Book: Support Spells
-
-- 8 The Spell Book: Offensive Spells
-
-8.1 Abolish Ritual
-8.2 Amnesia
-8.3 Blizzard
-8.4 Chastity
-8.5 Crystal Ball
-8.6 Droughts
-8.7 Explosions
-8.8 Expose Thieves
-8.9 Fireball
-8.10 Fool's Gold
-8.11 Greed
-8.12 Gluttony
-8.13 Lightning Strike
-8.14 Land Lust
-8.15 Magic Ward
-8.16 Meteor Showers
-8.17 Mystic Vortex
-8.18 Nightmares
-8.19 Pitfalls
-8.20 Sloth
-8.21 Storms
-8.22 Tornadoes
-8.23 Vermin
-
-- 9 Retired Spells
-
-9.1 Barrier of Integrity
-9.2 Crystal Eye
-9.3 Fog
-9.4 Guile
-9.5 Haste
-9.6 Hero's Inspiration
-9.7 Illusionary
-
-#### Essentials: Runes, Wizards, and Guilds
-
-Spells require Runes, Wizards, and Guilds to be cast. Towers produce runes every hour, which are consumed with each spell. Wizards are naturally trained by your Guilds. Like all of the other individuals across your lands, they come from your peasantry and reduce your number of available workers. Be careful not to hold too many Wizards or you may be sacrificing your peasantry, thieves, or military. At any time, you can release Wizards back into the peasantry or simply shut down additional training. Your Wizards maintain a Mana Rating which determines whether or not they can cast spells. This rating rises automatically each day and drops each time you cast a spell. Your Wizards will not cast spells without at least a 5% Mana Rating. Casting spells is not without risks. Failed attempts can result in explosions and kill a small portion of your wizards.
-
-#### Determining Success
-
-To cast a spell, you must have Guilds, wizards and mystic Runes. For spells cast upon yourself, success is based on your Guild percentage and your Building Efficiency - the more guilds you have, the better you will do. For spells cast upon others, the success is based on your relative wizard population, measured as Wizards Per Acre (WPA), modified by the racial bonuses or penalties and your knowledge of Channeling science. The higher your WPA compared to an enemy, the better your success. However, there is always a great deal of chance in every spell. Furthermore, the duration of all spells is greatly impacted by your Guild percentage.
-For support spells, the formula used to calculate success rate is adjusted to make casting self spells on your allies easier. A WPA vs WPA calculation will still be made which will require the caster to have WPA but the formula will make it so that all Kingdom members have an opportunity to receive the self spell bonuses from their support caster. In other words, although you still need WPA it won't be a very significant part of the formula.
-
-#### Duration of Spells
-
-The duration of successful spells is affected by:
-
-- The nominal duration of that particular spell, which differs for each spell.
-
-- The percentage of guilds the casting province has, with no additional effect for amounts over 20%.
-
-- The relative networth of the two provinces.
-
-- The current relations between the two provinces' kingdoms.
-
-Additionally, there is an element of randomness.
-One quarter of the nominal duration of a spell is always contributed to the final cast time. A scaling factor made up of the % guilds, relative net worth and current relations then governs the contribution of another quarter of the nominal duration. Finally, the remaining half of the nominal duration is contributed to the final cast time, scaled by both the scaling factor and a random number.
-For example, given a spell with a nominal duration of 24 days:
-
-- with a scaling factor of 100% (meaning both provinces have the same net worth, are in war, and the caster has 20% or more guilds), the final cast time will be in the range of 12-24 days.
-
-- in a situation with a scaling factor of 0% (e.g., the cast has no guilds), the final cast time will be 6 days (25% of 24 days).
-
-- in a situation with a scaling factor of 50%, the final cast time will be 6 days (25% of 24 days) + 3 days (25% of 24 days multiplied by scaling factor of 50%) + 0-6 days (random number out of 50% of 24 days multiplied by scaling factor of 50%), which equals 9 - 15 days in total.
-
-#### Cost of Spells
-
-All spells cost mana, which the province will regenerate each Utopian day up to a maximum of 100%. Once your mana falls below 5% you are unable to cast any more spells until your mana regenerates.
-The costs of spells are:
-
-- Self Spells - 3%
-
-- Offensive Spells (without relations) - 3%
-
-- Offensive Spells (Hostile relations) - 2%
-
-- Ritual Spells - 2%
-
-- Support Spells on others - 2%
-
-#### Restriction & Limits
-
-Certain spells are designated Unfriendly, Hostile or War Only spells -- Because of the destructive nature of these spells, they can be cast only against provinces which have at least a certain level of relations with your kingdom. In addition, you will find that many of these spells are more effective during heightened relations conditions.
-
-Spells are divided into two categories, as listed below:
-
-- Self Spells
- Some Self Spells can be cast on kingdom members by certain Races. These spells are known as Support Spells. Success is based on the caster's WPA and relative networth to the target, and the duration of these spells is based on target's guilds. The list can be found here.
-The caster gains honor from kd mates whom they cast support spells on. Those getting casted on lose honor when having a support spell casted on them, ~0.1%.
-
-- Offensive spells
-
-There are 3 possible outcomes of casting a spell. It can be successful, it can fail, or it can fail and some wizards may die.
-
-- Successful message: Your wizards gather their runes and begin casting. The spell consumes X Runes and ... is successful!
-
-- Fail message: Your wizards gather their runes and begin casting. The spell consumes X Runes and ... fizzles. Alas, we were not able to fulfill your expectations. Please forgive us.
-
-- Dying wizards message: "Leader name", something has gone terribly wrong with our spell. X of our wizards were killed in an explosion!
-
-Please note that Duration is in real time, spell messages are in Utopia Time
-
-### The Spell Book: Self Spells
-
-Listed here is a short reference guide to each of the spells available that can be cast on yourself. Any restrictions on use will be listed under the name. The max cast shown does not include any racial bonuses. Almost all the spells that provide bonuses for certain activities (like speeding up building construction etc.) need to be cast before the activity is initiated / ordered to reap the benefits of the spell.
-
-#### Aggression
-
-This spell refocuses your soldiers from versatile fighting units into an offensive machine. Giving them a lust for attacking, Soldiers will gain 2 offensive point in all combat for the duration of the spell. During this period, though, they will lose 2 defensive point as well.
-Is Known: Age 14 ... now
-
- Available to: Avian
- Effect: Your soldiers gain 2 offense points at the cost of losing 2 defense points.
- Duration: max 24 days.
- Cast Message: Our soldiers will fight with unique aggression for X days!
- Mystic Advisor Message: Our soldiers will fight with unique aggression for X days!
-
-#### Animate Dead
-
-The power to raise the dead gives you the power to protect your people. By casting this spell, you can protect your people from the death and destruction of defending your lands. During your next defensive battle, half of your dead army will be restored into basic soldiers to help repopulate your army.
-Is Known: Age 1 ... Age 87, Age 90 ... now
-
- Available to: Undead
- Effect: Raises 50% of your dead troops into basic soldiers during your next defensive battle.
- Duration: Expires when attacked.
- Cast Message: Our dead will be awakened the next time our lands are attacked!
- Mystic Advisor Message: Same as Cast Message
-
-#### Anonymity
-
-War is at the heart of the world of Utopia, but the fear of retaliation makes many leaders cringe. This spell casts an aura of mystery around your army. After a successful cast, your forces will remain anonymous during your next attack -- while your kingdom will be revealed, your enemy will not know your province's name.
-Is Known: Age 13 ... now
-
- Available to: All
- Effect: Hides your province name during your next attack at the cost of no honor gains,
- causing the attacked province to be unable to ambush that attack.
- Decreases your attack gains by 15% for your next attack.
- Duration: removed after attack
- Cast Message: Our next attack will be cloaked under the shades of anonymity.
- Mystic Advisor Message: Our armies are surrounded by a cloud of anonymity for our next battle.
-
-#### Bloodlust
-
-Bloodlust fires the blood of your troops, igniting in them a desire to cause destruction. This fury will increase the carnage among enemy troops at a cost of increased recklessness among your own troops.
-Is Known: Age 1 ... Age 22, Age 49 .. Age 58, Age 59 ... now
-
- Available to: Orc
- Effect: A province under Bloodlust will have 10% increased Offensive Military Efficiency, inflict 15% more kills, and suffer 15% higher military losses while the spell is active.
- Duration: Not yet known.
- Cast Message: Our armies crave the scent of blood. They will savage the enemy, or die trying.
- Mystic Advisor Message: Same as Cast Message
-
-#### Builders' Boon
-
-The Builders' Boon spell makes your workers build faster and harder than otherwise. All buildings constructed while the spell is active will be completed more quickly than normal. The spell must be cast before the new construction is ordered in the growth panel for lesser construction time.
-Is Known: Age 15 ... now
-
- Available to: All
- Effect: Decreases your construction times by 25% for building set to build while active.
- Duration: max 24 hours
- Cast Message: Our builders have been blessed with unnatural speed for X days!
- Mystic Advisor Message: Same as cast message.
-
-#### Cast Ritual
-
-Once your Monarch or Steward has declared what ritual to perform, this spell will increase your progress towards its completion with each cast. This spell has a very high difficulty and cost, and is accessible via the Ritual tab.
-Is Known: Age 73 ... now
-
- Available to: All
- Effect: Progresses the ritual counter with each successful cast.
- Duration: Instant Cast
- Cast Message: We are now closer to completing our ritual project!
- Mystic Advisor Message: N/A
-
-#### Clear Sight
-
-By granting your police the ability to see through the obvious and into the depths, you give them the ability to catch thieves who may wander into the lands. The spell, lasting potentially for weeks, gives you a base chance to catch opposing thieves, regardless of the strength of the guilds involved.
-Is Known: Age 1 ... now
-
- Available to: Merchant
- Effect: Automatically catches 25% of the thieves' operations conducted against your province.
- Duration: max 22 days
- Cast Message: Our police have been blessed with Clear Sight for X days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Divine Shield
-
-The cleric protects his people from the black magics of his enemies, granting them further protection against harmful spells.
-Is Known: Age 72 ... Age 80 ... Age 87 ... now
-
- Available to: Cleric
- Effect: Reduces Instant Spell Damage taken by 20%.
- Duration: Moderate, max time unknown
- Cast Message: You imbue your province with a holy shield, protecting against foul sorcery for XX days!
- Mystic Advisor Message: Same as cast message
-
-#### Fanaticism
-
-Fanaticism focuses your army on combat, increasing their offensive efficiency for several days. Unfortunately, a side effect of this desire for blood is that your armies remaining at home -- bored and frustrated for not being in combat -- will fight less effectively on defense.
-Is Known: Age 14 ... now
-
- Available to: Avian, Cleric
- Effect: Increases your Offensive Military Efficiency by 5%. Decreases your Defensive Military
- Efficiency by 5%.
- Duration: max 9 hours
- Cast Message: Our army will fight with fanaticism for X days!
- Mystic Advisor Message: Our army fights with fanatical fervor
-
-#### Fertile Lands
-
-By magically fertilizing your lands, you can ensure excellent food production for the duration of the spell. Whether a lack of farms, a deadly drought, or just wanting to stockpile extra food, this spell offers a definite increase to your food sources.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Increases food production by 25%.
- Duration: max 30 hours.
- Cast Message: We have made our lands extraordinarily fertile for X days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Fountain of Knowledge
-
-Science is a fundamental building block for any and all of the other parts of your province. While a Fountain of Knowledge spell is active, your students work harder and will learn more than they would otherwise.
-Is Known: Age 39 ... Age 68, Age 82 ... now
-
- Available to: Sage
- Effect: Increases your science book production by 10% while the spell is active.
- Duration: Moderate, max duration unknown
- Cast Message: Our students are blessed with excellent concentration for X Days!
- Mystic Advisor Message: Our students are blessed with excellent concentration for X days!
-
-#### Ghost Workers
-
-Creating ghostly workers to perform the duties of your peasants, this spell reduces reduces the amount of filled jobs for maximum efficiency. This spell is effective for several days until the ghosts disappear.
-Is Known: Age 13 ... Age 16 ... Age 81 ... now
-
- Available to: Faery
- Effect: The required number of jobs filled for maximum Building Efficiency is reduced by 20%.
- Duration: Moderate, max time unknown
- Cast Message: Magical auras enchant our buildings and begin working with increased productivity for XX days!
- Mystic Advisor Message: Same as cast message
-
-#### Greater Protection
-
-A more powerful version of the Minor Protection spell, this spell functions similarly but lasts potentially a great deal longer. It can be stacked with Minor Protection.
-Is Known: Age 1 ... now
-
- Available to: Human, Cleric
- Effect: Increases Defensive Military Efficiency by 5%.
- Duration: max time unknown
- Cast Message: Our realm is now under a sphere of protection for X days.
- Mystic Advisor Message: Our realm is now under a sphere of protection for X days!
-
-#### Illuminate Shadows
-
-Shine light across the land, eliminating the cover of darkness and revealing those who would hide within its shadow. Thieves who would enter these lands are discouraged from performing their duties and will thus have a lessened impact.
-Is Known: Age 72 ... now
-
- Available to: Cleric
- Effect: Reduces damage from thievery operations by 20%.
- Duration: Moderate, max time unknown
- Cast Message: Your mages fill your province with holy light, reducing shadows for thieves to hide in for XX days!
- Mystic Advisor Message: Same as cast message
-
-#### Inspire Army
-
-Inspire Army helps make your military train harder on their own, thus reducing the daily wages you pay your military for several days. This is especially useful in times of limited cash. This spell also increases the intensity of training, allowing your troops to be ready more quickly; provided the spell is cast before the troops are ordered to be trained.
-Is Known: Age 7 ... Age 71, Age 74 ... now
-
- Available to: All
- Effect: Decreases your military wages by 15%. Decreases your military training time by 20%.
- Duration: max 24 hours
- Cast Message: Our army has been inspired to train harder. We expect maintenance costs to be
- reduced for X days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Invisibility
-
-Thieves rely on stealth to master their craft, but a little bit of invisibility never hurts. Through the duration of this spell, your thieves have a 10% bonus to any offensive thievery operations and incur 20% lower losses.
-Is Known: Age 1 ... now
-
- Available to: Elf, Faery
- Effect: Increases your Offensive Thievery Efficiency by 10%. Reduce Thieves lost during Thievery Operations by 20%.
- Duration: max 22 hours
- Cast Message: Our thieves have been made partially invisible for X Days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Love & Peace
-
-Love & Peace creates an aura of calm and happiness across your peasantry for several days. This leads to increased natural birth rates which will quickly replenish your population. This is especially useful when your peasantry has suffered greatly.
-Is Known: Age 7 ... now
-
- Available to: All
- Effect: Increases base birth rate from 2.05% to 2.85%. Increase War Horses production by 40%.
- Duration: max 22 hours
- Cast Message: Our peasantry is influenced by a magical calm. We expect birth rates to be higher for
- X days!
- Mystic Advisor Message: Our people feel at peace (Estimated: X more Days).
-
-#### Mage's Fury
-
-This spell sparks a destructive fervor in your Mages Guild. They increase their efforts to cause damage to their opponents, whilst sacrificing a portion of their own defense temporarily.
-Is Known: Age 49 ... now
-
- Available to: Mystic
- Effect: This spell increases the province's WPA by 25% for offensive purposes while decreasing
- it by 25% for defensive
- purposes. No effect on self-spells.
- Duration: max 12 hours
- Cast Message: The fire of Mage's Fury burns in our wizards' eyes for x days!
- Mystic Advisor Message: The fire of Mage's Fury burns in our wizards' eyes for x days!
-
-#### Magic Shield
-
-While the natural aura of your Wizards will help protect from enemy spells, a little additional protection can never hurt. Casting this spell offers you a shield of magical protection for your province for about half a month.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Increases your defensive magic efficiency by 20%.
- Duration: max 24 hours
- Cast Message: For X days, the magical auras within our province will shine brightly!
- Mystic Advisor Message: A shield protects us from the black magic of our enemies
- (Estimated: X more Days).
-
-#### Mind Focus
-
-Wizard Production is a fundamental element for all parts of your province. While a Mind Focus spell is active, your guilds work harder and will produce more wizards than they would otherwise.
-Is Known: Age 1 ... Age 38 , Age 93 ... now
-
- Available to:
- Effect: Increases Wizard Production by 35%.
- Duration: max 20 hours
- Cast Message: Your guilds will produce extra wizards for X days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Miner's Mystique
-
-Peasants generate a stable, supplemental source of income thru mining. By casting this unique spell, you can increase the money you collect for a period lasting several weeks.
-Is Known: Age 1 ... Age 21 ... Age 97
-
- Available to: Dwarf
- Effect: Increases Income by 0.3 per Peasant.
- Duration: Moderate, max time unknown
- Cast Message: Unknown
- Mystic Advisor Message: Unknown
-
-#### Minor Protection
-
-Casting a sphere of protection over your province, this spell helps protect your province from invasion from others. This spell lasts for a few weeks.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Increases defensive military efficiency by 5%.
- Duration: max 24 hours
- Cast Message: Our realm is now under a sphere of protection for X days.
- Mystic Advisor Message: Same as Cast Message
-
-#### Mist
-
-Casting a sphere of protection over your province, this spell helps protect your province from invasion.
-Is Known: Age 85 ... now
-
- Available to: Dwarf
- Effect: Lowers enemy gains by 10% on defensive battles for a duration.
- Duration: Short, max time unknown
- Cast Message: Our lands are protected by a sacred mist for X days from attacks against us!
- Mystic Advisor Message: Our lands are protected by a sacred mist for X days from attacks against us!
-
-#### Mystic Aura
-
-A defense spell, creating a Mystic Aura around your lands will repel the next evil spell cast upon you from abroad. Unfortunately, the effect focuses only on the first spell cast upon you.
-Is Known: Age 1 ... Age 58, Age 60 ... now
-
- Available to: Dwarf
- Effect: Repels the next offensive spell cast upon you (except own spells).
- Duration: N/A
- Cast Message: A Mystic Aura has been placed around our province, protecting us from the next evil
- spell from abroad.
- Mystic Advisor Message: Same as Cast Message
-
-Note that Mystic Aura does not activate on intel spells like Crystal Ball.
-
-#### Nature's Blessing
-
-Nature's Blessing will protect your lands from any droughts and storms the world may see fit to place on you. This spell also has a chance of curing the Plague if your lands are affected by it.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Protects your land against Storms and Drought. Has a 33% chance of curing Plague (per cast).
- Duration: max 36 hours
- Cast Message: Our lands have been blessed by nature for X days, and will be protected from drought
- and storms.
- Mystic Advisor Message: Our land is blessed by nature (Estimated: X more Days).
-
-#### Paradise
-
-Arguably one of the most powerful -- and difficult -- spells known, Paradise simply creates several acres of new land for your people to populate. Similar in concept to exploring, this Spells gives you instant access to new lands to build upon and grow your province.
-Is Known: Age 12 ... now
-
- Available to: All
- Effect: Creates a small amount of land per cast, this land comes directly from your explore pool. Between 1-10 acres per cast.
- Duration: Instant cast
- Cast Message: Our mages created X acres more land for us to use.
- Mystic Advisor Message: N/A
- Note: Paradise is not available during War and Protection. This spell utilizes acres from the explore pool. If the explore pool is empty, it will return 0 acres.
-
-#### Patriotism
-
-Giving your population life and an innate desire to defend your lands, this spell increases the rate that you can draft peasants for several weeks, and offers partial protection against the Propaganda thievery operation. Excellent in emergencies and other strategic situations, this spell is difficult to cast and will more quickly weaken your economy.
-Is Known: Age 11 ... now
-
- Available to: All
- Effect: Increases military draft speed by 30%. Lowers Propaganda Damage received by 30%.
- Duration: max 20 hours
- Cast Message: Our people are excited about the military and will signup more quickly for x days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Quick Feet
-
-By giving your men magical speed, they can go to battle and return more quickly than usual, leaving your land without defense for a shorter period.
-Is Known: Age 1 ... Age 86, Age 88 ... now
-
- Available to: Tactician
- Effect: Decreases your attack time by 15%.
- Duration: Short
- Cast Message: Our armies have been blessed with excellent speed.
- Mystic Advisor Message: Our armies are blessed with incredible speed.
-
-#### Reflect Magic
-
-Reflect magic places a magical barrier around your lands for several days. During this period, successful spells cast upon your province may randomly be reflected upon the caster, doing unto them as they would have done to you.
-Is Known: Age 1 ... Age 98, Age 100
-
- Available to: Shepherd
- Effect: Has a 25% chance of reflecting offensive spells cast upon your province.
- Duration: max 18 hours.
- Cast Message: Some of the spells cast upon our lands will be reflected back upon their creators for X days!
-
-#### Revelation
-
-Science is a fundamental building block for any and all of the other parts of your province. While the Revelation spell is active, it increases the rate of a new scientist emerging.
-Is Known: Age 69 ... now
-
- Available to: Sage
- Effect: Increases the rate of a new scientist emerging on by 30% while the spell is active.
- Duration: Short-moderate, max duration unknown
- Cast Message: Our students are blessed with excellent concentration for X Days!
- Mystic Advisor Message: Our students are blessed with excellent concentration for X days!
-
-#### Salvation
-
-Salvation protects Military in Combat, reducing all Military Casualties by 10%.
-Is Known: Age 97 ... now
-
- Available to: Cleric
- Effect: Decrease Military Casualties of target province by 10%.
- Duration: Moderate, max time unknown
- Cast Message:
- Mystic Advisor Message:
-
-#### Scientific Insights
-
-This spell clears the minds of your scientists, allowing them to think more clearly and increasing the effectiveness of their research.
-Is Known: Age 72 ... Age 92, Age 96 ... Age 98, Age 100
-
- Available to: Sage
- Effect: Increase the science effectiveness of target province by 10%.
- Duration: Very short, max time unknown
- Cast Message: Your scientists have been imbued with mental energy, making them work harder for XX days!
- Mystic Advisor Message: Same as cast message
-
-#### Shadowlight
-
-Shadowlight places a face upon a shadow, revealing the province associated with the next thievery operation against your lands. It will also prevent the next sabotage from being successful.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Reveals the name of the next province performing a successful thievery operation upon your province. Deflects the next sabotage operation.
- Duration: Expires on enemy thievery attempt
- Cast Message: Our lands are blessed with Shadowlight. The next time thieves enter our lands their identities will be revealed.
- Mystic Advisor Message: Same as Cast Message
-
-#### Town Watch
-
-Town Watch will create a peasant watch upon your town for several days. While the Town Watch is active, all of your peasants will help defend your province in combat. Unfortunately, this also means your peasants will be killed during war - and since they are not well-armed, they will suffer heavy losses.
-Is Known: Age 7 ... now
-
- Available to: Halfling
- Effect: Every 5 of your peasants will defend your land with 1 point of defense.
- Duration: max 18 hours
- Cast Message: Our peasants will help defend our lands for X days!
- Mystic Advisor Message: Our peasants will help defend our lands for X days!
-
-#### Tree of Gold
-
-If you're ever in need of extra cash, casting a Tree of Gold may be a potential solution. While it won't give you a great deal of gold, every little bit can help.
-Is Known: Age 1 ... now
-
- Available to: Artisan
- Effect: Magically creates a small amount of gold (from 26.66% to 53.33% of your daily income).
- Duration: Instant cast
- Cast Message: X gold coins have fallen from the trees!
- Mystic Advisor Message: n/a
-
-#### War Spoils
-
-Ordinarily, any land captured in attacks require time to take control of and become available for your own use. War Spoils gives you the opportunity to get this land from combat immediately. The spell lasts just a few Utopian Days, but is more than enough to use on a couple of attacks. This allows you to begin the process of expanding much more quickly than otherwise.
-Is Known: Age 12 ... Age 58, Age 60 ... now
-
- Available to: All
- Effect: Makes the land gained from Traditional March immediately available.
- Duration: max 6 hours
- Cast Message: Our army has been blessed with immediate War Spoils for X days!
- Mystic Advisor Message: War Spoils give us quick returns on our attacks
-
-#### Wrathful Smite
-
-Smite foes who dare to inflict harm upon the target. Enemy attackers suffer increased casualties when attacking lands protected by this spell.
-Is Known: Age 72 ... now
-
- Available to: Cleric
- Effect: Increases enemy casualties when attacking the protected province by 20%.
- Duration: Moderate, max time unknown
- Cast Message: Your magic will smite attackers for XX days!
- Mystic Advisor Message: Same as cast message
-
-### The Spell Book: Support Spells
-
-Listed here is current ages active support spells.
-
-- Minor Protection
-
-- Greater Protection
-
-- Fertile Lands
-
-- Magic Shield
-
-- Natures Blessing
-
-- Love and Peace
-
-- Builders Boon
-
-- Inspire Army
-
-- Patriotism
-
-- Fanaticism
-
-- Divine Shield
-
-- Illuminate Shadows
-
-- Salvation
-
-- Wrathful Smite
-
-**Note:** in order to cast a particular Support Spell, you must have access to it
-
-### The Spell Book: Offensive Spells
-
-Listed here is a short reference guide to each of the spells available that can be cast upon your enemies. Any restrictions on usage will be listed under the name.
-
-#### Abolish Ritual
-
-Reduces the strength of an enemy kingdom's province and has a high cost/difficulty
-Is Known: Age 73 ... now
-
- Available to: All - with minimum relationship of Unfriendly.
- Effect: Reduces ritual strength by 2%. Limited to 10 casts on a single enemy province.
- Duration: Instant
- Cast Message: Your mages infest the guilds of X. Their ritual is now x% destroyed! This province can still be targeted X times!
- Mystic Advisor Message: N/A
-
-#### Amnesia
-
-Knowledge is vital to the longterm survival of a province. The unique powers of magic allow you to strip a province of some of its long-sought science. Its effects are temporary. By casting Amnesia, you can cause an enemy province to lose effectiveness of their arts & sciences knowledge, opening a window to attack or further damage the enemy.
-Is Known: Age 1 ... now
-
- Available to: Heretic - with a minimum relationship of War
- Effect: Temporarily removes ~5% of target's current total allocated Science Books. These Books return over 24 ticks.
- Duration: Instant with duration effect: 24 Ticks
- Cast Message: N/A
- Mystic Advisor Message: N/A
- Throne Room Notification: N/A
-
-#### Blizzard
-
-Reduces the building effectiveness of a province for a short duration.
-Is Known: Age 69 ... now
-
- Available to: Mystic
- Effect: Reduces the building effectiveness of a province by 10%.
- Duration: Short
- Cast Message: Your wizards gather n runes and begin casting, and the spell succeeds. Blizzards will beset the works of [province name] (#:#) for X days!
- Mystic Advisor Message: N/A
- Throne Room Notification: Blizzards are besetting our works, and our building efficiency will be crippled by 10% for for X days!
-
-#### Chastity
-
-Introducing Chastity amongst the peasants of your opponents is an effective way to grind their population growth to a halt.
-Is Known: Age 47 ... now
-
- Available to: Elf, Faery - with a minimum relationship of Unfriendly
- Effect: Decreases Birth Rate by 50%.
- Duration: Medium
- Cast Message: Much to the chagrin of their men, the womenfolk of [Province Name] have taken a vow
- of chastity for X days!
- Mystic Advisor Message: Our womenfolk have taken a vow of chastity preventing population growth for
- X days!
-
-#### Crystal Ball
-
-Knowing more about your friends and opponents is vital to your success as a leader. This spell gives you insight into the workings of any province of your choice.
-Is Known: Age 1 ... Age 47, Age 88 ... now
-
- Available to: All
- Effect: Displays the targeted provinces Throne
- Duration: Instant
- Cast Message:
- Mystic Advisor Message: N/A
-
-#### Droughts
-
-The opposite of storms, droughts can do significant damage as well. Without the rains necessary for fertile land, food production will be lower than usual, possibly resulting in starvation throughout the lands. In addition, the harsh conditions slow interest in the military and interferes with the soldier draft. Horses across the province may die as well due to lack of water and food. Droughts negate any Storms currently ravaging the target's land. Increases Arson damage taken by 15%.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Decreases food production by 25%, military draft rate by 15% and horses production by 50%.
- Some horses may also die as a result.
- Increases Arson damage taken by 15%.
- Duration: Medium
- Cast Message: A drought will reign over the lands of [Province Name] for X days!
- Mystic Advisor Message:
-
-#### Explosions
-
-Provinces work together by assisting each other in times of need. By casting Explosions, you can interrupt the flow of goods between provinces, creating explosions that destroy portions of shipments to and from a province at random.
-Is Known: Age 10 ... now
-
- Available to: All
- Effect: 50% chance to reduce an aid shipment to 55%-80% of original size.
- Duration:
- Cast Message: Explosions will rock aid shipments to and from [Province Name] for X days!
- Mystic Advisor Message: Explosions will rock aid shipments to and from our province for X days!
-
-#### Expose Thieves
-
-Thieves rely on stealth and surprise to be effective at their jobs. Casting this spell will expose an enemy's guild, leaving them less effective until they can recover.
-Is Known: Age 1 ... now
-
- Available to: All - with a minimum relationship of War
- Effect: Reduces Stealth level by 5% of current level each Tick, before Stealth regeneration.
- Duration: Medium
- Cast Message: Our mages have illuminated the lands of our enemies and exposed the thieves that walk
- through their lands.
- Mystic Advisor Message: N/A
-
-#### Fireball
-
-If you want to directly go after an enemy, launching a fireball at their peasantry is an effective weapon. The fireball, if successful, will splash directly into the heart of your opponent's lands, exploding on impact, and killing instantly.
-Is Known: Age 1 ... now
-
- Available to: All - with minimum relationship of Unfriendly
- Effect: Kills a small and random portion of peasants (4.95-8.47%).
- Duration: Instant
- Cast Message: A fireball burns through the skies of [province name] (##:##). X peasants are killed
- in the destruction!
- Mystic Advisor Message: N/A
-
-#### Fool's Gold
-
-The art of turning lead into gold has always been a confusing mystery. Is it possible? No one knows. However, turning gold into lead can be done! This spell will convert a portion of your opponent's gold into worthless lead.
-Is Known: Age 12 ... now
-
- Available to: Heretic - with a minimum relationship of Unfriendly
- Effect: Destroys up to 25% of target's gold.
- Duration: Instant
- Cast Message: Our mages have turned X gold coins in [Province Name] to worthless lead.
- Mystic Advisor Message: N/A
- Throne Room Notification: X gold coins have been turned into worthless lead.
-
-#### Greed
-
-People are, by their very nature, greedy individuals. Soldiers have been trained to sacrifice themselves for the greater good. However, this spell reverts the natural greed back into soldiers for several days, causing your opponent to have to pay more in wages and to draft new troops.
-Is Known: Age 12 ... now
-
- Available to: All
- Effect: Increases military wages and draft costs by 25%.
- Duration:
- Cast Message: Our mages have caused our enemy's soldiers to turn greedy for X days.
- Mystic Advisor Message:
- Throne Room Notification: Enemies have convinced our soldiers to demand more money for upkeep.
-
-#### Gluttony
-
-One of the seven deadly sins, your population will consume more food.
-Is Known: Age 68 ... now
-
- Available to: Faery
- Effect: Increases food required by 25%.
- Duration:
- Cast Message: The gluttony of [target] has increased for X days.
- Mystic Advisor Message: A fit of gluttony has descended upon our people, and they will not be sated until for X days.
-
-#### Lightning Strike
-
-The power of a direct Lightning Strike is arguably the most deadly force on the planet. Your Lightning Strikes will go directly at opponents rune stores and destroy everything in sight. This strike is the most effective way to cripple any opponent's ability to cast spells.
-Is Known: Age 1 ... now
-
- Available to: All - with a minimum relationship of Unfriendly
- Effect: Destroys a random portion of runes between 30-65%.
- Duration: Instant
- Cast Message: Lightning strikes the Towers in [province name] (##:##) and incinerates X runes!
- Mystic Advisor Message: N/A
-
-#### Land Lust
-
-Land is the defining strength of any province, and this spell is the Mage's way of simply stealing an opponent's land. This spell is a difficult alternative to attacking.
-Is Known: Age 15 ... now
-
- Available to: All - with minimum relationship of Unfriendly.
- Effect: Captures a small and random (up to 1.35%) of the enemy land.
- Duration: Instant
- Cast Message: Our Land Lust over Enemy Province (location) has given us X new acres of land!
- Mystic Advisor Message: N/A
- Throne Room Notification: X acres of land have disappeared from our control!
-
-#### Magic Ward
-
-Projects a magical ward into the skies above an enemy province, forcing the enemy to pour more resources into their spell casts.
-Is Known: Age 72 ... Age 81, Age 86... now
-
- Available to: Elf - with minimum relationship of Unfriendly.
- Effect: Increases target's rune costs by 50%.
- Duration:
- Cast Message: Unknown
- Mystic Advisor Message: Unknown
-
-#### Meteor Showers
-
-This spell will rain Meteors across the lands of an opponent for several days, killing peasants, troops and more. Deadly and enduring, casting this spell is both difficult and costly. The damage done, however, can be just as great.
-Is Known: Age 12 ... now
-
- Available to: Mystic - with minimum relationship of Hostile
- Effect: Kills peasants and troops (soldiers, specialists and elites) at home each Utopian Day the
- spell is active.
- Duration: Short-moderate
- Cast Message: Meteors will rain across the lands of [province name] (##:##) for X days
- Mystic Advisor Message: Meteors rain across our lands, and are not expected to stop for X days.
- Throne Room Notification: Meteors rain across the lands and kill X peasants and X troops!
-
-#### Mystic Vortex
-
-The Mystic Vortex is one of the more powerful spells in the Utopian World. A successful cast will cause approximately half of the spells currently active over a province to vanish. However, this spell does not discriminate and will nullify both positive and negative spells affecting their lands.
-Is Known: Age 1 ... now
-
- Available to: All - with a minimum relationship of Unfriendly
- Effect: Nullifies spells on the enemy province (50% chance per spell).
- Duration: Instant
- Cast Message: A magic vortex overcomes the province of [province name] (##:##), negating X active
- spells.
- Mystic Advisor Message: N/A
- Throne Room Notification: A magic vortex rendered many of our spells inactive!
-
-#### Nightmares
-
-The effects fear can have on an individual are amazing. By causing nightmares within the soldiers of an opposing army, you may be able to cause them to quiver in fear. Troops having nightmares have to be rehabilitated and are unavailable for a period of time.
-Is Known: Age 1 ... now
-
- Available to: Heretic - with a minimum relationship of Unfriendly
- Effect: Returns around 1.5% of the military troops (specialists, elites and thieves) under training for 8 days.
- Will only affect the troops that are at home.
- Soldiers simply quit the army.
- Duration: Instant with duration effect: Troops in training queue stretching 8 days.
- Cast Message: During the night, X of the men in the armies and thieves' guilds of [Province Name]
- had nightmares.
- Some were forced into rehabilitation, but the soldiers simply quit the army!
- Mystic Advisor Message: N/A
- Throne Room Notification:
-   This morning, X of our men from our armies and thieves' guild turned up unfit.
-   The Soldiers quit, while the rest are being retrained. They should be available again in 8 days.
-
-#### Pitfalls
-
-Placing magical pitfalls throughout an enemy's lands will cause them to suffer higher defensive losses in combat for several days. This is an effective way to frustrate attackers and strengthen your own position in the midst of war.
-Is Known: Age 14 ... now
-
- Available to: Mystic
- Effect: Increases defensive military losses by 25%.
- Duration: Medium
- Cast Message: Pitfalls will haunt the lands of [province name] (##:##) for X days. They will suffer
- increased defensive losses during battle.
- Mystic Advisor Message:
-
-#### Sloth
-
-This spell enchants the enemy's peasantry, calling upon their deep-rooted morals to family and preventing them from signing up for military service.
-Is Known: Age 72 ... Age 81, Age 87 ... now
-
- Available to: Faery - with minimum relationship of Unfriendly.
- Effect: Reduces drafting within a target province by 50%. Also increases Draft Cost by 100%.
- Duration: Short
- Cast Message: Unknown
- Mystic Advisor Message: Unknown
-
-#### Storms
-
-The power of mother nature is amongst the most powerful in existence. Sending storms over another province will cause destruction and death across the lands for days. The Storm Spell will cancel any Droughts affecting the target province. Increases Tornado damage taken by 15%.
-Is Known: Age 1 ... now
-
- Available to: All
- Effect: Kills 1.5% of peasant population per day.
- Increases Tornado damage taken by 15%.
- Duration:
- Cast Message: Storms will ravage [province name] (##:##) for X days!
- Mystic Advisor Message:
- Throne Room Notification: Storms are ravaging our lands!
-
-#### Tornadoes
-
-One of the most dangerous and destructive offensive spells, casting this will rain a terror of tornadoes across an opponent's lands, laying waste to acres of buildings across the province.
-Is Known: Age 14 ... now
-
- Available to: All - with minimum relationship of Unfriendly.
- Effect: Destroys a small and random portion of buildings.
- Duration: Instant
- Cast Message: Tornadoes scour the lands of [province name] (##:##), laying waste to X acres of
- buildings!
- Mystic Advisor Message: N/A
- Throne Room Notification: Tornadoes scour the lands, causing the destruction of X acres of
- buildings!
-
-#### Vermin
-
-Sending vermin scurrying into the food supplies of an opponent forces the destruction of a great deal of their reserves.
-Is Known: Age 1 ... Age 67, Age 82 ... Age 86, Age 90 ... now
-
- Available to: Heretic
- Effect: Destroys (on average) about 50% of target's food supplies.
- Duration: Instant
- Cast Message: Unknown
- Mystic Advisor Message: N/A
-
-### Retired Spells
-
-#### Barrier of Integrity
-
-Stops all drafting that would normally take place in target province.
-Was upgraded to Sloth
-Is Known: Age 72 ... Age 80
-
-#### Crystal Eye
-
-Cast on a kingdom instead of an individual province, this option gives a Bird's Eye view of all that has happened across the kingdom of the current and previous months.
-Is Known: Age 1 ... Age 47
-
- Available to: All
- Effect: Displays the targeted provinces Kingdom Paper
- Duration: instant spell
- Cast Message:
- Mystic Advisor Message:
-
-#### Fog
-
-Casting a sphere of protection over your province, this spell helps protect your province from invasion from others. This spell can last for a couple of days.
-Is Known: Age 1 ... Age 50
-
- Available to: Dwarf, Faery
- Effect: Increases enemy attack times by 3 hours.
- Duration: max 22 hours
- Cast Message: Our lands are protected by dense fog (Estimated: X more Days).
- Mystic Advisor Message: Our lands are filled with fog, slowing opposing armies for X days!
-
-#### Guile
-
-By focusing your mind and employing cunning techniques, you increase the damage of your spells and operations.
-Is Known: Age 90 ... Age 92, Age 94, Age 95, Age 98
-
- Available to: Heretic
- Effect: Increases Instant Spell and Sabotage Operation Damage by 15%.
- Duration: Moderate, max time unknown
- Cast Message: Our thieves and wizards' assimilated concentration will increase their damage for X days!
- Mystic Advisor Message: Our thieves and wizards' assimilated concentration will increase their damage for X days!
-
-#### Haste
-
-Haste makes your workers build faster and harder than otherwise. All buildings constructed while the Haste spell is active will be completed faster than otherwise would be expected.
-Is Known: Age 3 ... Age 14
-
-#### Hero's Inspiration
-
-The spell helps make your military train harder on their own, thus reducing the daily wages you pay your military for several days. This is especially useful in times of limited cash. This spell also increases the intensity of training, allowing your troops to be ready more quickly; provided the spell is cast before the troops are ordered to be trained.
-Is Known: Age 72 ... Age 80, Age 82, Age 85 ... Age 86, Age 93 ... Age 98
-
- Available to: Paladin, War Hero
- Effect: Decreases your military wages by 30%. Decreases your military training time by 30%. Does not stack with Inspire Army.
- Duration: max 24 hours
- Cast Message: Our army has been inspired to train even harder. We expect maintenance costs to be reduced for X days!
- Mystic Advisor Message: Same as Cast Message
-
-#### Illusionary
-
-By creating illusionary forces throughout your lands, it is possible to make an army of men look larger than life. Any crystal balls cast while this spell is active will show a larger-than-normal army.
-Is Known: Age 1 ... Age 11
-
-## Stances
-
-**As of Age 112, stances have been removed from the game. This information, though outdated, will be retained for historical purposes.**
-A kingdom's Stance is an unilateral statement to the world of the kingdom's intentions and is controlled by the Monarch or Steward. A stance differs from Relations with other kingdoms.
-You may not change your stance if you have changed it within the last 48 hours. 48 full Ticks must pass before it can be changed. A Kingdom in Aggressive or Peaceful Stance will automatically revert to Normal at the expiration of the 48nd tick.
-
-- Stance effects are negated in War.
-
-- Stances may not be changed during Protection.
-
-Stances
----
-Normal | Aggressive | Peaceful
-No Effects | +10% Battle Gains  -10% Attack Time  -50% Hostility Generation  +15% Military Wages  +10% Training Cost | +15% Income  +20% Food Production  +20% Rune Production  +20% Birth Rate  -15% Offensive Military Efficiency  -20% Outgoing Instant Spell damage and Sabotage Operation damage
-
-#### Changelog
-
-- Age 73: Fortified Stance Removed - replaced by a new stance called "Prosperous". Prosperous stance is almost identical to Fortified. Attacks into Prosperous will have no gains penalty; Attacks while your Kingdom is Prosperous have reduced gains of -20% (instead of -50%) and scientists gain experience during Prosperous.
-
-- Age 105: Stances reintroduced.
-
-- Age 106: Stances updated to reflect forum changes on 6 May 2024.
-
-- Age 107: Stances and minimum duration updated.
-
-- Age 111: Aggressive stance effects updated.
-
-- Age 112: Stances removed.
-
 ## The Plague
 
 ### Plague & Immunity
@@ -8188,121 +5626,6 @@ Gains Per Thief | 96 | 64 | 16.8 | 0.285 | 10% | 80%
 War Bonus | 25% | 25% | 25% | 25% | 25% | 25%
 Resources Lost | 10% | 10% | 10% | 20% | 50% | 0
 
-## Throne
-
-Money   Peasants   Food   Runes   Net Worth   Land   Net Worth/Acre    426,518   20,605   12,620   7375   251,721   1679   165           Game Update     Please note that with the server switch, Utopia is now operating in GMT!     Articles: Possible Changes.           Royal Commands     Victory! Good job guys...           The Province of The Nub (1:1) as of January 1 of YR10 (next tick: 41 minutes)     Race     Gnome     Soldiers     6701      Ruler     The Wise Sir Awesome     Halflings     0      Land     1679 Acres     Pikemen     16,365      Peasants     20,605     Golems     5357      Build Eff.     103%     Thieves     3587 (42%)      Money     426,518 gc     Wizards     1345 (68%)      Food     12,620 bushels     War-Horses     305      Runes     7375 runes     Prisoners     123      Trade Balance     -143,268     Off. Points     33,491     Networth     251,721 gold coins     Def Points     139,532       Our Kingdom is at WAR!    A Sapphire Dragon ravages the lands!        Info    Spells: Fertile Lands (5 days)           Recent News    January 1st   We have found thieves from ZeusTheGreat (2:2) causing trouble within our lands!    January 1st   Our mages noticed a possible spell attempt by ZeusTheGreat (2:2) causing trouble on our lands!    January 1st   Storms are ravaging our lands!    January 1st   Forces from ZeusTheGreat (2:2) came through and ravaged our lands! They captured 348 acres! We lost 79 Soldiers, 19049 Pikemen, 2140 Golems, and 4559 Peasants in the struggle.    January 1st   We have received a shipment of 7426 Runes from FoxyRoxy(1:1).      See all news | Money | Peasants | Food | Runes | Net Worth | Land | Net Worth/Acre | 426,518 | 20,605 | 12,620 | 7375 | 251,721 | 1679 | 165 | Game Update     Please note that with the server switch, Utopia is now operating in GMT!     Articles: Possible Changes.           Royal Commands     Victory! Good job guys...           The Province of The Nub (1:1) as of January 1 of YR10 (next tick: 41 minutes)     Race     Gnome     Soldiers     6701      Ruler     The Wise Sir Awesome     Halflings     0      Land     1679 Acres     Pikemen     16,365      Peasants     20,605     Golems     5357      Build Eff.     103%     Thieves     3587 (42%)      Money     426,518 gc     Wizards     1345 (68%)      Food     12,620 bushels     War-Horses     305      Runes     7375 runes     Prisoners     123      Trade Balance     -143,268     Off. Points     33,491     Networth     251,721 gold coins     Def Points     139,532       Our Kingdom is at WAR!    A Sapphire Dragon ravages the lands!        Info    Spells: Fertile Lands (5 days)           Recent News    January 1st   We have found thieves from ZeusTheGreat (2:2) causing trouble within our lands!    January 1st   Our mages noticed a possible spell attempt by ZeusTheGreat (2:2) causing trouble on our lands!    January 1st   Storms are ravaging our lands!    January 1st   Forces from ZeusTheGreat (2:2) came through and ravaged our lands! They captured 348 acres! We lost 79 Soldiers, 19049 Pikemen, 2140 Golems, and 4559 Peasants in the struggle.    January 1st   We have received a shipment of 7426 Runes from FoxyRoxy(1:1).      See all news | Game Update     Please note that with the server switch, Utopia is now operating in GMT!     Articles: Possible Changes. | Game Update | Please note that with the server switch, Utopia is now operating in GMT! | Articles: Possible Changes. | Royal Commands     Victory! Good job guys... | Royal Commands | Victory! Good job guys... | The Province of The Nub (1:1) as of January 1 of YR10 (next tick: 41 minutes)     Race     Gnome     Soldiers     6701      Ruler     The Wise Sir Awesome     Halflings     0      Land     1679 Acres     Pikemen     16,365      Peasants     20,605     Golems     5357      Build Eff.     103%     Thieves     3587 (42%)      Money     426,518 gc     Wizards     1345 (68%)      Food     12,620 bushels     War-Horses     305      Runes     7375 runes     Prisoners     123      Trade Balance     -143,268     Off. Points     33,491     Networth     251,721 gold coins     Def Points     139,532 | The Province of The Nub (1:1) as of January 1 of YR10 (next tick: 41 minutes) | Race | Gnome |  | Soldiers | 6701 | Ruler | The Wise Sir Awesome |  | Halflings | 0 | Land | 1679 Acres |  | Pikemen | 16,365 | Peasants | 20,605 |  | Golems | 5357 | Build Eff. | 103% |  | Thieves | 3587 (42%) | Money | 426,518 gc |  | Wizards | 1345 (68%) | Food | 12,620 bushels |  | War-Horses | 305 | Runes | 7375 runes |  | Prisoners | 123 | Trade Balance | -143,268 |  | Off. Points | 33,491 | Networth | 251,721 gold coins |  | Def Points | 139,532 | Our Kingdom is at WAR! | A Sapphire Dragon ravages the lands! | Info    Spells: Fertile Lands (5 days) | Info | Spells: Fertile Lands (5 days) | Recent News    January 1st   We have found thieves from ZeusTheGreat (2:2) causing trouble within our lands!    January 1st   Our mages noticed a possible spell attempt by ZeusTheGreat (2:2) causing trouble on our lands!    January 1st   Storms are ravaging our lands!    January 1st   Forces from ZeusTheGreat (2:2) came through and ravaged our lands! They captured 348 acres! We lost 79 Soldiers, 19049 Pikemen, 2140 Golems, and 4559 Peasants in the struggle.    January 1st   We have received a shipment of 7426 Runes from FoxyRoxy(1:1).      See all news |  | Recent News | January 1st | We have found thieves from ZeusTheGreat (2:2) causing trouble within our lands! | January 1st | Our mages noticed a possible spell attempt by ZeusTheGreat (2:2) causing trouble on our lands! | January 1st | Storms are ravaging our lands! | January 1st | Forces from ZeusTheGreat (2:2) came through and ravaged our lands! They captured 348 acres! We lost 79 Soldiers, 19049 Pikemen, 2140 Golems, and 4559 Peasants in the struggle. | January 1st | We have received a shipment of 7426 Runes from FoxyRoxy(1:1). |  | See all news
---- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-Money | Peasants | Food | Runes | Net Worth | Land | Net Worth/Acre
-426,518 | 20,605 | 12,620 | 7375 | 251,721 | 1679 | 165
-Game Update     Please note that with the server switch, Utopia is now operating in GMT!     Articles: Possible Changes.           Royal Commands     Victory! Good job guys...           The Province of The Nub (1:1) as of January 1 of YR10 (next tick: 41 minutes)     Race     Gnome     Soldiers     6701      Ruler     The Wise Sir Awesome     Halflings     0      Land     1679 Acres     Pikemen     16,365      Peasants     20,605     Golems     5357      Build Eff.     103%     Thieves     3587 (42%)      Money     426,518 gc     Wizards     1345 (68%)      Food     12,620 bushels     War-Horses     305      Runes     7375 runes     Prisoners     123      Trade Balance     -143,268     Off. Points     33,491     Networth     251,721 gold coins     Def Points     139,532       Our Kingdom is at WAR!    A Sapphire Dragon ravages the lands!        Info    Spells: Fertile Lands (5 days)           Recent News    January 1st   We have found thieves from ZeusTheGreat (2:2) causing trouble within our lands!    January 1st   Our mages noticed a possible spell attempt by ZeusTheGreat (2:2) causing trouble on our lands!    January 1st   Storms are ravaging our lands!    January 1st   Forces from ZeusTheGreat (2:2) came through and ravaged our lands! They captured 348 acres! We lost 79 Soldiers, 19049 Pikemen, 2140 Golems, and 4559 Peasants in the struggle.    January 1st   We have received a shipment of 7426 Runes from FoxyRoxy(1:1).      See all news | Game Update     Please note that with the server switch, Utopia is now operating in GMT!     Articles: Possible Changes. | Game Update | Please note that with the server switch, Utopia is now operating in GMT! | Articles: Possible Changes. | Royal Commands     Victory! Good job guys... | Royal Commands | Victory! Good job guys... | The Province of The Nub (1:1) as of January 1 of YR10 (next tick: 41 minutes)     Race     Gnome     Soldiers     6701      Ruler     The Wise Sir Awesome     Halflings     0      Land     1679 Acres     Pikemen     16,365      Peasants     20,605     Golems     5357      Build Eff.     103%     Thieves     3587 (42%)      Money     426,518 gc     Wizards     1345 (68%)      Food     12,620 bushels     War-Horses     305      Runes     7375 runes     Prisoners     123      Trade Balance     -143,268     Off. Points     33,491     Networth     251,721 gold coins     Def Points     139,532 | The Province of The Nub (1:1) as of January 1 of YR10 (next tick: 41 minutes) | Race | Gnome |  | Soldiers | 6701 | Ruler | The Wise Sir Awesome |  | Halflings | 0 | Land | 1679 Acres |  | Pikemen | 16,365 | Peasants | 20,605 |  | Golems | 5357 | Build Eff. | 103% |  | Thieves | 3587 (42%) | Money | 426,518 gc |  | Wizards | 1345 (68%) | Food | 12,620 bushels |  | War-Horses | 305 | Runes | 7375 runes |  | Prisoners | 123 | Trade Balance | -143,268 |  | Off. Points | 33,491 | Networth | 251,721 gold coins |  | Def Points | 139,532 | Our Kingdom is at WAR! | A Sapphire Dragon ravages the lands! | Info    Spells: Fertile Lands (5 days) | Info | Spells: Fertile Lands (5 days) | Recent News    January 1st   We have found thieves from ZeusTheGreat (2:2) causing trouble within our lands!    January 1st   Our mages noticed a possible spell attempt by ZeusTheGreat (2:2) causing trouble on our lands!    January 1st   Storms are ravaging our lands!    January 1st   Forces from ZeusTheGreat (2:2) came through and ravaged our lands! They captured 348 acres! We lost 79 Soldiers, 19049 Pikemen, 2140 Golems, and 4559 Peasants in the struggle.    January 1st   We have received a shipment of 7426 Runes from FoxyRoxy(1:1).      See all news |  | Recent News | January 1st | We have found thieves from ZeusTheGreat (2:2) causing trouble within our lands! | January 1st | Our mages noticed a possible spell attempt by ZeusTheGreat (2:2) causing trouble on our lands! | January 1st | Storms are ravaging our lands! | January 1st | Forces from ZeusTheGreat (2:2) came through and ravaged our lands! They captured 348 acres! We lost 79 Soldiers, 19049 Pikemen, 2140 Golems, and 4559 Peasants in the struggle. | January 1st | We have received a shipment of 7426 Runes from FoxyRoxy(1:1). |  | See all news
-Game Update     Please note that with the server switch, Utopia is now operating in GMT!     Articles: Possible Changes. | Game Update | Please note that with the server switch, Utopia is now operating in GMT! | Articles: Possible Changes.
-Game Update
-Please note that with the server switch, Utopia is now operating in GMT!
-Articles: Possible Changes.
-Royal Commands     Victory! Good job guys... | Royal Commands | Victory! Good job guys...
-Royal Commands
-Victory! Good job guys...
-The Province of The Nub (1:1) as of January 1 of YR10 (next tick: 41 minutes)     Race     Gnome     Soldiers     6701      Ruler     The Wise Sir Awesome     Halflings     0      Land     1679 Acres     Pikemen     16,365      Peasants     20,605     Golems     5357      Build Eff.     103%     Thieves     3587 (42%)      Money     426,518 gc     Wizards     1345 (68%)      Food     12,620 bushels     War-Horses     305      Runes     7375 runes     Prisoners     123      Trade Balance     -143,268     Off. Points     33,491     Networth     251,721 gold coins     Def Points     139,532 | The Province of The Nub (1:1) as of January 1 of YR10 (next tick: 41 minutes) | Race | Gnome |  | Soldiers | 6701 | Ruler | The Wise Sir Awesome |  | Halflings | 0 | Land | 1679 Acres |  | Pikemen | 16,365 | Peasants | 20,605 |  | Golems | 5357 | Build Eff. | 103% |  | Thieves | 3587 (42%) | Money | 426,518 gc |  | Wizards | 1345 (68%) | Food | 12,620 bushels |  | War-Horses | 305 | Runes | 7375 runes |  | Prisoners | 123 | Trade Balance | -143,268 |  | Off. Points | 33,491 | Networth | 251,721 gold coins |  | Def Points | 139,532
-The Province of The Nub (1:1) as of January 1 of YR10 (next tick: 41 minutes)
-Race | Gnome |  | Soldiers | 6701
-Ruler | The Wise Sir Awesome |  | Halflings | 0
-Land | 1679 Acres |  | Pikemen | 16,365
-Peasants | 20,605 |  | Golems | 5357
-Build Eff. | 103% |  | Thieves | 3587 (42%)
-Money | 426,518 gc |  | Wizards | 1345 (68%)
-Food | 12,620 bushels |  | War-Horses | 305
-Runes | 7375 runes |  | Prisoners | 123
-Trade Balance | -143,268 |  | Off. Points | 33,491
-Networth | 251,721 gold coins |  | Def Points | 139,532
-Our Kingdom is at WAR!
-A Sapphire Dragon ravages the lands!
-Info    Spells: Fertile Lands (5 days) | Info | Spells: Fertile Lands (5 days)
-Info
-Spells: Fertile Lands (5 days)
-Recent News    January 1st   We have found thieves from ZeusTheGreat (2:2) causing trouble within our lands!    January 1st   Our mages noticed a possible spell attempt by ZeusTheGreat (2:2) causing trouble on our lands!    January 1st   Storms are ravaging our lands!    January 1st   Forces from ZeusTheGreat (2:2) came through and ravaged our lands! They captured 348 acres! We lost 79 Soldiers, 19049 Pikemen, 2140 Golems, and 4559 Peasants in the struggle.    January 1st   We have received a shipment of 7426 Runes from FoxyRoxy(1:1).      See all news |  | Recent News | January 1st | We have found thieves from ZeusTheGreat (2:2) causing trouble within our lands! | January 1st | Our mages noticed a possible spell attempt by ZeusTheGreat (2:2) causing trouble on our lands! | January 1st | Storms are ravaging our lands! | January 1st | Forces from ZeusTheGreat (2:2) came through and ravaged our lands! They captured 348 acres! We lost 79 Soldiers, 19049 Pikemen, 2140 Golems, and 4559 Peasants in the struggle. | January 1st | We have received a shipment of 7426 Runes from FoxyRoxy(1:1). |  | See all news
-
-Recent News
-January 1st | We have found thieves from ZeusTheGreat (2:2) causing trouble within our lands!
-January 1st | Our mages noticed a possible spell attempt by ZeusTheGreat (2:2) causing trouble on our lands!
-January 1st | Storms are ravaging our lands!
-January 1st | Forces from ZeusTheGreat (2:2) came through and ravaged our lands! They captured 348 acres! We lost 79 Soldiers, 19049 Pikemen, 2140 Golems, and 4559 Peasants in the struggle.
-January 1st | We have received a shipment of 7426 Runes from FoxyRoxy(1:1).
- | See all news
-
-### Contents
-
-- 1 Top Bar
-
-1.1 Money
-1.2 Peasants
-1.3 Food
-1.4 Runes
-1.5 Networth
-1.6 Land
-
-- 2 Time
-
-- 3 Game Update
-
-- 4 Royal Commands
-
-- 5 Province Overview
-
-- 6 Recent Events
-
-### Top Bar
-
-This shows your basic resources and can be viewed from most pages. It's quite handy as it means you don't need to come back to your Throne page every time you want to see how much gold you have, or how many acres of land you own.
-
-#### Money
-
-**Gold Coin** (1gc or $1) is Utopian Currency, the base of Utopian Economics. Banks and population produce money, and some Races or Personalities can make some by casting Tree of Gold. Spend money on Exploration, Building, Training and Wages.
-For more information on how gold, or gc, is calculated, check out Economy - Money in the Advanced section.
-
-#### Peasants
-
-**Peasants** are responsible for working and generating income for your province.
-For more information on peasants, check out Economy - Population in the Advanced section.
-
-#### Food
-
-**Food** is a resource, and it is needed to keep population of a Province alive.
-For more information on food, check out Food in the Advanced section.
-
-#### Runes
-
-**Runes** are the main resource used in Spell Casting. Towers generates additional runes per Utopian Day.
-
-#### Networth
-
-**Networth** is a nominal value in gold coins of a Province/Kingdom.
-For more information on how networth is calculated, check out Networth in the Advanced section.
-
-#### Land
-
-Land is the main resource in Utopia. It is measured in **acres**. If a province doesn't have any land, the province doesn't exist.
-Buildings are built on your land to house your population, grow food, and empower your military, mages, and thieves. You can check learn more about buildings in Growth.
-
-### Time
-
-Below this is the game time, showing the current date in the Utopian time system which is a bit different to ours. Each Utopian day is one Real Life hour, each Utopian Month is a Real Life day, and each Utopian Year is a Real Life week. So there are 24 days in a month, 7 months in a year and normally around 12 years in an Age.
-
-### Game Update
-
-This section is sometimes used by the Utopian Staff to give important messages to everyone in the game. In the example above, it is informing you that the game time has been set to run based on Greenwich Mean Time.
-
-### Royal Commands
-
-The monarch of your kingdom can use this section to give information to everyone in the kingdom. For example, reminding everyone to build up a strong defense, or which targets to attack in war. Make sure you check this every time you login.
-
-### Province Overview
-
-The main box on this page gives a list of most of the important details about your province, from your Race, to your total Defence, and everything in-between.
-
-### Recent Events
-
-Finally, listed will be events which have occurred to your province since you last looked at your Throne page. This will include enemies attempts to conduct thievery operations or cast spells on you, attacks made against you, or aid you have received from kingdom mates.
-
 ## Time in Utopia
 
 Each event in Utopia is dated in **Utopian Time**.
@@ -8401,149 +5724,6 @@ Ambush | This attack can only be performed against a target which has recently a
 - Military
 
 - War
-
-## Tutorials
-
-To add the Game Mechanism header to the top of a newly created page, type in the code -
-
-{{game_mech}}
-
-at the top of the newly created page.
-To add the Player-written Guide header to the top of a newly created page, type in the code -
-
-{{playerguide}}
-
-at the top of the newly created page.
-
-These are not quite full length guides or the guides found from the original Utopian Guide, however are written from a Utopian's point of view, and aims to explain little quirks in the game to enhance the understanding of noobs all around.
-
-### Pages in category "Mini Guides"
-
-The following 20 pages are in this category, out of 20 total.
-
-#### A
-
-- Attacking & Calculating an Attack
-
-#### C
-
-- Chaining
-
-- Commonly Used Acronyms
-
-#### D
-
-- Dual Monarch
-
-#### F
-
-- FAQ
-
-- Finding Good Learn Targets
-
-#### G
-
-- Guide:Ambush
-
-- Guide:Combo Selection
-
-- Guide:SoM
-
-#### H
-
-- Hostile Meter
-
-- Hostility Meter Strategies
-
-#### L
-
-- Land Whorring Tips & Tricks
-
-#### M
-
-- MIRC
-
-- Multi-Attack Protection (MAP)
-
-#### O
-
-- Overpop Mitigation
-
-#### Q
-
-- Quick Tips
-
-#### R
-
-- Recommended Defense
-
-#### T
-
-- Target Finder
-
-- Time to Move On
-
-#### U
-
-- Using IRC
-
-## Utopia
-
-Welcome to Utopia, a world where reality and dreams come together, a world where the lowliest of peasants can become the world's greatest heroes. A world unlike any other that you may have experienced now stands before you. Any peasant can become Lord of their own province, but only the greatest can survive. Being a leader in the world of Utopia will challenge your every skill and demand your careful attention. Without diplomacy and tact, you will never rise to the respect the people demand of you. You must decide when to be ruthless and when to be compassionate. Will you run an empire of might or magic? Perhaps one of cunning and betrayal? Alas, it is almost impossible to do them all. Every decision, every challenge will be yours and yours alone.
-Are you ready to be a Lord or Lady here in Utopia? If so, continue onwards...
-As Lord or Lady of your lands, you will afterwards make the decisions that affect your people's daily lives. You will draft them into your service, send them off to war, decide when and what spells to cast, what to build, and how your population will live. As you enter the world, you will become more familiar with its workings. This will take time - do not be discouraged if you feel confused or overwhelmed. The Utopia Wiki will help you make your original decisions, and will be perfect for new players willing to discover the Utopian background. Read it as you wish, or learn as you go. Much of this information will be provided as necessary by your scribes, squires, and advisors within Utopia.
-
-### Contents
-
-- 1 History
-
-1.1 1998: Beta Period
-1.2 January 1999: Launch
-1.3 July 2008: OMAC acquires Swirve
-1.4 July 2011: Arcadia Games bought Utopia
-1.5 February 2017: Muga Gaming bought Utopia
-
-History
-
-### 1998: Beta Period
-
-Series of Betas, known as the "First Beta", "Long Beta & "Short Beta".
-
-### January 1999: Launch
-
-Utopia was Launched by its' Game Creator, Mehul Patel.
-Utopia was originally created under the company Solaria Games. It was renamed to Echelon Entertainment, and then in July 2000 was renamed to swirve.com.
-3 Servers Existed - World of Legends, Battlefields & Genesis.
-
-### July 2008: OMAC acquires Swirve
-
-Mehul Patel & Blake Gifford step down as OMAC acquires Swirve.com.
-
-### July 2011: Arcadia Games bought Utopia
-
-Arcadia Games bought Utopia from OMAC.
-
-### February 2017: Muga Gaming bought Utopia
-
-Muga Gaming bought Utopia from Arcadia Games.
-
-## Utopian server
-
-The main server is World of Legends.  Genesis is a secondary server for Utopia, commonly used as a testing ground for software updates. Players may have one account on each server.
-
-#### Current Servers
-
-- World of Legends
-
-- Genesis
-
-#### Previous Servers
-
-- Battlefields
-
-- Great Utopia War
-
-- Utopia Tournament
 
 ## War Score
 
@@ -8663,7 +5843,7 @@ Chaining is useful because it is one of the only ways for attackers to remove en
 #### Military Efficiency
 
 ME affects troop loss linearly. 200 OME means you lose half as many troops to break the same defence. This is particularly important in wage drops. If one kd has stronger econ control and can force the other kd to drop wages (e.g 100% avg vs 200% wage =~ 12% delta ME), the other kd will not only lose offence and defence, they will also lose more troops per hit, thus expanding the overall gap for as long as the wage discrepancy remains, even if it is later removed.
-It is worth noting that temporary ME changes affect natural attrition, while permanent ME affect everything except natural attrition. For example, if I MV a MP+GP to temporarily reduce DME right before a hit, the hit prov will lose 10% more defence per offence point sent. Permanent ME by comparison does not impact natural attrition: a warrior (+12% OME age 99) will always lose 12% fewer offensive troops, but the lost troops would have hit 12% harder, so the ratio of attrition in off/deff terms remains constant. However, NSing a warrior which enjoyed higher ME does more to the top line, so the higher the ME of a kd, the less important natural attrition is on a relative basis to all other troop removal mechanisms.
+It is worth noting that temporary ME changes affect natural attrition, while permanent ME affect everything except natural attrition. For example, if I MV a MP+GP to temporarily reduce DME right before a hit, the hit prov will lose 10% more defence per offence point sent. Permanent ME by comparison does not impact natural attrition: a warrior (e.g. +12% OME) will always lose 12% fewer offensive troops, but the lost troops would have hit 12% harder, so the ratio of attrition in off/deff terms remains constant. However, NSing a warrior which enjoyed higher ME does more to the top line, so the higher the ME of a kd, the less important natural attrition is on a relative basis to all other troop removal mechanisms.
 
 #### Rituals (~4% off/def per 24H)
 
@@ -8786,12 +5966,3 @@ Emergency | 2.0% | 110gc
 #### Maintenance cost
 
 **Click here for the Formula**
-
-## World of Legends
-
-This is the primary gaming server for Utopia. It is often abbreviated to WoL.
-
-#### Information
-
-Race
-Personality

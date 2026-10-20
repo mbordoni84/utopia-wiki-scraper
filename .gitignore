@@ -4,3 +4,5 @@ wiki_offline/*
 __pycache__/
 *.pyc
 .cursor/
+.venv/
+.DS_Store
